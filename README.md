@@ -127,6 +127,19 @@ adb logcat -s LockService KidsLockAccessibilityService BootReceiver
 - 开机自启
 - 后台运行
 - 悬浮窗（部分机型）
+- 通知权限（Android 13+，用于计时通知）
+
+声明的权限列表（AndroidManifest.xml）：
+- `RECEIVE_BOOT_COMPLETED` — 开机自启
+- `FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_SPECIAL_USE` — 前台服务
+- `WAKE_LOCK` — 唤醒锁
+- `SYSTEM_ALERT_WINDOW` — 悬浮窗
+- `POST_NOTIFICATIONS` — 通知权限（Android 13+）
+- `REQUEST_IGNORE_BATTERY_OPTIMIZATIONS` — 忽略电池优化
+- `QUERY_ALL_PACKAGES` — 查询已安装应用
+- `INTERNET` / `ACCESS_WIFI_STATE` / `ACCESS_NETWORK_STATE` — 网络
+- `USE_FULL_SCREEN_INTENT` — 全屏意图
+- `DISABLE_KEYGUARD` — 禁用锁屏
 
 电视建议将本应用加入白名单，避免被系统清理。
 
