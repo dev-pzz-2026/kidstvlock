@@ -89,12 +89,37 @@ $env:ANDROID_HOME="D:\data\Android\Sdk"
 4. 找到 APK，点击安装。
 5. 安装前需在「设置 → 账号与安全」中开启「允许安装未知来源应用」。
 
-或使用 adb：
+### ADB 安装与授权命令
 
 ```bash
+# 1. 连接电视
 adb connect <电视IP>:5555
-adb install kidslock-release.apk
+
+# 2. 安装 APK（覆盖安装）
+adb install -r kidslock-release.apk
+
+# 3. 授予开机自启权限（Android 10+）
+adb shell appops set com.kidslock.app RUN_IN_BACKGROUND allow
+adb shell appops set com.kidslock.app RUN_ANY_IN_BACKGROUND allow
+
+# 4. 授予悬浮窗权限
+adb shell appops set com.kidslock.app SYSTEM_ALERT_WINDOW allow
+
+# 5. 授予电池优化白名单（防止被系统杀掉）
+adb shell dumpsys deviceidle whitelist +com.kidslock.app
+
+# 6. 开启无障碍服务（增强锁定效果）
+adb shell settings put secure enabled_accessibility_services com.kidslock.app/com.kidslock.app.KidsLockAccessibilityService
+adb shell settings put secure accessibility_enabled 1
+
+# 7. 启动应用
+adb shell am start -n com.kidslock.app/.MainActivity
+
+# 8. 查看日志（调试用）
+adb logcat -s LockService KidsLockAccessibilityService BootReceiver
 ```
+
+> **注意**：部分电视品牌（小米、 TCL 等）可能需要在电视设置中手动授权「开机自启」和「后台运行」，ADB 命令仅作为辅助。
 
 ### 权限
 
