@@ -179,10 +179,7 @@ public class LockScreenActivity extends AppCompatActivity {
         pref.setHomeAliasEnabled(this, false);
         int minutes = pref.getWatchLimitMinutes();
         pref.startTimer(minutes);
-        try {
-            LockService.requestUnlock(this);
-        } catch (Exception e) {
-        }
+        // 启动计时服务，开始新计时
         try {
             Intent svc = new Intent(this, LockService.class);
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {

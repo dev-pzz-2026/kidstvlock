@@ -1,6 +1,7 @@
 package com.kidslock.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.wifi.WifiManager;
 import android.text.format.Formatter;
 import android.util.Log;
@@ -208,6 +209,8 @@ public class WebConfigServer {
             try {
                 JSONObject json = new JSONObject(body);
                 PrefManager pref = new PrefManager(context);
+                boolean timerWasActive = pref.isTimerActive();
+                int oldMinutes = pref.getWatchLimitMinutes();
                 if (json.has("watchLimitMinutes")) pref.setWatchLimitMinutes(json.getInt("watchLimitMinutes"));
                 if (json.has("unlockCount")) pref.setUnlockCount(json.getInt("unlockCount"));
                 if (json.has("lockDurationMinutes")) pref.setLockDurationMinutes(json.getInt("lockDurationMinutes"));
@@ -215,6 +218,24 @@ public class WebConfigServer {
                 if (json.has("relockDelaySeconds")) pref.setRelockDelaySeconds(json.getInt("relockDelaySeconds"));
                 if (json.has("autoStart")) pref.setAutoStart(json.getBoolean("autoStart"));
                 if (json.has("currentBankFile")) pref.setCurrentBankFile(json.getString("currentBankFile"));
+                // 如果计时器正在运行且观看时长变化，重新启动计时器
+                if (timerWasActive && json.has("watchLimitMinutes")) {
+                    int newMinutes = json.getInt("watchLimitMinutes");
+                    if (newMinutes != oldMinutes && newMinutes > 0) {
+                        pref.startTimer(newMinutes);
+                    }
+                }
+                // 重启计时服务以应用新配置
+                try {
+                    Intent svc = new Intent(context, LockService.class);
+                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                        context.startForegroundService(svc);
+                    } else {
+                        context.startService(svc);
+                    }
+                } catch (Exception e) {
+                    Log.e(TAG, "restart LockService failed", e);
+                }
             } catch (Exception e) {
                 Log.e(TAG, "Save config error", e);
             }
@@ -227,7 +248,7 @@ public class WebConfigServer {
                 String[] files = context.getAssets().list("");
                 if (files != null) {
                     for (String f : files) {
-                        if (f.endsWith(".json")) {
+                        if (f.endsWith(".json") && isValidBank(context, f, true)) {
                             JSONObject obj = new JSONObject();
                             obj.put("name", f);
                             obj.put("source", "assets");
@@ -240,7 +261,7 @@ public class WebConfigServer {
                 File[] files2 = dir.listFiles();
                 if (files2 != null) {
                     for (File f : files2) {
-                        if (f.getName().endsWith(".json")) {
+                        if (f.getName().endsWith(".json") && isValidBankFile(f)) {
                             JSONObject obj = new JSONObject();
                             obj.put("name", f.getName());
                             obj.put("source", "internal");
@@ -254,6 +275,38 @@ public class WebConfigServer {
             }
         }
         
+         private boolean isValidBank(Context ctx, String fileName, boolean isAsset) {
+             try {
+                 String json;
+                 if (isAsset) {
+                     InputStream is = ctx.getAssets().open(fileName);
+                     BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+                     StringBuilder sb = new StringBuilder();
+                     String line;
+                     while ((line = br.readLine()) != null) sb.append(line);
+                     br.close();
+                     json = sb.toString();
+                 } else {
+                     File f = new File(ctx.getFilesDir(), fileName);
+                     FileInputStream fis = new FileInputStream(f);
+                     BufferedReader br = new BufferedReader(new InputStreamReader(fis, StandardCharsets.UTF_8));
+                     StringBuilder sb = new StringBuilder();
+                     String line;
+                     while ((line = br.readLine()) != null) sb.append(line);
+                     br.close();
+                     json = sb.toString();
+                 }
+                 JSONObject root = new JSONObject(json);
+                 return root.has("questions") || root.has("characters") || root.has("pieces");
+             } catch (Exception e) {
+                 return false;
+             }
+         }
+
+         private boolean isValidBankFile(File f) {
+             return isValidBank(context, f.getName(), false);
+         }
+
         private String uploadBank(String body, Map<String, String> headers) {
             try {
                 // Simple JSON upload: {"filename":"test.json","content":"..."}

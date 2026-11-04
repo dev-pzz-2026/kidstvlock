@@ -29,16 +29,6 @@ import androidx.core.app.NotificationCompat;
 
 import java.util.List;
 
-/**
- * 前台服务，三种工作：
- * 1. 计时模式：每秒检查观看时长，到时间触发锁屏。
- * 2. 锁屏守护模式：检测锁屏状态，必要时拉起 LockScreenActivity。
- * 3. 悬浮窗覆盖层：锁屏时覆盖桌面，拦截孩子操作，引导回到锁屏界面。
- *
- * 悬浮窗是解决 Android 10+ 后台启动 Activity 受限的核心方案：
- * 孩子在桌面看到的不是普通桌面，而是一个半透明覆盖层，
- * 点击/遥控确定后会打开锁屏 Activity（带用户交互，系统不拦截）。
- */
 public class LockService extends Service {
 
     private static final String TAG = "LockService";
@@ -66,6 +56,29 @@ public class LockService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         startForeground(NOTIFICATION_ID, buildNotification());
+
+        // ACTION_UNLOCK → 解锁并重新启动计时
+        if (intent != null && "com.kidslock.app.ACTION_UNLOCK".equals(intent.getAction())) {
+            Log.i(TAG, "ACTION_UNLOCK received, unlocking and restarting timer");
+            pref.setLocked(false);
+            pref.setHomeAliasEnabled(this, false);
+            hideOverlay();
+            // 取消守护回调
+            if (watchdogRunnable != null) {
+                handler.removeCallbacks(watchdogRunnable);
+                watchdogRunnable = null;
+            }
+            // 取消已有计时回调
+            if (tickRunnable != null) {
+                handler.removeCallbacks(tickRunnable);
+                tickRunnable = null;
+            }
+            // 如果计时器已激活，开始计时循环
+            if (pref.isTimerActive()) {
+                startTicking();
+            }
+            return START_STICKY;
+        }
 
         // 已锁屏 → 进入锁屏守护模式
         if (pref.isLocked()) {
@@ -96,14 +109,14 @@ public class LockService extends Service {
         return START_STICKY;
     }
 
-    // ==================== 计时模式 ====================
-
     private void startTicking() {
+        if (tickRunnable != null) {
+            handler.removeCallbacks(tickRunnable);
+        }
         tickRunnable = new Runnable() {
             @Override
             public void run() {
                 if (pref.isLocked()) {
-                    // 已被锁屏接管
                     hideOverlay();
                     startWatchdog();
                     startLockScreenActivity();
@@ -113,9 +126,7 @@ public class LockService extends Service {
                     triggerLock();
                     return;
                 }
-                // 更新通知
                 updateNotification();
-                // 每秒检查
                 handler.postDelayed(this, 1000);
             }
         };
@@ -128,15 +139,11 @@ public class LockService extends Service {
         pref.setHomeAliasEnabled(this, true);
         pref.stopTimer();
 
-        // 直接进入答题锁屏页面，不显示中间覆盖层
         startLockScreenActivity();
         hideOverlay();
 
-        // 转为锁屏守护模式
         startWatchdog();
     }
-
-    // ==================== 锁屏守护模式 ====================
 
     private void startWatchdog() {
         if (tickRunnable != null) {
@@ -150,7 +157,6 @@ public class LockService extends Service {
             @Override
             public void run() {
                 if (!pref.isLocked()) {
-                    // 已解锁，守护任务结束
                     Log.i(TAG, "Unlocked, watchdog stopping");
                     hideOverlay();
                     stopForeground(true);
@@ -158,7 +164,6 @@ public class LockService extends Service {
                     return;
                 }
 
-                // 如果锁屏界面本身已经跑到前台，就不需要重复拉起，避免刷屏
                 if (!isLockScreenOnTop()) {
                     Log.i(TAG, "Lock screen not on top, pulling again");
                     startLockScreenActivity();
@@ -188,47 +193,8 @@ public class LockService extends Service {
         }
     }
 
-    // ==================== 悬浮窗覆盖层 ====================
-
     private boolean canDrawOverlays() {
         return Build.VERSION.SDK_INT < Build.VERSION_CODES.M || Settings.canDrawOverlays(this);
-    }
-
-    /**
-     * 显示全屏悬浮窗覆盖层。锁屏状态下只要权限已开就一直显示，
-     * 拦截孩子的所有触摸/按键操作，引导回到锁屏界面。
-     */
-    private void showOverlayIfPermitted() {
-        if (!canDrawOverlays()) {
-            Log.d(TAG, "Overlay permission not granted, skip overlay");
-            return;
-        }
-        if (overlayView != null) {
-            // 已显示则不再重复添加
-            return;
-        }
-
-        try {
-            overlayView = new LockOverlayView(this);
-            WindowManager.LayoutParams params = new WindowManager.LayoutParams(
-                    WindowManager.LayoutParams.MATCH_PARENT,
-                    WindowManager.LayoutParams.MATCH_PARENT,
-                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
-                            ? WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
-                            : WindowManager.LayoutParams.TYPE_PHONE,
-                    // 悬浮窗可聚焦，拦截 TV 遥控器焦点
-                    WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
-                            | WindowManager.LayoutParams.FLAG_DIM_BEHIND
-                            | WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
-                    PixelFormat.TRANSLUCENT
-            );
-            params.gravity = Gravity.TOP | Gravity.START;
-            params.dimAmount = 0.7f;
-            windowManager.addView(overlayView, params);
-            Log.i(TAG, "Overlay shown");
-        } catch (Exception e) {
-            Log.e(TAG, "Failed to show overlay", e);
-        }
     }
 
     public void hideOverlay() {
@@ -242,13 +208,10 @@ public class LockService extends Service {
         }
     }
 
-    /**
-     * 从悬浮窗点击/按键等用户交互场景启动锁屏 Activity。
-     */
     private void startLockScreenActivity() {
         Intent lockIntent = new Intent(this, LockScreenActivity.class);
-        lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK 
-                | Intent.FLAG_ACTIVITY_CLEAR_TOP 
+        lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_CLEAR_TOP
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP
                 | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
         lockIntent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -266,9 +229,6 @@ public class LockService extends Service {
         }
     }
 
-    /**
-     * 解锁时由 LockScreenActivity 调用，彻底移除悬浮窗和停止服务。
-     */
     public static void requestUnlock(Context context) {
         Intent intent = new Intent(context, LockService.class);
         intent.setAction("com.kidslock.app.ACTION_UNLOCK");
@@ -276,23 +236,22 @@ public class LockService extends Service {
     }
 
     @Override
-    public void onStart(Intent intent, int startId) {
-        super.onStart(intent, startId);
-        if (intent != null && "com.kidslock.app.ACTION_UNLOCK".equals(intent.getAction())) {
-            unlockAndStop();
+    public void onDestroy() {
+        if (tickRunnable != null) {
+            handler.removeCallbacks(tickRunnable);
         }
-    }
-
-    private void unlockAndStop() {
-        pref.setLocked(false);
-        pref.setHomeAliasEnabled(this, false);
-        pref.stopTimer();
+        if (watchdogRunnable != null) {
+            handler.removeCallbacks(watchdogRunnable);
+        }
         hideOverlay();
-        stopForeground(true);
-        stopSelf();
+        Log.i(TAG, "LockService destroyed");
+        super.onDestroy();
     }
 
-    // ==================== 通知 ====================
+    @Override
+    public IBinder onBind(Intent intent) {
+        return null;
+    }
 
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -336,7 +295,7 @@ public class LockService extends Service {
     }
 
     private void updateNotification() {
-        NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        NotificationManager nm = (NotificationManager) getSystemService(NotificationManager.class);
         if (nm != null) {
             nm.notify(NOTIFICATION_ID, buildNotification());
         }
@@ -347,73 +306,5 @@ public class LockService extends Service {
         long minutes = totalSeconds / 60;
         long seconds = totalSeconds % 60;
         return String.format("%02d:%02d", minutes, seconds);
-    }
-
-    @Override
-    public void onDestroy() {
-        if (tickRunnable != null) {
-            handler.removeCallbacks(tickRunnable);
-        }
-        if (watchdogRunnable != null) {
-            handler.removeCallbacks(watchdogRunnable);
-        }
-        hideOverlay();
-        // 卸载/停止时释放 HOME alias 与锁屏状态，避免系统卡死
-        try {
-            pref.setHomeAliasEnabled(this, false);
-            pref.setLocked(false);
-            pref.stopTimer();
-        } catch (Exception e) {
-            Log.e(TAG, "cleanup on destroy failed", e);
-        }
-        Log.i(TAG, "LockService destroyed");
-        super.onDestroy();
-    }
-
-    @Override
-    public IBinder onBind(Intent intent) {
-        return null;
-    }
-
-    // ==================== 悬浮窗内部视图 ====================
-
-    /**
-     * 全屏悬浮窗视图：大字提示 + 解锁按钮。
-     * 点击按钮或按遥控器确定键都会打开 LockScreenActivity。
-     */
-    public class LockOverlayView extends FrameLayout {
-
-        public LockOverlayView(Context context) {
-            super(context);
-            LayoutInflater.from(context).inflate(R.layout.overlay_lock, this, true);
-            setFocusable(true);
-            setFocusableInTouchMode(true);
-            requestFocus();
-
-            Button btnUnlock = findViewById(R.id.btnOverlayUnlock);
-            if (btnUnlock != null) {
-                btnUnlock.setFocusable(true);
-                btnUnlock.setFocusableInTouchMode(true);
-                btnUnlock.requestFocus();
-                btnUnlock.setOnClickListener(v -> startLockScreenActivity());
-            }
-
-            // 整个覆盖层点击也打开锁屏（对触屏更友好）
-            setOnClickListener(v -> startLockScreenActivity());
-        }
-
-        @Override
-        public boolean dispatchKeyEvent(KeyEvent event) {
-            if (event.getAction() == KeyEvent.ACTION_UP) {
-                int keyCode = event.getKeyCode();
-                if (keyCode == KeyEvent.KEYCODE_ENTER
-                        || keyCode == KeyEvent.KEYCODE_DPAD_CENTER
-                        || keyCode == KeyEvent.KEYCODE_SPACE) {
-                    startLockScreenActivity();
-                    return true;
-                }
-            }
-            return super.dispatchKeyEvent(event);
-        }
     }
 }

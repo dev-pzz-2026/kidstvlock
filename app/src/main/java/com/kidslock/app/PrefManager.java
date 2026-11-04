@@ -134,9 +134,11 @@ public class PrefManager {
     // --- Helper: start timer ---
     public void startTimer(int minutes) {
         long endTime = System.currentTimeMillis() + (long) minutes * 60 * 1000;
-        setTimerActive(true);
-        setTimerEndTime(endTime);
-        setLocked(false);
+        prefs.edit()
+            .putBoolean(KEY_TIMER_ACTIVE, true)
+            .putLong(KEY_TIMER_END_TIME, endTime)
+            .putBoolean(KEY_IS_LOCKED, false)
+            .commit();
     }
 
     public void stopTimer() {
