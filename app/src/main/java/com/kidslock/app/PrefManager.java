@@ -105,7 +105,7 @@ public class PrefManager {
     }
 
     public void setLocked(boolean locked) {
-        prefs.edit().putBoolean(KEY_IS_LOCKED, locked).apply();
+        prefs.edit().putBoolean(KEY_IS_LOCKED, locked).commit();
     }
 
     // --- Timer ---

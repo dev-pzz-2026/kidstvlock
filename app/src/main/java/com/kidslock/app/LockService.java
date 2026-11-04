@@ -89,6 +89,16 @@ public class LockService extends Service {
             return START_STICKY;
         }
 
+        // 解锁后：取消守护回调
+        if (watchdogRunnable != null) {
+            handler.removeCallbacks(watchdogRunnable);
+            watchdogRunnable = null;
+        }
+        if (tickRunnable != null) {
+            handler.removeCallbacks(tickRunnable);
+            tickRunnable = null;
+        }
+
         // 计时器未激活 → 停止服务
         if (!pref.isTimerActive()) {
             Log.i(TAG, "Timer not active, stopping service");

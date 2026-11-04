@@ -105,6 +105,26 @@ adb shell appops set com.kidslock.app RUN_ANY_IN_BACKGROUND allow
 # 4. 授予悬浮窗权限
 adb shell appops set com.kidslock.app SYSTEM_ALERT_WINDOW allow
 
+# 4b. 授予通知权限（Android 13+）
+adb shell pm grant com.kidslock.app android.permission.POST_NOTIFICATIONS
+
+# 4c. 授予忽略电池优化
+adb shell dumpsys deviceidle whitelist +com.kidslock.app
+
+# 4d. 授予开机自启（部分机型需要）
+adb shell pm grant com.kidslock.app android.permission.RECEIVE_BOOT_COMPLETED
+
+# 4e. 授予网络权限（部分机型需要）
+adb shell pm grant com.kidslock.app android.permission.INTERNET
+adb shell pm grant com.kidslock.app android.permission.ACCESS_WIFI_STATE
+adb shell pm grant com.kidslock.app android.permission.ACCESS_NETWORK_STATE
+
+# 4f. 授予全屏意图权限
+adb shell pm grant com.kidslock.app android.permission.USE_FULL_SCREEN_INTENT
+
+# 4g. 授予禁用锁屏权限
+adb shell pm grant com.kidslock.app android.permission.DISABLE_KEYGUARD
+
 # 5. 授予电池优化白名单（防止被系统杀掉）
 adb shell dumpsys deviceidle whitelist +com.kidslock.app
 
