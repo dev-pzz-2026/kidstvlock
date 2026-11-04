@@ -1,0 +1,2118 @@
+{
+  "bank_id": "grade6_math",
+  "bank_name": "六年级数学",
+  "grade": 6,
+  "subject": "math",
+  "subject_name": "数学",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 6001,
+      "question": "2/3×3/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "0.5",
+        "1.5",
+        "-0.5",
+        "10.5"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 2/3×3/4，结果为 0.5。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6002,
+      "question": "1/2×4/5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.4",
+        "0.4",
+        "-0.6",
+        "10.4"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 1/2×4/5，结果为 0.4。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6003,
+      "question": "3/5×5/6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.5",
+        "-0.5",
+        "0.5",
+        "10.5"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 3/5×5/6，结果为 0.5。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6004,
+      "question": "4/7×14 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "9",
+        "7",
+        "18",
+        "8"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 4/7×14，结果为 8。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6005,
+      "question": "1/3×3/5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "0.2",
+        "1.2",
+        "-0.8",
+        "10.2"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1/3×3/5，结果为 0.2。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6006,
+      "question": "1/2÷1/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.125",
+        "0.125",
+        "-0.875",
+        "10.125"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 1/2÷1/4，结果为 0.125。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6007,
+      "question": "3/4÷3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.25",
+        "-0.75",
+        "0.25",
+        "10.25"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 3/4÷3，结果为 0.25。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6008,
+      "question": "2/3÷4/9 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "55/54",
+        "-53/54",
+        "541/54",
+        "1/54"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 2/3÷4/9，结果为 1/54。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6009,
+      "question": "5/6÷5/12 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1/72",
+        "73/72",
+        "-71/72",
+        "721/72"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 5/6÷5/12，结果为 1/72。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6010,
+      "question": "8÷2/3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "7/3",
+        "4/3",
+        "1/3",
+        "34/3"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 8÷2/3，结果为 4/3。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6011,
+      "question": "1/4×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "0",
+        "1",
+        "11"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 1/4×4，结果为 1。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6012,
+      "question": "1-1/5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.8",
+        "-0.2",
+        "10.8",
+        "0.8"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 1-1/5，结果为 0.8。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6013,
+      "question": "3.14×5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "15.7",
+        "16.7",
+        "14.7",
+        "25.7"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 3.14×5，结果为 15.7。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6014,
+      "question": "2×3.14×3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "19.84",
+        "18.84",
+        "17.84",
+        "28.84"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 2×3.14×3，结果为 18.84。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6015,
+      "question": "3.14×10 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "32.4",
+        "30.4",
+        "31.4",
+        "41.4"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 3.14×10，结果为 31.4。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6016,
+      "question": "3.14×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "13.56",
+        "11.56",
+        "22.56",
+        "12.56"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 3.14×4，结果为 12.56。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6017,
+      "question": "1/2+1/3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "5/6",
+        "11/6",
+        "-1/6",
+        "65/6"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1/2+1/3，结果为 5/6。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6018,
+      "question": "3/4-1/2 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.25",
+        "0.25",
+        "-0.75",
+        "10.25"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 3/4-1/2，结果为 0.25。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6019,
+      "question": "60×1/2 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "31",
+        "29",
+        "30",
+        "40"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 60×1/2，结果为 30。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6020,
+      "question": "80×1/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "21",
+        "19",
+        "30",
+        "20"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 80×1/4，结果为 20。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6021,
+      "question": "3/5÷3/10 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "0.02",
+        "1.02",
+        "-0.98",
+        "10.02"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 3/5÷3/10，结果为 0.02。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6022,
+      "question": "7/8×4/7 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.5",
+        "0.5",
+        "-0.5",
+        "10.5"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 7/8×4/7，结果为 0.5。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6023,
+      "question": "120×3/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "91",
+        "89",
+        "90",
+        "100"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 120×3/4，结果为 90。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6024,
+      "question": "1-1/4-1/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.5",
+        "-0.5",
+        "10.5",
+        "0.5"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 1-1/4-1/4，结果为 0.5。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6025,
+      "question": "3.14×2 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "6.28",
+        "7.28",
+        "5.28",
+        "16.28"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 3.14×2，结果为 6.28。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6026,
+      "question": "1/4×1/5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.05",
+        "0.05",
+        "-0.95",
+        "10.05"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 1/4×1/5，结果为 0.05。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6027,
+      "question": "9÷3/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.75",
+        "-0.25",
+        "0.75",
+        "10.75"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 9÷3/4，结果为 0.75。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6028,
+      "question": "2/9×3/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "7/6",
+        "-5/6",
+        "61/6",
+        "1/6"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 2/9×3/4，结果为 1/6。",
+      "tags": [
+        "分数乘除",
+        "百分数"
+      ]
+    },
+    {
+      "id": 6029,
+      "question": "2平方千米 = ? 公顷",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "200",
+        "201",
+        "210",
+        "199"
+      ],
+      "correct_index": 0,
+      "explanation": "2平方千米 = 200公顷，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 6030,
+      "question": "3公顷 = ? 平方米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "30001",
+        "30000",
+        "30010",
+        "29999"
+      ],
+      "correct_index": 1,
+      "explanation": "3公顷 = 30000平方米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 6031,
+      "question": "1立方米 = ? 立方分米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "1001",
+        "1010",
+        "1000",
+        "999"
+      ],
+      "correct_index": 2,
+      "explanation": "1立方米 = 1000立方分米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 6032,
+      "question": "4升 = ? 毫升",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "4001",
+        "4010",
+        "3999",
+        "4000"
+      ],
+      "correct_index": 3,
+      "explanation": "4升 = 4000毫升，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 6033,
+      "question": "5平方千米 = ? 公顷",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "500",
+        "501",
+        "510",
+        "499"
+      ],
+      "correct_index": 0,
+      "explanation": "5平方千米 = 500公顷，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 6034,
+      "question": "2立方分米 = ? 升",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "2",
+        "12",
+        "1"
+      ],
+      "correct_index": 1,
+      "explanation": "2立方分米 = 2升，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 6035,
+      "question": "两个数相除又叫做两个数的？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "比例",
+        "比值",
+        "比",
+        "分数"
+      ],
+      "correct_index": 2,
+      "explanation": "两个数相除又叫两个数的比。",
+      "tags": [
+        "比的意义"
+      ]
+    },
+    {
+      "id": 6036,
+      "question": "比的前项除以后项所得的商叫？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "比的基本性质",
+        "比例",
+        "化简",
+        "比值"
+      ],
+      "correct_index": 3,
+      "explanation": "叫比值。",
+      "tags": [
+        "比值"
+      ]
+    },
+    {
+      "id": 6037,
+      "question": "化简比 6:8 的结果是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3:4",
+        "6:8",
+        "1:4",
+        "2:3"
+      ],
+      "correct_index": 0,
+      "explanation": "前后项同除以2，得3:4。",
+      "tags": [
+        "化简比"
+      ]
+    },
+    {
+      "id": 6038,
+      "question": "比的前项和后项同时乘或除以相同的数（0除外），比值？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "变大",
+        "不变",
+        "变小",
+        "无法确定"
+      ],
+      "correct_index": 1,
+      "explanation": "这是比的基本性质。",
+      "tags": [
+        "比的性质"
+      ]
+    },
+    {
+      "id": 6039,
+      "question": "表示两个比相等的式子叫？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "比",
+        "等式",
+        "比例",
+        "方程"
+      ],
+      "correct_index": 2,
+      "explanation": "两个比相等叫比例。",
+      "tags": [
+        "比例"
+      ]
+    },
+    {
+      "id": 6040,
+      "question": "在比例里，两个外项的积等于两个内项的积，这叫？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "比的性质",
+        "等式性质",
+        "乘法分配律",
+        "比例的基本性质"
+      ],
+      "correct_index": 3,
+      "explanation": "这是比例的基本性质。",
+      "tags": [
+        "比例性质"
+      ]
+    },
+    {
+      "id": 6041,
+      "question": "3:4=6:8 中，两个内项是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "4和6",
+        "3和8",
+        "3和6",
+        "4和8"
+      ],
+      "correct_index": 0,
+      "explanation": "两端是外项，中间两项是内项。",
+      "tags": [
+        "比例"
+      ]
+    },
+    {
+      "id": 6042,
+      "question": "表示一个数是另一个数的百分之几的数叫？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "分数",
+        "百分数",
+        "小数",
+        "比"
+      ],
+      "correct_index": 1,
+      "explanation": "百分数表示百分之几。",
+      "tags": [
+        "百分数"
+      ]
+    },
+    {
+      "id": 6043,
+      "question": "25%化成最简分数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1/2",
+        "25/100",
+        "1/4",
+        "1/5"
+      ],
+      "correct_index": 2,
+      "explanation": "25%=25/100=1/4。",
+      "tags": [
+        "百分数化分数"
+      ]
+    },
+    {
+      "id": 6044,
+      "question": "一件商品打八折出售，就是按原价的百分之几出售？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "8%",
+        "20%",
+        "120%",
+        "80%"
+      ],
+      "correct_index": 3,
+      "explanation": "八折即80%。",
+      "tags": [
+        "折扣"
+      ]
+    },
+    {
+      "id": 6045,
+      "question": "存入银行的钱叫？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "本金",
+        "利息",
+        "利率",
+        "本息"
+      ],
+      "correct_index": 0,
+      "explanation": "存入的钱叫本金。",
+      "tags": [
+        "利率"
+      ]
+    },
+    {
+      "id": 6046,
+      "question": "利息=本金×利率×？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "本金",
+        "时间",
+        "利率",
+        "本息"
+      ],
+      "correct_index": 1,
+      "explanation": "利息=本金×利率×时间。",
+      "tags": [
+        "利率"
+      ]
+    },
+    {
+      "id": 6047,
+      "question": "零下5摄氏度记作？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "5℃",
+        "+5℃",
+        "-5℃",
+        "5"
+      ],
+      "correct_index": 2,
+      "explanation": "零下用负数表示-5℃。",
+      "tags": [
+        "负数"
+      ]
+    },
+    {
+      "id": 6048,
+      "question": "在数轴上，0左边的数都是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "正数",
+        "整数",
+        "0",
+        "负数"
+      ],
+      "correct_index": 3,
+      "explanation": "0左边是负数。",
+      "tags": [
+        "负数"
+      ]
+    },
+    {
+      "id": 6049,
+      "question": "比较 -3 和 -5，哪个大？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "-3大",
+        "-5大",
+        "一样大",
+        "无法比较"
+      ],
+      "correct_index": 0,
+      "explanation": "负号后面数越大，数越小，-3＞-5。",
+      "tags": [
+        "负数比较"
+      ]
+    },
+    {
+      "id": 6050,
+      "question": "乘积是1的两个数互为？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "相反数",
+        "倒数",
+        "倒数倒数",
+        "因数"
+      ],
+      "correct_index": 1,
+      "explanation": "乘积为1互为倒数。",
+      "tags": [
+        "倒数"
+      ]
+    },
+    {
+      "id": 6051,
+      "question": "3/4的倒数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3/4",
+        "1/3",
+        "4/3",
+        "4"
+      ],
+      "correct_index": 2,
+      "explanation": "分子分母颠倒。",
+      "tags": [
+        "倒数"
+      ]
+    },
+    {
+      "id": 6052,
+      "question": "1的倒数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "0",
+        "没有倒数",
+        "1/1",
+        "1"
+      ],
+      "correct_index": 3,
+      "explanation": "1的倒数是它本身。",
+      "tags": [
+        "倒数"
+      ]
+    },
+    {
+      "id": 6053,
+      "question": "0有没有倒数？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "没有",
+        "有",
+        "是0",
+        "是1"
+      ],
+      "correct_index": 0,
+      "explanation": "0没有倒数。",
+      "tags": [
+        "倒数"
+      ]
+    },
+    {
+      "id": 6054,
+      "question": "圆的周长公式 C=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "πr²",
+        "2πr",
+        "πr",
+        "2r"
+      ],
+      "correct_index": 1,
+      "explanation": "C=2πr。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 6055,
+      "question": "圆的面积公式 S=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "2πr",
+        "πd",
+        "πr²",
+        "r²"
+      ],
+      "correct_index": 2,
+      "explanation": "S=πr²。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 6056,
+      "question": "圆的直径是半径的几倍？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1倍",
+        "3倍",
+        "一半",
+        "2倍"
+      ],
+      "correct_index": 3,
+      "explanation": "d=2r。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 6057,
+      "question": "把5克盐溶于100克水中，盐和盐水的比是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "1:21",
+        "1:20",
+        "5:100",
+        "1:19"
+      ],
+      "correct_index": 0,
+      "explanation": "盐水=5+100=105克，5:105=1:21。",
+      "tags": [
+        "比"
+      ]
+    },
+    {
+      "id": 6058,
+      "question": "一个圆柱有几个底面？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1个",
+        "2个",
+        "3个",
+        "没有"
+      ],
+      "correct_index": 1,
+      "explanation": "圆柱上下两个底面。",
+      "tags": [
+        "圆柱"
+      ]
+    },
+    {
+      "id": 6059,
+      "question": "圆周率π大约等于？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "3.41",
+        "3.1",
+        "3.14",
+        "3.1416"
+      ],
+      "correct_index": 2,
+      "explanation": "π≈3.14。",
+      "tags": [
+        "圆周率"
+      ]
+    },
+    {
+      "id": 6060,
+      "question": "一个圆的半径是2厘米，它的周长是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "6.28厘米",
+        "4厘米",
+        "25.12厘米",
+        "12.56厘米"
+      ],
+      "correct_index": 3,
+      "explanation": "2×3.14×2=12.56厘米。",
+      "tags": [
+        "圆周长"
+      ]
+    },
+    {
+      "id": 6061,
+      "question": "一个圆的半径是3厘米，它的面积是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "28.26平方厘米",
+        "18.84平方厘米",
+        "9平方厘米",
+        "9.42平方厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "3.14×3²=28.26平方厘米。",
+      "tags": [
+        "圆面积"
+      ]
+    },
+    {
+      "id": 6062,
+      "question": "圆的位置由什么决定？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "半径",
+        "圆心",
+        "直径",
+        "圆周率"
+      ],
+      "correct_index": 1,
+      "explanation": "圆心决定位置。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 6063,
+      "question": "圆的大小由什么决定？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "圆心",
+        "颜色",
+        "半径",
+        "位置"
+      ],
+      "correct_index": 2,
+      "explanation": "半径决定大小。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 6064,
+      "question": "圆柱的侧面展开是一个？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "三角形",
+        "圆",
+        "梯形",
+        "长方形"
+      ],
+      "correct_index": 3,
+      "explanation": "侧面展开是长方形。",
+      "tags": [
+        "圆柱"
+      ]
+    },
+    {
+      "id": 6065,
+      "question": "圆柱的体积=底面积×？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "高",
+        "半径",
+        "直径",
+        "2"
+      ],
+      "correct_index": 0,
+      "explanation": "V=底面积×高。",
+      "tags": [
+        "圆柱体积"
+      ]
+    },
+    {
+      "id": 6066,
+      "question": "一个圆柱底面积是15平方厘米，高是4厘米，体积是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "19立方厘米",
+        "60立方厘米",
+        "30立方厘米",
+        "45立方厘米"
+      ],
+      "correct_index": 1,
+      "explanation": "15×4=60立方厘米。",
+      "tags": [
+        "圆柱体积"
+      ]
+    },
+    {
+      "id": 6067,
+      "question": "圆锥的体积等于和它等底等高的圆柱体积的？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "相等",
+        "2倍",
+        "1/3",
+        "1/2"
+      ],
+      "correct_index": 2,
+      "explanation": "圆锥体积是等底等高圆柱的1/3。",
+      "tags": [
+        "圆锥"
+      ]
+    },
+    {
+      "id": 6068,
+      "question": "一个圆锥底面积是12平方厘米，高是3厘米，体积是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "36立方厘米",
+        "4立方厘米",
+        "15立方厘米",
+        "12立方厘米"
+      ],
+      "correct_index": 3,
+      "explanation": "12×3×1/3=12立方厘米。",
+      "tags": [
+        "圆锥体积"
+      ]
+    },
+    {
+      "id": 6069,
+      "question": "圆环的面积=外圆面积-？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "内圆面积",
+        "周长",
+        "直径",
+        "半径"
+      ],
+      "correct_index": 0,
+      "explanation": "圆环=外圆-内圆。",
+      "tags": [
+        "圆环"
+      ]
+    },
+    {
+      "id": 6070,
+      "question": "扇形统计图可以清楚表示什么？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "数量多少",
+        "各部分占总数的百分比",
+        "变化趋势",
+        "最大值"
+      ],
+      "correct_index": 1,
+      "explanation": "扇形图表示占比。",
+      "tags": [
+        "扇形图"
+      ]
+    },
+    {
+      "id": 6071,
+      "question": "一个半圆的半径是4厘米，它的周长是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "12.56厘米",
+        "25.12厘米",
+        "20.56厘米",
+        "16.56厘米"
+      ],
+      "correct_index": 2,
+      "explanation": "半圆弧3.14×4=12.56，加直径8，共20.56厘米。",
+      "tags": [
+        "半圆周长"
+      ]
+    },
+    {
+      "id": 6072,
+      "question": "把一个圆平均分成若干份拼成近似长方形，长方形的长相当于圆的？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "直径",
+        "半径",
+        "周长",
+        "周长的一半"
+      ],
+      "correct_index": 3,
+      "explanation": "长=圆周长的一半。",
+      "tags": [
+        "圆面积推导"
+      ]
+    },
+    {
+      "id": 6073,
+      "question": "圆有多少条对称轴？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "无数条",
+        "2条",
+        "4条",
+        "1条"
+      ],
+      "correct_index": 0,
+      "explanation": "圆有无数条对称轴。",
+      "tags": [
+        "对称"
+      ]
+    },
+    {
+      "id": 6074,
+      "question": "一个圆柱的底面半径扩大2倍，高不变，体积扩大几倍？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "2倍",
+        "4倍",
+        "8倍",
+        "不变"
+      ],
+      "correct_index": 1,
+      "explanation": "底面积平方关系，扩大4倍。",
+      "tags": [
+        "圆柱体积"
+      ]
+    },
+    {
+      "id": 6075,
+      "question": "长方体、正方体、圆柱的体积都可以用哪个公式？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "长×宽",
+        "棱长³",
+        "底面积×高",
+        "侧面积"
+      ],
+      "correct_index": 2,
+      "explanation": "都可用底面积×高。",
+      "tags": [
+        "体积"
+      ]
+    },
+    {
+      "id": 6076,
+      "question": "等底等高的圆柱和圆锥，体积相差24立方厘米，圆柱体积是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "12立方厘米",
+        "24立方厘米",
+        "48立方厘米",
+        "36立方厘米"
+      ],
+      "correct_index": 3,
+      "explanation": "圆柱3份圆锥1份，差2份=24，1份12，圆柱3份36。",
+      "tags": [
+        "圆柱圆锥"
+      ]
+    },
+    {
+      "id": 6077,
+      "question": "要表示各班人数占全校总人数的百分比，用什么统计图？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "扇形统计图",
+        "条形图",
+        "折线图",
+        "统计表"
+      ],
+      "correct_index": 0,
+      "explanation": "占比用扇形图。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 6078,
+      "question": "扇形统计图中，整个圆表示什么？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "某一部分",
+        "总数（单位1）",
+        "最大值",
+        "10%"
+      ],
+      "correct_index": 1,
+      "explanation": "整个圆表示总数100%。",
+      "tags": [
+        "扇形图"
+      ]
+    },
+    {
+      "id": 6079,
+      "question": "布袋里有红、黄、蓝球各2个，任意摸一个，摸到红球的可能性是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "1/6",
+        "1/2",
+        "1/3",
+        "1"
+      ],
+      "correct_index": 2,
+      "explanation": "共6个，红球2个，2/6=1/3。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 6080,
+      "question": "7只鸽子飞回3个鸽笼，至少有一个鸽笼至少飞进几只？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "2只",
+        "4只",
+        "1只",
+        "3只"
+      ],
+      "correct_index": 3,
+      "explanation": "鸽巢原理7÷3=2余1，至少3只。",
+      "tags": [
+        "鸽巢"
+      ]
+    },
+    {
+      "id": 6081,
+      "question": "数据2、4、6、8、10的平均数是？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "6",
+        "5",
+        "8",
+        "30"
+      ],
+      "correct_index": 0,
+      "explanation": "30÷5=6。",
+      "tags": [
+        "平均数"
+      ]
+    },
+    {
+      "id": 6082,
+      "question": "某班50人，今天出勤率98%，今天到校多少人？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "48人",
+        "49人",
+        "50人",
+        "1人"
+      ],
+      "correct_index": 1,
+      "explanation": "50×98%=49人。",
+      "tags": [
+        "百分数"
+      ]
+    },
+    {
+      "id": 6083,
+      "question": "一件衣服原价200元，现在打八折出售，现价多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "180元",
+        "40元",
+        "160元",
+        "240元"
+      ],
+      "correct_index": 2,
+      "explanation": "200×80%=160元。",
+      "tags": [
+        "折扣",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6084,
+      "question": "果园里有苹果树120棵，梨树是苹果树的3/4，梨树有多少棵？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "160棵",
+        "30棵",
+        "100棵",
+        "90棵"
+      ],
+      "correct_index": 3,
+      "explanation": "120×3/4=90棵。",
+      "tags": [
+        "分数乘法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6085,
+      "question": "六（1）班有男生24人，女生是男生的5/6，女生有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "20人",
+        "28人",
+        "4人",
+        "24人"
+      ],
+      "correct_index": 0,
+      "explanation": "24×5/6=20人。",
+      "tags": [
+        "分数乘法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6086,
+      "question": "一桶油重12千克，用去了它的3/4，用去了多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "3千克",
+        "9千克",
+        "16千克",
+        "6千克"
+      ],
+      "correct_index": 1,
+      "explanation": "12×3/4=9千克。",
+      "tags": [
+        "分数乘法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6087,
+      "question": "一个圆形花坛的直径是10米，它的周长是多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "15.7米",
+        "62.8米",
+        "31.4米",
+        "10米"
+      ],
+      "correct_index": 2,
+      "explanation": "3.14×10=31.4米。",
+      "tags": [
+        "圆周长",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6088,
+      "question": "一个圆形水池的半径是5米，它的占地面积是多少平方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "31.4平方米",
+        "15.7平方米",
+        "25平方米",
+        "78.5平方米"
+      ],
+      "correct_index": 3,
+      "explanation": "3.14×5²=78.5平方米。",
+      "tags": [
+        "圆面积",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6089,
+      "question": "小明看一本故事书，第一天看了全书的1/4，正好是30页，这本书一共有多少页？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "120页",
+        "90页",
+        "150页",
+        "30页"
+      ],
+      "correct_index": 0,
+      "explanation": "30÷1/4=120页。",
+      "tags": [
+        "分数除法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6090,
+      "question": "学校买来足球20个，正好是篮球个数的2/3，篮球有多少个？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "13个",
+        "30个",
+        "40个",
+        "20个"
+      ],
+      "correct_index": 1,
+      "explanation": "20÷2/3=30个。",
+      "tags": [
+        "分数除法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6091,
+      "question": "一项工程，甲队单独做10天完成，乙队单独做15天完成，两队合做几天完成？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5天",
+        "25天",
+        "6天",
+        "8天"
+      ],
+      "correct_index": 2,
+      "explanation": "甲每天1/10，乙每天1/15，合做1÷(1/10+1/15)=6天。",
+      "tags": [
+        "工程问题",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6092,
+      "question": "一条公路长300千米，一辆汽车已经行了全程的2/5，还剩多少千米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "120千米",
+        "150千米",
+        "250千米",
+        "180千米"
+      ],
+      "correct_index": 3,
+      "explanation": "剩300×(1-2/5)=180千米。",
+      "tags": [
+        "分数乘法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6093,
+      "question": "商店运来一批水果，其中苹果有60千克，占这批水果的1/3，这批水果共多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "180千克",
+        "20千克",
+        "90千克",
+        "120千克"
+      ],
+      "correct_index": 0,
+      "explanation": "60÷1/3=180千克。",
+      "tags": [
+        "分数除法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6094,
+      "question": "一个圆柱铁皮水桶，底面半径是2分米，高是5分米，它的容积是多少升？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "31.4升",
+        "62.8升",
+        "20升",
+        "125.6升"
+      ],
+      "correct_index": 1,
+      "explanation": "3.14×2²×5=62.8立方分米=62.8升。",
+      "tags": [
+        "圆柱体积",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6095,
+      "question": "小明家五月份用电120度，六月份比五月份节约了1/6，六月份用电多少度？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "140度",
+        "20度",
+        "100度",
+        "110度"
+      ],
+      "correct_index": 2,
+      "explanation": "120×(1-1/6)=100度。",
+      "tags": [
+        "分数乘法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6096,
+      "question": "一件商品原价500元，先涨价10%，又降价10%，现价是多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "500元",
+        "550元",
+        "490元",
+        "495元"
+      ],
+      "correct_index": 3,
+      "explanation": "涨后500×1.1=550，降后550×0.9=495元。",
+      "tags": [
+        "百分数",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6097,
+      "question": "用一根长62.8厘米的铁丝围成一个圆，这个圆的半径是多少厘米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10厘米",
+        "20厘米",
+        "31.4厘米",
+        "5厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "r=62.8÷(2×3.14)=10厘米。",
+      "tags": [
+        "圆周长",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6098,
+      "question": "学校把280本图书按4:3分给五、六年级，六年级分得多少本？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "160本",
+        "120本",
+        "40本",
+        "200本"
+      ],
+      "correct_index": 1,
+      "explanation": "共7份，六年级3份，280÷7×3=120本。",
+      "tags": [
+        "按比分配",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6099,
+      "question": "一个圆锥形沙堆，底面积是18平方米，高是1.5米，这堆沙有多少立方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "27立方米",
+        "6立方米",
+        "9立方米",
+        "19.5立方米"
+      ],
+      "correct_index": 2,
+      "explanation": "18×1.5×1/3=9立方米。",
+      "tags": [
+        "圆锥体积",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6100,
+      "question": "甲乙两地相距480千米，一辆汽车行了全程的5/8，行了多少千米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "180千米",
+        "240千米",
+        "384千米",
+        "300千米"
+      ],
+      "correct_index": 3,
+      "explanation": "480×5/8=300千米。",
+      "tags": [
+        "分数乘法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6101,
+      "question": "银行一年期年利率是2%，小明存入5000元，一年后可得利息多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "100元",
+        "1000元",
+        "50元",
+        "5100元"
+      ],
+      "correct_index": 0,
+      "explanation": "5000×2%×1=100元。",
+      "tags": [
+        "利率",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6102,
+      "question": "一个圆形喷水池的周长是25.12米，它的半径是多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "8米",
+        "4米",
+        "12.56米",
+        "2米"
+      ],
+      "correct_index": 1,
+      "explanation": "25.12÷(2×3.14)=4米。",
+      "tags": [
+        "圆周长",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6103,
+      "question": "六年级有学生200人，其中近视眼占15%，近视眼有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "15人",
+        "185人",
+        "30人",
+        "35人"
+      ],
+      "correct_index": 2,
+      "explanation": "200×15%=30人。",
+      "tags": [
+        "百分数",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6104,
+      "question": "一条裤子80元，是一件上衣价格的2/3，一件上衣多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "160元",
+        "60元",
+        "100元",
+        "120元"
+      ],
+      "correct_index": 3,
+      "explanation": "80÷2/3=120元。",
+      "tags": [
+        "分数除法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6105,
+      "question": "一个环形铁片，外圆半径5厘米，内圆半径3厘米，它的面积是多少平方厘米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "50.24平方厘米",
+        "78.5平方厘米",
+        "28.26平方厘米",
+        "12.56平方厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "3.14×(5²-3²)=3.14×16=50.24平方厘米。",
+      "tags": [
+        "圆环面积",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6106,
+      "question": "小明读一本240页的书，第一天读了全书的1/6，第二天读了全书的1/4，两天共读了多少页？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "40页",
+        "100页",
+        "60页",
+        "120页"
+      ],
+      "correct_index": 1,
+      "explanation": "240×(1/6+1/4)=240×5/12=100页。",
+      "tags": [
+        "分数乘法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6107,
+      "question": "一辆自行车车轮的直径是0.6米，车轮转动一周前进多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "0.942米",
+        "3.768米",
+        "1.884米",
+        "0.6米"
+      ],
+      "correct_index": 2,
+      "explanation": "3.14×0.6=1.884米。",
+      "tags": [
+        "圆周长",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6108,
+      "question": "学校十月份用电800度，比九月份节约了20%，九月份用电多少度？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "640度",
+        "960度",
+        "160度",
+        "1000度"
+      ],
+      "correct_index": 3,
+      "explanation": "九月×(1-20%)=800，九月=800÷0.8=1000度。",
+      "tags": [
+        "百分数",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6109,
+      "question": "用一根长48厘米的铁丝围成一个长方形，长和宽的比是5:3，这个长方形的长是多少厘米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "15厘米",
+        "9厘米",
+        "30厘米",
+        "6厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "长+宽=24厘米，长=24×5/8=15厘米。",
+      "tags": [
+        "按比分配",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6110,
+      "question": "一个圆柱的侧面积是62.8平方分米，底面半径是2分米，它的高是多少分米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10分米",
+        "5分米",
+        "31.4分米",
+        "2.5分米"
+      ],
+      "correct_index": 1,
+      "explanation": "底面周长2×3.14×2=12.56，高=62.8÷12.56=5分米。",
+      "tags": [
+        "圆柱侧面积",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6111,
+      "question": "一批零件，师傅单独做8小时完成，徒弟单独做12小时完成，两人合做几小时完成？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5小时",
+        "20小时",
+        "4.8小时",
+        "6小时"
+      ],
+      "correct_index": 2,
+      "explanation": "1÷(1/8+1/12)=1÷5/24=4.8小时。",
+      "tags": [
+        "工程问题",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6112,
+      "question": "一桶油，第一次用去1/5，第二次用去1/4，两次共用去9千克，这桶油原来有多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "9千克",
+        "18千克",
+        "25千克",
+        "20千克"
+      ],
+      "correct_index": 3,
+      "explanation": "9÷(1/5+1/4)=9÷9/20=20千克。",
+      "tags": [
+        "分数除法",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6113,
+      "question": "一个半圆花坛的半径是6米，它的周长是多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "30.84米",
+        "18.84米",
+        "37.68米",
+        "24米"
+      ],
+      "correct_index": 0,
+      "explanation": "半圆弧3.14×6=18.84，加直径12，共30.84米。",
+      "tags": [
+        "半圆周长",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6114,
+      "question": "商店运来苹果和梨共120箱，苹果和梨的箱数比是3:1，苹果有多少箱？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "30箱",
+        "90箱",
+        "60箱",
+        "40箱"
+      ],
+      "correct_index": 1,
+      "explanation": "共4份，苹果3份，120÷4×3=90箱。",
+      "tags": [
+        "按比分配",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6115,
+      "question": "一件衣服进价100元，标价150元，打八折出售，利润率是多少？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "50%",
+        "30%",
+        "20%",
+        "25%"
+      ],
+      "correct_index": 2,
+      "explanation": "售价150×0.8=120元，利润20元，20÷100=20%。",
+      "tags": [
+        "利润率",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6116,
+      "question": "一个圆形花坛周长是31.4米，在它周围修一条1米宽的小路，小路的面积是多少平方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "31.4平方米",
+        "3.14平方米",
+        "62.8平方米",
+        "34.54平方米"
+      ],
+      "correct_index": 3,
+      "explanation": "内圆r=5，外圆R=6，3.14×(6²-5²)=3.14×11=34.54平方米。",
+      "tags": [
+        "圆环",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6117,
+      "question": "小明把500元压岁钱存入银行，定期三年，年利率2.75%，到期时可取回本息共多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "541.25元",
+        "541.5元",
+        "41.25元",
+        "513.75元"
+      ],
+      "correct_index": 0,
+      "explanation": "利息500×2.75%×3=41.25，本息541.25元。",
+      "tags": [
+        "利率",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6118,
+      "question": "甲乙两人同时从A地出发去B地，甲走完全程要2小时，乙要3小时，甲的速度比乙快几分之几？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1/3",
+        "1/2",
+        "1/6",
+        "2/3"
+      ],
+      "correct_index": 1,
+      "explanation": "甲速1/2，乙速1/3，差1/6，(1/6)÷(1/3)=1/2。",
+      "tags": [
+        "行程",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6119,
+      "question": "一个圆柱形油桶，底面直径4分米，高是6分米，做这个油桶至少需要铁皮多少平方分米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "75.36平方分米",
+        "25.12平方分米",
+        "100.48平方分米",
+        "150.72平方分米"
+      ],
+      "correct_index": 2,
+      "explanation": "底2×3.14×2²=25.12，侧3.14×4×6=75.36，共100.48平方分米。",
+      "tags": [
+        "圆柱表面积",
+        "六年级"
+      ]
+    },
+    {
+      "id": 6120,
+      "question": "学校举行数学竞赛，六年级有80人参加，获奖人数占参赛人数的3/8，获奖有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "50人",
+        "24人",
+        "36人",
+        "30人"
+      ],
+      "correct_index": 3,
+      "explanation": "80×3/8=30人。",
+      "tags": [
+        "分数乘法",
+        "六年级"
+      ]
+    }
+  ]
+}

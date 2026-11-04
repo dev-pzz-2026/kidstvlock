@@ -1,0 +1,2172 @@
+{
+  "bank_id": "grade5_english",
+  "bank_name": "五年级英语",
+  "grade": 5,
+  "subject": "english",
+  "subject_name": "英语",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 5001,
+      "question": "“春天”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "autumn",
+        "spring",
+        "summer",
+        "winter"
+      ],
+      "correct_index": 1,
+      "explanation": "spring 春天。",
+      "tags": [
+        "季节",
+        "spring"
+      ]
+    },
+    {
+      "id": 5002,
+      "question": "“夏天”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "spring",
+        "winter",
+        "autumn",
+        "summer"
+      ],
+      "correct_index": 3,
+      "explanation": "summer 夏天。",
+      "tags": [
+        "季节",
+        "summer"
+      ]
+    },
+    {
+      "id": 5003,
+      "question": "“秋天”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "summer",
+        "autumn",
+        "spring",
+        "winter"
+      ],
+      "correct_index": 1,
+      "explanation": "autumn 秋天。",
+      "tags": [
+        "季节",
+        "autumn"
+      ]
+    },
+    {
+      "id": 5004,
+      "question": "“冬天”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "spring",
+        "winter",
+        "autumn",
+        "summer"
+      ],
+      "correct_index": 1,
+      "explanation": "winter 冬天。",
+      "tags": [
+        "季节",
+        "winter"
+      ]
+    },
+    {
+      "id": 5005,
+      "question": "“一月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "January",
+        "April",
+        "February",
+        "March"
+      ],
+      "correct_index": 0,
+      "explanation": "January 一月。",
+      "tags": [
+        "月份",
+        "January"
+      ]
+    },
+    {
+      "id": 5006,
+      "question": "“二月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "February",
+        "March",
+        "April",
+        "January"
+      ],
+      "correct_index": 0,
+      "explanation": "February 二月。",
+      "tags": [
+        "月份",
+        "February"
+      ]
+    },
+    {
+      "id": 5007,
+      "question": "“三月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "March",
+        "May",
+        "June",
+        "April"
+      ],
+      "correct_index": 0,
+      "explanation": "March 三月。",
+      "tags": [
+        "月份",
+        "March"
+      ]
+    },
+    {
+      "id": 5008,
+      "question": "“四月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "April",
+        "June",
+        "May",
+        "July"
+      ],
+      "correct_index": 0,
+      "explanation": "April 四月。",
+      "tags": [
+        "月份",
+        "April"
+      ]
+    },
+    {
+      "id": 5009,
+      "question": "“五月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "June",
+        "May",
+        "August",
+        "July"
+      ],
+      "correct_index": 1,
+      "explanation": "May 五月。",
+      "tags": [
+        "月份",
+        "May"
+      ]
+    },
+    {
+      "id": 5010,
+      "question": "“六月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "July",
+        "September",
+        "June",
+        "August"
+      ],
+      "correct_index": 2,
+      "explanation": "June 六月。",
+      "tags": [
+        "月份",
+        "June"
+      ]
+    },
+    {
+      "id": 5011,
+      "question": "“七月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "July",
+        "September",
+        "October",
+        "August"
+      ],
+      "correct_index": 0,
+      "explanation": "July 七月。",
+      "tags": [
+        "月份",
+        "July"
+      ]
+    },
+    {
+      "id": 5012,
+      "question": "“八月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "September",
+        "November",
+        "August",
+        "October"
+      ],
+      "correct_index": 2,
+      "explanation": "August 八月。",
+      "tags": [
+        "月份",
+        "August"
+      ]
+    },
+    {
+      "id": 5013,
+      "question": "“九月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "November",
+        "October",
+        "September",
+        "December"
+      ],
+      "correct_index": 2,
+      "explanation": "September 九月。",
+      "tags": [
+        "月份",
+        "September"
+      ]
+    },
+    {
+      "id": 5014,
+      "question": "“十月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "October",
+        "November",
+        "December",
+        "January"
+      ],
+      "correct_index": 0,
+      "explanation": "October 十月。",
+      "tags": [
+        "月份",
+        "October"
+      ]
+    },
+    {
+      "id": 5015,
+      "question": "“十一月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "January",
+        "February",
+        "November",
+        "December"
+      ],
+      "correct_index": 2,
+      "explanation": "November 十一月。",
+      "tags": [
+        "月份",
+        "November"
+      ]
+    },
+    {
+      "id": 5016,
+      "question": "“十二月”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "March",
+        "February",
+        "January",
+        "December"
+      ],
+      "correct_index": 3,
+      "explanation": "December 十二月。",
+      "tags": [
+        "月份",
+        "December"
+      ]
+    },
+    {
+      "id": 5017,
+      "question": "“医生”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "teacher",
+        "driver",
+        "farmer",
+        "doctor"
+      ],
+      "correct_index": 3,
+      "explanation": "doctor 医生。",
+      "tags": [
+        "职业",
+        "doctor"
+      ]
+    },
+    {
+      "id": 5018,
+      "question": "“教师”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "teacher",
+        "farmer",
+        "doctor",
+        "driver"
+      ],
+      "correct_index": 0,
+      "explanation": "teacher 教师。",
+      "tags": [
+        "职业",
+        "teacher"
+      ]
+    },
+    {
+      "id": 5019,
+      "question": "“司机”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "farmer",
+        "doctor",
+        "driver",
+        "teacher"
+      ],
+      "correct_index": 2,
+      "explanation": "driver 司机。",
+      "tags": [
+        "职业",
+        "driver"
+      ]
+    },
+    {
+      "id": 5020,
+      "question": "“农民”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "farmer",
+        "teacher",
+        "driver",
+        "doctor"
+      ],
+      "correct_index": 0,
+      "explanation": "farmer 农民。",
+      "tags": [
+        "职业",
+        "farmer"
+      ]
+    },
+    {
+      "id": 5021,
+      "question": "“护士”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "teacher",
+        "doctor",
+        "driver",
+        "nurse"
+      ],
+      "correct_index": 3,
+      "explanation": "nurse 护士。",
+      "tags": [
+        "职业",
+        "nurse"
+      ]
+    },
+    {
+      "id": 5022,
+      "question": "“工人”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "teacher",
+        "worker",
+        "doctor",
+        "farmer"
+      ],
+      "correct_index": 1,
+      "explanation": "worker 工人。",
+      "tags": [
+        "职业",
+        "worker"
+      ]
+    },
+    {
+      "id": 5023,
+      "question": "“厨师”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "doctor",
+        "teacher",
+        "cooker",
+        "cook"
+      ],
+      "correct_index": 3,
+      "explanation": "cook 厨师；cooker 厨具。",
+      "tags": [
+        "职业",
+        "cook"
+      ]
+    },
+    {
+      "id": 5024,
+      "question": "“歌唱家”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "driver",
+        "singer",
+        "doctor",
+        "teacher"
+      ],
+      "correct_index": 1,
+      "explanation": "singer 歌唱家。",
+      "tags": [
+        "职业",
+        "singer"
+      ]
+    },
+    {
+      "id": 5025,
+      "question": "“运动员”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "driver",
+        "player",
+        "doctor",
+        "teacher"
+      ],
+      "correct_index": 1,
+      "explanation": "player 运动员。",
+      "tags": [
+        "职业",
+        "player"
+      ]
+    },
+    {
+      "id": 5026,
+      "question": "“科学家”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "teacher",
+        "driver",
+        "scientist",
+        "doctor"
+      ],
+      "correct_index": 2,
+      "explanation": "scientist 科学家。",
+      "tags": [
+        "职业",
+        "scientist"
+      ]
+    },
+    {
+      "id": 5027,
+      "question": "“看书”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "see books",
+        "read books",
+        "look books",
+        "watch books"
+      ],
+      "correct_index": 1,
+      "explanation": "read books 看书。",
+      "tags": [
+        "日常活动",
+        "read"
+      ]
+    },
+    {
+      "id": 5028,
+      "question": "“看电视”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "read TV",
+        "watch TV",
+        "look TV",
+        "see TV"
+      ],
+      "correct_index": 1,
+      "explanation": "watch TV 看电视。",
+      "tags": [
+        "日常活动",
+        "watch"
+      ]
+    },
+    {
+      "id": 5029,
+      "question": "“打篮球”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "play basketball",
+        "play the basketball",
+        "play basketballs",
+        "play a basketball"
+      ],
+      "correct_index": 0,
+      "explanation": "play + 球类，不加 the。",
+      "tags": [
+        "日常活动",
+        "play"
+      ]
+    },
+    {
+      "id": 5030,
+      "question": "“踢足球”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "play the football",
+        "play a football",
+        "play football",
+        "play footballs"
+      ],
+      "correct_index": 2,
+      "explanation": "play + 球类，不加 the。",
+      "tags": [
+        "日常活动",
+        "play"
+      ]
+    },
+    {
+      "id": 5031,
+      "question": "“听音乐”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "listen music",
+        "listen to a music",
+        "listen to music",
+        "hear music"
+      ],
+      "correct_index": 2,
+      "explanation": "listen to music 听音乐。",
+      "tags": [
+        "日常活动",
+        "listen"
+      ]
+    },
+    {
+      "id": 5032,
+      "question": "“散步”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "make a walk",
+        "go a walk",
+        "take a walk",
+        "do a walk"
+      ],
+      "correct_index": 2,
+      "explanation": "take a walk 散步。",
+      "tags": [
+        "日常活动",
+        "walk"
+      ]
+    },
+    {
+      "id": 5033,
+      "question": "“购物”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "go shop",
+        "go shoped",
+        "go to shoping",
+        "go shopping"
+      ],
+      "correct_index": 3,
+      "explanation": "go shopping 购物。",
+      "tags": [
+        "日常活动",
+        "shopping"
+      ]
+    },
+    {
+      "id": 5034,
+      "question": "“游泳”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "go swim",
+        "go swimming",
+        "go to swim",
+        "go swiming"
+      ],
+      "correct_index": 1,
+      "explanation": "go swimming 游泳。",
+      "tags": [
+        "日常活动",
+        "swim"
+      ]
+    },
+    {
+      "id": 5035,
+      "question": "“跑步”的英语是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "go running",
+        "go runing",
+        "go run",
+        "go to run"
+      ],
+      "correct_index": 0,
+      "explanation": "go running 跑步。",
+      "tags": [
+        "日常活动",
+        "run"
+      ]
+    },
+    {
+      "id": 5036,
+      "question": "“你想要什么？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "What you would like?",
+        "What are you like?",
+        "What would you like?",
+        "What do you like?"
+      ],
+      "correct_index": 2,
+      "explanation": "What would you like? 你想要什么？",
+      "tags": [
+        "句型",
+        "What would you like"
+      ]
+    },
+    {
+      "id": 5037,
+      "question": "“我想要一些面条。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I like some noodles.",
+        "I'd like any noodles.",
+        "I would like a noodles.",
+        "I'd like some noodles."
+      ],
+      "correct_index": 3,
+      "explanation": "I'd like = I would like；some 用于肯定句。",
+      "tags": [
+        "句型",
+        "What would you like"
+      ]
+    },
+    {
+      "id": 5038,
+      "question": "“你会游泳吗？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "Can you swim?",
+        "Are you swim?",
+        "Do you swim?",
+        "You can swim?"
+      ],
+      "correct_index": 0,
+      "explanation": "can 引导的一般疑问句。",
+      "tags": [
+        "句型",
+        "can"
+      ]
+    },
+    {
+      "id": 5039,
+      "question": "“我会游泳。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I can swims.",
+        "I can swimming.",
+        "I am swim.",
+        "I can swim."
+      ],
+      "correct_index": 3,
+      "explanation": "can 后接动词原形。",
+      "tags": [
+        "句型",
+        "can"
+      ]
+    },
+    {
+      "id": 5040,
+      "question": "“我不会游泳。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I can't swim.",
+        "I can't swimming.",
+        "I am not swim.",
+        "I don't swim."
+      ],
+      "correct_index": 0,
+      "explanation": "can't = cannot，后接动词原形。",
+      "tags": [
+        "句型",
+        "can"
+      ]
+    },
+    {
+      "id": 5041,
+      "question": "“桌上有一本书。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "There are a book on the desk.",
+        "There is a book on the desk.",
+        "There have a book on the desk.",
+        "There is book on the desk."
+      ],
+      "correct_index": 1,
+      "explanation": "there be 句型，单数用 is。",
+      "tags": [
+        "句型",
+        "There be"
+      ]
+    },
+    {
+      "id": 5042,
+      "question": "“桌上有两本书。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "There are two book on the desk.",
+        "There have two books on the desk.",
+        "There is two books on the desk.",
+        "There are two books on the desk."
+      ],
+      "correct_index": 3,
+      "explanation": "there be 句型，复数用 are。",
+      "tags": [
+        "句型",
+        "There be"
+      ]
+    },
+    {
+      "id": 5043,
+      "question": "“教室里有多少学生？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "How many student are there in the classroom?",
+        "How many students are there in the classroom?",
+        "How many are there students in the classroom?",
+        "How many students is there in the classroom?"
+      ],
+      "correct_index": 1,
+      "explanation": "how many + 复数名词 + are there。",
+      "tags": [
+        "句型",
+        "There be"
+      ]
+    },
+    {
+      "id": 5044,
+      "question": "“他每天六点起床。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "He get up at six every day.",
+        "He gets up at six everyday.",
+        "He gets up at six every day.",
+        "He getting up at six every day."
+      ],
+      "correct_index": 2,
+      "explanation": "he 三单用 gets；every day 每天。",
+      "tags": [
+        "语法",
+        "三单"
+      ]
+    },
+    {
+      "id": 5045,
+      "question": "“她每天去上学。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "She go to school every day.",
+        "She goes to school every day.",
+        "She goes to school everyday.",
+        "She going to school every day."
+      ],
+      "correct_index": 1,
+      "explanation": "she 三单用 goes。",
+      "tags": [
+        "语法",
+        "三单"
+      ]
+    },
+    {
+      "id": 5046,
+      "question": "“他正在读书。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "He are reading a book.",
+        "He is read a book.",
+        "He reading a book.",
+        "He is reading a book."
+      ],
+      "correct_index": 3,
+      "explanation": "现在进行时：is + reading。",
+      "tags": [
+        "语法",
+        "现在进行时"
+      ]
+    },
+    {
+      "id": 5047,
+      "question": "“他们正在打篮球。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "They are playing basketball.",
+        "They is playing basketball.",
+        "They playing basketball.",
+        "They are play basketball."
+      ],
+      "correct_index": 0,
+      "explanation": "现在进行时：are + playing。",
+      "tags": [
+        "语法",
+        "现在进行时"
+      ]
+    },
+    {
+      "id": 5048,
+      "question": "“我昨天去了公园。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I goes to the park yesterday.",
+        "I went to the park yesterday.",
+        "I go to the park yesterday.",
+        "I am going to the park yesterday."
+      ],
+      "correct_index": 1,
+      "explanation": "yesterday 用一般过去时，go 变为 went。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 5049,
+      "question": "“他昨天看了电视。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "He watch TV yesterday.",
+        "He watched TV yesterday.",
+        "He is watching TV yesterday.",
+        "He watches TV yesterday."
+      ],
+      "correct_index": 1,
+      "explanation": "yesterday 用一般过去时，watch 变为 watched。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 5050,
+      "question": "“我昨天没有去学校。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I didn't went to school yesterday.",
+        "I didn't go to school yesterday.",
+        "I don't go to school yesterday.",
+        "I not go to school yesterday."
+      ],
+      "correct_index": 1,
+      "explanation": "didn't + 动词原形。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 5051,
+      "question": "“你喜欢什么季节？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "What season do you like?",
+        "What season you like?",
+        "What season does you like?",
+        "What season are you like?"
+      ],
+      "correct_index": 0,
+      "explanation": "问喜欢的季节用 What season。",
+      "tags": [
+        "句型",
+        "疑问"
+      ]
+    },
+    {
+      "id": 5052,
+      "question": "“我最喜欢春天。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I likes spring best.",
+        "I am like spring.",
+        "I like spring best.",
+        "I like spring best season."
+      ],
+      "correct_index": 2,
+      "explanation": "like...best 最喜欢。",
+      "tags": [
+        "句型",
+        "like"
+      ]
+    },
+    {
+      "id": 5053,
+      "question": "“你的生日在哪个月？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "Which month your birthday is?",
+        "Which month is your birthday?",
+        "What your birthday month?",
+        "What month is your birthday?"
+      ],
+      "correct_index": 1,
+      "explanation": "问生日在哪个月。",
+      "tags": [
+        "句型",
+        "疑问"
+      ]
+    },
+    {
+      "id": 5054,
+      "question": "“我的生日在五月。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "My birthday is in May.",
+        "My birthday is May.",
+        "My birthday is at May.",
+        "My birthday is on May."
+      ],
+      "correct_index": 0,
+      "explanation": "月份前用介词 in。",
+      "tags": [
+        "句型",
+        "月份"
+      ]
+    },
+    {
+      "id": 5055,
+      "question": "“你爸爸是做什么的？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "What your father do?",
+        "What is your father do?",
+        "What does your father do?",
+        "What do your father do?"
+      ],
+      "correct_index": 2,
+      "explanation": "问职业用 What does sb do?",
+      "tags": [
+        "句型",
+        "职业"
+      ]
+    },
+    {
+      "id": 5056,
+      "question": "“我爸爸是医生。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "My father are a doctor.",
+        "My father does a doctor.",
+        "My father is a doctor.",
+        "My father is doctor."
+      ],
+      "correct_index": 2,
+      "explanation": "My father is a doctor. 正确。",
+      "tags": [
+        "句型",
+        "职业"
+      ]
+    },
+    {
+      "id": 5057,
+      "question": "“你周末做什么？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "What do you does on weekends?",
+        "What you do on weekends?",
+        "What do you do on weekends?",
+        "What are you do on weekends?"
+      ],
+      "correct_index": 2,
+      "explanation": "问周末做什么。",
+      "tags": [
+        "句型",
+        "日常活动"
+      ]
+    },
+    {
+      "id": 5058,
+      "question": "“我经常看书。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I often reading books.",
+        "I am often read books.",
+        "I often read books.",
+        "I often reads books."
+      ],
+      "correct_index": 2,
+      "explanation": "often 后接动词原形。",
+      "tags": [
+        "句型",
+        "日常活动"
+      ]
+    },
+    {
+      "id": 5059,
+      "question": "“你在做什么？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "What do you doing?",
+        "What are you do?",
+        "What are you doing?",
+        "What you are doing?"
+      ],
+      "correct_index": 2,
+      "explanation": "现在进行时：are + doing。",
+      "tags": [
+        "语法",
+        "现在进行时"
+      ]
+    },
+    {
+      "id": 5060,
+      "question": "“我正在看电视。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I watching TV.",
+        "I am watch TV.",
+        "I am watched TV.",
+        "I am watching TV."
+      ],
+      "correct_index": 3,
+      "explanation": "现在进行时：am + watching。",
+      "tags": [
+        "语法",
+        "现在进行时"
+      ]
+    },
+    {
+      "id": 5061,
+      "question": "听短文：Spring is coming. The trees are green. The flowers are beautiful. I like spring.  什么季节来了？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Autumn.",
+        "Spring.",
+        "Winter.",
+        "Summer."
+      ],
+      "correct_index": 1,
+      "explanation": "Spring is coming. 说明春天来了。",
+      "tags": [
+        "阅读",
+        "季节"
+      ]
+    },
+    {
+      "id": 5062,
+      "question": "听短文：Spring is coming. The trees are green. The flowers are beautiful. I like spring.  树是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Brown.",
+        "Green.",
+        "Red.",
+        "Yellow."
+      ],
+      "correct_index": 1,
+      "explanation": "The trees are green. 说明树是绿色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 5063,
+      "question": "听短文：My birthday is in May. I usually have a birthday party.  我的生日在哪个月？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "May.",
+        "April.",
+        "June.",
+        "March."
+      ],
+      "correct_index": 0,
+      "explanation": "My birthday is in May. 说明生日在五月。",
+      "tags": [
+        "阅读",
+        "月份"
+      ]
+    },
+    {
+      "id": 5064,
+      "question": "听短文：My father is a doctor. He works in a hospital. He is busy.  爸爸在哪里工作？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "In a shop.",
+        "In a farm.",
+        "In a school.",
+        "In a hospital."
+      ],
+      "correct_index": 3,
+      "explanation": "works in a hospital 说明在医院工作。",
+      "tags": [
+        "阅读",
+        "职业"
+      ]
+    },
+    {
+      "id": 5065,
+      "question": "听短文：I often read books on weekends. Sometimes I play basketball.  我周末经常做什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Read books.",
+        "Watch TV.",
+        "Play football.",
+        "Go swimming."
+      ],
+      "correct_index": 0,
+      "explanation": "I often read books on weekends. 说明经常看书。",
+      "tags": [
+        "阅读",
+        "日常活动"
+      ]
+    },
+    {
+      "id": 5066,
+      "question": "听短文：It is Sunday. I am playing football with my friends.  我正在做什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Playing football.",
+        "Watching TV.",
+        "Reading books.",
+        "Playing basketball."
+      ],
+      "correct_index": 0,
+      "explanation": "I am playing football. 说明正在踢足球。",
+      "tags": [
+        "阅读",
+        "现在进行时"
+      ]
+    },
+    {
+      "id": 5067,
+      "question": "听短文：Yesterday was Saturday. I went to the park with my parents.  昨天是周几？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Monday.",
+        "Friday.",
+        "Saturday.",
+        "Sunday."
+      ],
+      "correct_index": 2,
+      "explanation": "Yesterday was Saturday. 说明昨天周六。",
+      "tags": [
+        "阅读",
+        "星期"
+      ]
+    },
+    {
+      "id": 5068,
+      "question": "听短文：Yesterday was Saturday. I went to the park with my parents.  我昨天去哪里了？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "School.",
+        "Zoo.",
+        "Park.",
+        "Home."
+      ],
+      "correct_index": 2,
+      "explanation": "went to the park 说明去了公园。",
+      "tags": [
+        "阅读",
+        "地点"
+      ]
+    },
+    {
+      "id": 5069,
+      "question": "听短文：There is a book on the desk. There are two pens in the pencil box.  桌上有什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "A pen.",
+        "An eraser.",
+        "A ruler.",
+        "A book."
+      ],
+      "correct_index": 3,
+      "explanation": "There is a book on the desk. 说明桌上有一本书。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 5070,
+      "question": "听短文：There is a book on the desk. There are two pens in the pencil box.  铅笔盒里有几支钢笔？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Two.",
+        "One.",
+        "Three.",
+        "Four."
+      ],
+      "correct_index": 0,
+      "explanation": "two pens 说明两支钢笔。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 5071,
+      "question": "听短文：I can swim. I can skate, too. But I can't dance.  我不会做什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Skate.",
+        "Dance.",
+        "Swim.",
+        "Both A and B."
+      ],
+      "correct_index": 1,
+      "explanation": "I can't dance. 说明不会跳舞。",
+      "tags": [
+        "阅读",
+        "能力"
+      ]
+    },
+    {
+      "id": 5072,
+      "question": "听短文：What would you like? I'd like some noodles, please.  我想要什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Some bread.",
+        "Some juice.",
+        "Some noodles.",
+        "Some rice."
+      ],
+      "correct_index": 2,
+      "explanation": "I'd like some noodles. 说明想要面条。",
+      "tags": [
+        "阅读",
+        "食物"
+      ]
+    },
+    {
+      "id": 5073,
+      "question": "听短文：My mother is a teacher. She works in a school. She likes her job.  妈妈的职业是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Doctor.",
+        "Farmer.",
+        "Driver.",
+        "Teacher."
+      ],
+      "correct_index": 3,
+      "explanation": "My mother is a teacher. 说明妈妈是老师。",
+      "tags": [
+        "阅读",
+        "职业"
+      ]
+    },
+    {
+      "id": 5074,
+      "question": "听短文：It is winter. It is cold. I wear a warm coat.  天气怎么样？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Warm.",
+        "Cold.",
+        "Cool.",
+        "Hot."
+      ],
+      "correct_index": 1,
+      "explanation": "It is cold. 说明天冷。",
+      "tags": [
+        "阅读",
+        "天气"
+      ]
+    },
+    {
+      "id": 5075,
+      "question": "听短文：I have a new friend. His name is Jack. He likes playing football.  朋友喜欢什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Watching TV.",
+        "Playing basketball.",
+        "Playing football.",
+        "Reading books."
+      ],
+      "correct_index": 2,
+      "explanation": "He likes playing football. 说明朋友喜欢踢足球。",
+      "tags": [
+        "阅读",
+        "喜好"
+      ]
+    },
+    {
+      "id": 5076,
+      "question": "听短文：The book is on the desk. The pen is in the pencil box.  钢笔在哪里？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Under the chair.",
+        "In the pencil box.",
+        "On the floor.",
+        "On the desk."
+      ],
+      "correct_index": 1,
+      "explanation": "in the pencil box 说明钢笔在铅笔盒里。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 5077,
+      "question": "听短文：I get up at six thirty. I go to school at seven thirty.  我几点起床？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "At seven thirty.",
+        "At six thirty.",
+        "At seven.",
+        "At six."
+      ],
+      "correct_index": 1,
+      "explanation": "get up at six thirty 说明六点半起床。",
+      "tags": [
+        "阅读",
+        "时间"
+      ]
+    },
+    {
+      "id": 5078,
+      "question": "听短文：I have three apples and two bananas.  我有几个香蕉？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "One.",
+        "Three.",
+        "Four.",
+        "Two."
+      ],
+      "correct_index": 3,
+      "explanation": "two bananas 说明两根香蕉。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 5079,
+      "question": "听短文：The elephant is big. The mouse is small.  哪个动物大？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "The elephant.",
+        "The mouse.",
+        "The dog.",
+        "The cat."
+      ],
+      "correct_index": 0,
+      "explanation": "The elephant is big. 说明大象大。",
+      "tags": [
+        "阅读",
+        "动物"
+      ]
+    },
+    {
+      "id": 5080,
+      "question": "听短文：I like summer. I can swim in summer. I can eat ice cream, too.  我喜欢什么季节？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Spring.",
+        "Summer.",
+        "Winter.",
+        "Autumn."
+      ],
+      "correct_index": 1,
+      "explanation": "I like summer. 说明喜欢夏天。",
+      "tags": [
+        "阅读",
+        "季节"
+      ]
+    },
+    {
+      "id": 5081,
+      "question": "听短文：My birthday is in October. I usually have a big party.  我的生日在哪个月？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "December.",
+        "September.",
+        "October.",
+        "November."
+      ],
+      "correct_index": 2,
+      "explanation": "My birthday is in October. 说明生日在十月。",
+      "tags": [
+        "阅读",
+        "月份"
+      ]
+    },
+    {
+      "id": 5082,
+      "question": "听短文：I go to school by bike. It takes 10 minutes.  我怎么上学？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "On foot.",
+        "By car.",
+        "By bus.",
+        "By bike."
+      ],
+      "correct_index": 3,
+      "explanation": "go to school by bike 说明骑自行车上学。",
+      "tags": [
+        "阅读",
+        "交通"
+      ]
+    },
+    {
+      "id": 5083,
+      "question": "听短文：The cat is under the tree. It is sleeping.  猫在哪里？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "In the house.",
+        "Under the tree.",
+        "On the tree.",
+        "On the desk."
+      ],
+      "correct_index": 1,
+      "explanation": "under the tree 说明在树下。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 5084,
+      "question": "听短文：I have breakfast at seven. I have bread and milk.  我早餐吃什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Cake and juice.",
+        "Noodles and egg.",
+        "Rice and fish.",
+        "Bread and milk."
+      ],
+      "correct_index": 3,
+      "explanation": "bread and milk 说明面包和牛奶。",
+      "tags": [
+        "阅读",
+        "食物"
+      ]
+    },
+    {
+      "id": 5085,
+      "question": "听短文：My English teacher is Miss Wang. She is kind. She often helps us.  英语老师怎么样？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Strict.",
+        "Young.",
+        "Tall.",
+        "Kind."
+      ],
+      "correct_index": 3,
+      "explanation": "She is kind. 说明老师很和蔼。",
+      "tags": [
+        "阅读",
+        "描述"
+      ]
+    },
+    {
+      "id": 5086,
+      "question": "听短文：I have a red apple and a green pear.  苹果是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Green.",
+        "Yellow.",
+        "Brown.",
+        "Red."
+      ],
+      "correct_index": 3,
+      "explanation": "a red apple 说明苹果是红色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 5087,
+      "question": "听短文：I go to the zoo on Sunday. I see many animals.  我周日去哪里？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Home.",
+        "School.",
+        "Park.",
+        "Zoo."
+      ],
+      "correct_index": 3,
+      "explanation": "go to the zoo 说明去动物园。",
+      "tags": [
+        "阅读",
+        "地点"
+      ]
+    },
+    {
+      "id": 5088,
+      "question": "听短文：I can sing English songs. I can dance, too.  我会做什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Cook.",
+        "Swim.",
+        "Draw.",
+        "Sing and dance."
+      ],
+      "correct_index": 3,
+      "explanation": "can sing and dance 说明会唱歌跳舞。",
+      "tags": [
+        "阅读",
+        "能力"
+      ]
+    },
+    {
+      "id": 5089,
+      "question": "听短文：There are four people in my family.  我家有几口人？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Four.",
+        "Six.",
+        "Three.",
+        "Five."
+      ],
+      "correct_index": 0,
+      "explanation": "four people 说明四口人。",
+      "tags": [
+        "阅读",
+        "家庭"
+      ]
+    },
+    {
+      "id": 5090,
+      "question": "听短文：The sun is red. The sky is blue.  天空是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Red.",
+        "Green.",
+        "Blue.",
+        "Yellow."
+      ],
+      "correct_index": 2,
+      "explanation": "The sky is blue. 说明天空是蓝色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 5091,
+      "question": "听短文：I have a toy bear. It is brown.  玩具熊是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Red.",
+        "White.",
+        "Brown.",
+        "Black."
+      ],
+      "correct_index": 2,
+      "explanation": "It is brown. 说明玩具熊是棕色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 5092,
+      "question": "听短文：I have six pencils. I give one to my friend.  我还剩几支铅笔？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Six.",
+        "Four.",
+        "Seven.",
+        "Five."
+      ],
+      "correct_index": 3,
+      "explanation": "6-1=5 支。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 5093,
+      "question": "听短文：I have a new ruler. It is long.  尺子怎么样？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Short.",
+        "Big.",
+        "Long.",
+        "Small."
+      ],
+      "correct_index": 2,
+      "explanation": "It is long. 说明尺子很长。",
+      "tags": [
+        "阅读",
+        "描述"
+      ]
+    },
+    {
+      "id": 5094,
+      "question": "听短文：The bird is in the sky. It can fly.  鸟会做什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Swim.",
+        "Sing.",
+        "Fly.",
+        "Run."
+      ],
+      "correct_index": 2,
+      "explanation": "It can fly. 说明鸟会飞。",
+      "tags": [
+        "阅读",
+        "能力"
+      ]
+    },
+    {
+      "id": 5095,
+      "question": "听短文：I like oranges. I don't like grapes.  我不喜欢什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Bananas.",
+        "Apples.",
+        "Grapes.",
+        "Oranges."
+      ],
+      "correct_index": 2,
+      "explanation": "don't like grapes 说明不喜欢葡萄。",
+      "tags": [
+        "阅读",
+        "喜好"
+      ]
+    },
+    {
+      "id": 5096,
+      "question": "听短文：It is snowing. I make a snowman with my brother.  天气怎么样？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Sunny.",
+        "Snowy.",
+        "Windy.",
+        "Rainy."
+      ],
+      "correct_index": 1,
+      "explanation": "It is snowing. 说明下雪。",
+      "tags": [
+        "阅读",
+        "天气"
+      ]
+    },
+    {
+      "id": 5097,
+      "question": "听短文：The dog is on the chair. It is sleeping.  狗在哪里？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "In the box.",
+        "On the desk.",
+        "On the chair.",
+        "Under the chair."
+      ],
+      "correct_index": 2,
+      "explanation": "on the chair 说明在椅子上。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 5098,
+      "question": "听短文：The shoes are 50 yuan. They are very nice.  鞋子多少钱？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "500 yuan.",
+        "5 yuan.",
+        "15 yuan.",
+        "50 yuan."
+      ],
+      "correct_index": 3,
+      "explanation": "The shoes are 50 yuan. 说明鞋子 50 元。",
+      "tags": [
+        "阅读",
+        "价格"
+      ]
+    },
+    {
+      "id": 5099,
+      "question": "听短文：I have a new pencil box. There are two pens and three pencils in it.  铅笔盒里有几支铅笔？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Three.",
+        "Five.",
+        "Two.",
+        "One."
+      ],
+      "correct_index": 0,
+      "explanation": "three pencils 说明三支铅笔。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 5100,
+      "question": "听短文：My father is tall. My mother is short.  谁矮？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "I.",
+        "Brother.",
+        "Mother.",
+        "Father."
+      ],
+      "correct_index": 2,
+      "explanation": "My mother is short. 说明妈妈矮。",
+      "tags": [
+        "阅读",
+        "外貌"
+      ]
+    },
+    {
+      "id": 5101,
+      "question": "听短文：I like dogs. I have a dog. Its name is Doudou.  狗叫什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Mimi.",
+        "Tom.",
+        "Lily.",
+        "Doudou."
+      ],
+      "correct_index": 3,
+      "explanation": "Its name is Doudou. 说明狗叫 Doudou。",
+      "tags": [
+        "阅读",
+        "名字"
+      ]
+    },
+    {
+      "id": 5102,
+      "question": "听短文：The elephant is big. The mouse is small.  哪个动物小？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "The mouse.",
+        "The dog.",
+        "The cat.",
+        "The elephant."
+      ],
+      "correct_index": 0,
+      "explanation": "The mouse is small. 说明老鼠小。",
+      "tags": [
+        "阅读",
+        "动物"
+      ]
+    },
+    {
+      "id": 5103,
+      "question": "听短文：I have a red apple and a green pear.  梨是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Yellow.",
+        "Green.",
+        "Red.",
+        "Brown."
+      ],
+      "correct_index": 1,
+      "explanation": "a green pear 说明梨是绿色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 5104,
+      "question": "听短文：I go to the park with my friends on Sunday. We fly a kite.  我周日和谁去公园？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "My friends.",
+        "My teacher.",
+        "My brother.",
+        "My parents."
+      ],
+      "correct_index": 0,
+      "explanation": "I go to the park with my friends. 说明和朋友去公园。",
+      "tags": [
+        "阅读",
+        "人物"
+      ]
+    },
+    {
+      "id": 5105,
+      "question": "听短文：I can't swim. But I can skate.  我会做什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Swim.",
+        "Both.",
+        "Skate.",
+        "Neither."
+      ],
+      "correct_index": 2,
+      "explanation": "I can skate. 说明会滑冰。",
+      "tags": [
+        "阅读",
+        "能力"
+      ]
+    },
+    {
+      "id": 5106,
+      "question": "听短文：My mother is a nurse. She works in a hospital.  妈妈的职业是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Doctor.",
+        "Driver.",
+        "Teacher.",
+        "Nurse."
+      ],
+      "correct_index": 3,
+      "explanation": "My mother is a nurse. 说明妈妈是护士。",
+      "tags": [
+        "阅读",
+        "职业"
+      ]
+    },
+    {
+      "id": 5107,
+      "question": "听短文：It is Monday today. I have Chinese, maths and English.  今天星期几？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Sunday.",
+        "Monday.",
+        "Saturday.",
+        "Friday."
+      ],
+      "correct_index": 1,
+      "explanation": "It is Monday today. 说明今天周一。",
+      "tags": [
+        "阅读",
+        "星期"
+      ]
+    },
+    {
+      "id": 5108,
+      "question": "听短文：I have lunch at 12:00. I eat rice and fish.  我几点吃午饭？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "At 12:00.",
+        "At 11:00.",
+        "At 11:30.",
+        "At 13:00."
+      ],
+      "correct_index": 0,
+      "explanation": "I have lunch at 12:00. 说明 12 点吃午饭。",
+      "tags": [
+        "阅读",
+        "时间"
+      ]
+    },
+    {
+      "id": 5109,
+      "question": "听短文：The ball is under the bed.  球在哪里？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "In the box.",
+        "On the desk.",
+        "On the bed.",
+        "Under the bed."
+      ],
+      "correct_index": 3,
+      "explanation": "under the bed 说明在床下。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 5110,
+      "question": "听短文：I have a red bag. I put my books in it.  书包是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Blue.",
+        "Yellow.",
+        "Green.",
+        "Red."
+      ],
+      "correct_index": 3,
+      "explanation": "a red bag 说明书包是红色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 5111,
+      "question": "听短文：I go to school on foot. It takes 15 minutes. 我怎么上学？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "By bus.",
+        "By car.",
+        "By bike.",
+        "On foot."
+      ],
+      "correct_index": 3,
+      "explanation": "go to school on foot 说明步行上学。",
+      "tags": [
+        "阅读",
+        "交通"
+      ]
+    },
+    {
+      "id": 5112,
+      "question": "听短文：My father is a driver. He drives a bus.  爸爸是做什么的？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Doctor.",
+        "Driver.",
+        "Teacher.",
+        "Farmer."
+      ],
+      "correct_index": 1,
+      "explanation": "My father is a driver. 说明爸爸是司机。",
+      "tags": [
+        "阅读",
+        "职业"
+      ]
+    },
+    {
+      "id": 5113,
+      "question": "听短文：I like winter best. I can make a snowman.  我最喜欢什么季节？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Autumn.",
+        "Winter.",
+        "Spring.",
+        "Summer."
+      ],
+      "correct_index": 1,
+      "explanation": "I like winter best. 说明最喜欢冬天。",
+      "tags": [
+        "阅读",
+        "季节"
+      ]
+    },
+    {
+      "id": 5114,
+      "question": "听短文：I have three pens and two pencils.  我有几支钢笔？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Two.",
+        "One.",
+        "Five.",
+        "Three."
+      ],
+      "correct_index": 3,
+      "explanation": "three pens 说明三支钢笔。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 5115,
+      "question": "“这是我的家人。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "This is my family.",
+        "This are my family.",
+        "This is me family.",
+        "Is this my family."
+      ],
+      "correct_index": 0,
+      "explanation": "This is my family. 正确。",
+      "tags": [
+        "句型",
+        "This is"
+      ]
+    },
+    {
+      "id": 5116,
+      "question": "“我喜欢春天。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I like spring season.",
+        "I am like spring.",
+        "I likes spring.",
+        "I like spring."
+      ],
+      "correct_index": 3,
+      "explanation": "I like spring. 正确。",
+      "tags": [
+        "句型",
+        "like"
+      ]
+    },
+    {
+      "id": 5117,
+      "question": "“他昨天去了学校。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "He went to school yesterday.",
+        "He is going to school yesterday.",
+        "He go to school yesterday.",
+        "He goes to school yesterday."
+      ],
+      "correct_index": 0,
+      "explanation": "yesterday 用一般过去时，go 变为 went。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 5118,
+      "question": "“桌上有一本书和两支钢笔。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "There is a book and two pens on the desk.",
+        "There is a book and two pen on the desk.",
+        "There are a book and two pens on the desk.",
+        "There have a book and two pens on the desk."
+      ],
+      "correct_index": 0,
+      "explanation": "there be 就近原则，a book 单数用 is。",
+      "tags": [
+        "句型",
+        "There be"
+      ]
+    },
+    {
+      "id": 5119,
+      "question": "“你会做什么？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "What can you do?",
+        "What are you can do?",
+        "What you can do?",
+        "What do you can?"
+      ],
+      "correct_index": 0,
+      "explanation": "问能力用 What can you do?",
+      "tags": [
+        "句型",
+        "can"
+      ]
+    },
+    {
+      "id": 5120,
+      "question": "“我会画画。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I can draw.",
+        "I am draw.",
+        "I can draws.",
+        "I can drawing."
+      ],
+      "correct_index": 0,
+      "explanation": "can 后接动词原形。",
+      "tags": [
+        "句型",
+        "can"
+      ]
+    }
+  ]
+}

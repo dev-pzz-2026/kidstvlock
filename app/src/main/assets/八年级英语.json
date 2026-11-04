@@ -1,0 +1,2172 @@
+{
+  "bank_id": "grade8_english",
+  "bank_name": "八年级英语",
+  "grade": 8,
+  "subject": "english",
+  "subject_name": "英语",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 8001,
+      "question": "“我昨天去了公园。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "I go to the park yesterday.",
+        "I goes to the park yesterday.",
+        "I went to the park yesterday.",
+        "I am going to the park yesterday."
+      ],
+      "correct_index": 2,
+      "explanation": "yesterday 用一般过去时，go 变为 went。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8002,
+      "question": "“他昨天看了一部电影。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "He is seeing a film yesterday.",
+        "He saw a film yesterday.",
+        "He see a film yesterday.",
+        "He sees a film yesterday."
+      ],
+      "correct_index": 1,
+      "explanation": "yesterday 用一般过去时，see 变为 saw。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8003,
+      "question": "“她上周买了一本书。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "She buyed a book last week.",
+        "She is buying a book last week.",
+        "She buys a book last week.",
+        "She bought a book last week."
+      ],
+      "correct_index": 3,
+      "explanation": "last week 用一般过去时，buy 变为 bought。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8004,
+      "question": "“他们昨天踢了足球。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "They plays football yesterday.",
+        "They are playing football yesterday.",
+        "They played football yesterday.",
+        "They play football yesterday."
+      ],
+      "correct_index": 2,
+      "explanation": "yesterday 用一般过去时，play 变为 played。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8005,
+      "question": "“我昨天没看电视。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "I didn't watched TV yesterday.",
+        "I don't watch TV yesterday.",
+        "I didn't watch TV yesterday.",
+        "I not watch TV yesterday."
+      ],
+      "correct_index": 2,
+      "explanation": "一般过去时否定 didn't + 动词原形。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8006,
+      "question": "“他昨天没上学。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "He didn't went to school yesterday.",
+        "He doesn't go to school yesterday.",
+        "He didn't go to school yesterday.",
+        "He not go to school yesterday."
+      ],
+      "correct_index": 2,
+      "explanation": "一般过去时否定 didn't + 动词原形。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8007,
+      "question": "“你昨天做了什么？”用英语问：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "What do you do yesterday?",
+        "What did you did yesterday?",
+        "What you did yesterday?",
+        "What did you do yesterday?"
+      ],
+      "correct_index": 3,
+      "explanation": "一般过去时疑问句。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8008,
+      "question": "“他昨天去哪里了？”用英语问：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "Where did he went yesterday?",
+        "Where he went yesterday?",
+        "Where did he go yesterday?",
+        "Where does he go yesterday?"
+      ],
+      "correct_index": 2,
+      "explanation": "一般过去时疑问句。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8009,
+      "question": "“我已经完成了作业。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I have finished my homework.",
+        "I finished my homework already.",
+        "I has finished my homework.",
+        "I have finish my homework."
+      ],
+      "correct_index": 0,
+      "explanation": "现在完成时 have + 过去分词。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8010,
+      "question": "“他已经离开了。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "He has left.",
+        "He left already.",
+        "He have left.",
+        "He has leave."
+      ],
+      "correct_index": 0,
+      "explanation": "he 三单用 has + 过去分词。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8011,
+      "question": "“我还没看完那本书。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I haven't finish reading the book.",
+        "I haven't finished reading the book.",
+        "I didn't finish reading the book.",
+        "I don't finish reading the book."
+      ],
+      "correct_index": 1,
+      "explanation": "现在完成时否定 haven't + 过去分词。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8012,
+      "question": "“你去过北京吗？”用英语问：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "Did you ever go to Beijing?",
+        "Have you ever been to Beijing?",
+        "Have you ever gone to Beijing?",
+        "Do you ever go to Beijing?"
+      ],
+      "correct_index": 1,
+      "explanation": "have been to 表示去过已回。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8013,
+      "question": "“他去了上海。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "He has been to Shanghai.",
+        "He went to Shanghai.",
+        "He has gone to Shanghai.",
+        "He goes to Shanghai."
+      ],
+      "correct_index": 2,
+      "explanation": "has gone to 表示去了未回。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8014,
+      "question": "“这个苹果比那个大。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "This apple is more big than that one.",
+        "This apple is big than that one.",
+        "This apple is bigger than that one.",
+        "This apple is bigger than that."
+      ],
+      "correct_index": 2,
+      "explanation": "big 的比较级是 bigger。",
+      "tags": [
+        "语法",
+        "比较级"
+      ]
+    },
+    {
+      "id": 8015,
+      "question": "“这把尺子比那把长。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "This ruler is longer than that one.",
+        "This ruler is longer than that.",
+        "This ruler is more long than that one.",
+        "This ruler is long than that one."
+      ],
+      "correct_index": 0,
+      "explanation": "long 的比较级是 longer。",
+      "tags": [
+        "语法",
+        "比较级"
+      ]
+    },
+    {
+      "id": 8016,
+      "question": "“这是我们班最高的学生。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "He is the talllest student in our class.",
+        "He is tallest student in our class.",
+        "He is the tallest student in our class.",
+        "He is the taller student in our class."
+      ],
+      "correct_index": 2,
+      "explanation": "tall 的最高级是 tallest。",
+      "tags": [
+        "语法",
+        "最高级"
+      ]
+    },
+    {
+      "id": 8017,
+      "question": "“这是我看过最有趣的电影。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "This is most interesting film I have ever seen.",
+        "This is the more interesting film I have ever seen.",
+        "This is the most interesting film I have ever seen.",
+        "This is the interestingest film I have ever seen."
+      ],
+      "correct_index": 2,
+      "explanation": "interesting 的最高级是 the most interesting。",
+      "tags": [
+        "语法",
+        "最高级"
+      ]
+    },
+    {
+      "id": 8018,
+      "question": "“他和我一样高。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "He is so tall as me.",
+        "He is as tall than me.",
+        "He is as tall as me.",
+        "He is as taller as me."
+      ],
+      "correct_index": 2,
+      "explanation": "as + 原级 + as。",
+      "tags": [
+        "语法",
+        "同级比较"
+      ]
+    },
+    {
+      "id": 8019,
+      "question": "“她和我一样认真。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "She is as more careful as me.",
+        "She is so careful as me.",
+        "She is as careful as me.",
+        "She is as careful than me."
+      ],
+      "correct_index": 2,
+      "explanation": "as + 原级 + as。",
+      "tags": [
+        "语法",
+        "同级比较"
+      ]
+    },
+    {
+      "id": 8020,
+      "question": "“我想去看电影。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I want to seeing a film.",
+        "I want see a film.",
+        "I want seeing a film.",
+        "I want to see a film."
+      ],
+      "correct_index": 3,
+      "explanation": "want to do sth。",
+      "tags": [
+        "语法",
+        "不定式"
+      ]
+    },
+    {
+      "id": 8021,
+      "question": "“他喜欢游泳。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "He likes to swimming.",
+        "He likes swimming.",
+        "He like swimming.",
+        "He likes swim."
+      ],
+      "correct_index": 1,
+      "explanation": "like doing sth。",
+      "tags": [
+        "语法",
+        "动名词"
+      ]
+    },
+    {
+      "id": 8022,
+      "question": "“我决定明天去北京。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I decide going to Beijing tomorrow.",
+        "I decide go to Beijing tomorrow.",
+        "I decide to go to Beijing tomorrow.",
+        "I decide to going to Beijing tomorrow."
+      ],
+      "correct_index": 2,
+      "explanation": "decide to do sth。",
+      "tags": [
+        "语法",
+        "不定式"
+      ]
+    },
+    {
+      "id": 8023,
+      "question": "“他停止了说话。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "He stops talking.",
+        "He stopped to talk.",
+        "He stopped talking.",
+        "He stop talking."
+      ],
+      "correct_index": 2,
+      "explanation": "stop doing 停止正在做的事。",
+      "tags": [
+        "语法",
+        "动名词"
+      ]
+    },
+    {
+      "id": 8024,
+      "question": "“我必须完成作业。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I must to finish my homework.",
+        "I must finished my homework.",
+        "I must finishing my homework.",
+        "I must finish my homework."
+      ],
+      "correct_index": 3,
+      "explanation": "must + 动词原形。",
+      "tags": [
+        "语法",
+        "情态动词"
+      ]
+    },
+    {
+      "id": 8025,
+      "question": "“你应该努力学习。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "You should study hard.",
+        "You should studying hard.",
+        "You should to study hard.",
+        "You should studied hard."
+      ],
+      "correct_index": 0,
+      "explanation": "should + 动词原形。",
+      "tags": [
+        "语法",
+        "情态动词"
+      ]
+    },
+    {
+      "id": 8026,
+      "question": "“他会弹钢琴。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "He cans play the piano.",
+        "He can playing the piano.",
+        "He can play the piano.",
+        "He can plays the piano."
+      ],
+      "correct_index": 2,
+      "explanation": "can + 动词原形。",
+      "tags": [
+        "语法",
+        "情态动词"
+      ]
+    },
+    {
+      "id": 8027,
+      "question": "“这本书是鲁迅写的。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "This book was write by Lu Xun.",
+        "This book is wrote by Lu Xun.",
+        "This book was written by Lu Xun.",
+        "This book wrote by Lu Xun."
+      ],
+      "correct_index": 2,
+      "explanation": "一般过去时被动 was/were + 过去分词。",
+      "tags": [
+        "语法",
+        "被动语态"
+      ]
+    },
+    {
+      "id": 8028,
+      "question": "“树被风刮倒了。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "The tree was blown down by the wind.",
+        "The tree is blown down by the wind.",
+        "The tree was blow down by the wind.",
+        "The tree blew down by the wind."
+      ],
+      "correct_index": 0,
+      "explanation": "一般过去时被动。",
+      "tags": [
+        "语法",
+        "被动语态"
+      ]
+    },
+    {
+      "id": 8029,
+      "question": "“我认为他是对的。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I think (that) he was right.",
+        "I think (that) he are right.",
+        "I think (that) he be right.",
+        "I think (that) he is right."
+      ],
+      "correct_index": 3,
+      "explanation": "宾语从句，陈述语序。",
+      "tags": [
+        "语法",
+        "宾语从句"
+      ]
+    },
+    {
+      "id": 8030,
+      "question": "“我不知道他是否会来。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I don't know if he comes.",
+        "I don't know if he will come.",
+        "I don't know if will he come.",
+        "I don't know if he come."
+      ],
+      "correct_index": 1,
+      "explanation": "if 引导宾语从句，陈述语序。",
+      "tags": [
+        "语法",
+        "宾语从句"
+      ]
+    },
+    {
+      "id": 8031,
+      "question": "“你能告诉我怎么去图书馆吗？”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "Could you tell me how to get to the library?",
+        "Could you tell me how get to the library?",
+        "Could you tell me how to getting to the library?",
+        "Could you tell me how getting to the library?"
+      ],
+      "correct_index": 0,
+      "explanation": "疑问词 + 不定式。",
+      "tags": [
+        "语法",
+        "宾语从句"
+      ]
+    },
+    {
+      "id": 8032,
+      "question": "“我昨天买了一件新衬衫。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "I buyed a new shirt yesterday.",
+        "I bought a new shirt yesterday.",
+        "I am buying a new shirt yesterday.",
+        "I buy a new shirt yesterday."
+      ],
+      "correct_index": 1,
+      "explanation": "yesterday 用一般过去时。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8033,
+      "question": "“她昨天没去上学。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "She didn't go to school yesterday.",
+        "She doesn't go to school yesterday.",
+        "She not go to school yesterday.",
+        "She didn't went to school yesterday."
+      ],
+      "correct_index": 0,
+      "explanation": "一般过去时否定。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8034,
+      "question": "“他们上周去了长城。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "They goes to the Great Wall last week.",
+        "They go to the Great Wall last week.",
+        "They went to the Great Wall last week.",
+        "They are going to the Great Wall last week."
+      ],
+      "correct_index": 2,
+      "explanation": "last week 用一般过去时。",
+      "tags": [
+        "语法",
+        "一般过去时"
+      ]
+    },
+    {
+      "id": 8035,
+      "question": "“我已经吃过早饭了。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I have already had breakfast.",
+        "I has already had breakfast.",
+        "I already had breakfast.",
+        "I have already have breakfast."
+      ],
+      "correct_index": 0,
+      "explanation": "现在完成时。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8036,
+      "question": "“他还没完成作业。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "He doesn't finish his homework yet.",
+        "He hasn't finish his homework yet.",
+        "He didn't finish his homework yet.",
+        "He hasn't finished his homework yet."
+      ],
+      "correct_index": 3,
+      "explanation": "现在完成时否定。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8037,
+      "question": "“你学英语多久了？”用英语问：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "How long do you study English?",
+        "How long have you studied English?",
+        "How long did you study English?",
+        "How long have you study English?"
+      ],
+      "correct_index": 1,
+      "explanation": "现在完成时问时长。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8038,
+      "question": "“我学英语五年了。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I have studied English for five years.",
+        "I studied English for five years.",
+        "I study English for five years.",
+        "I have studied English since five years."
+      ],
+      "correct_index": 0,
+      "explanation": "for + 一段时间。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8039,
+      "question": "“这个箱子比那个重。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "This box is heavier than that one.",
+        "This box is heavy than that one.",
+        "This box is heavier than that.",
+        "This box is more heavy than that one."
+      ],
+      "correct_index": 0,
+      "explanation": "heavy 的比较级是 heavier。",
+      "tags": [
+        "语法",
+        "比较级"
+      ]
+    },
+    {
+      "id": 8040,
+      "question": "“这是我们学校最受欢迎的老师。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "She is most popular teacher in our school.",
+        "She is the popularer teacher in our school.",
+        "She is the more popular teacher in our school.",
+        "She is the most popular teacher in our school."
+      ],
+      "correct_index": 3,
+      "explanation": "popular 的最高级是 the most popular。",
+      "tags": [
+        "语法",
+        "最高级"
+      ]
+    },
+    {
+      "id": 8041,
+      "question": "“他太小了，不能去上学。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "He is too young to go to school.",
+        "He is so young to go to school.",
+        "He is too young go to school.",
+        "He is very young to go to school."
+      ],
+      "correct_index": 0,
+      "explanation": "too + 形容词 + to do。",
+      "tags": [
+        "语法",
+        "不定式"
+      ]
+    },
+    {
+      "id": 8042,
+      "question": "“我很高兴见到你。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I am glad seeing you.",
+        "I am glad see you.",
+        "I am glad to see you.",
+        "I am glad to seeing you."
+      ],
+      "correct_index": 2,
+      "explanation": "be + 形容词 + to do。",
+      "tags": [
+        "语法",
+        "不定式"
+      ]
+    },
+    {
+      "id": 8043,
+      "question": "“他喜欢打篮球。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "He likes playing basketball.",
+        "He like playing basketball.",
+        "He likes to playing basketball.",
+        "He likes play basketball."
+      ],
+      "correct_index": 0,
+      "explanation": "like doing sth。",
+      "tags": [
+        "语法",
+        "动名词"
+      ]
+    },
+    {
+      "id": 8044,
+      "question": "“我完成了作业。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I finished my homework.",
+        "I have finish my homework.",
+        "I has finished my homework.",
+        "I have finished my homework."
+      ],
+      "correct_index": 3,
+      "explanation": "现在完成时。",
+      "tags": [
+        "语法",
+        "现在完成时"
+      ]
+    },
+    {
+      "id": 8045,
+      "question": "“窗户被打破了。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "The window is broken.",
+        "The window was break.",
+        "The window was broken.",
+        "The window broke."
+      ],
+      "correct_index": 2,
+      "explanation": "一般过去时被动。",
+      "tags": [
+        "语法",
+        "被动语态"
+      ]
+    },
+    {
+      "id": 8046,
+      "question": "“我听说他生病了。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I heard that he ill.",
+        "I heard that he was ill.",
+        "I heard that he be ill.",
+        "I heard that he is ill."
+      ],
+      "correct_index": 1,
+      "explanation": "宾语从句，时态一致。",
+      "tags": [
+        "语法",
+        "宾语从句"
+      ]
+    },
+    {
+      "id": 8047,
+      "question": "““你能帮我吗？”用英语说：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "Can you help me?",
+        "Can you help me to?",
+        "Do you help me?",
+        "Can you help I?"
+      ],
+      "correct_index": 0,
+      "explanation": "请求帮助。",
+      "tags": [
+        "情景交际",
+        "请求"
+      ]
+    },
+    {
+      "id": 8048,
+      "question": "““当然可以。”用英语说：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "Sorry.",
+        "No.",
+        "Sure.",
+        "Thanks."
+      ],
+      "correct_index": 2,
+      "explanation": "Sure. 当然可以。",
+      "tags": [
+        "情景交际",
+        "回应"
+      ]
+    },
+    {
+      "id": 8049,
+      "question": "““你怎么了？”用英语问：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "What's wrong to you?",
+        "What's wrong with you?",
+        "What wrong with you?",
+        "What's wrong you?"
+      ],
+      "correct_index": 1,
+      "explanation": "询问状况。",
+      "tags": [
+        "情景交际",
+        "关心"
+      ]
+    },
+    {
+      "id": 8050,
+      "question": "““我牙疼。”用英语说：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "I have a toothache.",
+        "I have a tooth.",
+        "I have toothache.",
+        "I have a teeth."
+      ],
+      "correct_index": 0,
+      "explanation": "have a toothache 牙疼。",
+      "tags": [
+        "情景交际",
+        "健康"
+      ]
+    },
+    {
+      "id": 8051,
+      "question": "““你应该看牙医。”用英语说：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "You should to see a dentist.",
+        "You should seeing a dentist.",
+        "You should see dentist.",
+        "You should see a dentist."
+      ],
+      "correct_index": 3,
+      "explanation": "should + 动词原形。",
+      "tags": [
+        "情景交际",
+        "建议"
+      ]
+    },
+    {
+      "id": 8052,
+      "question": "““你多久锻炼一次？”用英语问：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "How often do you exercise?",
+        "How often you exercise?",
+        "How often are you exercise?",
+        "How often do you exercises?"
+      ],
+      "correct_index": 0,
+      "explanation": "问频率用 How often。",
+      "tags": [
+        "句型",
+        "频率"
+      ]
+    },
+    {
+      "id": 8053,
+      "question": "““我每周锻炼三次。”用英语说：",
+      "type": "句型",
+      "difficulty": 1,
+      "options": [
+        "I exercise three times a week.",
+        "I exercise three time a week.",
+        "I exercise three times a week.",
+        "I exercise three times week."
+      ],
+      "correct_index": 0,
+      "explanation": "three times a week 每周三次。",
+      "tags": [
+        "句型",
+        "频率"
+      ]
+    },
+    {
+      "id": 8054,
+      "question": "““我感冒了。”用英语说：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "I have cold.",
+        "I have a colds.",
+        "I have a cold.",
+        "I am a cold."
+      ],
+      "correct_index": 2,
+      "explanation": "have a cold 感冒。",
+      "tags": [
+        "情景交际",
+        "健康"
+      ]
+    },
+    {
+      "id": 8055,
+      "question": "““你应该多喝水。”用英语说：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "You should drinking more water.",
+        "You should drink more waters.",
+        "You should to drink more water.",
+        "You should drink more water."
+      ],
+      "correct_index": 3,
+      "explanation": "should + 动词原形。",
+      "tags": [
+        "情景交际",
+        "建议"
+      ]
+    },
+    {
+      "id": 8056,
+      "question": "““你今天感觉怎么样？”用英语问：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "How are you feel today?",
+        "How are you feeling today?",
+        "How you are feeling today?",
+        "How do you feeling today?"
+      ],
+      "correct_index": 1,
+      "explanation": "询问感受。",
+      "tags": [
+        "情景交际",
+        "关心"
+      ]
+    },
+    {
+      "id": 8057,
+      "question": "““我感觉好多了。”用英语说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "I feel much good.",
+        "I feel much better.",
+        "I feel betterer.",
+        "I feel more better."
+      ],
+      "correct_index": 1,
+      "explanation": "much 修饰比较级。",
+      "tags": [
+        "情景交际",
+        "感受"
+      ]
+    },
+    {
+      "id": 8058,
+      "question": "听短文：Yesterday was Sunday. I went to the park with my parents. We flew a kite. We had a good time.  昨天星期几？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Saturday.",
+        "Sunday.",
+        "Friday.",
+        "Monday."
+      ],
+      "correct_index": 1,
+      "explanation": "Yesterday was Sunday. 说明昨天周日。",
+      "tags": [
+        "阅读",
+        "星期"
+      ]
+    },
+    {
+      "id": 8059,
+      "question": "听短文：Yesterday was Sunday. I went to the park with my parents. We flew a kite. We had a good time.  我和谁去公园？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "My parents.",
+        "My friends.",
+        "My teacher.",
+        "My brother."
+      ],
+      "correct_index": 0,
+      "explanation": "with my parents 说明和父母一起。",
+      "tags": [
+        "阅读",
+        "人物"
+      ]
+    },
+    {
+      "id": 8060,
+      "question": "听短文：Yesterday was Sunday. I went to the park with my parents. We flew a kite. We had a good time.  我们在公园做什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Read books.",
+        "Go swimming.",
+        "Play football.",
+        "Fly a kite."
+      ],
+      "correct_index": 3,
+      "explanation": "We flew a kite. 说明放风筝。",
+      "tags": [
+        "阅读",
+        "活动"
+      ]
+    },
+    {
+      "id": 8061,
+      "question": "听短文：I have studied English for five years. I like English very much. I think it is very important.  我学英语多久了？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Four years.",
+        "Six years.",
+        "Five years.",
+        "Three years."
+      ],
+      "correct_index": 2,
+      "explanation": "for five years 说明五年。",
+      "tags": [
+        "阅读",
+        "时间"
+      ]
+    },
+    {
+      "id": 8062,
+      "question": "听短文：I have studied English for five years. I like English very much. I think it is very important.  我认为英语怎么样？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Difficult.",
+        "Important.",
+        "Easy.",
+        "Boring."
+      ],
+      "correct_index": 1,
+      "explanation": "I think it is very important. 说明重要。",
+      "tags": [
+        "阅读",
+        "看法"
+      ]
+    },
+    {
+      "id": 8063,
+      "question": "听短文：My father is a doctor. He works in a big hospital. He is very busy. He often comes home late.  爸爸的职业是？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Farmer.",
+        "Doctor.",
+        "Driver.",
+        "Teacher."
+      ],
+      "correct_index": 1,
+      "explanation": "My father is a doctor. 说明爸爸是医生。",
+      "tags": [
+        "阅读",
+        "职业"
+      ]
+    },
+    {
+      "id": 8064,
+      "question": "听短文：My father is a doctor. He works in a big hospital. He is very busy. He often comes home late.  爸爸工作忙吗？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "No, he doesn't.",
+        "No, he isn't.",
+        "Yes, he does.",
+        "Yes, he is."
+      ],
+      "correct_index": 3,
+      "explanation": "He is very busy. 说明很忙。",
+      "tags": [
+        "阅读",
+        "工作"
+      ]
+    },
+    {
+      "id": 8065,
+      "question": "听短文：Yesterday I went to the zoo. I saw many animals. I liked the pandas best. They were very cute.  我昨天去了哪里？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Zoo.",
+        "Library.",
+        "School.",
+        "Park."
+      ],
+      "correct_index": 0,
+      "explanation": "went to the zoo 说明去动物园。",
+      "tags": [
+        "阅读",
+        "地点"
+      ]
+    },
+    {
+      "id": 8066,
+      "question": "听短文：Yesterday I went to the zoo. I saw many animals. I liked the pandas best. They were very cute.  我最喜欢什么动物？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Tigers.",
+        "Monkeys.",
+        "Pandas.",
+        "Elephants."
+      ],
+      "correct_index": 2,
+      "explanation": "I liked the pandas best. 说明最喜欢熊猫。",
+      "tags": [
+        "阅读",
+        "动物"
+      ]
+    },
+    {
+      "id": 8067,
+      "question": "听短文：I have been to Beijing twice. I went there last year. I visited the Great Wall.  我去过北京几次？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Once.",
+        "Four times.",
+        "Three times.",
+        "Twice."
+      ],
+      "correct_index": 3,
+      "explanation": "have been to Beijing twice 说明两次。",
+      "tags": [
+        "阅读",
+        "次数"
+      ]
+    },
+    {
+      "id": 8068,
+      "question": "听短文：I have been to Beijing twice. I went there last year. I visited the Great Wall.  我什么时候去的？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Last week.",
+        "This year.",
+        "Last month.",
+        "Last year."
+      ],
+      "correct_index": 3,
+      "explanation": "went there last year 说明去年。",
+      "tags": [
+        "阅读",
+        "时间"
+      ]
+    },
+    {
+      "id": 8069,
+      "question": "听短文：The weather is getting colder and colder. I need to wear warm clothes.  天气怎么样？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Hotter and hotter.",
+        "Cooler and cooler.",
+        "Warmer and warmer.",
+        "Colder and colder."
+      ],
+      "correct_index": 3,
+      "explanation": "colder and colder 说明越来越冷。",
+      "tags": [
+        "阅读",
+        "天气"
+      ]
+    },
+    {
+      "id": 8070,
+      "question": "听短文：The weather is getting colder and colder. I need to wear warm clothes.  我需要穿什么？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Shorts.",
+        "T-shirts.",
+        "Sunglasses.",
+        "Warm clothes."
+      ],
+      "correct_index": 3,
+      "explanation": "wear warm clothes 说明穿暖和衣服。",
+      "tags": [
+        "阅读",
+        "衣物"
+      ]
+    },
+    {
+      "id": 8071,
+      "question": "听短文：I have a headache. I can't go to school today. I need to see a doctor.  我怎么了？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Toothache.",
+        "Stomachache.",
+        "Headache.",
+        "Fever."
+      ],
+      "correct_index": 2,
+      "explanation": "I have a headache. 说明头疼。",
+      "tags": [
+        "阅读",
+        "健康"
+      ]
+    },
+    {
+      "id": 8072,
+      "question": "听短文：I have a headache. I can't go to school today. I need to see a doctor.  我今天能上学吗？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "No, I can't.",
+        "Yes, I do.",
+        "Yes, I can.",
+        "No, I don't."
+      ],
+      "correct_index": 0,
+      "explanation": "can't go to school 说明不能上学。",
+      "tags": [
+        "阅读",
+        "健康"
+      ]
+    },
+    {
+      "id": 8073,
+      "question": "听短文：My sister is taller than me. But I am stronger than her.  谁更高？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "My father.",
+        "I.",
+        "My sister.",
+        "My brother."
+      ],
+      "correct_index": 2,
+      "explanation": "My sister is taller than me. 说明姐姐更高。",
+      "tags": [
+        "阅读",
+        "比较"
+      ]
+    },
+    {
+      "id": 8074,
+      "question": "听短文：My sister is taller than me. But I am stronger than her.  谁更强壮？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "My brother.",
+        "I.",
+        "My sister.",
+        "My father."
+      ],
+      "correct_index": 1,
+      "explanation": "I am stronger than her. 说明我更强壮。",
+      "tags": [
+        "阅读",
+        "比较"
+      ]
+    },
+    {
+      "id": 8075,
+      "question": "听短文：I bought a new bike yesterday. It is red. I ride it to school every day.  我昨天买了什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "A bag.",
+        "A pen.",
+        "A book.",
+        "A bike."
+      ],
+      "correct_index": 3,
+      "explanation": "bought a new bike 说明买了自行车。",
+      "tags": [
+        "阅读",
+        "物品"
+      ]
+    },
+    {
+      "id": 8076,
+      "question": "听短文：I bought a new bike yesterday. It is red. I ride it to school every day.  自行车是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Green.",
+        "Blue.",
+        "Red.",
+        "Yellow."
+      ],
+      "correct_index": 2,
+      "explanation": "It is red. 说明自行车是红色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 8077,
+      "question": "听短文：There are 50 students in our class. 25 are boys and 25 are girls.  班里有多少学生？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "70.",
+        "40.",
+        "50.",
+        "60."
+      ],
+      "correct_index": 2,
+      "explanation": "50 students 说明 50 个学生。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 8078,
+      "question": "听短文：There are 50 students in our class. 25 are boys and 25 are girls.  班里有多少女生？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "30.",
+        "25.",
+        "35.",
+        "20."
+      ],
+      "correct_index": 1,
+      "explanation": "25 are girls 说明 25 个女生。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 8079,
+      "question": "听短文：I get up at six every day. I have breakfast at six thirty. I go to school at seven.  我几点起床？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "At six thirty.",
+        "At seven.",
+        "At seven thirty.",
+        "At six."
+      ],
+      "correct_index": 3,
+      "explanation": "get up at six 说明六点起床。",
+      "tags": [
+        "阅读",
+        "时间"
+      ]
+    },
+    {
+      "id": 8080,
+      "question": "听短文：I get up at six every day. I have breakfast at six thirty. I go to school at seven.  我几点吃早饭？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "At seven thirty.",
+        "At six thirty.",
+        "At six.",
+        "At seven."
+      ],
+      "correct_index": 1,
+      "explanation": "have breakfast at six thirty 说明六点半吃早饭。",
+      "tags": [
+        "阅读",
+        "时间"
+      ]
+    },
+    {
+      "id": 8081,
+      "question": "听短文：My favourite sport is swimming. I go swimming every weekend. I can swim very fast.  我最喜欢什么运动？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Swimming.",
+        "Playing basketball.",
+        "Playing football.",
+        "Running."
+      ],
+      "correct_index": 0,
+      "explanation": "My favourite sport is swimming. 说明最喜欢游泳。",
+      "tags": [
+        "阅读",
+        "运动"
+      ]
+    },
+    {
+      "id": 8082,
+      "question": "听短文：My favourite sport is swimming. I go swimming every weekend. I can swim very fast.  我多久游一次泳？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Every month.",
+        "Every weekend.",
+        "Every day.",
+        "Every year."
+      ],
+      "correct_index": 1,
+      "explanation": "every weekend 说明每周末。",
+      "tags": [
+        "阅读",
+        "频率"
+      ]
+    },
+    {
+      "id": 8083,
+      "question": "听短文：Yesterday it rained. I stayed at home. I read a book and watched TV.  昨天天气怎么样？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Sunny.",
+        "Rainy.",
+        "Windy.",
+        "Cloudy."
+      ],
+      "correct_index": 1,
+      "explanation": "it rained 说明下雨。",
+      "tags": [
+        "阅读",
+        "天气"
+      ]
+    },
+    {
+      "id": 8084,
+      "question": "听短文：Yesterday it rained. I stayed at home. I read a book and watched TV.  我昨天做了什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Stayed at home.",
+        "Went to the park.",
+        "Went to school.",
+        "Went to the zoo."
+      ],
+      "correct_index": 0,
+      "explanation": "stayed at home 说明待在家。",
+      "tags": [
+        "阅读",
+        "活动"
+      ]
+    },
+    {
+      "id": 8085,
+      "question": "听短文：I have a cat. Its name is Mimi. It is two years old. It likes eating fish.  猫叫什么？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Doudou.",
+        "Tom.",
+        "Lily.",
+        "Mimi."
+      ],
+      "correct_index": 3,
+      "explanation": "Its name is Mimi. 说明猫叫 Mimi。",
+      "tags": [
+        "阅读",
+        "名字"
+      ]
+    },
+    {
+      "id": 8086,
+      "question": "听短文：I have a cat. Its name is Mimi. It is two years old. It likes eating fish.  猫喜欢吃什么？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Rice.",
+        "Meat.",
+        "Fish.",
+        "Bones."
+      ],
+      "correct_index": 2,
+      "explanation": "likes eating fish 说明喜欢吃鱼。",
+      "tags": [
+        "阅读",
+        "食物"
+      ]
+    },
+    {
+      "id": 8087,
+      "question": "听短文：My school is big and beautiful. There is a library, a playground and a garden. I like my school very much.  学校里有什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Both A and B.",
+        "A playground.",
+        "A zoo.",
+        "A library."
+      ],
+      "correct_index": 0,
+      "explanation": "a library, a playground and a garden 说明有图书馆和操场。",
+      "tags": [
+        "阅读",
+        "学校"
+      ]
+    },
+    {
+      "id": 8088,
+      "question": "听短文：My school is big and beautiful. There is a library, a playground and a garden. I like my school very much.  学校怎么样？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Small but beautiful.",
+        "Big but old.",
+        "Small and old.",
+        "Big and beautiful."
+      ],
+      "correct_index": 3,
+      "explanation": "big and beautiful 说明又大又漂亮。",
+      "tags": [
+        "阅读",
+        "学校"
+      ]
+    },
+    {
+      "id": 8089,
+      "question": "听短文：I will go to Beijing next month. I will visit the Great Wall and the Palace Museum.  我什么时候去北京？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Yesterday.",
+        "Next week.",
+        "Next year.",
+        "Next month."
+      ],
+      "correct_index": 3,
+      "explanation": "next month 说明下个月。",
+      "tags": [
+        "阅读",
+        "时间"
+      ]
+    },
+    {
+      "id": 8090,
+      "question": "听短文：I will go to Beijing next month. I will visit the Great Wall and the Palace Museum.  我要参观什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Both A and B.",
+        "The Great Wall.",
+        "The Palace Museum.",
+        "The Summer Palace."
+      ],
+      "correct_index": 0,
+      "explanation": "visit the Great Wall and the Palace Museum 说明参观长城和故宫。",
+      "tags": [
+        "阅读",
+        "计划"
+      ]
+    },
+    {
+      "id": 8091,
+      "question": "听短文：Yesterday I was ill. I didn't go to school. I stayed in bed. My mother looked after me.  我昨天怎么了？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Tired.",
+        "Ill.",
+        "Happy.",
+        "Sad."
+      ],
+      "correct_index": 1,
+      "explanation": "I was ill. 说明生病了。",
+      "tags": [
+        "阅读",
+        "健康"
+      ]
+    },
+    {
+      "id": 8092,
+      "question": "听短文：Yesterday I was ill. I didn't go to school. I stayed in bed. My mother looked after me.  谁照顾我？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "My mother.",
+        "My friend.",
+        "My father.",
+        "My teacher."
+      ],
+      "correct_index": 0,
+      "explanation": "My mother looked after me. 说明妈妈照顾我。",
+      "tags": [
+        "阅读",
+        "人物"
+      ]
+    },
+    {
+      "id": 8093,
+      "question": "听短文：There are four people in my family. They are my father, my mother, my sister and I.  我家有几口人？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Six.",
+        "Five.",
+        "Three.",
+        "Four."
+      ],
+      "correct_index": 3,
+      "explanation": "four people 说明四口人。",
+      "tags": [
+        "阅读",
+        "家庭"
+      ]
+    },
+    {
+      "id": 8094,
+      "question": "听短文：There are four people in my family. They are my father, my mother, my sister and I.  我有几个姐妹？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Two.",
+        "One.",
+        "Four.",
+        "Three."
+      ],
+      "correct_index": 1,
+      "explanation": "my sister 说明一个姐妹。",
+      "tags": [
+        "阅读",
+        "家庭"
+      ]
+    },
+    {
+      "id": 8095,
+      "question": "听短文：I like English best. I think it is interesting. I have English classes every day.  我最喜欢什么科目？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Chinese.",
+        "History.",
+        "Maths.",
+        "English."
+      ],
+      "correct_index": 3,
+      "explanation": "I like English best. 说明最喜欢英语。",
+      "tags": [
+        "阅读",
+        "科目"
+      ]
+    },
+    {
+      "id": 8096,
+      "question": "听短文：I like English best. I think it is interesting. I have English classes every day.  我认为英语怎么样？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Difficult.",
+        "Interesting.",
+        "Boring.",
+        "Easy."
+      ],
+      "correct_index": 1,
+      "explanation": "I think it is interesting. 说明有趣。",
+      "tags": [
+        "阅读",
+        "看法"
+      ]
+    },
+    {
+      "id": 8097,
+      "question": "听短文：Last weekend I went to the mountains with my friends. We had a picnic. We had a lot of fun.  上周末我去了哪里？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "The park.",
+        "The mountains.",
+        "The zoo.",
+        "The beach."
+      ],
+      "correct_index": 1,
+      "explanation": "went to the mountains 说明去山里。",
+      "tags": [
+        "阅读",
+        "地点"
+      ]
+    },
+    {
+      "id": 8098,
+      "question": "听短文：Last weekend I went to the mountains with my friends. We had a picnic. We had a lot of fun.  我们做了什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Went swimming.",
+        "Had a picnic.",
+        "Went fishing.",
+        "Played football."
+      ],
+      "correct_index": 1,
+      "explanation": "had a picnic 说明野餐。",
+      "tags": [
+        "阅读",
+        "活动"
+      ]
+    },
+    {
+      "id": 8099,
+      "question": "听短文：I have a new friend. His name is Jack. He is from America. He is 13 years old. He likes playing basketball.  朋友叫什么？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "John.",
+        "Jack.",
+        "Tom.",
+        "Mike."
+      ],
+      "correct_index": 1,
+      "explanation": "His name is Jack. 说明朋友叫 Jack。",
+      "tags": [
+        "阅读",
+        "名字"
+      ]
+    },
+    {
+      "id": 8100,
+      "question": "听短文：I have a new friend. His name is Jack. He is from America. He is 13 years old. He likes playing basketball.  朋友来自哪里？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "England.",
+        "Japan.",
+        "China.",
+        "America."
+      ],
+      "correct_index": 3,
+      "explanation": "He is from America. 说明来自美国。",
+      "tags": [
+        "阅读",
+        "籍贯"
+      ]
+    },
+    {
+      "id": 8101,
+      "question": "听短文：The book is on the desk. The pen is in the pencil box. The bag is under the chair.  书在哪里？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Under the chair.",
+        "On the desk.",
+        "In the box.",
+        "On the floor."
+      ],
+      "correct_index": 1,
+      "explanation": "on the desk 说明书在桌上。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 8102,
+      "question": "听短文：The book is on the desk. The pen is in the pencil box. The bag is under the chair.  书包在哪里？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Under the chair.",
+        "On the floor.",
+        "On the desk.",
+        "In the box."
+      ],
+      "correct_index": 0,
+      "explanation": "under the chair 说明书包在椅子下。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 8103,
+      "question": "听短文：I can swim very well. I can also skate. But I can't dance.  我会做什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Skate.",
+        "Both A and B.",
+        "Swim.",
+        "Dance."
+      ],
+      "correct_index": 1,
+      "explanation": "can swim and skate 说明会游泳和滑冰。",
+      "tags": [
+        "阅读",
+        "能力"
+      ]
+    },
+    {
+      "id": 8104,
+      "question": "听短文：I can swim very well. I can also skate. But I can't dance.  我不会做什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Skate.",
+        "Both A and B.",
+        "Swim.",
+        "Dance."
+      ],
+      "correct_index": 3,
+      "explanation": "I can't dance. 说明不会跳舞。",
+      "tags": [
+        "阅读",
+        "能力"
+      ]
+    },
+    {
+      "id": 8105,
+      "question": "听短文：Today is Monday. We have Chinese, maths, English and PE. I like PE best.  今天星期几？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Saturday.",
+        "Monday.",
+        "Sunday.",
+        "Friday."
+      ],
+      "correct_index": 1,
+      "explanation": "Today is Monday. 说明今天周一。",
+      "tags": [
+        "阅读",
+        "星期"
+      ]
+    },
+    {
+      "id": 8106,
+      "question": "听短文：Today is Monday. We have Chinese, maths, English and PE. I like PE best.  我最喜欢什么课？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "English.",
+        "PE.",
+        "Chinese.",
+        "Maths."
+      ],
+      "correct_index": 1,
+      "explanation": "I like PE best. 说明最喜欢体育课。",
+      "tags": [
+        "阅读",
+        "科目"
+      ]
+    },
+    {
+      "id": 8107,
+      "question": "听短文：My father is tall. My mother is short. I am tall, too.  谁矮？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Brother.",
+        "I.",
+        "Father.",
+        "Mother."
+      ],
+      "correct_index": 3,
+      "explanation": "My mother is short. 说明妈妈矮。",
+      "tags": [
+        "阅读",
+        "外貌"
+      ]
+    },
+    {
+      "id": 8108,
+      "question": "听短文：I have three apples and two bananas. I eat an apple every day.  我有几个苹果？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Two.",
+        "One.",
+        "Five.",
+        "Three."
+      ],
+      "correct_index": 3,
+      "explanation": "three apples 说明三个苹果。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 8109,
+      "question": "听短文：It is Sunday today. I don't go to school. I stay at home and do my homework.  今天星期几？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Sunday.",
+        "Monday.",
+        "Saturday.",
+        "Friday."
+      ],
+      "correct_index": 0,
+      "explanation": "It is Sunday today. 说明今天周日。",
+      "tags": [
+        "阅读",
+        "星期"
+      ]
+    },
+    {
+      "id": 8110,
+      "question": "听短文：The cat is under the tree. It is sleeping.  猫在哪里？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "On the tree.",
+        "On the desk.",
+        "In the house.",
+        "Under the tree."
+      ],
+      "correct_index": 3,
+      "explanation": "under the tree 说明在树下。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 8111,
+      "question": "听短文：I have a dog. Its name is Doudou. It is black and white. It is very cute.  狗叫什么？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Doudou.",
+        "Lily.",
+        "Mimi.",
+        "Tom."
+      ],
+      "correct_index": 0,
+      "explanation": "Its name is Doudou. 说明狗叫 Doudou。",
+      "tags": [
+        "阅读",
+        "名字"
+      ]
+    },
+    {
+      "id": 8112,
+      "question": "听短文：My English teacher is Miss Wang. She is kind. She often helps us. We all like her.  英语老师是谁？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Miss Li.",
+        "Miss Wang.",
+        "Mr Li.",
+        "Mr Wang."
+      ],
+      "correct_index": 1,
+      "explanation": "My English teacher is Miss Wang. 说明英语老师是王老师。",
+      "tags": [
+        "阅读",
+        "老师"
+      ]
+    },
+    {
+      "id": 8113,
+      "question": "听短文：I go to school on foot. It takes 10 minutes. I like walking.  我怎么上学？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "On foot.",
+        "By bike.",
+        "By bus.",
+        "By car."
+      ],
+      "correct_index": 0,
+      "explanation": "go to school on foot 说明步行上学。",
+      "tags": [
+        "阅读",
+        "交通"
+      ]
+    },
+    {
+      "id": 8114,
+      "question": "听短文：I have three pens and two pencils.  我有几支钢笔？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Three.",
+        "Two.",
+        "Five.",
+        "One."
+      ],
+      "correct_index": 0,
+      "explanation": "three pens 说明三支钢笔。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 8115,
+      "question": "听短文：Today is Friday. Tomorrow is Saturday. We don't go to school on Saturday.  明天星期几？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Monday.",
+        "Friday.",
+        "Sunday.",
+        "Saturday."
+      ],
+      "correct_index": 3,
+      "explanation": "Tomorrow is Saturday. 说明明天周六。",
+      "tags": [
+        "阅读",
+        "星期"
+      ]
+    },
+    {
+      "id": 8116,
+      "question": "听短文：I can see five birds in the tree. They are singing.  树上有几只鸟？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Four.",
+        "Six.",
+        "Three.",
+        "Five."
+      ],
+      "correct_index": 3,
+      "explanation": "five birds 说明五只鸟。",
+      "tags": [
+        "阅读",
+        "数字"
+      ]
+    },
+    {
+      "id": 8117,
+      "question": "听短文：I have a red bag. I put my books in it.  书包是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Red.",
+        "Blue.",
+        "Green.",
+        "Yellow."
+      ],
+      "correct_index": 0,
+      "explanation": "a red bag 说明书包是红色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 8118,
+      "question": "听短文：The weather is sunny today. I go to the park with my parents. We fly a kite.  今天天气怎么样？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Windy.",
+        "Cloudy.",
+        "Sunny.",
+        "Rainy."
+      ],
+      "correct_index": 2,
+      "explanation": "The weather is sunny. 说明晴天。",
+      "tags": [
+        "阅读",
+        "天气"
+      ]
+    },
+    {
+      "id": 8119,
+      "question": "听短文：I have a new bike. It is blue. I ride it to school every day.  自行车是什么颜色？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "Yellow.",
+        "Green.",
+        "Blue.",
+        "Red."
+      ],
+      "correct_index": 2,
+      "explanation": "It is blue. 说明自行车是蓝色。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 8120,
+      "question": "听短文：My favourite food is noodles. I have noodles for breakfast every day.  我最喜欢什么食物？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "Rice.",
+        "Cake.",
+        "Noodles.",
+        "Bread."
+      ],
+      "correct_index": 2,
+      "explanation": "My favourite food is noodles. 说明最喜欢面条。",
+      "tags": [
+        "阅读",
+        "食物"
+      ]
+    }
+  ]
+}

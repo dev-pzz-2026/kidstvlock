@@ -1,0 +1,2116 @@
+{
+  "bank_id": "grade5_math",
+  "bank_name": "五年级数学",
+  "grade": 5,
+  "subject": "math",
+  "subject_name": "数学",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 5001,
+      "question": "0.5×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "3",
+        "1",
+        "12"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 0.5×4，结果为 2。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5002,
+      "question": "1.2×3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "4.6",
+        "3.6",
+        "2.6",
+        "13.6"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 1.2×3，结果为 3.6。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5003,
+      "question": "0.25×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "0",
+        "1",
+        "11"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 0.25×4，结果为 1。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5004,
+      "question": "0.6×0.5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.3",
+        "-0.7",
+        "10.3",
+        "0.3"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 0.6×0.5，结果为 0.3。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5005,
+      "question": "1.5×0.6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "0.9",
+        "1.9",
+        "-0.1",
+        "10.9"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1.5×0.6，结果为 0.9。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5006,
+      "question": "2.4×0.5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "2.2",
+        "1.2",
+        "0.2",
+        "11.2"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 2.4×0.5，结果为 1.2。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5007,
+      "question": "3.6÷0.6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "7",
+        "5",
+        "6",
+        "16"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 3.6÷0.6，结果为 6。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5008,
+      "question": "7.2÷0.8 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "10",
+        "8",
+        "19",
+        "9"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 7.2÷0.8，结果为 9。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5009,
+      "question": "0.81÷0.9 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "0.9",
+        "1.9",
+        "-0.1",
+        "10.9"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 0.81÷0.9，结果为 0.9。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5010,
+      "question": "4.5÷5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.9",
+        "0.9",
+        "-0.1",
+        "10.9"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 4.5÷5，结果为 0.9。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5011,
+      "question": "6.3÷0.7 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "10",
+        "8",
+        "9",
+        "19"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 6.3÷0.7，结果为 9。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5012,
+      "question": "0.48÷0.12 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "5",
+        "3",
+        "14",
+        "4"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 0.48÷0.12，结果为 4。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5013,
+      "question": "1/2+1/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "0.75",
+        "1.75",
+        "-0.25",
+        "10.75"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1/2+1/4，结果为 0.75。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5014,
+      "question": "3/5-1/5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.4",
+        "0.4",
+        "-0.6",
+        "10.4"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 3/5-1/5，结果为 0.4。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5015,
+      "question": "1/3+1/6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.5",
+        "-0.5",
+        "0.5",
+        "10.5"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 1/3+1/6，结果为 0.5。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5016,
+      "question": "7/8-3/8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.5",
+        "-0.5",
+        "10.5",
+        "0.5"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 7/8-3/8，结果为 0.5。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5017,
+      "question": "1-2/5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "0.6",
+        "1.6",
+        "-0.4",
+        "10.6"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1-2/5，结果为 0.6。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5018,
+      "question": "0.25+0.75 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "1",
+        "0",
+        "11"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 0.25+0.75，结果为 1。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5019,
+      "question": "5-1.25 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "4.75",
+        "2.75",
+        "3.75",
+        "13.75"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 5-1.25，结果为 3.75。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5020,
+      "question": "3.14×2 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "7.28",
+        "5.28",
+        "16.28",
+        "6.28"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 3.14×2，结果为 6.28。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5021,
+      "question": "3.14×10 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "31.4",
+        "32.4",
+        "30.4",
+        "41.4"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 3.14×10，结果为 31.4。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5022,
+      "question": "2.5×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "11",
+        "10",
+        "9",
+        "20"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 2.5×4，结果为 10。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5023,
+      "question": "0.125×8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "0",
+        "1",
+        "11"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 0.125×8，结果为 1。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5024,
+      "question": "9.6÷0.3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "33",
+        "31",
+        "42",
+        "32"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 9.6÷0.3，结果为 32。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5025,
+      "question": "0.7×0.8 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "0.56",
+        "1.56",
+        "-0.44",
+        "10.56"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 0.7×0.8，结果为 0.56。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5026,
+      "question": "1/2+1/3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "11/6",
+        "5/6",
+        "-1/6",
+        "65/6"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 1/2+1/3，结果为 5/6。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5027,
+      "question": "5/6-1/2 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "4/3",
+        "-2/3",
+        "1/3",
+        "31/3"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 5/6-1/2，结果为 1/3。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5028,
+      "question": "2.5×0.4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "0",
+        "11",
+        "1"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 2.5×0.4，结果为 1。",
+      "tags": [
+        "小数乘除",
+        "分数加减"
+      ]
+    },
+    {
+      "id": 5029,
+      "question": "2立方米 = ? 立方分米",
+      "type": "单位换算",
+      "difficulty": 3,
+      "options": [
+        "2000",
+        "2001",
+        "2010",
+        "1999"
+      ],
+      "correct_index": 0,
+      "explanation": "2立方米 = 2000立方分米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 5030,
+      "question": "3立方分米 = ? 立方厘米",
+      "type": "单位换算",
+      "difficulty": 3,
+      "options": [
+        "3001",
+        "3000",
+        "3010",
+        "2999"
+      ],
+      "correct_index": 1,
+      "explanation": "3立方分米 = 3000立方厘米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 5031,
+      "question": "1升 = ? 毫升",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "1001",
+        "1010",
+        "1000",
+        "999"
+      ],
+      "correct_index": 2,
+      "explanation": "1升 = 1000毫升，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 5032,
+      "question": "5升 = ? 毫升",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "5001",
+        "5010",
+        "4999",
+        "5000"
+      ],
+      "correct_index": 3,
+      "explanation": "5升 = 5000毫升，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 5033,
+      "question": "2平方千米 = ? 公顷",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "200",
+        "201",
+        "210",
+        "199"
+      ],
+      "correct_index": 0,
+      "explanation": "2平方千米 = 200公顷，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 5034,
+      "question": "4公顷 = ? 平方米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "40001",
+        "40000",
+        "40010",
+        "39999"
+      ],
+      "correct_index": 1,
+      "explanation": "4公顷 = 40000平方米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 5035,
+      "question": "1立方米 = ? 立方分米",
+      "type": "单位换算",
+      "difficulty": 3,
+      "options": [
+        "1001",
+        "1010",
+        "1000",
+        "999"
+      ],
+      "correct_index": 2,
+      "explanation": "1立方米 = 1000立方分米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 5036,
+      "question": "6立方分米 = ? 升",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "7",
+        "16",
+        "5",
+        "6"
+      ],
+      "correct_index": 3,
+      "explanation": "6立方分米 = 6升，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 5037,
+      "question": "含有未知数的等式叫？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "方程",
+        "算式",
+        "式子",
+        "不等式"
+      ],
+      "correct_index": 0,
+      "explanation": "含有未知数的等式叫方程。",
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": 5038,
+      "question": "方程 x+5=12 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=17",
+        "x=7",
+        "x=5",
+        "x=12"
+      ],
+      "correct_index": 1,
+      "explanation": "12-5=7。",
+      "tags": [
+        "解方程"
+      ]
+    },
+    {
+      "id": 5039,
+      "question": "方程 3x=18 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=15",
+        "x=21",
+        "x=6",
+        "x=9"
+      ],
+      "correct_index": 2,
+      "explanation": "18÷3=6。",
+      "tags": [
+        "解方程"
+      ]
+    },
+    {
+      "id": 5040,
+      "question": "方程 2x-4=10 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=3",
+        "x=14",
+        "x=6",
+        "x=7"
+      ],
+      "correct_index": 3,
+      "explanation": "2x=14，x=7。",
+      "tags": [
+        "解方程"
+      ]
+    },
+    {
+      "id": 5041,
+      "question": "使方程左右两边相等的未知数的值叫？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "方程的解",
+        "解方程",
+        "等式",
+        "未知数"
+      ],
+      "correct_index": 0,
+      "explanation": "叫方程的解。",
+      "tags": [
+        "方程概念"
+      ]
+    },
+    {
+      "id": 5042,
+      "question": "12的因数有几个？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "4个",
+        "6个",
+        "3个",
+        "12个"
+      ],
+      "correct_index": 1,
+      "explanation": "12的因数有1,2,3,4,6,12共6个。",
+      "tags": [
+        "因数"
+      ]
+    },
+    {
+      "id": 5043,
+      "question": "下面哪个数是质数？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "4",
+        "9",
+        "7",
+        "15"
+      ],
+      "correct_index": 2,
+      "explanation": "7只有1和它本身两个因数，是质数。",
+      "tags": [
+        "质数"
+      ]
+    },
+    {
+      "id": 5044,
+      "question": "最小的质数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "3",
+        "0",
+        "2"
+      ],
+      "correct_index": 3,
+      "explanation": "最小的质数是2。",
+      "tags": [
+        "质数"
+      ]
+    },
+    {
+      "id": 5045,
+      "question": "最小的合数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ],
+      "correct_index": 0,
+      "explanation": "最小的合数是4。",
+      "tags": [
+        "合数"
+      ]
+    },
+    {
+      "id": 5046,
+      "question": "一个数既是12的因数，又是12的倍数，这个数是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "6",
+        "12",
+        "24",
+        "1"
+      ],
+      "correct_index": 1,
+      "explanation": "一个数最大因数和最小倍数都是它本身。",
+      "tags": [
+        "因数倍数"
+      ]
+    },
+    {
+      "id": 5047,
+      "question": "能同时被2、3、5整除的最小两位数是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "10",
+        "15",
+        "30",
+        "60"
+      ],
+      "correct_index": 2,
+      "explanation": "2×3×5=30。",
+      "tags": [
+        "整除"
+      ]
+    },
+    {
+      "id": 5048,
+      "question": "分数 3/8 的分数单位是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3/8",
+        "1/3",
+        "8",
+        "1/8"
+      ],
+      "correct_index": 3,
+      "explanation": "分母是8，分数单位是1/8。",
+      "tags": [
+        "分数意义"
+      ]
+    },
+    {
+      "id": 5049,
+      "question": "把3米长的绳子平均分成5段，每段是全长的？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1/5",
+        "3/5",
+        "1/3",
+        "5/3"
+      ],
+      "correct_index": 0,
+      "explanation": "平均分成5段，每段占1/5。",
+      "tags": [
+        "分数意义"
+      ]
+    },
+    {
+      "id": 5050,
+      "question": "3/4 = （ ）/8，括号里填？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "6",
+        "4",
+        "8"
+      ],
+      "correct_index": 1,
+      "explanation": "分母乘2，分子也乘2，3×2=6。",
+      "tags": [
+        "分数基本性质"
+      ]
+    },
+    {
+      "id": 5051,
+      "question": "约分的依据是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "乘法",
+        "除法",
+        "分数的基本性质",
+        "等式性质"
+      ],
+      "correct_index": 2,
+      "explanation": "约分依据分数基本性质。",
+      "tags": [
+        "约分"
+      ]
+    },
+    {
+      "id": 5052,
+      "question": "分子和分母只有公因数1的分数叫？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "真分数",
+        "假分数",
+        "带分数",
+        "最简分数"
+      ],
+      "correct_index": 3,
+      "explanation": "叫最简分数。",
+      "tags": [
+        "最简分数"
+      ]
+    },
+    {
+      "id": 5053,
+      "question": "18和24的最大公因数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "6",
+        "3",
+        "12",
+        "8"
+      ],
+      "correct_index": 0,
+      "explanation": "18和24最大公因数是6。",
+      "tags": [
+        "最大公因数"
+      ]
+    },
+    {
+      "id": 5054,
+      "question": "4和6的最小公倍数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "24",
+        "12",
+        "6",
+        "10"
+      ],
+      "correct_index": 1,
+      "explanation": "4和6最小公倍数是12。",
+      "tags": [
+        "最小公倍数"
+      ]
+    },
+    {
+      "id": 5055,
+      "question": "小数乘法中，积的小数位数等于因数小数位数的？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "差",
+        "积",
+        "和",
+        "无关"
+      ],
+      "correct_index": 2,
+      "explanation": "积的小数位数等于各因数小数位数之和。",
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": 5056,
+      "question": "一个数（0除外）乘小于1的数，积比原数？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "大",
+        "相等",
+        "无法确定",
+        "小"
+      ],
+      "correct_index": 3,
+      "explanation": "乘小于1的数积变小。",
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": 5057,
+      "question": "方程 4x=0 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=0",
+        "x=4",
+        "无解",
+        "x=1"
+      ],
+      "correct_index": 0,
+      "explanation": "0÷4=0。",
+      "tags": [
+        "解方程"
+      ]
+    },
+    {
+      "id": 5058,
+      "question": "3.56×0.5的积有几位小数？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "2位",
+        "3位",
+        "1位",
+        "4位"
+      ],
+      "correct_index": 0,
+      "explanation": "3.56两位+0.5一位，共3位。",
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": 5059,
+      "question": "把5米长的绳子平均分成8段，每段长多少米？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1/8米",
+        "8/5米",
+        "5/8米",
+        "1米"
+      ],
+      "correct_index": 2,
+      "explanation": "5÷8=5/8米。",
+      "tags": [
+        "分数应用"
+      ]
+    },
+    {
+      "id": 5060,
+      "question": "偶数+奇数=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "偶数",
+        "不确定",
+        "0",
+        "奇数"
+      ],
+      "correct_index": 3,
+      "explanation": "偶+奇=奇。",
+      "tags": [
+        "奇偶性"
+      ]
+    },
+    {
+      "id": 5061,
+      "question": "平行四边形的面积公式是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "底×高",
+        "底+高",
+        "(上底+下底)×高÷2",
+        "边长×4"
+      ],
+      "correct_index": 0,
+      "explanation": "S=底×高。",
+      "tags": [
+        "平行四边形面积"
+      ]
+    },
+    {
+      "id": 5062,
+      "question": "一个平行四边形底6厘米高4厘米，面积是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "10平方厘米",
+        "24平方厘米",
+        "12平方厘米",
+        "20平方厘米"
+      ],
+      "correct_index": 1,
+      "explanation": "6×4=24平方厘米。",
+      "tags": [
+        "面积"
+      ]
+    },
+    {
+      "id": 5063,
+      "question": "三角形的面积公式是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "底×高",
+        "底×2",
+        "底×高÷2",
+        "(上底+下底)×高"
+      ],
+      "correct_index": 2,
+      "explanation": "S=底×高÷2。",
+      "tags": [
+        "三角形面积"
+      ]
+    },
+    {
+      "id": 5064,
+      "question": "一个三角形底8分米高5分米，面积是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "40平方分米",
+        "13平方分米",
+        "30平方分米",
+        "20平方分米"
+      ],
+      "correct_index": 3,
+      "explanation": "8×5÷2=20平方分米。",
+      "tags": [
+        "面积"
+      ]
+    },
+    {
+      "id": 5065,
+      "question": "梯形的面积公式是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "(上底+下底)×高÷2",
+        "底×高",
+        "(上底+下底)×高",
+        "上底×下底"
+      ],
+      "correct_index": 0,
+      "explanation": "S=(上底+下底)×高÷2。",
+      "tags": [
+        "梯形面积"
+      ]
+    },
+    {
+      "id": 5066,
+      "question": "等底等高的三角形面积是平行四边形面积的？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "相等",
+        "一半",
+        "2倍",
+        "3倍"
+      ],
+      "correct_index": 1,
+      "explanation": "三角形是等底等高平行四边形的一半。",
+      "tags": [
+        "面积关系"
+      ]
+    },
+    {
+      "id": 5067,
+      "question": "长方体有几个面？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "4个",
+        "8个",
+        "6个",
+        "12个"
+      ],
+      "correct_index": 2,
+      "explanation": "长方体有6个面。",
+      "tags": [
+        "长方体"
+      ]
+    },
+    {
+      "id": 5068,
+      "question": "长方体有几条棱？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "6条",
+        "8条",
+        "4条",
+        "12条"
+      ],
+      "correct_index": 3,
+      "explanation": "长方体12条棱。",
+      "tags": [
+        "长方体"
+      ]
+    },
+    {
+      "id": 5069,
+      "question": "正方体有几个顶点？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "8个",
+        "6个",
+        "12个",
+        "4个"
+      ],
+      "correct_index": 0,
+      "explanation": "正方体8个顶点。",
+      "tags": [
+        "正方体"
+      ]
+    },
+    {
+      "id": 5070,
+      "question": "长方体的表面积=？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "长×宽×高",
+        "(长×宽+长×高+宽×高)×2",
+        "长×宽×2",
+        "棱长×12"
+      ],
+      "correct_index": 1,
+      "explanation": "表面积是六个面面积之和。",
+      "tags": [
+        "表面积"
+      ]
+    },
+    {
+      "id": 5071,
+      "question": "一个正方体棱长3厘米，它的表面积是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "27平方厘米",
+        "36平方厘米",
+        "54平方厘米",
+        "18平方厘米"
+      ],
+      "correct_index": 2,
+      "explanation": "6×3×3=54平方厘米。",
+      "tags": [
+        "表面积"
+      ]
+    },
+    {
+      "id": 5072,
+      "question": "长方体的体积=？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "长+宽+高",
+        "表面积×2",
+        "底面积",
+        "长×宽×高"
+      ],
+      "correct_index": 3,
+      "explanation": "V=长×宽×高。",
+      "tags": [
+        "体积"
+      ]
+    },
+    {
+      "id": 5073,
+      "question": "一个长方体长5米宽2米高3米，体积是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "30立方米",
+        "10立方米",
+        "20立方米",
+        "15立方米"
+      ],
+      "correct_index": 0,
+      "explanation": "5×2×3=30立方米。",
+      "tags": [
+        "体积"
+      ]
+    },
+    {
+      "id": 5074,
+      "question": "物体所占空间的大小叫？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "表面积",
+        "体积",
+        "面积",
+        "容积"
+      ],
+      "correct_index": 1,
+      "explanation": "所占空间大小是体积。",
+      "tags": [
+        "体积概念"
+      ]
+    },
+    {
+      "id": 5075,
+      "question": "容器所能容纳物体的体积叫？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "体积",
+        "表面积",
+        "容积",
+        "底面积"
+      ],
+      "correct_index": 2,
+      "explanation": "容纳物体的体积叫容积。",
+      "tags": [
+        "容积"
+      ]
+    },
+    {
+      "id": 5076,
+      "question": "1立方米=多少立方分米？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "100",
+        "10",
+        "10000",
+        "1000"
+      ],
+      "correct_index": 3,
+      "explanation": "1立方米=1000立方分米。",
+      "tags": [
+        "体积单位"
+      ]
+    },
+    {
+      "id": 5077,
+      "question": "一个三角形与一个平行四边形等底等面积，三角形的高是平行四边形高的？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "2倍",
+        "一半",
+        "相等",
+        "3倍"
+      ],
+      "correct_index": 0,
+      "explanation": "三角形面积要除以2，故高要2倍才相等。",
+      "tags": [
+        "面积关系"
+      ]
+    },
+    {
+      "id": 5078,
+      "question": "把一个平行四边形木框拉成长方形，面积怎样？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "变小",
+        "变大",
+        "不变",
+        "无法确定"
+      ],
+      "correct_index": 1,
+      "explanation": "拉成长方形高变大，面积变大。",
+      "tags": [
+        "面积变化"
+      ]
+    },
+    {
+      "id": 5079,
+      "question": "折线统计图的特点是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "只看数量多少",
+        "不反映变化",
+        "反映数据变化趋势",
+        "只能看比例"
+      ],
+      "correct_index": 2,
+      "explanation": "折线图反映变化趋势。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 5080,
+      "question": "要表示病人一天的体温变化，用什么统计图？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "条形图",
+        "扇形图",
+        "统计表",
+        "折线统计图"
+      ],
+      "correct_index": 3,
+      "explanation": "体温变化用折线图。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 5081,
+      "question": "五个数10、20、30、40、50的平均数是？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "30",
+        "25",
+        "40",
+        "150"
+      ],
+      "correct_index": 0,
+      "explanation": "150÷5=30。",
+      "tags": [
+        "平均数"
+      ]
+    },
+    {
+      "id": 5082,
+      "question": "袋中3红7黄，摸到哪种球可能性大？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "红球",
+        "黄球",
+        "一样",
+        "都摸不到"
+      ],
+      "correct_index": 1,
+      "explanation": "黄球多可能性大。",
+      "tags": [
+        "可能性"
+      ]
+    },
+    {
+      "id": 5083,
+      "question": "数据2、4、4、6、8中，众数是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "2",
+        "6",
+        "4",
+        "8"
+      ],
+      "correct_index": 2,
+      "explanation": "4出现两次最多。",
+      "tags": [
+        "众数"
+      ]
+    },
+    {
+      "id": 5084,
+      "question": "明天降水概率90%，出门应？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "不带伞",
+        "不可能下雨",
+        "一定不下",
+        "带伞"
+      ],
+      "correct_index": 3,
+      "explanation": "概率大，带伞。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 5085,
+      "question": "小明买了3千克苹果，每千克6.5元，一共花了多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "19.5元",
+        "9.5元",
+        "195元",
+        "18.5元"
+      ],
+      "correct_index": 0,
+      "explanation": "3×6.5=19.5元。",
+      "tags": [
+        "小数乘法",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5086,
+      "question": "一块平行四边形菜地，底是25米高是16米，它的面积是多少平方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "41平方米",
+        "400平方米",
+        "200平方米",
+        "500平方米"
+      ],
+      "correct_index": 1,
+      "explanation": "25×16=400平方米。",
+      "tags": [
+        "面积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5087,
+      "question": "一个三角形零件，底12厘米高8厘米，它的面积是多少平方厘米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "96平方厘米",
+        "20平方厘米",
+        "48平方厘米",
+        "40平方厘米"
+      ],
+      "correct_index": 2,
+      "explanation": "12×8÷2=48平方厘米。",
+      "tags": [
+        "面积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5088,
+      "question": "商店运来240千克苹果，装了8箱，平均每箱装多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "232千克",
+        "32千克",
+        "40千克",
+        "30千克"
+      ],
+      "correct_index": 3,
+      "explanation": "240÷8=30千克。",
+      "tags": [
+        "除法",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5089,
+      "question": "一个长方体水箱，长8分米宽5分米高6分米，它的容积是多少升？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "240升",
+        "2400升",
+        "190升",
+        "48升"
+      ],
+      "correct_index": 0,
+      "explanation": "8×5×6=240立方分米=240升。",
+      "tags": [
+        "体积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5090,
+      "question": "学校买了4张办公桌，付出500元，找回20元，每张办公桌多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "130元",
+        "120元",
+        "480元",
+        "110元"
+      ],
+      "correct_index": 1,
+      "explanation": "4张共500-20=480元，480÷4=120元。",
+      "tags": [
+        "两步",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5091,
+      "question": "一块梯形麦田，上底40米下底60米高30米，它的面积是多少平方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "3000平方米",
+        "1800平方米",
+        "1500平方米",
+        "900平方米"
+      ],
+      "correct_index": 2,
+      "explanation": "(40+60)×30÷2=1500平方米。",
+      "tags": [
+        "面积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5092,
+      "question": "小明看一本240页的书，前5天每天看24页，剩下的每天看30页，还要几天看完？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5天",
+        "3天",
+        "6天",
+        "4天"
+      ],
+      "correct_index": 3,
+      "explanation": "已看5×24=120页，剩120页，120÷30=4天。",
+      "tags": [
+        "两步",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5093,
+      "question": "一辆汽车0.6小时行36千米，照这样计算，1小时行多少千米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "60千米",
+        "21.6千米",
+        "6千米",
+        "50千米"
+      ],
+      "correct_index": 0,
+      "explanation": "36÷0.6=60千米。",
+      "tags": [
+        "行程",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5094,
+      "question": "一个正方体油箱，棱长4分米，它能装油多少升？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "16升",
+        "64升",
+        "96升",
+        "640升"
+      ],
+      "correct_index": 1,
+      "explanation": "4×4×4=64立方分米=64升。",
+      "tags": [
+        "体积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5095,
+      "question": "果园里有桃树120棵，比梨树的2倍少20棵，梨树有多少棵？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "260棵",
+        "50棵",
+        "70棵",
+        "60棵"
+      ],
+      "correct_index": 2,
+      "explanation": "桃树+20=梨树×2，梨树=(120+20)÷2=70棵。",
+      "tags": [
+        "方程",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5096,
+      "question": "学校合唱队有女生45人，比男生多15人，合唱队一共有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "60人",
+        "30人",
+        "90人",
+        "75人"
+      ],
+      "correct_index": 3,
+      "explanation": "男生45-15=30人，共45+30=75人。",
+      "tags": [
+        "两步",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5097,
+      "question": "一块三角形玻璃，底10分米高8分米，每平方分米玻璃2元，这块玻璃多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "80元",
+        "160元",
+        "18元",
+        "100元"
+      ],
+      "correct_index": 0,
+      "explanation": "面积10×8÷2=40平方分米，40×2=80元。",
+      "tags": [
+        "面积应用",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5098,
+      "question": "小明买了4支钢笔，每支x元，付出50元找回10元，列方程求每支钢笔多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "15元",
+        "10元",
+        "40元",
+        "5元"
+      ],
+      "correct_index": 1,
+      "explanation": "4x+10=50，4x=40，x=10。",
+      "tags": [
+        "方程",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5099,
+      "question": "一个长方体游泳池，长50米宽25米深2米，它的占地面积是多少平方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "100平方米",
+        "2500平方米",
+        "1250平方米",
+        "1350平方米"
+      ],
+      "correct_index": 2,
+      "explanation": "占地面积=长×宽=50×25=1250平方米。",
+      "tags": [
+        "面积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5100,
+      "question": "一块布料长12米，做上衣用去3/4米，还剩多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "9米",
+        "12又3/4米",
+        "3米",
+        "11又1/4米"
+      ],
+      "correct_index": 3,
+      "explanation": "12-3/4=11又1/4米。",
+      "tags": [
+        "分数",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5101,
+      "question": "商店运来面粉和大米各20袋，面粉每袋25千克，大米每袋30千克，一共运来多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1100千克",
+        "500千克",
+        "600千克",
+        "1000千克"
+      ],
+      "correct_index": 0,
+      "explanation": "面粉20×25=500，大米20×30=600，共1100千克。",
+      "tags": [
+        "两步",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5102,
+      "question": "小明今年x岁，爸爸比他大28岁，爸爸今年40岁，小明多少岁？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "68岁",
+        "12岁",
+        "28岁",
+        "10岁"
+      ],
+      "correct_index": 1,
+      "explanation": "x+28=40，x=12。",
+      "tags": [
+        "方程",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5103,
+      "question": "一个平行四边形面积是72平方厘米，底是9厘米，高是多少厘米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "648厘米",
+        "9厘米",
+        "8厘米",
+        "16厘米"
+      ],
+      "correct_index": 2,
+      "explanation": "72÷9=8厘米。",
+      "tags": [
+        "面积逆运算",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5104,
+      "question": "一堆货物重48吨，用一辆载重4.5吨的卡车运，至少要运几次？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10次",
+        "12次",
+        "9次",
+        "11次"
+      ],
+      "correct_index": 3,
+      "explanation": "48÷4.5=10.67，需11次。",
+      "tags": [
+        "进一法",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5105,
+      "question": "一块三角形菜地面积是120平方米，底是15米，高是多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "16米",
+        "8米",
+        "24米",
+        "30米"
+      ],
+      "correct_index": 0,
+      "explanation": "高=120×2÷15=16米。",
+      "tags": [
+        "面积逆运算",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5106,
+      "question": "学校买了5套《百科全书》，每套a元，付出200元找回25元，求a。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "45元",
+        "35元",
+        "225元",
+        "30元"
+      ],
+      "correct_index": 1,
+      "explanation": "5a+25=200，5a=175，a=35。",
+      "tags": [
+        "方程",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5107,
+      "question": "一个长方体木箱，长1.2米宽0.8米高0.5米，它的体积是多少立方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2.5立方米",
+        "0.6立方米",
+        "0.48立方米",
+        "4.8立方米"
+      ],
+      "correct_index": 2,
+      "explanation": "1.2×0.8×0.5=0.48立方米。",
+      "tags": [
+        "体积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5108,
+      "question": "甲乙两地相距360千米，一辆汽车以每小时72千米的速度从甲地开往乙地，需要几小时？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "4小时",
+        "6小时",
+        "3小时",
+        "5小时"
+      ],
+      "correct_index": 3,
+      "explanation": "360÷72=5小时。",
+      "tags": [
+        "行程",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5109,
+      "question": "小红读一本书，第一天读了全书的1/4，第二天读了全书的1/3，两天共读了全书的几分之几？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "7/12",
+        "1/12",
+        "2/7",
+        "7/24"
+      ],
+      "correct_index": 0,
+      "explanation": "1/4+1/3=3/12+4/12=7/12。",
+      "tags": [
+        "分数",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5110,
+      "question": "一块梯形果园，上底60米下底80米高40米，每棵果树占地4平方米，这块地能种多少棵果树？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1400棵",
+        "700棵",
+        "350棵",
+        "2800棵"
+      ],
+      "correct_index": 1,
+      "explanation": "面积(60+80)×40÷2=2800平方米，2800÷4=700棵。",
+      "tags": [
+        "面积应用",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5111,
+      "question": "商店运来15箱橘子，每箱12千克，卖出100千克后，还剩多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "180千克",
+        "90千克",
+        "80千克",
+        "70千克"
+      ],
+      "correct_index": 2,
+      "explanation": "共15×12=180千克，180-100=80千克。",
+      "tags": [
+        "两步",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5112,
+      "question": "小明买了2.5千克橘子，每千克4元，付出20元，找回多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "100元",
+        "15元",
+        "12元",
+        "10元"
+      ],
+      "correct_index": 3,
+      "explanation": "2.5×4=10元，20-10=10元。",
+      "tags": [
+        "小数乘法",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5113,
+      "question": "一个三角形面积是45平方分米，高是9分米，底是多少分米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10分米",
+        "5分米",
+        "20分米",
+        "15分米"
+      ],
+      "correct_index": 0,
+      "explanation": "底=45×2÷9=10分米。",
+      "tags": [
+        "面积逆运算",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5114,
+      "question": "学校买来足球和篮球共20个，足球每个x元买了12个，篮球每个50元买了8个，一共花了1000元，求x。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "60元",
+        "50元",
+        "40元",
+        "80元"
+      ],
+      "correct_index": 1,
+      "explanation": "12x+8×50=1000，12x=600，x=50。",
+      "tags": [
+        "方程",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5115,
+      "question": "一个长方体沙坑，长4米宽2米深0.5米，需要多少立方米沙子才能填满？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "8立方米",
+        "6.5立方米",
+        "4立方米",
+        "2立方米"
+      ],
+      "correct_index": 2,
+      "explanation": "4×2×0.5=4立方米。",
+      "tags": [
+        "体积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5116,
+      "question": "甲乙两车同时从相距480千米的两地相向而行，甲车每小时行50千米，乙车每小时行70千米，几小时后相遇？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5小时",
+        "3小时",
+        "6小时",
+        "4小时"
+      ],
+      "correct_index": 3,
+      "explanation": "速度和120千米，480÷120=4小时。",
+      "tags": [
+        "相遇问题",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5117,
+      "question": "一块长方形菜地，长是宽的2倍，宽是5米，它的面积是多少平方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "50平方米",
+        "10平方米",
+        "25平方米",
+        "60平方米"
+      ],
+      "correct_index": 0,
+      "explanation": "长=5×2=10米，面积10×5=50平方米。",
+      "tags": [
+        "面积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5118,
+      "question": "小明家第三季度三个月用电分别是120度135度141度，平均每月用电多少度？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "130度",
+        "132度",
+        "135度",
+        "396度"
+      ],
+      "correct_index": 1,
+      "explanation": "(120+135+141)÷3=132度。",
+      "tags": [
+        "平均数",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5119,
+      "question": "一个无盖正方体玻璃缸，棱长5分米，制作这个玻璃缸至少需要多少平方分米玻璃？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "150平方分米",
+        "25平方分米",
+        "125平方分米",
+        "100平方分米"
+      ],
+      "correct_index": 2,
+      "explanation": "无盖5个面，5×5×5=125平方分米。",
+      "tags": [
+        "表面积",
+        "五年级"
+      ]
+    },
+    {
+      "id": 5120,
+      "question": "商店运来苹果240千克，比运来的梨的1.5倍多30千克，运来梨多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "390千克",
+        "180千克",
+        "150千克",
+        "140千克"
+      ],
+      "correct_index": 3,
+      "explanation": "梨×1.5+30=240，梨=(240-30)÷1.5=140千克。",
+      "tags": [
+        "方程",
+        "五年级"
+      ]
+    }
+  ]
+}

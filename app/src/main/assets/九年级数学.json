@@ -1,0 +1,2084 @@
+{
+  "bank_id": "grade9_math",
+  "bank_name": "九年级数学",
+  "grade": 9,
+  "subject": "math",
+  "subject_name": "数学",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 9001,
+      "question": "3×3+4×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "25",
+        "26",
+        "24",
+        "35"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 3×3+4×4，结果为 25。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9002,
+      "question": "5×5-3×3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "17",
+        "16",
+        "15",
+        "26"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 5×5-3×3，结果为 16。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9003,
+      "question": "2×3.14×5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "32.4",
+        "30.4",
+        "31.4",
+        "41.4"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 2×3.14×5，结果为 31.4。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9004,
+      "question": "3.14×3×3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "29.26",
+        "27.26",
+        "38.26",
+        "28.26"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 3.14×3×3，结果为 28.26。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9005,
+      "question": "1/2+1/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "0.75",
+        "1.75",
+        "-0.25",
+        "10.75"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1/2+1/4，结果为 0.75。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9006,
+      "question": "3/4×8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "7",
+        "6",
+        "5",
+        "16"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 3/4×8，结果为 6。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9007,
+      "question": "12÷3/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "2",
+        "0",
+        "1",
+        "11"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 12÷3/4，结果为 1。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9008,
+      "question": "2×2×2×2 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "17",
+        "15",
+        "26",
+        "16"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 2×2×2×2，结果为 16。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9009,
+      "question": "(-3)+(-4) = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "-7",
+        "-6",
+        "-8",
+        "3"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 (-3)+(-4)，结果为 -7。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9010,
+      "question": "(-2)×(-5) = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "11",
+        "10",
+        "9",
+        "20"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 (-2)×(-5)，结果为 10。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9011,
+      "question": "100-36 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "65",
+        "63",
+        "64",
+        "74"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 100-36，结果为 64。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9012,
+      "question": "9×9 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "82",
+        "80",
+        "91",
+        "81"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 9×9，结果为 81。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9013,
+      "question": "144÷12 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 144÷12，结果为 12。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9014,
+      "question": "2.5×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "11",
+        "10",
+        "9",
+        "20"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 2.5×4，结果为 10。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9015,
+      "question": "0.25×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "0",
+        "1",
+        "11"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 0.25×4，结果为 1。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9016,
+      "question": "6×8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "49",
+        "47",
+        "58",
+        "48"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 6×8，结果为 48。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9017,
+      "question": "5×5×5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "125",
+        "126",
+        "124",
+        "135"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 5×5×5，结果为 125。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9018,
+      "question": "1/3+1/6 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.5",
+        "0.5",
+        "-0.5",
+        "10.5"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 1/3+1/6，结果为 0.5。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9019,
+      "question": "3/5×5/9 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "4/3",
+        "-2/3",
+        "1/3",
+        "31/3"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 3/5×5/9，结果为 1/3。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9020,
+      "question": "7/8÷7/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.03125",
+        "-0.96875",
+        "10.03125",
+        "0.03125"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 7/8÷7/4，结果为 0.03125。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9021,
+      "question": "20×0.5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "10",
+        "11",
+        "9",
+        "20"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 20×0.5，结果为 10。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9022,
+      "question": "12÷0.5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "25",
+        "24",
+        "23",
+        "34"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 12÷0.5，结果为 24。",
+      "tags": [
+        "数与计算"
+      ]
+    },
+    {
+      "id": 9023,
+      "question": "2千米 = ? 米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "2001",
+        "2010",
+        "2000",
+        "1999"
+      ],
+      "correct_index": 2,
+      "explanation": "2千米 = 2000米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 9024,
+      "question": "1立方米 = ? 立方分米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "1001",
+        "1010",
+        "999",
+        "1000"
+      ],
+      "correct_index": 3,
+      "explanation": "1立方米 = 1000立方分米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 9025,
+      "question": "一元二次方程的一般形式是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "ax²+bx+c=0(a≠0)",
+        "ax²+bx+c=0",
+        "ax+by+c=0",
+        "y=ax²+bx+c"
+      ],
+      "correct_index": 0,
+      "explanation": "二次项系数不为0。",
+      "tags": [
+        "一元二次方程"
+      ]
+    },
+    {
+      "id": 9026,
+      "question": "方程 x²=9 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=3",
+        "x=±3",
+        "x=-3",
+        "x=81"
+      ],
+      "correct_index": 1,
+      "explanation": "开平方得±3。",
+      "tags": [
+        "一元二次方程"
+      ]
+    },
+    {
+      "id": 9027,
+      "question": "方程 x²-5x+6=0 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=1或x=6",
+        "x=-2或-3",
+        "x=2或x=3",
+        "x=2或x=-3"
+      ],
+      "correct_index": 2,
+      "explanation": "(x-2)(x-3)=0。",
+      "tags": [
+        "因式分解"
+      ]
+    },
+    {
+      "id": 9028,
+      "question": "一元二次方程 ax²+bx+c=0 的求根公式是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "x=(-b±√(b²+4ac))/2a",
+        "x=(b±√(b²-4ac))/2a",
+        "x=(-b±√(b²-4ac))/a",
+        "x=(-b±√(b²-4ac))/2a"
+      ],
+      "correct_index": 3,
+      "explanation": "求根公式。",
+      "tags": [
+        "求根公式"
+      ]
+    },
+    {
+      "id": 9029,
+      "question": "一元二次方程根的判别式 Δ=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "b²-4ac",
+        "b²+4ac",
+        "4ac-b²",
+        "2a"
+      ],
+      "correct_index": 0,
+      "explanation": "判别式。",
+      "tags": [
+        "判别式"
+      ]
+    },
+    {
+      "id": 9030,
+      "question": "方程 x²-2x+1=0 的根的情况是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "有两个不等实根",
+        "有两个相等的实数根",
+        "无实根",
+        "只有一个根"
+      ],
+      "correct_index": 1,
+      "explanation": "Δ=4-4=0。",
+      "tags": [
+        "判别式"
+      ]
+    },
+    {
+      "id": 9031,
+      "question": "二次函数 y=ax²+bx+c 中，a＞0时图象开口？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "向下",
+        "向左",
+        "向上",
+        "向右"
+      ],
+      "correct_index": 2,
+      "explanation": "a＞0开口向上。",
+      "tags": [
+        "二次函数"
+      ]
+    },
+    {
+      "id": 9032,
+      "question": "二次函数 y=x² 的顶点坐标是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(1,1)",
+        "(0,1)",
+        "(-1,1)",
+        "(0,0)"
+      ],
+      "correct_index": 3,
+      "explanation": "顶点在原点。",
+      "tags": [
+        "二次函数"
+      ]
+    },
+    {
+      "id": 9033,
+      "question": "二次函数 y=(x-1)²+2 的顶点坐标是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(1,2)",
+        "(-1,2)",
+        "(1,-2)",
+        "(0,2)"
+      ],
+      "correct_index": 0,
+      "explanation": "顶点式直接读出。",
+      "tags": [
+        "二次函数"
+      ]
+    },
+    {
+      "id": 9034,
+      "question": "二次函数 y=x²-4x+3 的对称轴是直线？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=-2",
+        "x=2",
+        "x=4",
+        "x=-4"
+      ],
+      "correct_index": 1,
+      "explanation": "x=-b/2a=4/2=2。",
+      "tags": [
+        "二次函数"
+      ]
+    },
+    {
+      "id": 9035,
+      "question": "反比例函数 y=k/x(k≠0) 的图象是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "直线",
+        "抛物线",
+        "双曲线",
+        "圆"
+      ],
+      "correct_index": 2,
+      "explanation": "反比例函数图象是双曲线。",
+      "tags": [
+        "反比例函数"
+      ]
+    },
+    {
+      "id": 9036,
+      "question": "反比例函数 y=6/x 经过哪个点？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(2,4)",
+        "(3,3)",
+        "(4,2)",
+        "(2,3)"
+      ],
+      "correct_index": 3,
+      "explanation": "xy=6，2×3=6。",
+      "tags": [
+        "反比例函数"
+      ]
+    },
+    {
+      "id": 9037,
+      "question": "反比例函数 y=k/x 中，当k＞0时图象在？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "第一、三象限",
+        "第二、四象限",
+        "第一、二象限",
+        "第三、四象限"
+      ],
+      "correct_index": 0,
+      "explanation": "k＞0在一三象限。",
+      "tags": [
+        "反比例函数"
+      ]
+    },
+    {
+      "id": 9038,
+      "question": "sin30°=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "√3/2",
+        "1/2",
+        "√2/2",
+        "1"
+      ],
+      "correct_index": 1,
+      "explanation": "sin30°=1/2。",
+      "tags": [
+        "三角函数"
+      ]
+    },
+    {
+      "id": 9039,
+      "question": "cos60°=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "√3/2",
+        "√2/2",
+        "1/2",
+        "1"
+      ],
+      "correct_index": 2,
+      "explanation": "cos60°=1/2。",
+      "tags": [
+        "三角函数"
+      ]
+    },
+    {
+      "id": 9040,
+      "question": "tan45°=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "√3",
+        "√3/3",
+        "1/2",
+        "1"
+      ],
+      "correct_index": 3,
+      "explanation": "tan45°=1。",
+      "tags": [
+        "三角函数"
+      ]
+    },
+    {
+      "id": 9041,
+      "question": "在Rt△ABC中，∠C=90°，sinA=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "∠A的对边/斜边",
+        "∠A的邻边/斜边",
+        "对边/邻边",
+        "邻边/对边"
+      ],
+      "correct_index": 0,
+      "explanation": "正弦=对边/斜边。",
+      "tags": [
+        "三角函数"
+      ]
+    },
+    {
+      "id": 9042,
+      "question": "在Rt△中，tanA=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "对边/斜边",
+        "对边/邻边",
+        "邻边/斜边",
+        "斜边/对边"
+      ],
+      "correct_index": 1,
+      "explanation": "正切=对边/邻边。",
+      "tags": [
+        "三角函数"
+      ]
+    },
+    {
+      "id": 9043,
+      "question": "一元二次方程 2x²+3x-1=0 的二次项系数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "-1",
+        "2",
+        "1"
+      ],
+      "correct_index": 2,
+      "explanation": "二次项2x²系数是2。",
+      "tags": [
+        "一元二次方程"
+      ]
+    },
+    {
+      "id": 9044,
+      "question": "把方程 x²+6x+5=0 配方得？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "(x+3)²=14",
+        "(x-3)²=4",
+        "(x+6)²=31",
+        "(x+3)²=4"
+      ],
+      "correct_index": 3,
+      "explanation": "x²+6x=-5，加9得(x+3)²=4。",
+      "tags": [
+        "配方法"
+      ]
+    },
+    {
+      "id": 9045,
+      "question": "二次函数 y=-2x² 图象开口？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "向下",
+        "向上",
+        "向左",
+        "向右"
+      ],
+      "correct_index": 0,
+      "explanation": "a=-2＜0开口向下。",
+      "tags": [
+        "二次函数"
+      ]
+    },
+    {
+      "id": 9046,
+      "question": "抛物线 y=2(x+1)²-3 可由 y=2x² 怎样平移得到？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "向右1向下3",
+        "向左平移1个单位，向下平移3个单位",
+        "向左1向上3",
+        "向右1向上3"
+      ],
+      "correct_index": 1,
+      "explanation": "左加右减，上加下减。",
+      "tags": [
+        "二次函数平移"
+      ]
+    },
+    {
+      "id": 9047,
+      "question": "反比例函数 y=-3/x 的图象在第？象限",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "一、三",
+        "一、二",
+        "二、四",
+        "三、四"
+      ],
+      "correct_index": 2,
+      "explanation": "k=-3＜0在二四象限。",
+      "tags": [
+        "反比例函数"
+      ]
+    },
+    {
+      "id": 9048,
+      "question": "关于原点对称的点，坐标(x,y)变为？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(-x,y)",
+        "(x,-y)",
+        "(y,x)",
+        "(-x,-y)"
+      ],
+      "correct_index": 3,
+      "explanation": "原点对称横纵都变号。",
+      "tags": [
+        "旋转"
+      ]
+    },
+    {
+      "id": 9049,
+      "question": "关于y轴对称的点，坐标(x,y)变为？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(-x,y)",
+        "(x,-y)",
+        "(-x,-y)",
+        "(y,x)"
+      ],
+      "correct_index": 0,
+      "explanation": "关于y轴对称x变号。",
+      "tags": [
+        "对称"
+      ]
+    },
+    {
+      "id": 9050,
+      "question": "点(2,3)关于原点对称的点是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(-2,3)",
+        "(-2,-3)",
+        "(2,-3)",
+        "(3,2)"
+      ],
+      "correct_index": 1,
+      "explanation": "原点对称。",
+      "tags": [
+        "旋转"
+      ]
+    },
+    {
+      "id": 9051,
+      "question": "相似三角形的对应边？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "相等",
+        "平行",
+        "成比例",
+        "垂直"
+      ],
+      "correct_index": 2,
+      "explanation": "相似三角形对应边成比例。",
+      "tags": [
+        "相似"
+      ]
+    },
+    {
+      "id": 9052,
+      "question": "相似三角形面积比等于相似比的？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "相等",
+        "立方",
+        "一半",
+        "平方"
+      ],
+      "correct_index": 3,
+      "explanation": "面积比=相似比平方。",
+      "tags": [
+        "相似"
+      ]
+    },
+    {
+      "id": 9053,
+      "question": "位似图形对应点的连线交于？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "一点（位似中心）",
+        "两点",
+        "无数点",
+        "平行"
+      ],
+      "correct_index": 0,
+      "explanation": "位似中心。",
+      "tags": [
+        "位似"
+      ]
+    },
+    {
+      "id": 9054,
+      "question": "一元二次方程 x²+px+q=0 的两根之和为？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "p",
+        "-p",
+        "q",
+        "-q"
+      ],
+      "correct_index": 1,
+      "explanation": "韦达定理，和=-p。",
+      "tags": [
+        "韦达定理"
+      ]
+    },
+    {
+      "id": 9055,
+      "question": "圆的周长公式 C=？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "πr²",
+        "πd²",
+        "2πr",
+        "2r"
+      ],
+      "correct_index": 2,
+      "explanation": "C=2πr。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 9056,
+      "question": "圆的面积公式 S=？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "2πr",
+        "πd",
+        "r²",
+        "πr²"
+      ],
+      "correct_index": 3,
+      "explanation": "S=πr²。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 9057,
+      "question": "圆是轴对称图形，它有多少条对称轴？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "无数条",
+        "2条",
+        "4条",
+        "1条"
+      ],
+      "correct_index": 0,
+      "explanation": "圆有无数条对称轴。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 9058,
+      "question": "垂径定理：垂直于弦的直径？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "只平分弦",
+        "平分弦且平分弦所对的两条弧",
+        "平分弧",
+        "不过圆心"
+      ],
+      "correct_index": 1,
+      "explanation": "垂径定理。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 9059,
+      "question": "在同圆或等圆中，同弧所对的圆周角是圆心角的？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "相等",
+        "2倍",
+        "一半",
+        "3倍"
+      ],
+      "correct_index": 2,
+      "explanation": "圆周角定理。",
+      "tags": [
+        "圆周角"
+      ]
+    },
+    {
+      "id": 9060,
+      "question": "90°的圆周角所对的弦是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "半径",
+        "任意弦",
+        "切线",
+        "直径"
+      ],
+      "correct_index": 3,
+      "explanation": "90°圆周角对直径。",
+      "tags": [
+        "圆周角"
+      ]
+    },
+    {
+      "id": 9061,
+      "question": "点和圆的位置关系不包括？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "点在圆内切线",
+        "点在圆外",
+        "点在圆上",
+        "点在圆内"
+      ],
+      "correct_index": 0,
+      "explanation": "点与圆三种位置。",
+      "tags": [
+        "点圆位置"
+      ]
+    },
+    {
+      "id": 9062,
+      "question": "直线和圆有唯一公共点时，这条直线叫圆的？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "割线",
+        "切线",
+        "弦",
+        "直径"
+      ],
+      "correct_index": 1,
+      "explanation": "唯一公共点是切线。",
+      "tags": [
+        "切线"
+      ]
+    },
+    {
+      "id": 9063,
+      "question": "切线的性质：圆的切线垂直于过切点的？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "弦",
+        "切线",
+        "半径",
+        "直径长"
+      ],
+      "correct_index": 2,
+      "explanation": "切线垂直于过切点半径。",
+      "tags": [
+        "切线"
+      ]
+    },
+    {
+      "id": 9064,
+      "question": "三角形的内心是三角形什么的交点？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "三条中线",
+        "三条高",
+        "三边垂直平分线",
+        "三条角平分线"
+      ],
+      "correct_index": 3,
+      "explanation": "内心是角平分线交点。",
+      "tags": [
+        "内心"
+      ]
+    },
+    {
+      "id": 9065,
+      "question": "三角形的外心是三角形什么的交点？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "三边垂直平分线",
+        "三条角平分线",
+        "三条中线",
+        "三条高"
+      ],
+      "correct_index": 0,
+      "explanation": "外心是垂直平分线交点。",
+      "tags": [
+        "外心"
+      ]
+    },
+    {
+      "id": 9066,
+      "question": "弧长公式 l=？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "nπr/360",
+        "nπr/180",
+        "πr²",
+        "2πr"
+      ],
+      "correct_index": 1,
+      "explanation": "n度圆心角所对弧长。",
+      "tags": [
+        "弧长"
+      ]
+    },
+    {
+      "id": 9067,
+      "question": "扇形面积公式 S=？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "nπr/180",
+        "πr²",
+        "nπr²/360",
+        "2πr"
+      ],
+      "correct_index": 2,
+      "explanation": "扇形面积。",
+      "tags": [
+        "扇形"
+      ]
+    },
+    {
+      "id": 9068,
+      "question": "一个圆的半径扩大2倍，面积扩大几倍？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "2倍",
+        "8倍",
+        "不变",
+        "4倍"
+      ],
+      "correct_index": 3,
+      "explanation": "面积与半径平方成正比。",
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": 9069,
+      "question": "正多边形一定是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "轴对称图形",
+        "中心对称图形",
+        "既是轴对称又是中心对称",
+        "都不是"
+      ],
+      "correct_index": 0,
+      "explanation": "正多边形是轴对称图形。",
+      "tags": [
+        "正多边形"
+      ]
+    },
+    {
+      "id": 9070,
+      "question": "主视图是从哪个方向看物体得到的视图？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "上面",
+        "正面",
+        "左面",
+        "后面"
+      ],
+      "correct_index": 1,
+      "explanation": "主视图从正面看。",
+      "tags": [
+        "三视图"
+      ]
+    },
+    {
+      "id": 9071,
+      "question": "一个正方体的三视图都是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "长方形",
+        "圆",
+        "正方形",
+        "三角形"
+      ],
+      "correct_index": 2,
+      "explanation": "正方体三视图都是正方形。",
+      "tags": [
+        "三视图"
+      ]
+    },
+    {
+      "id": 9072,
+      "question": "一个圆柱的主视图是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "圆",
+        "三角形",
+        "正方形",
+        "长方形"
+      ],
+      "correct_index": 3,
+      "explanation": "圆柱主视图是长方形。",
+      "tags": [
+        "三视图"
+      ]
+    },
+    {
+      "id": 9073,
+      "question": "光线形成的投影分为平行投影和？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "中心投影",
+        "正投影",
+        "斜投影",
+        "都不是"
+      ],
+      "correct_index": 0,
+      "explanation": "中心投影由点光源发出。",
+      "tags": [
+        "投影"
+      ]
+    },
+    {
+      "id": 9074,
+      "question": "中心投影的光源是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "太阳光",
+        "点光源（如灯泡）",
+        "平行光",
+        "都不是"
+      ],
+      "correct_index": 1,
+      "explanation": "点光源形成中心投影。",
+      "tags": [
+        "投影"
+      ]
+    },
+    {
+      "id": 9075,
+      "question": "两个相似三角形的相似比为2:3，则周长比为？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "4:9",
+        "3:2",
+        "2:3",
+        "4:6"
+      ],
+      "correct_index": 2,
+      "explanation": "周长比=相似比。",
+      "tags": [
+        "相似"
+      ]
+    },
+    {
+      "id": 9076,
+      "question": "在相似三角形中，对应高的比等于？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "相似比平方",
+        "相似比一半",
+        "2倍相似比",
+        "相似比"
+      ],
+      "correct_index": 3,
+      "explanation": "对应高比=相似比。",
+      "tags": [
+        "相似"
+      ]
+    },
+    {
+      "id": 9077,
+      "question": "一个圆锥的侧面展开图是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "扇形",
+        "圆",
+        "长方形",
+        "三角形"
+      ],
+      "correct_index": 0,
+      "explanation": "圆锥侧面展开是扇形。",
+      "tags": [
+        "圆锥"
+      ]
+    },
+    {
+      "id": 9078,
+      "question": "在Rt△ABC中，∠C=90°，AB=5，AC=3，则BC=？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "√34",
+        "4",
+        "8",
+        "2"
+      ],
+      "correct_index": 1,
+      "explanation": "BC=√(25-9)=4。",
+      "tags": [
+        "勾股定理"
+      ]
+    },
+    {
+      "id": 9079,
+      "question": "在Rt△ABC中，∠C=90°，AC=6，BC=8，则sinA=？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "3/5",
+        "5/4",
+        "4/5",
+        "3/4"
+      ],
+      "correct_index": 2,
+      "explanation": "斜边=10，sinA=BC/AB=8/10=4/5。",
+      "tags": [
+        "三角函数"
+      ]
+    },
+    {
+      "id": 9080,
+      "question": "仰角是视线在水平线什么方向的角？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "下方",
+        "平行",
+        "任意",
+        "上方"
+      ],
+      "correct_index": 3,
+      "explanation": "仰角是视线向上与水平线夹角。",
+      "tags": [
+        "解直角三角形"
+      ]
+    },
+    {
+      "id": 9081,
+      "question": "掷两枚硬币，出现两个正面的概率是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "1/4",
+        "1/2",
+        "1/3",
+        "1"
+      ],
+      "correct_index": 0,
+      "explanation": "四种结果，两正一种。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 9082,
+      "question": "从1、2、3、4中任取两个数，和为偶数的概率是？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "1/2",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "correct_index": 1,
+      "explanation": "共6种组合，和为偶(1,3)(2,4)两种，2/6=1/3。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 9083,
+      "question": "一个不透明袋中有3红2白1黑共6个球，任意摸一个是红球的概率是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "1/3",
+        "1/6",
+        "1/2",
+        "2/3"
+      ],
+      "correct_index": 2,
+      "explanation": "3/6=1/2。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 9084,
+      "question": "用列举法求概率时，常用列表法和？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "估算法",
+        "频率估计",
+        "随便猜",
+        "画树状图"
+      ],
+      "correct_index": 3,
+      "explanation": "列表法和树状图法。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 9085,
+      "question": "大量重复试验中，事件发生的频率稳定在某个常数附近，这个常数叫？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "概率",
+        "频率",
+        "平均数",
+        "频数"
+      ],
+      "correct_index": 0,
+      "explanation": "概率是频率的稳定值。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 9086,
+      "question": "某抽奖活动中奖率为1%，抽100次一定中奖吗？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "一定中奖",
+        "不一定",
+        "一定不中奖",
+        "两次必中"
+      ],
+      "correct_index": 1,
+      "explanation": "概率是可能性，不是保证。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 9087,
+      "question": "数据2、4、6、8、10的方差是？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_index": 2,
+      "explanation": "平均数6，方差=[(4+4+0+4+4)]/5=16/5=3.2？重算：(2-6)²=16,(4-6)²=4,(6-6)²=0,(8-6)²=4,(10-6)²=16，和40，方差8。",
+      "tags": [
+        "方差"
+      ]
+    },
+    {
+      "id": 9088,
+      "question": "一组数据的极差是指？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "最大值",
+        "最小值",
+        "平均数",
+        "最大值减最小值"
+      ],
+      "correct_index": 3,
+      "explanation": "极差=最大值-最小值。",
+      "tags": [
+        "极差"
+      ]
+    },
+    {
+      "id": 9089,
+      "question": "某商品原价100元，经过两次降价后为81元，求平均每次降价的百分率。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10%",
+        "9%",
+        "19%",
+        "20%"
+      ],
+      "correct_index": 0,
+      "explanation": "100(1-x)²=81，(1-x)²=0.81，x=0.1。",
+      "tags": [
+        "增长率",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9090,
+      "question": "用一段长20米的篱笆围成一个矩形花圃，当长和宽各为多少时面积最大？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "长6米宽4米",
+        "长5米宽5米（正方形）",
+        "长7米宽3米",
+        "长10米宽0米"
+      ],
+      "correct_index": 1,
+      "explanation": "S=x(10-x)，顶点x=5时最大。",
+      "tags": [
+        "二次函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9091,
+      "question": "某厂今年1月产值50万元，第一季度共182万元，求二、三月平均每月增长率。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10%",
+        "30%",
+        "20%",
+        "15%"
+      ],
+      "correct_index": 2,
+      "explanation": "50+50(1+x)+50(1+x)²=182，50(1+x)²+50(1+x)-132=0，解得x=0.2。",
+      "tags": [
+        "增长率",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9092,
+      "question": "一个直角三角形两条直角边的和是14，面积是24，求斜边长。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "√52",
+        "5",
+        "12",
+        "10"
+      ],
+      "correct_index": 3,
+      "explanation": "设两直角边a,b，a+b=14，ab=48，斜边√(a²+b²)=√((a+b)²-2ab)=√(196-96)=√100=10。",
+      "tags": [
+        "勾股",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9093,
+      "question": "在Rt△ABC中，∠C=90°，∠A=30°，斜边AB=10，求BC。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5",
+        "5√3",
+        "10",
+        "5√2"
+      ],
+      "correct_index": 0,
+      "explanation": "30°对边是斜边一半，BC=5。",
+      "tags": [
+        "三角函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9094,
+      "question": "某水库大坝的横断面是梯形，坝顶宽6米，坝高20米，斜坡AB的坡度i=1:√3，斜坡CD的坡度i=1:1，求坝底宽。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "26米",
+        "(26+20√3)米",
+        "46米",
+        "(26+10√3)米"
+      ],
+      "correct_index": 1,
+      "explanation": "AB水平投影20√3，CD水平投影20，底宽=6+20√3+20=26+20√3。",
+      "tags": [
+        "解直角三角形",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9095,
+      "question": "小明在教学楼底部A测得山顶仰角45°，沿坡度1:1的山坡走了200米到B，在B测得山顶仰角60°，求山高。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "100√3米",
+        "200米",
+        "100(√3+1)米",
+        "100米"
+      ],
+      "correct_index": 2,
+      "explanation": "设山高h，通过45°和60°关系解得h=100(√3+1)。",
+      "tags": [
+        "解直角三角形",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9096,
+      "question": "一个圆的直径是10厘米，求它的周长和面积。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "31.4厘米，314平方厘米",
+        "62.8厘米，78.5平方厘米",
+        "15.7厘米，78.5平方厘米",
+        "31.4厘米，78.5平方厘米"
+      ],
+      "correct_index": 3,
+      "explanation": "周长=3.14×10=31.4，面积=3.14×25=78.5。",
+      "tags": [
+        "圆",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9097,
+      "question": "一个扇形的半径为6厘米，圆心角为60°，求它的弧长。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2π厘米",
+        "6π厘米",
+        "3π厘米",
+        "π厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "l=60×π×6/180=2π。",
+      "tags": [
+        "弧长",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9098,
+      "question": "一个圆柱形水桶底面半径2分米，高5分米，它的侧面积是多少平方分米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10π平方分米",
+        "20π平方分米",
+        "4π平方分米",
+        "25π平方分米"
+      ],
+      "correct_index": 1,
+      "explanation": "侧面积=2πrh=2π×2×5=20π。",
+      "tags": [
+        "圆柱",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9099,
+      "question": "某商店将进价为8元的商品按每件10元售出，每天可卖200件，售价每涨0.5元销量减10件，售价定为多少时每天利润最大？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "12元",
+        "13元",
+        "14元",
+        "15元"
+      ],
+      "correct_index": 2,
+      "explanation": "利润=(10+x-8)(200-20x/0.5？设涨x元，(2+x)(200-20x)，顶点x=2，售价12元。重算：(2+x)(200-20x)，顶点x=(-? ) -b/2a：(2+x)(200-20x)=-20x²+160x+400，顶点x=4，售价14元。",
+      "tags": [
+        "二次函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9100,
+      "question": "某飞机于空中A处探测到目标C，此时飞行高度AC=1200米，从飞机上看地面控制点B的俯角α=30°，求飞机A到控制点B的距离。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1200米",
+        "1200√3米",
+        "600米",
+        "2400米"
+      ],
+      "correct_index": 3,
+      "explanation": "AB=AC/sin30°=1200/0.5=2400米。",
+      "tags": [
+        "解直角三角形",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9101,
+      "question": "一个三角形的三边分别是6、8、10，求证它是直角三角形，并求斜边上的高。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "是直角三角形，高4.8",
+        "高4.8，锐角三角形",
+        "高5，直角三角形",
+        "高6，直角三角形"
+      ],
+      "correct_index": 0,
+      "explanation": "6²+8²=10²，直角三角形，面积=6×8/2=24，高=24×2/10=4.8。",
+      "tags": [
+        "勾股",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9102,
+      "question": "某工厂计划用两年时间把产量从100万台提高到121万台，求平均每年增长率。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "11%",
+        "10%",
+        "21%",
+        "15%"
+      ],
+      "correct_index": 1,
+      "explanation": "100(1+x)²=121，x=10%。",
+      "tags": [
+        "增长率",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9103,
+      "question": "已知二次函数 y=x²-2x-3，求它的图象与x轴交点坐标。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "(3,0)和(1,0)",
+        "(-3,0)和(1,0)",
+        "(3,0)和(-1,0)",
+        "(0,0)和(2,0)"
+      ],
+      "correct_index": 2,
+      "explanation": "x²-2x-3=0，(x-3)(x+1)=0。",
+      "tags": [
+        "二次函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9104,
+      "question": "用铁皮制作一个无盖的圆柱形水桶，底面直径4分米，高5分米，至少需要多少平方分米铁皮？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "62.8平方分米",
+        "75.36平方分米",
+        "87.92平方分米",
+        "12.56+62.8=75.36平方分米"
+      ],
+      "correct_index": 3,
+      "explanation": "底面积12.56，侧面积3.14×4×5=62.8，共75.36。",
+      "tags": [
+        "圆柱表面积",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9105,
+      "question": "甲乙两人在玩转盘游戏，转盘被等分成4个扇形，分别标1、2、3、4，转动两次，两次数字之和为偶数的概率是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1/2",
+        "1/4",
+        "1/3",
+        "3/4"
+      ],
+      "correct_index": 0,
+      "explanation": "共16种结果，和为偶8种，概率1/2。",
+      "tags": [
+        "概率",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9106,
+      "question": "一个圆锥的底面半径是3厘米，母线长是5厘米，求它的侧面积。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "9π平方厘米",
+        "15π平方厘米",
+        "25π平方厘米",
+        "12π平方厘米"
+      ],
+      "correct_index": 1,
+      "explanation": "侧面积=πrl=π×3×5=15π。",
+      "tags": [
+        "圆锥",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9107,
+      "question": "某一时刻，测得一旗杆的影长为8米，同时测得身高1.5米的同学影长为1.2米，求旗杆高。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "9.6米",
+        "6.4米",
+        "10米",
+        "12米"
+      ],
+      "correct_index": 2,
+      "explanation": "相似三角形：h/8=1.5/1.2，h=10米。",
+      "tags": [
+        "相似",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9108,
+      "question": "已知关于x的一元二次方程 x²-(2k+1)x+k²+k=0，求证方程有两个不相等的实数根。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "Δ=0",
+        "Δ<0",
+        "Δ不确定",
+        "Δ=1>0"
+      ],
+      "correct_index": 3,
+      "explanation": "Δ=(2k+1)²-4(k²+k)=4k²+4k+1-4k²-4k=1>0。",
+      "tags": [
+        "判别式",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9109,
+      "question": "一个圆形喷水池的周长是25.12米，在它周围修一条1米宽的环形小路，求小路面积。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "28.26平方米",
+        "25.12平方米",
+        "3.14平方米",
+        "50.24平方米"
+      ],
+      "correct_index": 0,
+      "explanation": "内圆r=4，外圆R=5，3.14×(25-16)=28.26平方米。",
+      "tags": [
+        "圆环",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9110,
+      "question": "某商店经销一种销售成本为每千克40元的水产品，按每千克50元销售，一个月能售500千克，销售单价每涨1元月销量减10千克，设售价为每千克x元，月利润为y元，求y与x的函数关系式。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "y=10x²+...",
+        "y=-10x²+1400x-40000",
+        "y=500x",
+        "y=..."
+      ],
+      "correct_index": 1,
+      "explanation": "y=(x-40)[500-10(x-50)]=(x-40)(1000-10x)=-10x²+1400x-40000。",
+      "tags": [
+        "二次函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9111,
+      "question": "在Rt△ABC中，∠C=90°，a=5，b=12，求c及∠A的正弦值。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "c=13，sinA=12/13",
+        "c=17，sinA=5/13",
+        "c=13，sinA=5/13",
+        "c=13，sinA=13/5"
+      ],
+      "correct_index": 2,
+      "explanation": "c=√(25+144)=13，sinA=a/c=5/13。",
+      "tags": [
+        "三角函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9112,
+      "question": "一个足球被从地面踢出，它距地面高度h（米）与时间t（秒）关系为h=-5t²+10t，足球何时落地？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1秒",
+        "0秒",
+        "5秒",
+        "2秒"
+      ],
+      "correct_index": 3,
+      "explanation": "令h=0，-5t(t-2)=0，t=2秒。",
+      "tags": [
+        "二次函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9113,
+      "question": "某建筑工地上，起重机的滑轮组将重物匀速提升，已知滑轮组由定滑轮和动滑轮组成，若物体重500N，动滑轮重100N，不计摩擦，求拉力。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "300N",
+        "250N",
+        "600N",
+        "200N"
+      ],
+      "correct_index": 0,
+      "explanation": "(500+100)/2=300N（此为物理综合，数学按比例）。",
+      "tags": [
+        "比例",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9114,
+      "question": "一个正方体的顶点都在一个球面上，正方体棱长为2，求球的半径。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "√2",
+        "√3",
+        "2",
+        "2√3"
+      ],
+      "correct_index": 1,
+      "explanation": "球直径=正方体体对角线=2√3，半径√3。",
+      "tags": [
+        "球",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9115,
+      "question": "某抛物线形拱桥，正常水位时桥下水面宽20米，拱顶距水面4米，在如图坐标系中求抛物线解析式。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "y=-1/4 x²",
+        "y=1/25 x²",
+        "y=-1/25 x²",
+        "y=-1/100 x²"
+      ],
+      "correct_index": 2,
+      "explanation": "设顶点在原点，过(10,-4)，-4=a·100，a=-1/25。",
+      "tags": [
+        "二次函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9116,
+      "question": "一个布袋中有4个红球和若干个白球，它们除颜色外完全相同，从袋中任意摸出一个球，摸到红球的概率是1/3，求袋中白球个数。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "4个",
+        "12个",
+        "6个",
+        "8个"
+      ],
+      "correct_index": 3,
+      "explanation": "设白球x，4/(4+x)=1/3，4+x=12，x=8。",
+      "tags": [
+        "概率",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9117,
+      "question": "某公司前年缴税40万元，今年缴税48.4万元，求该公司缴税的年平均增长率。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10%",
+        "11%",
+        "12%",
+        "21%"
+      ],
+      "correct_index": 0,
+      "explanation": "40(1+x)²=48.4，(1+x)²=1.21，x=10%。",
+      "tags": [
+        "增长率",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9118,
+      "question": "在Rt△ABC中，∠C=90°，a=√3，b=1，求∠A的度数。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "30°",
+        "60°",
+        "45°",
+        "90°"
+      ],
+      "correct_index": 1,
+      "explanation": "tanA=a/b=√3，∠A=60°。",
+      "tags": [
+        "三角函数",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9119,
+      "question": "一个圆锥的底面周长是18.84厘米，高是5厘米，求它的体积（π取3.14）。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "141.3立方厘米",
+        "30立方厘米",
+        "47.1立方厘米",
+        "94.2立方厘米"
+      ],
+      "correct_index": 2,
+      "explanation": "r=18.84/(2×3.14)=3，体积=1/3×3.14×9×5=47.1。",
+      "tags": [
+        "圆锥体积",
+        "九年级"
+      ]
+    },
+    {
+      "id": 9120,
+      "question": "某商场销售一批名牌衬衫，平均每天可售出20件，每件盈利40元，为了扩大销售，经调查发现，每件降价1元，每天可多售2件，若商场每天要盈利1200元，每件应降价多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "只能10元",
+        "只能20元",
+        "15元",
+        "10元或20元"
+      ],
+      "correct_index": 3,
+      "explanation": "(40-x)(20+2x)=1200，x²-30x+200=0，x=10或20。",
+      "tags": [
+        "一元二次方程",
+        "九年级"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+package com.kidslock.app;
+
+import android.content.Context;
+import android.net.wifi.WifiManager;
+import android.text.format.Formatter;
+import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class WebConfigServer {
+    private static final String TAG = "WebConfigServer";
+    private static final int PORT = 8080;
+    private static WebConfigServer instance;
+    
+    private ServerSocket serverSocket;
+    private boolean running = false;
+    private ExecutorService executor = Executors.newCachedThreadPool();
+    private Context context;
+    
+    public static synchronized WebConfigServer getInstance(Context context) {
+        if (instance == null) {
+            instance = new WebConfigServer(context.getApplicationContext());
+        }
+        return instance;
+    }
+    
+    private WebConfigServer(Context context) {
+        this.context = context;
+    }
+    
+    public void start() {
+        if (running) return;
+        executor.execute(() -> {
+            try {
+                serverSocket = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
+                serverSocket.setReuseAddress(true);
+                running = true;
+                Log.i(TAG, "Web server started on port " + PORT);
+                while (running) {
+                    try {
+                        Socket client = serverSocket.accept();
+                        executor.execute(new ClientHandler(client));
+                    } catch (Exception e) {
+                        if (running) {
+                            Log.e(TAG, "Accept error", e);
+                        }
+                        break;
+                    }
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Server error", e);
+                running = false;
+            }
+        });
+    }
+    
+    public void stop() {
+        running = false;
+        try {
+            if (serverSocket != null) {
+                serverSocket.close();
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Stop error", e);
+        }
+    }
+    
+    public String getServerUrl() {
+        try {
+            WifiManager wm = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+            if (wm != null && wm.getConnectionInfo() != null) {
+                int ipInt = wm.getConnectionInfo().getIpAddress();
+                if (ipInt != 0) {
+                    String ip = Formatter.formatIpAddress(ipInt);
+                    return "http://" + ip + ":" + PORT;
+                }
+            }
+        } catch (Exception e) {
+        }
+        return "http://127.0.0.1:" + PORT;
+    }
+    
+    private class ClientHandler implements Runnable {
+        private Socket socket;
+        public ClientHandler(Socket socket) {
+            this.socket = socket;
+        }
+        
+        @Override
+        public void run() {
+            try {
+                InputStream in = socket.getInputStream();
+                OutputStream out = socket.getOutputStream();
+                BufferedReader br = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));
+                
+                String requestLine = br.readLine();
+                if (requestLine == null) return;
+                String[] parts = requestLine.split(" ");
+                String method = parts[0];
+                String path = parts.length > 1 ? parts[1] : "/";
+                
+                // Read headers
+                Map<String, String> headers = new HashMap<>();
+                String line;
+                int contentLength = 0;
+                while ((line = br.readLine()) != null && !line.isEmpty()) {
+                    if (line.toLowerCase().startsWith("content-length:")) {
+                        try {
+                            contentLength = Integer.parseInt(line.split(":")[1].trim());
+                        } catch (Exception e) {}
+                    }
+                    int idx = line.indexOf(':');
+                    if (idx > 0) {
+                        headers.put(line.substring(0, idx).trim().toLowerCase(), line.substring(idx + 1).trim());
+                    }
+                }
+                
+                String body = "";
+                if (contentLength > 0) {
+                    char[] buf = new char[contentLength];
+                    br.read(buf, 0, contentLength);
+                    body = new String(buf);
+                }
+                
+                if (path.equals("/") || path.startsWith("/index")) {
+                    sendResponse(out, 200, "text/html; charset=utf-8", getIndexHtml());
+                } else if (path.equals("/api/config") && method.equals("GET")) {
+                    sendResponse(out, 200, "application/json; charset=utf-8", getConfigJson());
+                } else if (path.equals("/api/config") && method.equals("POST")) {
+                    saveConfig(body);
+                    sendResponse(out, 200, "application/json; charset=utf-8", "{\"success\":true}");
+                } else if (path.equals("/api/banks") && method.equals("GET")) {
+                    sendResponse(out, 200, "application/json; charset=utf-8", getBanksJson());
+                } else if (path.equals("/api/bank/upload") && method.equals("POST")) {
+                    String result = uploadBank(body, headers);
+                    sendResponse(out, 200, "application/json; charset=utf-8", result);
+                } else if (path.equals("/api/bank/setdefault") && method.equals("POST")) {
+                    try {
+                        JSONObject json = new JSONObject(body);
+                        String bankFile = json.getString("bankFile");
+                        PrefManager pref = new PrefManager(context);
+                        pref.setCurrentBankFile(bankFile);
+                        sendResponse(out, 200, "application/json; charset=utf-8", "{\"success\":true}");
+                    } catch (Exception e) {
+                        sendResponse(out, 400, "application/json; charset=utf-8", "{\"error\":\"" + e.getMessage() + "\"}");
+                    }
+                } else {
+                    sendResponse(out, 404, "text/plain", "Not Found");
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Client error", e);
+            } finally {
+                try { socket.close(); } catch (Exception e) {}
+            }
+        }
+        
+        private void sendResponse(OutputStream out, int code, String contentType, String body) throws Exception {
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(out, StandardCharsets.UTF_8));
+            bw.write("HTTP/1.1 " + code + " OK\r\n");
+            bw.write("Content-Type: " + contentType + "\r\n");
+            bw.write("Connection: close\r\n");
+            byte[] bodyBytes = body.getBytes(StandardCharsets.UTF_8);
+            bw.write("Content-Length: " + bodyBytes.length + "\r\n");
+            bw.write("\r\n");
+            bw.flush();
+            out.write(bodyBytes);
+            out.flush();
+        }
+        
+        private String getConfigJson() {
+            try {
+                PrefManager pref = new PrefManager(context);
+                JSONObject json = new JSONObject();
+                json.put("watchLimitMinutes", pref.getWatchLimitMinutes());
+                json.put("unlockCount", pref.getUnlockCount());
+                json.put("lockDurationMinutes", pref.getLockDurationMinutes());
+                json.put("lockIntervalMinutes", pref.getLockIntervalMinutes());
+                json.put("relockDelaySeconds", pref.getRelockDelaySeconds());
+                json.put("autoStart", pref.isAutoStart());
+                json.put("currentBankFile", pref.getCurrentBankFile());
+                return json.toString();
+            } catch (Exception e) {
+                return "{}";
+            }
+        }
+        
+        private void saveConfig(String body) {
+            try {
+                JSONObject json = new JSONObject(body);
+                PrefManager pref = new PrefManager(context);
+                if (json.has("watchLimitMinutes")) pref.setWatchLimitMinutes(json.getInt("watchLimitMinutes"));
+                if (json.has("unlockCount")) pref.setUnlockCount(json.getInt("unlockCount"));
+                if (json.has("lockDurationMinutes")) pref.setLockDurationMinutes(json.getInt("lockDurationMinutes"));
+                if (json.has("lockIntervalMinutes")) pref.setLockIntervalMinutes(json.getInt("lockIntervalMinutes"));
+                if (json.has("relockDelaySeconds")) pref.setRelockDelaySeconds(json.getInt("relockDelaySeconds"));
+                if (json.has("autoStart")) pref.setAutoStart(json.getBoolean("autoStart"));
+                if (json.has("currentBankFile")) pref.setCurrentBankFile(json.getString("currentBankFile"));
+            } catch (Exception e) {
+                Log.e(TAG, "Save config error", e);
+            }
+        }
+        
+        private String getBanksJson() {
+            try {
+                JSONArray arr = new JSONArray();
+                // Assets
+                String[] files = context.getAssets().list("");
+                if (files != null) {
+                    for (String f : files) {
+                        if (f.endsWith(".json")) {
+                            JSONObject obj = new JSONObject();
+                            obj.put("name", f);
+                            obj.put("source", "assets");
+                            arr.put(obj);
+                        }
+                    }
+                }
+                // Internal files dir
+                File dir = context.getFilesDir();
+                File[] files2 = dir.listFiles();
+                if (files2 != null) {
+                    for (File f : files2) {
+                        if (f.getName().endsWith(".json")) {
+                            JSONObject obj = new JSONObject();
+                            obj.put("name", f.getName());
+                            obj.put("source", "internal");
+                            arr.put(obj);
+                        }
+                    }
+                }
+                return arr.toString();
+            } catch (Exception e) {
+                return "[]";
+            }
+        }
+        
+        private String uploadBank(String body, Map<String, String> headers) {
+            try {
+                // Simple JSON upload: {"filename":"test.json","content":"..."}
+                JSONObject json = new JSONObject(body);
+                String filename = json.getString("filename");
+                String content = json.getString("content");
+                if (!filename.endsWith(".json")) filename += ".json";
+                File outFile = new File(context.getFilesDir(), filename);
+                FileOutputStream fos = new FileOutputStream(outFile);
+                fos.write(content.getBytes(StandardCharsets.UTF_8));
+                fos.close();
+                return "{\"success\":true,\"filename\":\"" + filename + "\"}";
+            } catch (Exception e) {
+                return "{\"error\":\"" + e.getMessage() + "\"}";
+            }
+        }
+        
+        private String getIndexHtml() {
+            return "<!DOCTYPE html><html lang=\"zh\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>儿童锁屏配置</title>" +
+                    "<style>body{font-family:sans-serif;margin:20px;background:#f5f5f5}h1{color:#333}.card{background:white;padding:20px;margin:10px 0;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1)}label{display:block;margin:10px 0 5px}input,select{padding:8px;width:300px;max-width:100%}button{padding:10px 20px;background:#007bff;color:white;border:none;border-radius:4px;cursor:pointer;margin:5px}button:hover{background:#0056b3}.success{color:green}</style>" +
+                    "</head><body><h1>儿童锁屏配置</h1>" +
+                    "<div class=\"card\"><h2>锁屏设置</h2>" +
+                    "<label>观看时长（分钟）</label><input type=\"number\" id=\"watchLimitMinutes\">" +
+                    "<label>答对几次解锁（题数）</label><input type=\"number\" id=\"unlockCount\">" +
+                    "<label>锁定时长（分钟，0表示无限）</label><input type=\"number\" id=\"lockDurationMinutes\">" +
+                    "<label>锁屏间隔（分钟，0表示不自动）</label><input type=\"number\" id=\"lockIntervalMinutes\">" +
+                    "<label>重新锁屏延迟（秒）</label><input type=\"number\" id=\"relockDelaySeconds\">" +
+                    "<label><input type=\"checkbox\" id=\"autoStart\" style=\"width:auto\"> 开机自启</label>" +
+                    "<button onclick=\"saveConfig()\">保存设置</button><span id=\"configMsg\" class=\"success\"></span>" +
+                    "</div>" +
+                    "<div class=\"card\"><h2>题库设置</h2>" +
+                    "<label>默认生效题库</label><select id=\"bankSelect\"></select><button onclick=\"setDefaultBank()\">设置默认题库</button><br>" +
+                    "<label>上传题库JSON文件</label><input type=\"text\" id=\"bankFilename\" placeholder=\"文件名.json\"><textarea id=\"bankContent\" style=\"width:100%;height:200px\" placeholder=\"粘贴JSON内容\"></textarea><br><button onclick=\"uploadBank()\">上传题库</button><span id=\"bankMsg\" class=\"success\"></span>" +
+                    "</div>" +
+                    "<script>" +
+                    "fetch('/api/config').then(r=>r.json()).then(d=>{document.getElementById('watchLimitMinutes').value=d.watchLimitMinutes||30;document.getElementById('unlockCount').value=d.unlockCount||3;document.getElementById('lockDurationMinutes').value=d.lockDurationMinutes||0;document.getElementById('lockIntervalMinutes').value=d.lockIntervalMinutes||30;document.getElementById('relockDelaySeconds').value=d.relockDelaySeconds||2;document.getElementById('autoStart').checked=d.autoStart!==false;window.currentBank=d.currentBankFile;});" +
+                    "fetch('/api/banks').then(r=>r.json()).then(list=>{let sel=document.getElementById('bankSelect');list.forEach(b=>{let opt=document.createElement('option');opt.value=b.name;opt.text=b.name+(b.source==='assets'?' [内置]':' [上传]');if(window.currentBank===b.name) opt.selected=true;sel.add(opt);});});" +
+                    "function saveConfig(){fetch('/api/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({watchLimitMinutes:parseInt(document.getElementById('watchLimitMinutes').value),unlockCount:parseInt(document.getElementById('unlockCount').value),lockDurationMinutes:parseInt(document.getElementById('lockDurationMinutes').value),lockIntervalMinutes:parseInt(document.getElementById('lockIntervalMinutes').value),relockDelaySeconds:parseInt(document.getElementById('relockDelaySeconds').value),autoStart:document.getElementById('autoStart').checked})}).then(r=>r.json()).then(d=>{document.getElementById('configMsg').textContent='保存成功';setTimeout(()=>document.getElementById('configMsg').textContent='',2000);});}" +
+                    "function setDefaultBank(){let f=document.getElementById('bankSelect').value;fetch('/api/bank/setdefault',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({bankFile:f})}).then(r=>r.json()).then(d=>{document.getElementById('bankMsg').textContent='设置成功';setTimeout(()=>document.getElementById('bankMsg').textContent='',2000);});}" +
+                    "function uploadBank(){let fn=document.getElementById('bankFilename').value,ct=document.getElementById('bankContent').value;fetch('/api/bank/upload',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filename:fn,content:ct})}).then(r=>r.json()).then(d=>{document.getElementById('bankMsg').textContent=d.success?'上传成功':'上传失败';if(d.success){location.reload();}});}" +
+                    "</script></body></html>";
+        }
+    }
+}

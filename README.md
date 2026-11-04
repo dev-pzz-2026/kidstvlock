@@ -1,109 +1,189 @@
-# 儿童锁屏 · 电视认字锁屏
+# 儿童锁屏 · 电视答题解锁
 
-一款专为小米电视（Android TV）设计的儿童锁屏应用。
+一款专为电视（Android TV）设计的儿童锁屏应用，开机自动启动计时，到时锁屏，需答对题目才能解锁。
 
-## 功能
+## 项目简介
 
-- **开机自启**：电视开机后自动启动计时（默认开启）
-- **后台默认运行**：无需手动操作，开机即按设定时长自动开始倒计时
-- **定时锁屏**：15/30/45/60/90/120 分钟六档可选，到时自动锁屏
-- **重启仍锁**：锁屏后即使关机重启，电视仍保持锁屏状态
-- **认字解锁**：答对五年级水平汉字拼音才能解锁
-- **家长PIN**：家长可用 PIN 码快速解锁（默认 1234）
+- **答题解锁**：锁屏时显示汉字/题目，答对指定数量题目才能解锁。
+- **开机自启**：电视开机后自动启动计时（默认开启）。
+- **定时锁屏**：10/15/30/45/60/90/120 分钟可选，到时自动锁屏。
+- **重启仍锁**：锁屏后即使关机重启，电视仍保持锁屏状态。
+- **题库丰富**：内置 1-9 年级语文/数学/英语/科学题库及背诵篇目。
+- **可配**：通过 Web 配置页（端口 8080）调整参数。
 
-## 安装方法
+## 适用人群与场景
 
-### 方法一：U盘安装（推荐）
+- 家长控制儿童观看电视时长。
+- 教育机构/培训机构限制娱乐时间。
+- 需要答题解锁的儿童教育场景。
 
-1. 如果之前安装过旧版，建议先在电视上卸载旧版（防止旧版入口残留）
-2. 将新的 `kidslock-release.apk` 复制到 U盘
-3. U盘插入小米电视 USB 口
-4. 在电视上打开「高清播放器」或「文件管理」
-5. 找到 U盘中的 apk 文件，点击安装
-6. 安装前需在「设置 → 账号与安全」中开启「允许安装未知来源应用」
+## 源码结构
 
-> **提示**：安装完成后，在电视桌面或「全部应用」中找「儿童锁屏」图标。如果找不到，重启一次电视即可。
+```
+kidslock/
+├── app/
+│   ├── src/main/
+│   │   ├── AndroidManifest.xml
+│   │   ├── java/com/kidslock/app/
+│   │   │   ├── MainActivity.java        # 设置界面
+│   │   │   ├── LockScreenActivity.java  # 锁屏答题界面
+│   │   │   ├── LockService.java         # 计时前台服务
+│   │   │   ├── BootReceiver.java        # 开机自启动
+│   │   │   ├── CharacterBank.java       # 题库加载
+│   │   │   ├── PrefManager.java         # 设置持久化
+│   │   │   ├── WebConfigServer.java     # Web 配置服务
+│   │   │   └── WebConfigService.java    # Web 配置服务封装
+│   │   ├── res/
+│   │   │   ├── layout/                  # 布局 XML
+│   │   │   ├── drawable/                # 按钮选择器、图标、TV banner
+│   │   │   ├── mipmap-*/                # 启动图标
+│   │   │   └── values/                  # 颜色、尺寸、字符串、主题
+│   │   └── assets/                      # 题库 JSON
+├── build.gradle
+├── settings.gradle
+├── gradle.properties
+└── README.md
+```
 
-### 方法二：adb 安装
+## 二次开发注意点
+
+- 包名：`com.kidslock.app`。
+- 默认观看时长：10 分钟（`PrefManager.DEFAULT_WATCH_LIMIT_MIN`）。
+- 锁屏仅通过答题解锁，无家长 PIN / 密码入口。
+- 常驻通知：`LockService` 前台服务，需通知权限。
+- 开机自启：`BootReceiver` 监听 `BOOT_COMPLETED`。
+- Web 配置：端口 8080，局域网访问 `http://<电视IP>:8080`。
+- 题库：`assets/` 下 JSON，`CharacterBank` 解析。
+- 修改图标：更新 `mipmap-*/ic_launcher*.png` 与 `drawable/tv_banner.png`（320×180）。
+- 二次开发请保留 MIT 协议。
+
+## 打包与安装
+
+### 环境
+
+- JDK 17
+- Android SDK (API 34)
+- Gradle 8.2
+
+### 编译
+
+```bash
+export JAVA_HOME=<JDK路径>
+export ANDROID_HOME=<SDK路径>
+./gradlew assembleRelease
+```
+
+Windows：
+
+```powershell
+$env:JAVA_HOME="D:\data\Java\jdk-17.0.2"
+$env:ANDROID_HOME="D:\data\Android\Sdk"
+.\gradlew.bat assembleDebug --no-daemon
+```
+
+### 安装
+
+1. 将 APK 复制到 U 盘。
+2. U 盘插入电视 USB 口。
+3. 电视打开「高清播放器」或「文件管理」。
+4. 找到 APK，点击安装。
+5. 安装前需在「设置 → 账号与安全」中开启「允许安装未知来源应用」。
+
+或使用 adb：
 
 ```bash
 adb connect <电视IP>:5555
 adb install kidslock-release.apk
 ```
 
-## 使用流程
+### 权限
 
-1. **首次打开**：从电视桌面或「全部应用 / 应用中心」找到「儿童锁屏」图标打开
-2. **设置参数**：
-   - 开机自启：已开启（默认）
-   - 观看时长：选择 15/30/45/60/90/120 分钟（默认30分钟）
-   - 解锁题数：3/5/10 题连续答对（默认3题）
-   - 家长PIN：默认 1234，建议修改
-3. **开始计时**：按「开始计时」按钮
-4. **自动锁屏**：时间到自动弹出锁屏界面
-5. **认字解锁**：
-   - 屏幕显示一个五年级水平汉字
-   - 4个拼音选项，用遥控器方向键选择，按确认键提交
-   - 答对继续，答错重置计数
-   - 连续答对指定题数后自动解锁
-6. **家长解锁**：在锁屏界面选「家长解锁」，输入4位PIN码
+安装后需在电视设置中授予：
+- 开机自启
+- 后台运行
+- 悬浮窗（部分机型）
 
-## 锁屏防绕过机制
+电视建议将本应用加入白名单，避免被系统清理。
 
-- 锁屏时显示全屏悬浮窗覆盖层，遮挡桌面
-- 按遥控器 HOME 键 → 被悬浮窗拦截，无法回到桌面
-- 按返回键 → 无效
-- 关机重启 → 锁屏界面自动弹出
-- 计时器与锁屏状态保存在 SharedPreferences 中，重启不丢失
+## 题库 JSON 格式
 
-## 项目结构
+题库文件放置于 `app/src/main/assets/`，Web 配置页可上传自定义题库。
 
-```
-电视锁屏/
-├── app/src/main/
-│   ├── AndroidManifest.xml          # 清单文件
-│   ├── java/com/kidslock/app/
-│   │   ├── MainActivity.java        # 设置界面
-│   │   ├── LockScreenActivity.java  # 锁屏认字界面
-│   │   ├── LockService.java         # 计时前台服务
-│   │   ├── BootReceiver.java        # 开机自启接收器
-│   │   ├── CharacterBank.java       # 五年级汉字题库（140字）
-│   │   └── PrefManager.java         # 持久化状态管理
-│   └── res/
-│       ├── layout/                   # 布局XML
-│       ├── drawable/                 # 按钮选择器、图标、TV banner
-│       └── values/                   # 颜色、尺寸、字符串、主题
-├── kidslock-release.apk              # 签名正式版 APK
-└── kidslock-debug.apk                # 调试版 APK
+### 选择题格式
+
+```json
+{
+  "bank_id": "grade1_chinese",
+  "bank_name": "一年级语文",
+  "grade": 1,
+  "subject": "chinese",
+  "subject_name": "语文",
+  "version": 1,
+  "updated_at": "2026-11-01",
+  "total": 120,
+  "questions": [
+    {
+      "id": 1001,
+      "question": "字母 b 的正确读音",
+      "type": "拼音",
+      "difficulty": 1,
+      "options": ["a", "b", "o", "e"],
+      "correct_index": 1,
+      "explanation": "辅音字母 b、p、m、f 等",
+      "tags": ["字母", "声母"]
+    }
+  ]
+}
 ```
 
-## 技术参数
+### 背诵篇目格式
 
-- 最低支持：Android 5.0 (API 21)
-- 目标版本：Android 13 (API 33)
-- 编译版本：API 34
-- 签名密钥有效期：10000天
-- 架构：armeabi-v7a / arm64-v8a（覆盖所有小米电视）
-
-## 编译方法
-
-```bash
-# 需要 JDK 17 和 Android SDK
-export JAVA_HOME=<JDK路径>
-export ANDROID_HOME=<SDK路径>
-
-gradle assembleRelease
-
-# 签名（使用自己的 keystore）
-zipalign -f 4 app-universal-release-unsigned.apk aligned.apk
-apksigner sign --ks <你的.keystore> --out kidslock-release.apk aligned.apk
+```json
+{
+  "bank_id": "recitation_1_6",
+  "bank_name": "背诵篇目1-6年级",
+  "subject": "recitation",
+  "subject_name": "背诵",
+  "grade_range": "1-6",
+  "version": 1,
+  "updated_at": "2026-11-01",
+  "total": 75,
+  "pieces": [
+    {
+      "id": 1,
+      "title": "静夜思",
+      "first_line": "床前明月光",
+      "author": "李白",
+      "dynasty": "唐",
+      "genre": "五言绝句",
+      "key_lines": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+      "note": "李白诗歌，表达思乡之情"
+    }
+  ]
+}
 ```
 
-> 已发布的 kidslock-release.apk 由作者签名，如需自行编译发布请替换为自己的签名密钥。
+### 字段说明
 
-## 注意事项
+| 字段 | 类型 | 必填 | 说明 |
+|------|------|------|------|
+| `bank_id` | string | 是 | 题库唯一标识 |
+| `bank_name` | string | 是 | 题库显示名称 |
+| `grade` / `grade_range` | int/string | 是 | 年级或年级范围 |
+| `subject` | string | 是 | 学科标识（chinese/math/english/science/recitation） |
+| `questions` | array | 选择题必填 | 选择题列表 |
+| `pieces` | array | 背诵题必填 | 背诵篇目列表 |
+| `id` | int | 是 | 题目/篇目 ID |
+| `question` | string | 选择题必填 | 题目文本 |
+| `options` | array | 选择题必填 | 选项列表 |
+| `correct_index` | int | 选择题必填 | 正确答案索引 |
+| `title` / `first_line` / `author` | string | 背诵题必填 | 篇目信息 |
+| `key_lines` | string | 背诵题必填 | 关键诗句 |
 
-- 安装后需在电视设置中给予「开机自启」和「后台运行」权限
-- 小米电视的「安全中心」可能会清理后台，需将本应用加入白名单
-- 部分小米电视系统可能限制 HOME launcher 替换，如遇问题请使用家长PIN解锁
-- 汉字题库包含约 140 个五年级水平汉字，随机出题
+## 许可证
+
+本项目采用 MIT License 开源，详见 [LICENSE](LICENSE)。
+
+---
+
+**开机自启 · 答题解锁**

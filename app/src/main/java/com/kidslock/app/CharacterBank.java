@@ -1,5 +1,15 @@
 package com.kidslock.app;
 
+import android.content.Context;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -8,22 +18,52 @@ import java.util.Random;
 import java.util.Set;
 
 /**
- * 五年级水平汉字题库。
+ * 题库管理类。
  * 每道题：展示一个汉字，从4个拼音选项中选出正确读音。
+ * 支持从本地 assets JSON 文件加载题库，并保留离线兜底题库。
  */
 public class CharacterBank {
 
     public static class CharEntry {
         public final String character;
         public final String pinyin;
+        public final String type;
+        public final String question;
+        public final String word;
+        public final int difficulty;
+        public final String explanation;
+        public final String questionText;
+        public final List<String> options;
+        public final int correctIndex;
+        public final String category; // 识字, 多音字, 形近字, 古诗, 文言文, 阅读等
+        public final String bankType; // normal, recitation
 
         CharEntry(String character, String pinyin) {
+            this(character, pinyin, "char_to_pinyin", null, null, 1, null, null, null, -1, null, "normal");
+        }
+
+        CharEntry(String character, String pinyin, String type, String question, String word, int difficulty, String explanation) {
+            this(character, pinyin, type, question, word, difficulty, explanation, question, null, -1, null, "normal");
+        }
+
+        CharEntry(String character, String pinyin, String type, String question, String word, int difficulty, String explanation, 
+                  String questionText, List<String> options, int correctIndex, String category, String bankType) {
             this.character = character;
             this.pinyin = pinyin;
+            this.type = type != null ? type : "char_to_pinyin";
+            this.question = question;
+            this.word = word;
+            this.difficulty = difficulty;
+            this.explanation = explanation;
+            this.questionText = questionText != null ? questionText : (question != null ? question : character);
+            this.options = options;
+            this.correctIndex = correctIndex;
+            this.category = category;
+            this.bankType = bankType != null ? bankType : "normal";
         }
     }
 
-    private static final CharEntry[] BANK = {
+    private static final CharEntry[] FALLBACK_BANK = {
         new CharEntry("誉", "yù"),
         new CharEntry("邦", "bāng"),
         new CharEntry("餐", "cān"),
@@ -170,25 +210,320 @@ public class CharacterBank {
         new CharEntry("奏", "zòu"),
     };
 
+    private CharEntry[] currentBank = FALLBACK_BANK;
     private final Random random = new Random();
     private final List<Integer> recentIndices = new ArrayList<>();
     private static final int RECENT_MEMORY = 10;
 
     /**
+     * 从 assets 加载题库
+     */
+    public void loadFromAssets(Context context, String bankFileName) {
+        if (bankFileName == null || bankFileName.isEmpty()) {
+            currentBank = FALLBACK_BANK;
+            return;
+        }
+        String json = readAssetFile(context, bankFileName);
+        if (json == null || json.isEmpty()) {
+            currentBank = FALLBACK_BANK;
+            return;
+        }
+        try {
+            JSONObject root = new JSONObject(json);
+            // 检查是否是背诵篇目格式
+            if (root.has("pieces")) {
+                loadRecitationBank(root);
+                return;
+            }
+            
+            JSONArray arr = root.optJSONArray("questions");
+            if (arr == null) {
+                arr = root.optJSONArray("characters");
+            }
+            if (arr == null || arr.length() == 0) {
+                currentBank = FALLBACK_BANK;
+                return;
+            }
+            List<CharEntry> list = new ArrayList<>();
+            for (int i = 0; i < arr.length(); i++) {
+                JSONObject obj = arr.optJSONObject(i);
+                if (obj == null) continue;
+                String type = obj.optString("type", "char_to_pinyin");
+                String category = obj.optString("type", "");
+                String questionText = obj.optString("question", "");
+                int difficulty = obj.optInt("difficulty", 1);
+                String explanation = obj.optString("explanation", null);
+                
+                // 解析选项
+                JSONArray optionsArr = obj.optJSONArray("options");
+                List<String> optionsList = null;
+                int correctIndex = obj.optInt("correct_index", -1);
+                if (optionsArr != null) {
+                    optionsList = new ArrayList<>();
+                    for (int j = 0; j < optionsArr.length(); j++) {
+                        optionsList.add(optionsArr.optString(j, ""));
+                    }
+                }
+                
+                if ("math_calculation".equals(type)) {
+                    String question = questionText;
+                    String pinyin = obj.optString("pinyin", "");
+                    if (question.isEmpty()) {
+                        question = obj.optString("character", "");
+                    }
+                    list.add(new CharEntry(question, pinyin.isEmpty() ? question : pinyin, type, question, null, difficulty, explanation, questionText, optionsList, correctIndex, category, "normal"));
+                } else if ("english_word".equals(type)) {
+                    String word = obj.optString("word", "");
+                    if (word.isEmpty()) {
+                        word = questionText.isEmpty() ? obj.optString("character", "") : questionText;
+                    }
+                    String pinyin = obj.optString("pinyin", word);
+                    list.add(new CharEntry(word, pinyin, type, null, word, difficulty, explanation, questionText, optionsList, correctIndex, category, "normal"));
+                } else {
+                    String character = obj.optString("character", "");
+                    if (character.isEmpty()) {
+                        character = questionText.isEmpty() ? obj.optString("pinyin", "") : questionText;
+                    }
+                    String pinyin = obj.optString("pinyin", "");
+                    if (pinyin.isEmpty() && optionsList != null && correctIndex >= 0 && correctIndex < optionsList.size()) {
+                        pinyin = optionsList.get(correctIndex);
+                    }
+                    if (!character.isEmpty() && pinyin != null && !pinyin.isEmpty()) {
+                        list.add(new CharEntry(character, pinyin, type, questionText, null, difficulty, explanation, questionText, optionsList, correctIndex, category, "normal"));
+                    }
+                }
+            }
+            if (list.isEmpty()) {
+                currentBank = FALLBACK_BANK;
+            } else {
+                currentBank = list.toArray(new CharEntry[0]);
+            }
+        } catch (JSONException e) {
+            currentBank = FALLBACK_BANK;
+        }
+    }
+    
+    private void loadRecitationBank(JSONObject root) throws JSONException {
+        JSONArray piecesArr = root.optJSONArray("pieces");
+        if (piecesArr == null || piecesArr.length() == 0) {
+            currentBank = FALLBACK_BANK;
+            return;
+        }
+        List<CharEntry> list = new ArrayList<>();
+        Random recRand = new Random();
+        
+        for (int i = 0; i < piecesArr.length(); i++) {
+            JSONObject piece = piecesArr.optJSONObject(i);
+            if (piece == null) continue;
+            String title = piece.optString("title", "");
+            String author = piece.optString("author", "");
+            String firstLine = piece.optString("first_line", "");
+            String keyLines = piece.optString("key_lines", "");
+            String dynasty = piece.optString("dynasty", "");
+            String note = piece.optString("note", "");
+            
+            // 题型1：填空题 - 补全诗句
+            if (!keyLines.isEmpty()) {
+                String[] lines = keyLines.split("[，。；？！\n]");
+                for (String line : lines) {
+                    line = line.trim();
+                    if (line.length() >= 4) {
+                        // 随机选择一个字作为填空
+                        int fillIndex = recRand.nextInt(line.length());
+                        String fillChar = String.valueOf(line.charAt(fillIndex));
+                        StringBuilder questionBuilder = new StringBuilder();
+                        for (int c = 0; c < line.length(); c++) {
+                            if (c == fillIndex) {
+                                questionBuilder.append("□");
+                            } else {
+                                questionBuilder.append(line.charAt(c));
+                            }
+                        }
+                        String questionText = "《" + title + "》：" + questionBuilder.toString();
+                        
+                        // 生成干扰项
+                        List<String> optionsList = new ArrayList<>();
+                        optionsList.add(fillChar);
+                        String[] distractors = {"之", "于", "以", "而", "为", "不", "有", "无", "大", "小"};
+                        for (String d : distractors) {
+                            if (!optionsList.contains(d) && optionsList.size() < 4) {
+                                optionsList.add(d);
+                            }
+                        }
+                        Collections.shuffle(optionsList, recRand);
+                        int correctIdx = optionsList.indexOf(fillChar);
+                        
+                        list.add(new CharEntry(fillChar, fillChar, "recitation_fill", questionText, fillChar, 2, 
+                            "《" + title + "》" + (author.isEmpty() ? "" : "（" + author + " " + dynasty + "）") + "：" + line, 
+                            questionText, optionsList, correctIdx, "古诗", "recitation"));
+                    }
+                }
+            }
+            
+            // 题型2：作者题
+            if (!title.isEmpty() && !author.isEmpty() && !"《诗经》".equals(author)) {
+                String questionText = "《" + title + "》的作者是谁？";
+                List<String> optionsList = new ArrayList<>();
+                optionsList.add(author);
+                String[] authors = {"李白", "杜甫", "王维", "孟浩然", "白居易", "苏轼", "陆游", "辛弃疾", "王之涣", "贺知章"};
+                for (String a : authors) {
+                    if (!a.equals(author) && !optionsList.contains(a) && optionsList.size() < 4) {
+                        optionsList.add(a);
+                    }
+                }
+                Collections.shuffle(optionsList, recRand);
+                int correctIdx = optionsList.indexOf(author);
+                list.add(new CharEntry(author, author, "recitation_author", questionText, author, 1, note, 
+                    questionText, optionsList, correctIdx, "古诗", "recitation"));
+            }
+            
+            // 题型3：首句题
+            if (!firstLine.isEmpty() && !title.isEmpty()) {
+                String questionText = "《" + title + "》的第一句是什么？";
+                List<String> optionsList = new ArrayList<>();
+                optionsList.add(firstLine);
+                // 添加其他诗的首句作为干扰
+                if (piecesArr.length() > 1) {
+                    for (int k = 0; k < 3 && piecesArr.length() > 0; k++) {
+                        int randIdx = recRand.nextInt(piecesArr.length());
+                        JSONObject otherPiece = piecesArr.optJSONObject(randIdx);
+                        if (otherPiece != null) {
+                            String otherFirst = otherPiece.optString("first_line", "");
+                            if (!otherFirst.isEmpty() && !otherFirst.equals(firstLine) && !optionsList.contains(otherFirst)) {
+                                optionsList.add(otherFirst);
+                            }
+                        }
+                    }
+                }
+                while (optionsList.size() < 4) {
+                    optionsList.add("（无）");
+                }
+                Collections.shuffle(optionsList, recRand);
+                int correctIdx = optionsList.indexOf(firstLine);
+                list.add(new CharEntry(firstLine, firstLine, "recitation_first", questionText, firstLine, 2, 
+                    "《" + title + "》：" + keyLines, questionText, optionsList, correctIdx, "古诗", "recitation"));
+            }
+        }
+        
+        if (list.isEmpty()) {
+            currentBank = FALLBACK_BANK;
+        } else {
+            currentBank = list.toArray(new CharEntry[0]);
+        }
+    }
+
+    public void loadFromCurrentBank(PrefManager pref, Context context) {
+        String bankFile = pref.getCurrentBankFile();
+        if (bankFile != null && !bankFile.isEmpty()) {
+            String json = readAssetFile(context, bankFile);
+            if (json != null && !json.isEmpty()) {
+                loadFromAssets(context, bankFile);
+                if (currentBank != null && currentBank.length > 0 && currentBank != FALLBACK_BANK) {
+                    return;
+                }
+            }
+        }
+        
+        String bankId = pref.getCurrentBankId();
+        if (bankId == null || bankId.isEmpty()) {
+            bankId = "grade5_chinese";
+        }
+        // 尝试加载多种文件名格式
+        String[] candidates = {
+            bankId + ".json",
+            "bank_" + bankId + ".json",
+            "五年级语文.json",
+            "背诵篇目1-6年级75篇.json"
+        };
+        for (String name : candidates) {
+            String json = readAssetFile(context, name);
+            if (json != null && !json.isEmpty()) {
+                loadFromAssets(context, name);
+                if (currentBank != null && currentBank.length > 0 && currentBank != FALLBACK_BANK) {
+                    // 保存到配置
+                    pref.setCurrentBankFile(name);
+                    pref.setCurrentBankId(bankId);
+                    return;
+                }
+            }
+        }
+        // 如果都没找到，尝试随机加载一个可用的题库
+        try {
+            String[] files = context.getAssets().list("");
+            if (files != null) {
+                for (String f : files) {
+                    if (f.endsWith(".json")) {
+                        loadFromAssets(context, f);
+                        if (currentBank != null && currentBank.length > 0 && currentBank != FALLBACK_BANK) {
+                            pref.setCurrentBankFile(f);
+                            return;
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+        }
+        currentBank = FALLBACK_BANK;
+    }
+
+    private String readAssetFile(Context context, String fileName) {
+        // Try internal files first (uploaded banks)
+        try {
+            java.io.File f = new java.io.File(context.getFilesDir(), fileName);
+            if (f.exists()) {
+                java.io.FileInputStream fis = new java.io.FileInputStream(f);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(fis, "UTF-8"));
+                StringBuilder sb = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    sb.append(line).append('\n');
+                }
+                reader.close();
+                return sb.toString();
+            }
+        } catch (Exception e) {
+        }
+        try {
+            InputStream is = context.getAssets().open(fileName);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+            StringBuilder sb = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                sb.append(line).append('\n');
+            }
+            reader.close();
+            return sb.toString();
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
+    public boolean isLoaded() {
+        return currentBank != null && currentBank.length > 0;
+    }
+
+    public int getSize() {
+        return currentBank == null ? 0 : currentBank.length;
+    }
+
+    /**
      * 随机取一道题（尽量不与最近用过的重复）。
      */
     public CharEntry getRandomCharacter() {
+        if (currentBank == null || currentBank.length == 0) {
+            currentBank = FALLBACK_BANK;
+        }
         int idx;
         int attempts = 0;
         do {
-            idx = random.nextInt(BANK.length);
+            idx = random.nextInt(currentBank.length);
             attempts++;
         } while (recentIndices.contains(idx) && attempts < 20);
         recentIndices.add(idx);
         if (recentIndices.size() > RECENT_MEMORY) {
             recentIndices.remove(0);
         }
-        return BANK[idx];
+        return currentBank[idx];
     }
 
     /**
@@ -196,19 +531,33 @@ public class CharacterBank {
      */
     public List<String> getDistractors(String correctPinyin, int count) {
         Set<String> used = new HashSet<>();
-        used.add(correctPinyin);
+        if (correctPinyin != null) {
+            used.add(correctPinyin);
+        }
         List<String> result = new ArrayList<>();
         int attempts = 0;
+        if (currentBank == null || currentBank.length == 0) {
+            currentBank = FALLBACK_BANK;
+        }
         while (result.size() < count && attempts < 100) {
-            int idx = random.nextInt(BANK.length);
-            String py = BANK[idx].pinyin;
-            if (!used.contains(py)) {
+            int idx = random.nextInt(currentBank.length);
+            String py = currentBank[idx].pinyin;
+            if (py != null && !used.contains(py)) {
                 used.add(py);
                 result.add(py);
             }
             attempts++;
         }
         // 万一不够，补几个通用拼音
+        String[] fallbackPinyin = {"bā", "pí", "mō", "fǔ", "dè", "tè", "nǐ", "lǐ", "gǔ", "kǒu"};
+        int fbIdx = 0;
+        while (result.size() < count && fbIdx < fallbackPinyin.length) {
+            if (!used.contains(fallbackPinyin[fbIdx])) {
+                used.add(fallbackPinyin[fbIdx]);
+                result.add(fallbackPinyin[fbIdx]);
+            }
+            fbIdx++;
+        }
         while (result.size() < count) {
             result.add("n/a");
         }
@@ -221,7 +570,9 @@ public class CharacterBank {
      */
     public List<String> getOptions(String correctPinyin) {
         List<String> options = new ArrayList<>();
-        options.add(correctPinyin);
+        if (correctPinyin != null) {
+            options.add(correctPinyin);
+        }
         options.addAll(getDistractors(correctPinyin, 3));
         Collections.shuffle(options, random);
         return options;

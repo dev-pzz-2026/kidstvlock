@@ -9,7 +9,6 @@
     <dimen name="text_subtitle">24sp</dimen>
     <dimen name="text_body">20sp</dimen>
     <dimen name="text_button">22sp</dimen>
-    <dimen name="text_pin">28sp</dimen>
 
     <!-- 锁屏汉字特大 -->
     <dimen name="text_hanzi">180sp</dimen>

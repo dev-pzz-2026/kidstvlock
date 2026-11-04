@@ -1,0 +1,2099 @@
+{
+  "bank_id": "grade1_chinese",
+  "bank_name": "一年级语文",
+  "grade": 1,
+  "subject": "chinese",
+  "subject_name": "语文",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 1001,
+      "question": "下面哪个是声母？",
+      "type": "拼音",
+      "difficulty": 1,
+      "options": [
+        "a",
+        "b",
+        "o",
+        "e"
+      ],
+      "correct_index": 1,
+      "explanation": "声母是 b、p、m、f 等，a、o、e 是韵母。",
+      "tags": [
+        "声母",
+        "韵母"
+      ]
+    },
+    {
+      "id": 1002,
+      "question": "下面哪个是韵母？",
+      "type": "拼音",
+      "difficulty": 1,
+      "options": [
+        "b",
+        "p",
+        "u",
+        "m"
+      ],
+      "correct_index": 2,
+      "explanation": "u 是单韵母，b、p、m 是声母。",
+      "tags": [
+        "韵母"
+      ]
+    },
+    {
+      "id": 1003,
+      "question": "整体认读音节下面哪个是？",
+      "type": "拼音",
+      "difficulty": 1,
+      "options": [
+        "yi",
+        "ba",
+        "ma",
+        "du"
+      ],
+      "correct_index": 0,
+      "explanation": "yi 是整体认读音节，不需拼读。",
+      "tags": [
+        "整体认读音节"
+      ]
+    },
+    {
+      "id": 1004,
+      "question": "下列音节中，哪个是整体认读音节？",
+      "type": "拼音",
+      "difficulty": 1,
+      "options": [
+        "ka",
+        "hu",
+        "lu",
+        "wu"
+      ],
+      "correct_index": 3,
+      "explanation": "wu 是整体认读音节。",
+      "tags": [
+        "整体认读音节"
+      ]
+    },
+    {
+      "id": 1005,
+      "question": "“山”的拼音是哪个？",
+      "type": "拼音",
+      "difficulty": 1,
+      "options": [
+        "sān",
+        "shāng",
+        "shān",
+        "sān"
+      ],
+      "correct_index": 2,
+      "explanation": "“山”读 shān，翘舌音。",
+      "tags": [
+        "拼音",
+        "翘舌音"
+      ]
+    },
+    {
+      "id": 1006,
+      "question": "“足”的拼音是哪个？",
+      "type": "拼音",
+      "difficulty": 2,
+      "options": [
+        "zú",
+        "zhú",
+        "jū",
+        "zū"
+      ],
+      "correct_index": 0,
+      "explanation": "“足”读 zú，平舌音。",
+      "tags": [
+        "拼音",
+        "平舌音"
+      ]
+    },
+    {
+      "id": 1007,
+      "question": "“四”的拼音是哪个？",
+      "type": "拼音",
+      "difficulty": 2,
+      "options": [
+        "shì",
+        "sì",
+        "sìr",
+        "sī"
+      ],
+      "correct_index": 1,
+      "explanation": "“四”读 sì，第四声。",
+      "tags": [
+        "拼音",
+        "声调"
+      ]
+    },
+    {
+      "id": 1008,
+      "question": "“白”的拼音声调是第几声？",
+      "type": "拼音",
+      "difficulty": 2,
+      "options": [
+        "第二声",
+        "第二声",
+        "第三声",
+        "第四声"
+      ],
+      "correct_index": 1,
+      "explanation": "“白”读 bái，第二声。",
+      "tags": [
+        "声调"
+      ]
+    },
+    {
+      "id": 1009,
+      "question": "下面哪个是三拼音节？",
+      "type": "拼音",
+      "difficulty": 1,
+      "options": [
+        "xiǎo",
+        "shàng",
+        "mén",
+        "rì"
+      ],
+      "correct_index": 0,
+      "explanation": "xiǎo 由 i 介母和 ao 韵母拼成，是三拼音节。",
+      "tags": [
+        "三拼音节"
+      ]
+    },
+    {
+      "id": 1010,
+      "question": "“花”的拼音是哪个？",
+      "type": "拼音",
+      "difficulty": 2,
+      "options": [
+        "huā",
+        "huā",
+        "hā",
+        "wā"
+      ],
+      "correct_index": 0,
+      "explanation": "“花”读 huā，三拼音节。",
+      "tags": [
+        "拼音"
+      ]
+    },
+    {
+      "id": 1011,
+      "question": "“桌”的声母是哪个？",
+      "type": "拼音",
+      "difficulty": 2,
+      "options": [
+        "z",
+        "zh",
+        "ch",
+        "s"
+      ],
+      "correct_index": 1,
+      "explanation": "“桌”读 zhuō，声母是 zh。",
+      "tags": [
+        "声母",
+        "翘舌音"
+      ]
+    },
+    {
+      "id": 1012,
+      "question": "“草”的声母是哪个？",
+      "type": "拼音",
+      "difficulty": 2,
+      "options": [
+        "c",
+        "ch",
+        "s",
+        "sh"
+      ],
+      "correct_index": 0,
+      "explanation": "“草”读 cǎo，声母是 c，平舌音。",
+      "tags": [
+        "声母",
+        "平舌音"
+      ]
+    },
+    {
+      "id": 1013,
+      "question": "下面哪个音节的韵母是后鼻音？",
+      "type": "拼音",
+      "difficulty": 3,
+      "options": [
+        "bān",
+        "chén",
+        "lín",
+        "dēng"
+      ],
+      "correct_index": 3,
+      "explanation": "dēng 含后鼻韵母 eng。",
+      "tags": [
+        "前后鼻音"
+      ]
+    },
+    {
+      "id": 1014,
+      "question": "下面哪个音节的韵母是前鼻音？",
+      "type": "拼音",
+      "difficulty": 3,
+      "options": [
+        "dēng",
+        "bān",
+        "tīng",
+        "zhōng"
+      ],
+      "correct_index": 1,
+      "explanation": "bān 含前鼻韵母 an。",
+      "tags": [
+        "前后鼻音"
+      ]
+    },
+    {
+      "id": 1015,
+      "question": "“木”字作偏旁时，下面哪个字含“木”？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "打",
+        "拍",
+        "桃",
+        "拉"
+      ],
+      "correct_index": 2,
+      "explanation": "“桃”左偏旁是木。",
+      "tags": [
+        "偏旁",
+        "木字旁"
+      ]
+    },
+    {
+      "id": 1016,
+      "question": "“江”字的偏旁是哪个？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "氵",
+        "亻",
+        "口",
+        "日"
+      ],
+      "correct_index": 0,
+      "explanation": "“江”左边是三点水。",
+      "tags": [
+        "偏旁",
+        "三点水"
+      ]
+    },
+    {
+      "id": 1017,
+      "question": "下列哪个字是象形字？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "跑",
+        "跳",
+        "说",
+        "日"
+      ],
+      "correct_index": 3,
+      "explanation": "“日”像太阳的形状，是象形字。",
+      "tags": [
+        "象形字"
+      ]
+    },
+    {
+      "id": 1018,
+      "question": "“明”字是由哪两个字组成的？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "日和月",
+        "日和目",
+        "日和口",
+        "月和目"
+      ],
+      "correct_index": 0,
+      "explanation": "“明”=日+月，会意字。",
+      "tags": [
+        "会意字"
+      ]
+    },
+    {
+      "id": 1019,
+      "question": "“林”字表示很多树，它是由什么组成的？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "两个木",
+        "三个木",
+        "木和子",
+        "木和寸"
+      ],
+      "correct_index": 0,
+      "explanation": "“林”由两个“木”组成。",
+      "tags": [
+        "会意字",
+        "木字旁"
+      ]
+    },
+    {
+      "id": 1020,
+      "question": "“妈”字女字旁表示什么？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "和女性有关",
+        "和母亲有关",
+        "和手有关",
+        "和水有关"
+      ],
+      "correct_index": 0,
+      "explanation": "女字旁表示和女性有关。",
+      "tags": [
+        "偏旁",
+        "女字旁"
+      ]
+    },
+    {
+      "id": 1021,
+      "question": "“把”字提手旁表示什么动作？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "说话",
+        "走路",
+        "看",
+        "用手抓"
+      ],
+      "correct_index": 3,
+      "explanation": "提手旁表示和手的动作有关。",
+      "tags": [
+        "提手旁"
+      ]
+    },
+    {
+      "id": 1022,
+      "question": "“打”字用什么部首查字法先查？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "丁",
+        "扌",
+        "一",
+        "亅"
+      ],
+      "correct_index": 1,
+      "explanation": "按部首查“打”，先查提手旁。",
+      "tags": [
+        "部首查字法"
+      ]
+    },
+    {
+      "id": 1023,
+      "question": "“上”字的笔顺第一笔是？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "竖",
+        "横",
+        "横",
+        "捺"
+      ],
+      "correct_index": 0,
+      "explanation": "“上”先写竖，再写短横，最后长横。",
+      "tags": [
+        "笔顺"
+      ]
+    },
+    {
+      "id": 1024,
+      "question": "“火”字共几笔？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "3笔",
+        "5笔",
+        "4笔",
+        "6笔"
+      ],
+      "correct_index": 2,
+      "explanation": "“火”共 4 笔：点、撇、撇、捺。",
+      "tags": [
+        "笔画"
+      ]
+    },
+    {
+      "id": 1025,
+      "question": "“山”字的笔顺是？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "先写中间一竖",
+        "先写左边竖",
+        "先写下面横",
+        "先写右边竖"
+      ],
+      "correct_index": 0,
+      "explanation": "“山”先写中间竖。",
+      "tags": [
+        "笔顺"
+      ]
+    },
+    {
+      "id": 1026,
+      "question": "“手”字第四笔是？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "横",
+        "弯钩",
+        "竖",
+        "撇"
+      ],
+      "correct_index": 1,
+      "explanation": "“手”撇、横、横、弯钩，第四笔是弯钩。",
+      "tags": [
+        "笔画"
+      ]
+    },
+    {
+      "id": 1027,
+      "question": "“小”和“大”是一对什么词？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "反义词",
+        "近义词",
+        "同音字",
+        "多音字"
+      ],
+      "correct_index": 0,
+      "explanation": "小和大意思相反。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 1028,
+      "question": "“多”的反义词是？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "高",
+        "长",
+        "少",
+        "粗"
+      ],
+      "correct_index": 2,
+      "explanation": "多和少相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 1029,
+      "question": "“前”的反义词是？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "左",
+        "后",
+        "上",
+        "里"
+      ],
+      "correct_index": 1,
+      "explanation": "前和后相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 1030,
+      "question": "“东”的反义词（方向上）是？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "南",
+        "北",
+        "上",
+        "西"
+      ],
+      "correct_index": 3,
+      "explanation": "东和西相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 1031,
+      "question": "“远”的反义词是？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "近",
+        "高",
+        "大",
+        "长"
+      ],
+      "correct_index": 0,
+      "explanation": "远和近相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 1032,
+      "question": "“有”的反义词是？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "无",
+        "多",
+        "来",
+        "去"
+      ],
+      "correct_index": 0,
+      "explanation": "有和无相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 1033,
+      "question": "“一（  ）牛”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "只",
+        "头",
+        "条",
+        "朵"
+      ],
+      "correct_index": 1,
+      "explanation": "牛的量词用“头”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 1034,
+      "question": "“一（  ）鸟”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "只",
+        "头",
+        "条",
+        "本"
+      ],
+      "correct_index": 0,
+      "explanation": "鸟的量词用“只”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 1035,
+      "question": "“一（  ）鱼”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "只",
+        "头",
+        "朵",
+        "条"
+      ],
+      "correct_index": 3,
+      "explanation": "鱼的量词用“条”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 1036,
+      "question": "“一（  ）花”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "条",
+        "头",
+        "朵",
+        "只"
+      ],
+      "correct_index": 2,
+      "explanation": "花的量词用“朵”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 1037,
+      "question": "“一（  ）书”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "只",
+        "本",
+        "头",
+        "条"
+      ],
+      "correct_index": 1,
+      "explanation": "书的量词用“本”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 1038,
+      "question": "“大”和“小”合起来可以说？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "大小",
+        "小高",
+        "下小",
+        "上大"
+      ],
+      "correct_index": 0,
+      "explanation": "大小是常见对义词组合。",
+      "tags": [
+        "词语搭配"
+      ]
+    },
+    {
+      "id": 1039,
+      "question": "“白”的颜色相近词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "黑",
+        "黄",
+        "雪白",
+        "红"
+      ],
+      "correct_index": 2,
+      "explanation": "雪白形容很白，与白近义。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 1040,
+      "question": "“高兴”的近义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "难过",
+        "开心",
+        "生气",
+        "着急"
+      ],
+      "correct_index": 1,
+      "explanation": "高兴和开心意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 1041,
+      "question": "“立刻”的近义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "慢慢",
+        "以后",
+        "马上",
+        "常常"
+      ],
+      "correct_index": 2,
+      "explanation": "立刻和马上意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 1042,
+      "question": "“漂亮”的近义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "好看",
+        "难看",
+        "高大",
+        "细小"
+      ],
+      "correct_index": 0,
+      "explanation": "漂亮和好看意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 1043,
+      "question": "下面哪个词是形容颜色的？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "跑",
+        "红",
+        "跳",
+        "笑"
+      ],
+      "correct_index": 1,
+      "explanation": "红是颜色词。",
+      "tags": [
+        "形容词"
+      ]
+    },
+    {
+      "id": 1044,
+      "question": "下面哪个词是表示动作的？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "红花",
+        "跑",
+        "白云",
+        "月亮"
+      ],
+      "correct_index": 1,
+      "explanation": "跑是动词。",
+      "tags": [
+        "动词"
+      ]
+    },
+    {
+      "id": 1045,
+      "question": "“又大又圆”下面哪个词和它结构一样？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "大口大口",
+        "又高又大",
+        "大红大紫",
+        "大大小小"
+      ],
+      "correct_index": 1,
+      "explanation": "又高又大是“又A又B”结构。",
+      "tags": [
+        "词语结构"
+      ]
+    },
+    {
+      "id": 1046,
+      "question": "“金灿灿”形容什么？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "颜色很亮很黄",
+        "声音很大",
+        "味道很酸",
+        "跑得很快"
+      ],
+      "correct_index": 0,
+      "explanation": "金灿灿形容金黄发亮的样子。",
+      "tags": [
+        "ABB式"
+      ]
+    },
+    {
+      "id": 1047,
+      "question": "“绿油油”形容什么？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "云很白",
+        "草很绿",
+        "天很蓝",
+        "花很红"
+      ],
+      "correct_index": 1,
+      "explanation": "绿油油形容浓绿而润泽。",
+      "tags": [
+        "ABB式"
+      ]
+    },
+    {
+      "id": 1048,
+      "question": "“圆”的反义词是？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "方",
+        "高",
+        "长",
+        "短"
+      ],
+      "correct_index": 0,
+      "explanation": "圆和方相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 1049,
+      "question": "下面哪个是完整的句子？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "太阳。",
+        "红红的",
+        "小鸟在天上飞。",
+        "真高兴！"
+      ],
+      "correct_index": 2,
+      "explanation": "“小鸟在天上飞”谁+干什么，完整。",
+      "tags": [
+        "完整句"
+      ]
+    },
+    {
+      "id": 1050,
+      "question": "句子末尾表示感叹的标点是？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "。",
+        "？",
+        "！",
+        "，"
+      ],
+      "correct_index": 2,
+      "explanation": "感叹号用于感叹句末尾。",
+      "tags": [
+        "标点"
+      ]
+    },
+    {
+      "id": 1051,
+      "question": "疑问句末尾用什么标点？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "。",
+        "！",
+        "，",
+        "？"
+      ],
+      "correct_index": 3,
+      "explanation": "疑问句末尾用问号。",
+      "tags": [
+        "标点"
+      ]
+    },
+    {
+      "id": 1052,
+      "question": "“我去上学。”这句话主要说谁？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "学校",
+        "我",
+        "去",
+        "学"
+      ],
+      "correct_index": 1,
+      "explanation": "主语是“我”。",
+      "tags": [
+        "句子成分"
+      ]
+    },
+    {
+      "id": 1053,
+      "question": "把“花儿开了”扩成“____花儿开了”，最恰当的是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "红红地",
+        "红花",
+        "红红的",
+        "红"
+      ],
+      "correct_index": 2,
+      "explanation": "形容词+“的”修饰名词：红红的花儿。",
+      "tags": [
+        "扩句"
+      ]
+    },
+    {
+      "id": 1054,
+      "question": "“我把窗户打开了。”这句话中“把”表示什么？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "动作",
+        "处所",
+        "时间",
+        "数量"
+      ],
+      "correct_index": 0,
+      "explanation": "“把”字句表示对某物做了某动作。",
+      "tags": [
+        "把字句"
+      ]
+    },
+    {
+      "id": 1055,
+      "question": "“树叶落下来了”下面哪个句子意思相同？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "树叶飞起来了",
+        "树叶飘起来了",
+        "树叶被风吹落下来了",
+        "树叶长出来了"
+      ],
+      "correct_index": 2,
+      "explanation": "落下来与被吹落意思一致。",
+      "tags": [
+        "句子理解"
+      ]
+    },
+    {
+      "id": 1056,
+      "question": "“弯弯的月亮像小船。”这句话把月亮比作？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "圆盘",
+        "小船",
+        "星星",
+        "太阳"
+      ],
+      "correct_index": 1,
+      "explanation": "句子中明确说月亮像小船。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 1057,
+      "question": "“太阳像个大火球。”这是一个什么句子？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "拟人句",
+        "排比句",
+        "比喻句",
+        "设问句"
+      ],
+      "correct_index": 2,
+      "explanation": "把太阳比作大火球，是比喻。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 1058,
+      "question": "“小草偷偷地从土里钻出来。”这句话把小草当作什么来写？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "人",
+        "动物",
+        "太阳",
+        "石头"
+      ],
+      "correct_index": 0,
+      "explanation": "“偷偷地”把小草当作人来写，拟人。",
+      "tags": [
+        "拟人句"
+      ]
+    },
+    {
+      "id": 1059,
+      "question": "下面哪个句子是拟人句？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "月亮像圆盘。",
+        "花儿笑了。",
+        "他跑得像风。",
+        "天空很蓝。"
+      ],
+      "correct_index": 1,
+      "explanation": "“花儿笑了”把花当人写。",
+      "tags": [
+        "拟人句"
+      ]
+    },
+    {
+      "id": 1060,
+      "question": "《咏鹅》的作者是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "李白",
+        "杜甫",
+        "骆宾王",
+        "白居易"
+      ],
+      "correct_index": 2,
+      "explanation": "《咏鹅》是骆宾王七岁时所作。",
+      "tags": [
+        "古诗",
+        "咏鹅"
+      ]
+    },
+    {
+      "id": 1061,
+      "question": "“鹅，鹅，鹅，曲项向天歌”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "白毛浮绿水",
+        "红掌拨清波",
+        "白毛浮绿水",
+        "红掌拨清波"
+      ],
+      "correct_index": 0,
+      "explanation": "第二句是“白毛浮绿水”。",
+      "tags": [
+        "古诗",
+        "咏鹅"
+      ]
+    },
+    {
+      "id": 1062,
+      "question": "《静夜思》的作者是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "杜甫",
+        "李白",
+        "王维",
+        "孟浩然"
+      ],
+      "correct_index": 1,
+      "explanation": "《静夜思》作者李白。",
+      "tags": [
+        "古诗",
+        "静夜思"
+      ]
+    },
+    {
+      "id": 1063,
+      "question": "“床前明月光”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "低头思故乡",
+        "举头望明月",
+        "疑是地上霜",
+        "月是故乡明"
+      ],
+      "correct_index": 2,
+      "explanation": "“疑是地上霜”。",
+      "tags": [
+        "古诗",
+        "静夜思"
+      ]
+    },
+    {
+      "id": 1064,
+      "question": "“举头望明月”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "疑是地上霜",
+        "床前明月光",
+        "月落乌啼",
+        "低头思故乡"
+      ],
+      "correct_index": 3,
+      "explanation": "“低头思故乡”。",
+      "tags": [
+        "古诗",
+        "静夜思"
+      ]
+    },
+    {
+      "id": 1065,
+      "question": "《悯农》“锄禾日当午”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "汗滴禾下土",
+        "谁知盘中餐",
+        "粒粒皆辛苦",
+        "春种一粒粟"
+      ],
+      "correct_index": 0,
+      "explanation": "“汗滴禾下土”。",
+      "tags": [
+        "古诗",
+        "悯农"
+      ]
+    },
+    {
+      "id": 1066,
+      "question": "“谁知盘中餐”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "汗滴禾下土",
+        "粒粒皆辛苦",
+        "春种一粒粟",
+        "秋收万颗子"
+      ],
+      "correct_index": 1,
+      "explanation": "“粒粒皆辛苦”。",
+      "tags": [
+        "古诗",
+        "悯农"
+      ]
+    },
+    {
+      "id": 1067,
+      "question": "《春晓》的作者是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "李白",
+        "杜甫",
+        "孟浩然",
+        "王维"
+      ],
+      "correct_index": 2,
+      "explanation": "《春晓》作者孟浩然。",
+      "tags": [
+        "古诗",
+        "春晓"
+      ]
+    },
+    {
+      "id": 1068,
+      "question": "“春眠不觉晓”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "处处闻啼鸟",
+        "夜来风雨声",
+        "花落知多少",
+        "忙趁东风放纸鸢"
+      ],
+      "correct_index": 0,
+      "explanation": "“处处闻啼鸟”。",
+      "tags": [
+        "古诗",
+        "春晓"
+      ]
+    },
+    {
+      "id": 1069,
+      "question": "“夜来风雨声”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "处处闻啼鸟",
+        "花落知多少",
+        "春眠不觉晓",
+        "二月春风似剪刀"
+      ],
+      "correct_index": 1,
+      "explanation": "“花落知多少”。",
+      "tags": [
+        "古诗",
+        "春晓"
+      ]
+    },
+    {
+      "id": 1070,
+      "question": "《画》“远看山有色”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "近听水无声",
+        "春去花还在",
+        "人来鸟不惊",
+        "鹅鹅鹅"
+      ],
+      "correct_index": 0,
+      "explanation": "“近听水无声”。",
+      "tags": [
+        "古诗",
+        "画"
+      ]
+    },
+    {
+      "id": 1071,
+      "question": "“春去花还在”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "人来鸟不惊",
+        "近听水无声",
+        "远看山有色",
+        "汗滴禾下土"
+      ],
+      "correct_index": 0,
+      "explanation": "“人来鸟不惊”。",
+      "tags": [
+        "古诗",
+        "画"
+      ]
+    },
+    {
+      "id": 1072,
+      "question": "《古朗月行》“小时不识月”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "呼作白玉盘",
+        "又疑瑶台镜",
+        "飞在青云端",
+        "举头望明月"
+      ],
+      "correct_index": 0,
+      "explanation": "“呼作白玉盘”。",
+      "tags": [
+        "古诗",
+        "古朗月行"
+      ]
+    },
+    {
+      "id": 1073,
+      "question": "《风》“解落三秋叶”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "能开二月花",
+        "过江千尺浪",
+        "入竹万竿斜",
+        "低头思故乡"
+      ],
+      "correct_index": 0,
+      "explanation": "“能开二月花”。",
+      "tags": [
+        "古诗",
+        "风"
+      ]
+    },
+    {
+      "id": 1074,
+      "question": "《江南》“江南可采莲”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "鱼戏莲叶东",
+        "鱼戏莲叶间",
+        "鱼戏莲叶南",
+        "鱼戏莲叶北"
+      ],
+      "correct_index": 1,
+      "explanation": "“鱼戏莲叶间”。",
+      "tags": [
+        "古诗",
+        "江南"
+      ]
+    },
+    {
+      "id": 1075,
+      "question": "《小池》“小荷才露尖尖角”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "早有蜻蜓立上头",
+        "泉眼无声惜细流",
+        "树阴照水爱晴柔",
+        "接天莲叶无穷碧"
+      ],
+      "correct_index": 0,
+      "explanation": "“早有蜻蜓立上头”。",
+      "tags": [
+        "古诗",
+        "小池"
+      ]
+    },
+    {
+      "id": 1076,
+      "question": "《村居》“儿童散学归来早”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "忙趁东风放纸鸢",
+        "草长莺飞二月天",
+        "拂堤杨柳醉春烟",
+        "二月春风似剪刀"
+      ],
+      "correct_index": 0,
+      "explanation": "“忙趁东风放纸鸢”。",
+      "tags": [
+        "古诗",
+        "村居"
+      ]
+    },
+    {
+      "id": 1077,
+      "question": "《所见》“意欲捕鸣蝉”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "歌声振林樾",
+        "忽然闭口立",
+        "牧童骑黄牛",
+        "松下问童子"
+      ],
+      "correct_index": 1,
+      "explanation": "“忽然闭口立”。",
+      "tags": [
+        "古诗",
+        "所见"
+      ]
+    },
+    {
+      "id": 1078,
+      "question": "“小白兔，白又白，两只耳朵竖起来。”这里写的是谁？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "小白羊",
+        "小白兔",
+        "小熊猫",
+        "小花猫"
+      ],
+      "correct_index": 1,
+      "explanation": "开头就写小白兔。",
+      "tags": [
+        "阅读",
+        "儿歌"
+      ]
+    },
+    {
+      "id": 1079,
+      "question": "“太阳出来了，天渐渐亮了。”这句话写的是什么时间？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "晚上",
+        "半夜",
+        "中午",
+        "早上"
+      ],
+      "correct_index": 3,
+      "explanation": "太阳出来是早上。",
+      "tags": [
+        "阅读",
+        "短文"
+      ]
+    },
+    {
+      "id": 1080,
+      "question": "“秋天到了，树叶黄了，一片片叶子从树上落下来。”叶子落下来是因为？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "春天到了",
+        "秋天到了",
+        "冬天到了",
+        "夏天到了"
+      ],
+      "correct_index": 1,
+      "explanation": "开头即秋天到了。",
+      "tags": [
+        "阅读",
+        "短文"
+      ]
+    },
+    {
+      "id": 1081,
+      "question": "“小鸡画竹叶，小狗画梅花，小鸭画枫叶，小马画月牙。”谁画的是梅花？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "小鸡",
+        "小鸭",
+        "小狗",
+        "小马"
+      ],
+      "correct_index": 2,
+      "explanation": "小狗画梅花。",
+      "tags": [
+        "阅读",
+        "雪地里的小画家"
+      ]
+    },
+    {
+      "id": 1082,
+      "question": "“影子在前，影子在后，影子常常跟着我。”影子像什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "好朋友",
+        "小猫",
+        "大树",
+        "太阳"
+      ],
+      "correct_index": 0,
+      "explanation": "影子常跟着，像好朋友。",
+      "tags": [
+        "阅读",
+        "影子"
+      ]
+    },
+    {
+      "id": 1083,
+      "question": "“猴子的尾巴长，兔子的尾巴短，松鼠的尾巴好像一把伞。”谁的尾巴好像一把伞？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "猴子",
+        "兔子",
+        "松鼠",
+        "孔雀"
+      ],
+      "correct_index": 2,
+      "explanation": "松鼠尾巴像伞。",
+      "tags": [
+        "阅读",
+        "比尾巴"
+      ]
+    },
+    {
+      "id": 1084,
+      "question": "“下雪啦，雪地里来了一群小画家。”小画家是？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "小朋友",
+        "小动物",
+        "老师",
+        "雪花"
+      ],
+      "correct_index": 1,
+      "explanation": "课文中小鸡小狗小鸭小马是小画家。",
+      "tags": [
+        "阅读",
+        "雪地里的小画家"
+      ]
+    },
+    {
+      "id": 1085,
+      "question": "“天气凉了，树叶黄了，一片片叶子从树上落下来。”这句话主要写？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "春天",
+        "夏天",
+        "秋天",
+        "冬天"
+      ],
+      "correct_index": 2,
+      "explanation": "天气凉、树叶黄落是秋天。",
+      "tags": [
+        "阅读",
+        "秋天"
+      ]
+    },
+    {
+      "id": 1086,
+      "question": "“我多想去看看，我多想去看看！”这句话表达了什么心情？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "很想去",
+        "不想去",
+        "生气",
+        "害怕"
+      ],
+      "correct_index": 0,
+      "explanation": "反复说多想去，表达很想去。",
+      "tags": [
+        "阅读",
+        "我多想去看看"
+      ]
+    },
+    {
+      "id": 1087,
+      "question": "“井底之蛙”故事里，青蛙认为天有多大？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "无边无际",
+        "只有井口那么大",
+        "只有井那么深",
+        "只有井外面大"
+      ],
+      "correct_index": 1,
+      "explanation": "坐井观天，认为天只有井口大。",
+      "tags": [
+        "阅读",
+        "坐井观天"
+      ]
+    },
+    {
+      "id": 1088,
+      "question": "“咕咚！”木瓜从树上掉进湖里，兔子第一反应是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "跑",
+        "笑",
+        "跳下水",
+        "睡觉"
+      ],
+      "correct_index": 0,
+      "explanation": "兔子一听“咕咚”就吓跑了。",
+      "tags": [
+        "阅读",
+        "咕咚"
+      ]
+    },
+    {
+      "id": 1089,
+      "question": "“乌鸦喝水”中乌鸦怎么喝到水的？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "飞到井里",
+        "把石头放进瓶子",
+        "找朋友帮忙",
+        "等水满出来"
+      ],
+      "correct_index": 1,
+      "explanation": "乌鸦把石子放进瓶子，水位升高。",
+      "tags": [
+        "阅读",
+        "乌鸦喝水"
+      ]
+    },
+    {
+      "id": 1090,
+      "question": "“小蜗牛”故事里，蜗牛为什么总是慢？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "它不着急",
+        "它走得很慢",
+        "它迷路了",
+        "它在睡觉"
+      ],
+      "correct_index": 1,
+      "explanation": "蜗牛走路很慢。",
+      "tags": [
+        "阅读",
+        "小蜗牛"
+      ]
+    },
+    {
+      "id": 1091,
+      "question": "“雨点儿”：数不清的雨点儿从哪里飘落下来？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "云里",
+        "天上",
+        "树上",
+        "地里"
+      ],
+      "correct_index": 0,
+      "explanation": "雨点儿从云彩里飘落。",
+      "tags": [
+        "阅读",
+        "雨点儿"
+      ]
+    },
+    {
+      "id": 1092,
+      "question": "“四季”草芽尖尖，他对小鸟说：“我是____。”",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "春天",
+        "夏天",
+        "秋天",
+        "冬天"
+      ],
+      "correct_index": 0,
+      "explanation": "草芽是春天。",
+      "tags": [
+        "阅读",
+        "四季"
+      ]
+    },
+    {
+      "id": 1093,
+      "question": "“荷叶圆圆，他对青蛙说：‘我是____。’”",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "春天",
+        "夏天",
+        "秋天",
+        "冬天"
+      ],
+      "correct_index": 1,
+      "explanation": "荷叶是夏天。",
+      "tags": [
+        "阅读",
+        "四季"
+      ]
+    },
+    {
+      "id": 1094,
+      "question": "“一二三四五”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "金木水火土",
+        "天地分上下",
+        "日月照今古",
+        "站如松"
+      ],
+      "correct_index": 0,
+      "explanation": "一二三四五，金木水火土。",
+      "tags": [
+        "对子歌"
+      ]
+    },
+    {
+      "id": 1095,
+      "question": "“天地分上下”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "日月照今古",
+        "金木水火土",
+        "一二三四五",
+        "今古分明"
+      ],
+      "correct_index": 0,
+      "explanation": "天地分上下，日月照今古。",
+      "tags": [
+        "对子歌"
+      ]
+    },
+    {
+      "id": 1096,
+      "question": "“站如松”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "坐如钟",
+        "行如风",
+        "卧如弓",
+        "立如松"
+      ],
+      "correct_index": 0,
+      "explanation": "站如松，坐如钟。",
+      "tags": [
+        "口歌"
+      ]
+    },
+    {
+      "id": 1097,
+      "question": "“十月一日”是什么节日？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "教师节",
+        "国庆节",
+        "儿童节",
+        "劳动节"
+      ],
+      "correct_index": 1,
+      "explanation": "十月一日是国庆节。",
+      "tags": [
+        "节日"
+      ]
+    },
+    {
+      "id": 1098,
+      "question": "“六月一日”是什么节日？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "教师节",
+        "国庆节",
+        "儿童节",
+        "妇女节"
+      ],
+      "correct_index": 2,
+      "explanation": "六月一日是儿童节。",
+      "tags": [
+        "节日"
+      ]
+    },
+    {
+      "id": 1099,
+      "question": "“九月十日”是什么节日？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "教师节",
+        "国庆节",
+        "儿童节",
+        "元旦"
+      ],
+      "correct_index": 0,
+      "explanation": "九月十日是教师节。",
+      "tags": [
+        "节日"
+      ]
+    },
+    {
+      "id": 1100,
+      "question": "我们的国旗是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "五星红旗",
+        "红旗",
+        "五星旗",
+        "中国旗"
+      ],
+      "correct_index": 0,
+      "explanation": "中华人民共和国国旗是五星红旗。",
+      "tags": [
+        "国旗"
+      ]
+    },
+    {
+      "id": 1101,
+      "question": "“一年之计在于春”下一句是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "一日之计在于晨",
+        "一生之计在于勤",
+        "一家之计在于和",
+        "一日之计在于午"
+      ],
+      "correct_index": 0,
+      "explanation": "一年之计在于春，一日之计在于晨。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 1102,
+      "question": "“一寸光阴一寸金”下一句是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "寸金难买寸光阴",
+        "寸金难买寸阴",
+        "寸金难买寸光",
+        "光阴似箭"
+      ],
+      "correct_index": 0,
+      "explanation": "寸金难买寸光阴。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 1103,
+      "question": "“春风”后面常接的词语是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "秋雨",
+        "夏雨",
+        "冬雪",
+        "春风吹"
+      ],
+      "correct_index": 1,
+      "explanation": "常见：春风、夏雨、秋霜、冬雪。",
+      "tags": [
+        "春夏秋冬"
+      ]
+    },
+    {
+      "id": 1104,
+      "question": "“冬天来了，白天变____了，夜晚变____了。”",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "长、短",
+        "短、长",
+        "长、长",
+        "短、短"
+      ],
+      "correct_index": 1,
+      "explanation": "冬天昼短夜长。",
+      "tags": [
+        "四季"
+      ]
+    },
+    {
+      "id": 1105,
+      "question": "在学校里，我们应该怎样和同学相处？",
+      "type": "综合性学习",
+      "difficulty": 1,
+      "options": [
+        "吵架",
+        "互相帮助",
+        "打架",
+        "不理人"
+      ],
+      "correct_index": 1,
+      "explanation": "同学之间应团结友爱、互相帮助。",
+      "tags": [
+        "校园生活"
+      ]
+    },
+    {
+      "id": 1106,
+      "question": "过马路时，红绿灯亮红灯应该？",
+      "type": "综合性学习",
+      "difficulty": 1,
+      "options": [
+        "赶快走",
+        "停下来等",
+        "慢慢走",
+        "跑过去"
+      ],
+      "correct_index": 1,
+      "explanation": "红灯停、绿灯行。",
+      "tags": [
+        "交通规则"
+      ]
+    },
+    {
+      "id": 1107,
+      "question": "下面哪种行为是爱护环境的？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "随地扔垃圾",
+        "摘花踩草",
+        "垃圾分类",
+        "在墙上乱画"
+      ],
+      "correct_index": 2,
+      "explanation": "垃圾分类是环保行为。",
+      "tags": [
+        "环保"
+      ]
+    },
+    {
+      "id": 1108,
+      "question": "春天到了，下面哪种活动合适？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "堆雪人",
+        "植树",
+        "游泳",
+        "吃冰棍"
+      ],
+      "correct_index": 1,
+      "explanation": "春天是植树的好季节。",
+      "tags": [
+        "季节活动"
+      ]
+    },
+    {
+      "id": 1109,
+      "question": "下面哪种做法是爱护眼睛的？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "躺着看书",
+        "在太阳下看书",
+        "做眼保健操",
+        "长时间看手机"
+      ],
+      "correct_index": 2,
+      "explanation": "做眼保健操保护视力。",
+      "tags": [
+        "护眼"
+      ]
+    },
+    {
+      "id": 1110,
+      "question": "吃饭前我们应该做什么？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "马上吃",
+        "洗手",
+        "喝水",
+        "跑一圈"
+      ],
+      "correct_index": 1,
+      "explanation": "饭前洗手讲卫生。",
+      "tags": [
+        "卫生习惯"
+      ]
+    },
+    {
+      "id": 1111,
+      "question": "“一（  ）苹果”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "个",
+        "头",
+        "条",
+        "朵"
+      ],
+      "correct_index": 0,
+      "explanation": "苹果的量词用“个”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 1112,
+      "question": "“又白又胖”形容什么？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "长得很白很胖",
+        "跑得很快",
+        "跳得很高",
+        "声音很响"
+      ],
+      "correct_index": 0,
+      "explanation": "又白又胖形容皮肤白、胖乎乎。",
+      "tags": [
+        "词语搭配"
+      ]
+    },
+    {
+      "id": 1113,
+      "question": "“妈妈在____。”填哪个最完整？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "做饭",
+        "饭",
+        "在做",
+        "正在"
+      ],
+      "correct_index": 0,
+      "explanation": "妈妈在做饭，主谓宾完整。",
+      "tags": [
+        "完整句"
+      ]
+    },
+    {
+      "id": 1114,
+      "question": "“天空的星星眨着眼睛。”这是什么句？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "比喻句",
+        "拟人句",
+        "排比句",
+        "反问句"
+      ],
+      "correct_index": 1,
+      "explanation": "“眨眼睛”把星星当人写。",
+      "tags": [
+        "拟人句"
+      ]
+    },
+    {
+      "id": 1115,
+      "question": "《登鹳雀楼》“白日依山尽”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "黄河入海流",
+        "欲穷千里目",
+        "更上一层楼",
+        "疑是银河落九天"
+      ],
+      "correct_index": 0,
+      "explanation": "“黄河入海流”。",
+      "tags": [
+        "古诗",
+        "登鹳雀楼"
+      ]
+    },
+    {
+      "id": 1116,
+      "question": "“欲穷千里目”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "黄河入海流",
+        "白日依山尽",
+        "更上一层楼",
+        "春风又绿江南岸"
+      ],
+      "correct_index": 2,
+      "explanation": "“更上一层楼”。",
+      "tags": [
+        "古诗",
+        "登鹳雀楼"
+      ]
+    },
+    {
+      "id": 1117,
+      "question": "“小公鸡和小鸭子一块儿出去玩。”他们俩是？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "兄弟",
+        "好朋友",
+        "陌生人",
+        "对手"
+      ],
+      "correct_index": 1,
+      "explanation": "一块儿出去玩是好朋友。",
+      "tags": [
+        "阅读",
+        "小公鸡和小鸭子"
+      ]
+    },
+    {
+      "id": 1118,
+      "question": "“凉”字和什么季节有关？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "春",
+        "夏",
+        "秋",
+        "冬天"
+      ],
+      "correct_index": 2,
+      "explanation": "秋天气候转凉。",
+      "tags": [
+        "季节"
+      ]
+    },
+    {
+      "id": 1119,
+      "question": "“们”字的偏旁是？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "亻",
+        "门",
+        "丨",
+        "丿"
+      ],
+      "correct_index": 0,
+      "explanation": "“们”左边是单人旁。",
+      "tags": [
+        "偏旁"
+      ]
+    },
+    {
+      "id": 1120,
+      "question": "“一（  ）小河”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "条",
+        "只",
+        "头",
+        "本"
+      ],
+      "correct_index": 0,
+      "explanation": "河流的量词常用“条”。",
+      "tags": [
+        "量词"
+      ]
+    }
+  ]
+}

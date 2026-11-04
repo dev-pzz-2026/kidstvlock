@@ -1,0 +1,2110 @@
+{
+  "bank_id": "grade8_math",
+  "bank_name": "八年级数学",
+  "grade": 8,
+  "subject": "math",
+  "subject_name": "数学",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 8001,
+      "question": "3×3+4×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "25",
+        "26",
+        "24",
+        "35"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 3×3+4×4，结果为 25。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8002,
+      "question": "5×5-3×3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "17",
+        "16",
+        "15",
+        "26"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 5×5-3×3，结果为 16。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8003,
+      "question": "2×2×2 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "9",
+        "7",
+        "8",
+        "18"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 2×2×2，结果为 8。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8004,
+      "question": "3×3×3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "28",
+        "26",
+        "37",
+        "27"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 3×3×3，结果为 27。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8005,
+      "question": "1/2+1/3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "5/6",
+        "11/6",
+        "-1/6",
+        "65/6"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1/2+1/3，结果为 5/6。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8006,
+      "question": "3/4-1/6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "19/12",
+        "7/12",
+        "-5/12",
+        "127/12"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 3/4-1/6，结果为 7/12。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8007,
+      "question": "2/3×3/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.5",
+        "-0.5",
+        "0.5",
+        "10.5"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 2/3×3/4，结果为 0.5。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8008,
+      "question": "1/2÷3/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "25/24",
+        "-23/24",
+        "241/24",
+        "1/24"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 1/2÷3/4，结果为 1/24。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8009,
+      "question": "5/6-1/3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "0.5",
+        "1.5",
+        "-0.5",
+        "10.5"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 5/6-1/3，结果为 0.5。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8010,
+      "question": "1/3+1/6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.5",
+        "0.5",
+        "-0.5",
+        "10.5"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 1/3+1/6，结果为 0.5。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8011,
+      "question": "2/5×5/6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "4/3",
+        "-2/3",
+        "1/3",
+        "31/3"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 2/5×5/6，结果为 1/3。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8012,
+      "question": "3/4÷1/2 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1.375",
+        "-0.625",
+        "10.375",
+        "0.375"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 3/4÷1/2，结果为 0.375。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8013,
+      "question": "1/2+1/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "0.75",
+        "1.75",
+        "-0.25",
+        "10.75"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1/2+1/4，结果为 0.75。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8014,
+      "question": "(-2)+(-3)×2 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-7",
+        "-8",
+        "-9",
+        "2"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 (-2)+(-3)×2，结果为 -8。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8015,
+      "question": "(-5)×(-5) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "26",
+        "24",
+        "25",
+        "35"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 (-5)×(-5)，结果为 25。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8016,
+      "question": "8×8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "65",
+        "63",
+        "74",
+        "64"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 8×8，结果为 64。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8017,
+      "question": "6×8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "48",
+        "49",
+        "47",
+        "58"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 6×8，结果为 48。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8018,
+      "question": "9×9 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "82",
+        "81",
+        "80",
+        "91"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 9×9，结果为 81。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8019,
+      "question": "121÷11 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "12",
+        "10",
+        "11",
+        "21"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 121÷11，结果为 11。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8020,
+      "question": "144÷12 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "13",
+        "11",
+        "22",
+        "12"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 144÷12，结果为 12。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8021,
+      "question": "72÷8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "9",
+        "10",
+        "8",
+        "19"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 72÷8，结果为 9。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8022,
+      "question": "15×12 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "181",
+        "180",
+        "179",
+        "190"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 15×12，结果为 180。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8023,
+      "question": "2.5×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "11",
+        "9",
+        "10",
+        "20"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 2.5×4，结果为 10。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8024,
+      "question": "0.25×8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "1",
+        "12",
+        "2"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 0.25×8，结果为 2。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8025,
+      "question": "1.5×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "6",
+        "7",
+        "5",
+        "16"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 1.5×4，结果为 6。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8026,
+      "question": "49÷7 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "8",
+        "7",
+        "6",
+        "17"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 49÷7，结果为 7。",
+      "tags": [
+        "整式分式",
+        "勾股"
+      ]
+    },
+    {
+      "id": 8027,
+      "question": "2千米 = ? 米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "2001",
+        "2010",
+        "2000",
+        "1999"
+      ],
+      "correct_index": 2,
+      "explanation": "2千米 = 2000米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 8028,
+      "question": "3千克 = ? 克",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "3001",
+        "3010",
+        "2999",
+        "3000"
+      ],
+      "correct_index": 3,
+      "explanation": "3千克 = 3000克，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 8029,
+      "question": "1平方米 = ? 平方分米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "100",
+        "101",
+        "110",
+        "99"
+      ],
+      "correct_index": 0,
+      "explanation": "1平方米 = 100平方分米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 8030,
+      "question": "2立方米 = ? 立方分米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "2001",
+        "2000",
+        "2010",
+        "1999"
+      ],
+      "correct_index": 1,
+      "explanation": "2立方米 = 2000立方分米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 8031,
+      "question": "同底数幂相乘，底数不变，指数？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "相乘",
+        "相减",
+        "相加",
+        "不变"
+      ],
+      "correct_index": 2,
+      "explanation": "aᵐ·aⁿ=aᵐ⁺ⁿ。",
+      "tags": [
+        "幂的运算"
+      ]
+    },
+    {
+      "id": 8032,
+      "question": "幂的乘方，底数不变，指数？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "相加",
+        "相减",
+        "不变",
+        "相乘"
+      ],
+      "correct_index": 3,
+      "explanation": "(aᵐ)ⁿ=aᵐⁿ。",
+      "tags": [
+        "幂的运算"
+      ]
+    },
+    {
+      "id": 8033,
+      "question": "计算 a²·a³=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "a⁵",
+        "a⁶",
+        "a",
+        "2a⁵"
+      ],
+      "correct_index": 0,
+      "explanation": "同底数幂相乘指数相加。",
+      "tags": [
+        "幂的运算"
+      ]
+    },
+    {
+      "id": 8034,
+      "question": "计算 (a²)³=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "a⁵",
+        "a⁶",
+        "a⁸",
+        "2a⁶"
+      ],
+      "correct_index": 1,
+      "explanation": "幂的乘方指数相乘。",
+      "tags": [
+        "幂的运算"
+      ]
+    },
+    {
+      "id": 8035,
+      "question": "同底数幂相除，底数不变，指数？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "相加",
+        "相乘",
+        "相减",
+        "不变"
+      ],
+      "correct_index": 2,
+      "explanation": "aᵐ÷aⁿ=aᵐ⁻ⁿ。",
+      "tags": [
+        "幂的运算"
+      ]
+    },
+    {
+      "id": 8036,
+      "question": "a⁰=？（a≠0）",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "0",
+        "a",
+        "不确定",
+        "1"
+      ],
+      "correct_index": 3,
+      "explanation": "任何非零数的0次幂等于1。",
+      "tags": [
+        "零指数"
+      ]
+    },
+    {
+      "id": 8037,
+      "question": "平方差公式：(a+b)(a-b)=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "a²-b²",
+        "a²+b²",
+        "a²-2ab+b²",
+        "2ab"
+      ],
+      "correct_index": 0,
+      "explanation": "平方差公式。",
+      "tags": [
+        "乘法公式"
+      ]
+    },
+    {
+      "id": 8038,
+      "question": "完全平方公式：(a+b)²=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "a²+b²",
+        "a²+2ab+b²",
+        "a²-2ab+b²",
+        "2ab"
+      ],
+      "correct_index": 1,
+      "explanation": "和的完全平方。",
+      "tags": [
+        "乘法公式"
+      ]
+    },
+    {
+      "id": 8039,
+      "question": "分解因式：x²-9=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(x-3)²",
+        "(x+9)(x-9)",
+        "(x+3)(x-3)",
+        "(x-3)"
+      ],
+      "correct_index": 2,
+      "explanation": "用平方差公式。",
+      "tags": [
+        "因式分解"
+      ]
+    },
+    {
+      "id": 8040,
+      "question": "分解因式：x²+2x+1=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(x-1)²",
+        "(x+1)(x-1)",
+        "(x+2)²",
+        "(x+1)²"
+      ],
+      "correct_index": 3,
+      "explanation": "完全平方公式。",
+      "tags": [
+        "因式分解"
+      ]
+    },
+    {
+      "id": 8041,
+      "question": "分式 1/(x-2) 有意义的条件是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x≠2",
+        "x=2",
+        "x≠0",
+        "x＞2"
+      ],
+      "correct_index": 0,
+      "explanation": "分母不为0。",
+      "tags": [
+        "分式"
+      ]
+    },
+    {
+      "id": 8042,
+      "question": "分式方程 2/(x-1)=1 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=1",
+        "x=3",
+        "x=2",
+        "x=-1"
+      ],
+      "correct_index": 1,
+      "explanation": "x-1=2，x=3。",
+      "tags": [
+        "分式方程"
+      ]
+    },
+    {
+      "id": 8043,
+      "question": "当x=2时，分式 (x-2)/(x+3) 的值为？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "2",
+        "0",
+        "无意义"
+      ],
+      "correct_index": 2,
+      "explanation": "分子为0且分母不为0，值为0。",
+      "tags": [
+        "分式"
+      ]
+    },
+    {
+      "id": 8044,
+      "question": "√16=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "±4",
+        "8",
+        "2",
+        "4"
+      ],
+      "correct_index": 3,
+      "explanation": "算术平方根取正。",
+      "tags": [
+        "二次根式"
+      ]
+    },
+    {
+      "id": 8045,
+      "question": "√8 化简的结果是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "2√2",
+        "4√2",
+        "2",
+        "√2"
+      ],
+      "correct_index": 0,
+      "explanation": "√8=√(4×2)=2√2。",
+      "tags": [
+        "二次根式"
+      ]
+    },
+    {
+      "id": 8046,
+      "question": "下列是最简二次根式的是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "√8",
+        "√3",
+        "√12",
+        "√(1/2)"
+      ],
+      "correct_index": 1,
+      "explanation": "√3不能再化简。",
+      "tags": [
+        "二次根式"
+      ]
+    },
+    {
+      "id": 8047,
+      "question": "一次函数 y=2x+1 中，k的值是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "x",
+        "2",
+        "-2"
+      ],
+      "correct_index": 2,
+      "explanation": "y=kx+b，k=2。",
+      "tags": [
+        "一次函数"
+      ]
+    },
+    {
+      "id": 8048,
+      "question": "一次函数 y=-3x+2 的图象经过哪几个象限？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "一、二、三",
+        "一、三、四",
+        "二、三、四",
+        "一、二、四"
+      ],
+      "correct_index": 3,
+      "explanation": "k<0,b>0，过一二四象限。",
+      "tags": [
+        "一次函数"
+      ]
+    },
+    {
+      "id": 8049,
+      "question": "一次函数 y=x-2 的图象与y轴交点坐标是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(0,-2)",
+        "(-2,0)",
+        "(0,2)",
+        "(2,0)"
+      ],
+      "correct_index": 0,
+      "explanation": "x=0时y=-2。",
+      "tags": [
+        "一次函数"
+      ]
+    },
+    {
+      "id": 8050,
+      "question": "正比例函数 y=kx 经过哪个点？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "(1,0)",
+        "(0,0)",
+        "(0,1)",
+        "(1,1)"
+      ],
+      "correct_index": 1,
+      "explanation": "正比例函数过原点。",
+      "tags": [
+        "正比例函数"
+      ]
+    },
+    {
+      "id": 8051,
+      "question": "数据 2、4、4、6、8 的中位数是？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "4.5",
+        "6",
+        "4",
+        "24"
+      ],
+      "correct_index": 2,
+      "explanation": "排序后中间的数是4。",
+      "tags": [
+        "中位数"
+      ]
+    },
+    {
+      "id": 8052,
+      "question": "数据 3、5、5、7、10 的众数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "7",
+        "10",
+        "5"
+      ],
+      "correct_index": 3,
+      "explanation": "5出现最多。",
+      "tags": [
+        "众数"
+      ]
+    },
+    {
+      "id": 8053,
+      "question": "一组数据中，各数据与平均数差的平方的平均数叫？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "方差",
+        "平均数",
+        "中位数",
+        "众数"
+      ],
+      "correct_index": 0,
+      "explanation": "方差描述波动大小。",
+      "tags": [
+        "方差"
+      ]
+    },
+    {
+      "id": 8054,
+      "question": "方差越大，数据的波动越？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "小",
+        "大",
+        "不变",
+        "无法确定"
+      ],
+      "correct_index": 1,
+      "explanation": "方差大波动大。",
+      "tags": [
+        "方差"
+      ]
+    },
+    {
+      "id": 8055,
+      "question": "计算 2⁻¹=？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "-2",
+        "2",
+        "1/2",
+        "1"
+      ],
+      "correct_index": 2,
+      "explanation": "负指数。",
+      "tags": [
+        "负指数"
+      ]
+    },
+    {
+      "id": 8056,
+      "question": "把 0.000025 用科学记数法表示为？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "2.5×10⁻⁴",
+        "25×10⁻⁶",
+        "2.5×10⁵",
+        "2.5×10⁻⁵"
+      ],
+      "correct_index": 3,
+      "explanation": "小数点后5位，10⁻⁵。",
+      "tags": [
+        "科学记数法"
+      ]
+    },
+    {
+      "id": 8057,
+      "question": "若 y=(m-2)x+3 是一次函数，则 m 满足？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "m≠2",
+        "m=2",
+        "m＞2",
+        "m＜2"
+      ],
+      "correct_index": 0,
+      "explanation": "一次项系数不为0。",
+      "tags": [
+        "一次函数"
+      ]
+    },
+    {
+      "id": 8058,
+      "question": "因式分解的结果一定要分解到？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "任意程度",
+        "不能再分解为止",
+        "能再分",
+        "只分一次"
+      ],
+      "correct_index": 1,
+      "explanation": "分解到每个因式不能再分。",
+      "tags": [
+        "因式分解"
+      ]
+    },
+    {
+      "id": 8059,
+      "question": "三角形的内角和等于？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "90度",
+        "360度",
+        "180度",
+        "270度"
+      ],
+      "correct_index": 2,
+      "explanation": "三角形内角和180度。",
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": 8060,
+      "question": "三角形任意两边之和？第三边",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "小于",
+        "等于",
+        "不大于",
+        "大于"
+      ],
+      "correct_index": 3,
+      "explanation": "两边之和大于第三边。",
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": 8061,
+      "question": "全等三角形的对应边？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "相等",
+        "不相等",
+        "成比例",
+        "无法确定"
+      ],
+      "correct_index": 0,
+      "explanation": "全等三角形对应边相等。",
+      "tags": [
+        "全等"
+      ]
+    },
+    {
+      "id": 8062,
+      "question": "判定两个三角形全等的方法不包括？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "SSS",
+        "AAA",
+        "SAS",
+        "ASA"
+      ],
+      "correct_index": 1,
+      "explanation": "AAA不能判定全等。",
+      "tags": [
+        "全等判定"
+      ]
+    },
+    {
+      "id": 8063,
+      "question": "等腰三角形的两个底角？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "不等",
+        "互补",
+        "相等",
+        "互余"
+      ],
+      "correct_index": 2,
+      "explanation": "等边对等角。",
+      "tags": [
+        "等腰三角形"
+      ]
+    },
+    {
+      "id": 8064,
+      "question": "等腰三角形顶角是80度，它的一个底角是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "40度",
+        "100度",
+        "80度",
+        "50度"
+      ],
+      "correct_index": 3,
+      "explanation": "(180-80)÷2=50度。",
+      "tags": [
+        "等腰三角形"
+      ]
+    },
+    {
+      "id": 8065,
+      "question": "等边三角形的每个内角是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "60度",
+        "90度",
+        "45度",
+        "30度"
+      ],
+      "correct_index": 0,
+      "explanation": "等边三角形各角60度。",
+      "tags": [
+        "等边三角形"
+      ]
+    },
+    {
+      "id": 8066,
+      "question": "线段垂直平分线上的点到线段两端的距离？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "不等",
+        "相等",
+        "无法确定",
+        "是一半"
+      ],
+      "correct_index": 1,
+      "explanation": "垂直平分线性质。",
+      "tags": [
+        "垂直平分线"
+      ]
+    },
+    {
+      "id": 8067,
+      "question": "角平分线上的点到角两边的距离？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "不等",
+        "无法确定",
+        "相等",
+        "是两倍"
+      ],
+      "correct_index": 2,
+      "explanation": "角平分线性质。",
+      "tags": [
+        "角平分线"
+      ]
+    },
+    {
+      "id": 8068,
+      "question": "轴对称图形对应点的连线被对称轴？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "平分",
+        "垂直",
+        "平行",
+        "垂直平分"
+      ],
+      "correct_index": 3,
+      "explanation": "对称轴垂直平分对应点连线。",
+      "tags": [
+        "轴对称"
+      ]
+    },
+    {
+      "id": 8069,
+      "question": "在直角三角形中，两直角边分别是3和4，则斜边是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "5",
+        "7",
+        "25",
+        "√7"
+      ],
+      "correct_index": 0,
+      "explanation": "勾股定理3²+4²=5²。",
+      "tags": [
+        "勾股定理"
+      ]
+    },
+    {
+      "id": 8070,
+      "question": "勾股定理的表达式是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "a²-b²=c²",
+        "a²+b²=c²",
+        "a+b=c",
+        "a²+b²=2c²"
+      ],
+      "correct_index": 1,
+      "explanation": "直角三角形两直角边平方和等于斜边平方。",
+      "tags": [
+        "勾股定理"
+      ]
+    },
+    {
+      "id": 8071,
+      "question": "一个直角三角形斜边是5，一条直角边是3，另一条直角边是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "√34",
+        "8",
+        "4",
+        "2"
+      ],
+      "correct_index": 2,
+      "explanation": "√(25-9)=4。",
+      "tags": [
+        "勾股定理"
+      ]
+    },
+    {
+      "id": 8072,
+      "question": "平行四边形的对边？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "平行但不等",
+        "相等但不平行",
+        "无关",
+        "平行且相等"
+      ],
+      "correct_index": 3,
+      "explanation": "平行四边形对边平行且相等。",
+      "tags": [
+        "平行四边形"
+      ]
+    },
+    {
+      "id": 8073,
+      "question": "平行四边形的对角线？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "互相平分",
+        "相等",
+        "互相垂直",
+        "垂直平分"
+      ],
+      "correct_index": 0,
+      "explanation": "平行四边形对角线互相平分。",
+      "tags": [
+        "平行四边形"
+      ]
+    },
+    {
+      "id": 8074,
+      "question": "矩形的四个角都是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "锐角",
+        "直角",
+        "钝角",
+        "不确定"
+      ],
+      "correct_index": 1,
+      "explanation": "矩形四个角都是直角。",
+      "tags": [
+        "矩形"
+      ]
+    },
+    {
+      "id": 8075,
+      "question": "菱形的四条边？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "对边相等",
+        "不相等",
+        "都相等",
+        "邻边相等"
+      ],
+      "correct_index": 2,
+      "explanation": "菱形四条边都相等。",
+      "tags": [
+        "菱形"
+      ]
+    },
+    {
+      "id": 8076,
+      "question": "正方形的对角线？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "相等但不垂直",
+        "垂直但不等",
+        "只互相平分",
+        "相等且互相垂直平分"
+      ],
+      "correct_index": 3,
+      "explanation": "正方形对角线相等垂直平分。",
+      "tags": [
+        "正方形"
+      ]
+    },
+    {
+      "id": 8077,
+      "question": "对角线互相垂直的平行四边形是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "菱形",
+        "矩形",
+        "正方形",
+        "梯形"
+      ],
+      "correct_index": 0,
+      "explanation": "对角线垂直的平行四边形是菱形。",
+      "tags": [
+        "菱形判定"
+      ]
+    },
+    {
+      "id": 8078,
+      "question": "对角线相等的平行四边形是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "菱形",
+        "矩形",
+        "正方形",
+        "梯形"
+      ],
+      "correct_index": 1,
+      "explanation": "对角线相等的平行四边形是矩形。",
+      "tags": [
+        "矩形判定"
+      ]
+    },
+    {
+      "id": 8079,
+      "question": "三角形的中位线平行于第三边，且等于第三边的？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "相等",
+        "2倍",
+        "一半",
+        "三分之一"
+      ],
+      "correct_index": 2,
+      "explanation": "中位线等于第三边一半。",
+      "tags": [
+        "中位线"
+      ]
+    },
+    {
+      "id": 8080,
+      "question": "一个三角形三个内角之比是1:2:3，这个三角形是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "锐角三角形",
+        "钝角三角形",
+        "等腰三角形",
+        "直角三角形"
+      ],
+      "correct_index": 3,
+      "explanation": "180÷6=30，三个角30,60,90。",
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": 8081,
+      "question": "直角三角形斜边上的中线等于斜边的？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "一半",
+        "相等",
+        "2倍",
+        "三分之一"
+      ],
+      "correct_index": 0,
+      "explanation": "直角三角形斜边中线等于斜边一半。",
+      "tags": [
+        "直角三角形"
+      ]
+    },
+    {
+      "id": 8082,
+      "question": "在△ABC中，AB=AC，若∠B=70度，则∠A=？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "70度",
+        "40度",
+        "55度",
+        "110度"
+      ],
+      "correct_index": 1,
+      "explanation": "等腰∠C=∠B=70，∠A=180-140=40。",
+      "tags": [
+        "等腰三角形"
+      ]
+    },
+    {
+      "id": 8083,
+      "question": "一组数据 1、2、3、4、5 的方差是？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "3",
+        "1",
+        "2",
+        "2.5"
+      ],
+      "correct_index": 2,
+      "explanation": "平均数3，方差=[(1-3)²+...]/5=10/5=2。",
+      "tags": [
+        "方差"
+      ]
+    },
+    {
+      "id": 8084,
+      "question": "要比较两名运动员成绩的稳定性，应比较他们的？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "平均数",
+        "中位数",
+        "众数",
+        "方差"
+      ],
+      "correct_index": 3,
+      "explanation": "方差反映稳定性。",
+      "tags": [
+        "方差"
+      ]
+    },
+    {
+      "id": 8085,
+      "question": "数据 6、8、10、12、14 的平均数是？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "10",
+        "9",
+        "11",
+        "50"
+      ],
+      "correct_index": 0,
+      "explanation": "50÷5=10。",
+      "tags": [
+        "平均数"
+      ]
+    },
+    {
+      "id": 8086,
+      "question": "一组数据中有两个5、三个3、一个8，众数是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "5",
+        "3",
+        "8",
+        "都没有"
+      ],
+      "correct_index": 1,
+      "explanation": "3出现三次最多。",
+      "tags": [
+        "众数"
+      ]
+    },
+    {
+      "id": 8087,
+      "question": "某班50名学生身高的中位数是第几个数据？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "第25个",
+        "第26个",
+        "第25和26个的平均",
+        "第50个"
+      ],
+      "correct_index": 2,
+      "explanation": "偶数个取中间两数平均。",
+      "tags": [
+        "中位数"
+      ]
+    },
+    {
+      "id": 8088,
+      "question": "掷一枚骰子，朝上一面是偶数的概率是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "1/3",
+        "1/6",
+        "1",
+        "1/2"
+      ],
+      "correct_index": 3,
+      "explanation": "偶数2,4,6共3个，3/6=1/2。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 8089,
+      "question": "一个直角三角形两直角边分别为6cm和8cm，求斜边长。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10cm",
+        "14cm",
+        "100cm",
+        "√28cm"
+      ],
+      "correct_index": 0,
+      "explanation": "√(6²+8²)=√100=10cm。",
+      "tags": [
+        "勾股定理",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8090,
+      "question": "一次函数 y=kx+b 的图象经过(0,2)和(1,5)，求k。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2",
+        "3",
+        "5",
+        "-3"
+      ],
+      "correct_index": 1,
+      "explanation": "b=2，k+2=5，k=3。",
+      "tags": [
+        "一次函数",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8091,
+      "question": "某工厂现有甲种原料360千克，乙种原料290千克，计划生产A、B两种产品共50件，A每件需甲9千克乙3千克，B每件需甲4千克乙10千克，生产A种产品x件，x的取值范围是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "0≤x≤50",
+        "x=30",
+        "30≤x≤32",
+        "x=32"
+      ],
+      "correct_index": 2,
+      "explanation": "9x+4(50-x)≤360得x≤32，3x+10(50-x)≤290得x≥30。",
+      "tags": [
+        "不等式",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8092,
+      "question": "甲乙两地相距360千米，一辆汽车从甲地开往乙地，出发第一小时按原速行驶，1小时后加速为原速的1.5倍，结果比原计划提前40分钟到达，求第一小时的速度。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "80千米/时",
+        "50千米/时",
+        "70千米/时",
+        "60千米/时"
+      ],
+      "correct_index": 3,
+      "explanation": "设原速v，360/v - [1+(360-v)/(1.5v)]=2/3，解得v=60。",
+      "tags": [
+        "行程",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8093,
+      "question": "某商店销售一种商品，进价为每件40元，售价为每件50元时，每天可卖出500件，售价每涨1元，销量减少10件，售价定为多少时利润最大？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "70元",
+        "60元",
+        "80元",
+        "50元"
+      ],
+      "correct_index": 0,
+      "explanation": "利润=(50+x-40)(500-10x)=(10+x)(500-10x)，顶点x=20，售价70元。",
+      "tags": [
+        "函数",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8094,
+      "question": "一个平行四边形相邻两边长分别为8和6，一个内角为60度，求它的面积。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "48√3",
+        "24√3",
+        "24",
+        "12√3"
+      ],
+      "correct_index": 1,
+      "explanation": "面积=8×6×sin60=48×√3/2=24√3。",
+      "tags": [
+        "平行四边形",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8095,
+      "question": "在△ABC中，AB=13，BC=14，AC=15，求BC边上的高。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "13",
+        "11",
+        "12",
+        "10"
+      ],
+      "correct_index": 2,
+      "explanation": "设高AD，BD=x，DC=14-x，13²-x²=15²-(14-x)²，解得x=5，高=√(169-25)=12。",
+      "tags": [
+        "勾股",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8096,
+      "question": "已知一次函数 y=2x-4，当x取何值时y＞0？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "x＜2",
+        "x＞-2",
+        "x＜-2",
+        "x＞2"
+      ],
+      "correct_index": 3,
+      "explanation": "2x-4＞0，x＞2。",
+      "tags": [
+        "一次函数",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8097,
+      "question": "某工程队修建一条长1200米的道路，采用新施工方式后工作效率提升了50%，结果提前4天完成，原计划每天修多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "100米",
+        "50米",
+        "60米",
+        "80米"
+      ],
+      "correct_index": 0,
+      "explanation": "设原每天x米，1200/x-1200/(1.5x)=4，400/x=4，x=100。",
+      "tags": [
+        "分式方程",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8098,
+      "question": "矩形ABCD中，对角线AC=10，AB=8，求矩形的面积。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "80",
+        "48",
+        "60",
+        "24"
+      ],
+      "correct_index": 1,
+      "explanation": "BC=√(100-64)=6，面积8×6=48。",
+      "tags": [
+        "矩形",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8099,
+      "question": "菱形的两条对角线长分别为6和8，求菱形的面积。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "48",
+        "14",
+        "24",
+        "12"
+      ],
+      "correct_index": 2,
+      "explanation": "面积=对角线乘积一半=6×8÷2=24。",
+      "tags": [
+        "菱形",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8100,
+      "question": "已知正比例函数 y=kx 的图象经过点(2,-6)，求k。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "3",
+        "-12",
+        "12",
+        "-3"
+      ],
+      "correct_index": 3,
+      "explanation": "-6=2k，k=-3。",
+      "tags": [
+        "正比例函数",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8101,
+      "question": "甲、乙两人分别从距目的地6千米和10千米的两地同时出发，甲乙速度比是3:4，结果甲比乙提前20分钟到达，求甲的速度。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "4.5千米/时",
+        "6千米/时",
+        "3千米/时",
+        "5千米/时"
+      ],
+      "correct_index": 0,
+      "explanation": "设甲速3v乙速4v，10/(4v)-6/(3v)=1/3，2.5/v-2/v=1/3，0.5/v=1/3，v=1.5，甲速4.5。",
+      "tags": [
+        "行程",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8102,
+      "question": "一个三角形的三边分别为5、12、13，这个三角形是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "锐角三角形",
+        "直角三角形",
+        "钝角三角形",
+        "等边三角形"
+      ],
+      "correct_index": 1,
+      "explanation": "5²+12²=13²，直角三角形。",
+      "tags": [
+        "勾股逆定理",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8103,
+      "question": "分解因式：2x²-8=？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2(x²-4)",
+        "(2x+4)(x-2)",
+        "2(x+2)(x-2)",
+        "2(x-2)²"
+      ],
+      "correct_index": 2,
+      "explanation": "先提2再平方差。",
+      "tags": [
+        "因式分解",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8104,
+      "question": "计算：(x+2)(x-2)-(x-1)² 的结果是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2x-3",
+        "2x+5",
+        "-5",
+        "2x-5"
+      ],
+      "correct_index": 3,
+      "explanation": "x²-4-(x²-2x+1)=2x-5。",
+      "tags": [
+        "整式乘法",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8105,
+      "question": "某户家庭去年开支：饮食30%，住房35%，教育20%，其他15%，若教育支出为3000元，则总开支是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "15000元",
+        "12000元",
+        "10000元",
+        "20000元"
+      ],
+      "correct_index": 0,
+      "explanation": "3000÷20%=15000元。",
+      "tags": [
+        "百分数",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8106,
+      "question": "一艘轮船在静水中的最大航速为20千米/时，它沿江以最大航速顺流航行100千米所用时间，与以最大航速逆流航行60千米所用时间相等，求江水的流速。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "4千米/时",
+        "5千米/时",
+        "6千米/时",
+        "8千米/时"
+      ],
+      "correct_index": 1,
+      "explanation": "100/(20+v)=60/(20-v)，100(20-v)=60(20+v)，2000-100v=1200+60v，v=5。",
+      "tags": [
+        "分式方程",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8107,
+      "question": "在平面直角坐标系中，点A(-3,4)到原点的距离是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "4",
+        "3",
+        "5",
+        "7"
+      ],
+      "correct_index": 2,
+      "explanation": "√(9+16)=5。",
+      "tags": [
+        "勾股",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8108,
+      "question": "一个正方形边长增加2cm，面积增加24cm²，求原正方形边长。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "6cm",
+        "4cm",
+        "8cm",
+        "5cm"
+      ],
+      "correct_index": 3,
+      "explanation": "(x+2)²-x²=24，4x+4=24，x=5。",
+      "tags": [
+        "方程",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8109,
+      "question": "数据 5、8、8、9、10、12 的中位数是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "8.5",
+        "8",
+        "9",
+        "8.5以上"
+      ],
+      "correct_index": 0,
+      "explanation": "中间两数8和9平均8.5。",
+      "tags": [
+        "中位数",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8110,
+      "question": "某一次函数的图象与直线 y=2x 平行，且经过点(0,-3)，求解析式。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "y=2x+3",
+        "y=2x-3",
+        "y=-2x-3",
+        "y=3x-2"
+      ],
+      "correct_index": 1,
+      "explanation": "平行k相同，过(0,-3)b=-3。",
+      "tags": [
+        "一次函数",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8111,
+      "question": "已知 a+1/a=3，求 a²+1/a² 的值。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "9",
+        "11",
+        "7",
+        "5"
+      ],
+      "correct_index": 2,
+      "explanation": "(a+1/a)²=a²+2+1/a²=9，故a²+1/a²=7。",
+      "tags": [
+        "乘法公式",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8112,
+      "question": "如图，在△ABC中，AB=AC，D为BC中点，∠B=50度，则∠BAD=？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "50度",
+        "80度",
+        "30度",
+        "40度"
+      ],
+      "correct_index": 3,
+      "explanation": "等腰三角形三线合一，AD⊥BC，∠BAD=90-50=40度。",
+      "tags": [
+        "等腰三角形",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8113,
+      "question": "甲乙两组学生各10人，数学成绩平均分都是85分，甲方差为12，乙方差为20，成绩更稳定的是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "甲组",
+        "乙组",
+        "一样",
+        "无法判断"
+      ],
+      "correct_index": 0,
+      "explanation": "方差小更稳定。",
+      "tags": [
+        "方差",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8114,
+      "question": "用总长为60米的篱笆围成矩形场地，矩形面积S随一边长x变化，当x为多少时面积最大？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10米",
+        "15米",
+        "20米",
+        "30米"
+      ],
+      "correct_index": 1,
+      "explanation": "S=x(30-x)，顶点x=15。",
+      "tags": [
+        "函数应用",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8115,
+      "question": "化简：√12+√27-√3=？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "3√3",
+        "5√3",
+        "4√3",
+        "√3"
+      ],
+      "correct_index": 2,
+      "explanation": "2√3+3√3-√3=4√3。",
+      "tags": [
+        "二次根式",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8116,
+      "question": "某商店今年一月份利润1000元，三月份利润1210元，求平均每月增长率。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "11%",
+        "9%",
+        "20%",
+        "10%"
+      ],
+      "correct_index": 3,
+      "explanation": "1000(1+x)²=1210，(1+x)²=1.21，x=10%。",
+      "tags": [
+        "增长率",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8117,
+      "question": "在△ABC中，D、E分别是AB、AC的中点，若DE=4，则BC=？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "8",
+        "4",
+        "16",
+        "2"
+      ],
+      "correct_index": 0,
+      "explanation": "中位线DE=BC/2，BC=8。",
+      "tags": [
+        "中位线",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8118,
+      "question": "解分式方程：1/(x-1)=3/(x+1)，得x=？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "-2",
+        "2",
+        "1",
+        "0"
+      ],
+      "correct_index": 1,
+      "explanation": "x+1=3(x-1)，x+1=3x-3，2x=4，x=2。",
+      "tags": [
+        "分式方程",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8119,
+      "question": "已知菱形的周长为20，一条对角线长为6，求另一条对角线长。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5",
+        "10",
+        "8",
+        "4"
+      ],
+      "correct_index": 2,
+      "explanation": "边长5，半对角线3，另半对角线=√(25-9)=4，总长8。",
+      "tags": [
+        "菱形",
+        "八年级"
+      ]
+    },
+    {
+      "id": 8120,
+      "question": "某中学组织学生去离校15千米的科技馆参观，先遣队比大队早出发半小时，速度是大队的1.2倍，结果同时到达，求大队速度。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "6千米/时",
+        "4千米/时",
+        "7.5千米/时",
+        "5千米/时"
+      ],
+      "correct_index": 3,
+      "explanation": "15/v-15/(1.2v)=0.5，15/v(1-5/6)=0.5，15/v=3，v=5。",
+      "tags": [
+        "分式方程",
+        "八年级"
+      ]
+    }
+  ]
+}

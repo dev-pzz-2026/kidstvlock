@@ -1,0 +1,2091 @@
+{
+  "bank_id": "grade2_chinese",
+  "bank_name": "二年级语文",
+  "grade": 2,
+  "subject": "chinese",
+  "subject_name": "语文",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 2001,
+      "question": "“清”和“晴”都读 qīng，它们是什么字？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "同音字",
+        "形近字",
+        "多音字",
+        "形声字"
+      ],
+      "correct_index": 0,
+      "explanation": "清、晴读音相同，是同音字。",
+      "tags": [
+        "同音字"
+      ]
+    },
+    {
+      "id": 2002,
+      "question": "“抱”和“跑”偏旁不同，表示的意思不同，它们是？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "同音字",
+        "多音字",
+        "形近字",
+        "象形字"
+      ],
+      "correct_index": 2,
+      "explanation": "抱、跑字形相近，是形近字。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 2003,
+      "question": "按音序查字法，“妈”应先查大写字母？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "M",
+        "A",
+        "N",
+        "B"
+      ],
+      "correct_index": 0,
+      "explanation": "妈 mā，音序 M。",
+      "tags": [
+        "音序查字法"
+      ]
+    },
+    {
+      "id": 2004,
+      "question": "按部首查字法，“河”应先查？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "可",
+        "氵",
+        "亻",
+        "口"
+      ],
+      "correct_index": 1,
+      "explanation": "河是左右结构，先查三点水。",
+      "tags": [
+        "部首查字法"
+      ]
+    },
+    {
+      "id": 2005,
+      "question": "“晴”字是形声字，形旁是？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "青",
+        "日",
+        "目",
+        "月"
+      ],
+      "correct_index": 1,
+      "explanation": "晴，日字旁表示和天气有关。",
+      "tags": [
+        "形声字"
+      ]
+    },
+    {
+      "id": 2006,
+      "question": "“抱”字提手旁表示什么？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "和水有关",
+        "和说话有关",
+        "和太阳有关",
+        "和手的动作有关"
+      ],
+      "correct_index": 3,
+      "explanation": "提手旁表示和手的动作有关。",
+      "tags": [
+        "形声字",
+        "提手旁"
+      ]
+    },
+    {
+      "id": 2007,
+      "question": "“戴”和“带”用法不同，“穿____”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "戴",
+        "带",
+        "代",
+        "待"
+      ],
+      "correct_index": 0,
+      "explanation": "穿戴用“戴”。",
+      "tags": [
+        "同音字辨析"
+      ]
+    },
+    {
+      "id": 2008,
+      "question": "“在”和“再”，“我____家里”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "再",
+        "在",
+        "载",
+        "栽"
+      ],
+      "correct_index": 1,
+      "explanation": "表示位置用“在”。",
+      "tags": [
+        "同音字辨析"
+      ]
+    },
+    {
+      "id": 2009,
+      "question": "“后”和“厚”，“我____面”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "后",
+        "厚",
+        "候",
+        "侯"
+      ],
+      "correct_index": 0,
+      "explanation": "方位用“后”。",
+      "tags": [
+        "同音字辨析"
+      ]
+    },
+    {
+      "id": 2010,
+      "question": "“进”和“近”，“远____”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "进",
+        "近",
+        "尽",
+        "静"
+      ],
+      "correct_index": 1,
+      "explanation": "远近的近。",
+      "tags": [
+        "同音字辨析"
+      ]
+    },
+    {
+      "id": 2011,
+      "question": "“坐”和“座”，“请____下”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "坐",
+        "座",
+        "作",
+        "做"
+      ],
+      "correct_index": 0,
+      "explanation": "动词用“坐”。",
+      "tags": [
+        "同音字辨析"
+      ]
+    },
+    {
+      "id": 2012,
+      "question": "“圆”和“园”，“公____”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "圆",
+        "园",
+        "原",
+        "源"
+      ],
+      "correct_index": 1,
+      "explanation": "公园的园。",
+      "tags": [
+        "同音字辨析"
+      ]
+    },
+    {
+      "id": 2013,
+      "question": "“漂”在“漂亮”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "piāo",
+        "piào",
+        "piǎo",
+        "piào"
+      ],
+      "correct_index": 1,
+      "explanation": "“漂”在“漂亮”中读 piào。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 2014,
+      "question": "“重”在“重要”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "chóng",
+        "zhòng",
+        "zhōng",
+        "zhǒng"
+      ],
+      "correct_index": 1,
+      "explanation": "重要的重读 zhòng。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 2015,
+      "question": "“发”在“发现”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "fā",
+        "fà",
+        "fá",
+        "fǎ"
+      ],
+      "correct_index": 0,
+      "explanation": "发现的发读 fā。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 2016,
+      "question": "“朝”在“朝阳”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "cháo",
+        "zhāo",
+        "zhǎo",
+        "chǎo"
+      ],
+      "correct_index": 1,
+      "explanation": "朝阳的朝读 zhāo。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 2017,
+      "question": "“一（  ）军舰”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "艘",
+        "只",
+        "条",
+        "棵"
+      ],
+      "correct_index": 0,
+      "explanation": "军舰量词用“艘”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 2018,
+      "question": "“一（  ）翠竹”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "艘",
+        "只",
+        "竿",
+        "棵"
+      ],
+      "correct_index": 2,
+      "explanation": "翠竹的量词用“竿”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 2019,
+      "question": "“一（  ）石桥”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "孔",
+        "艘",
+        "只",
+        "条"
+      ],
+      "correct_index": 0,
+      "explanation": "石桥的量词用“孔”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 2020,
+      "question": "“一（  ）飞鸟”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "艘",
+        "只",
+        "条",
+        "棵"
+      ],
+      "correct_index": 1,
+      "explanation": "飞鸟的量词用“只”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 2021,
+      "question": "“雪白的”后面常接？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "天空",
+        "棉花",
+        "大树",
+        "小河"
+      ],
+      "correct_index": 1,
+      "explanation": "雪白的棉花，常见搭配。",
+      "tags": [
+        "词语搭配"
+      ]
+    },
+    {
+      "id": 2022,
+      "question": "“得意洋洋”下面哪个词意思和它相近？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "垂头丧气",
+        "喜气洋洋",
+        "洋洋得意",
+        "闷闷不乐"
+      ],
+      "correct_index": 2,
+      "explanation": "得意洋洋和洋洋得意意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 2023,
+      "question": "“赶快”的近义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "慢慢",
+        "赶紧",
+        "以后",
+        "常常"
+      ],
+      "correct_index": 1,
+      "explanation": "赶快和赶紧意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 2024,
+      "question": "“温和”的反义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "暖和",
+        "和气",
+        "暴躁",
+        "温柔"
+      ],
+      "correct_index": 2,
+      "explanation": "温和与暴躁相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 2025,
+      "question": "“懒惰”的反义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "偷懒",
+        "勤快",
+        "消极",
+        "散漫"
+      ],
+      "correct_index": 1,
+      "explanation": "懒惰与勤快相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 2026,
+      "question": "“寒冷”的反义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "冰冷",
+        "凉快",
+        "温暖",
+        "凉快"
+      ],
+      "correct_index": 2,
+      "explanation": "寒冷与温暖相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 2027,
+      "question": "下面哪个词是 AABB 式？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "绿油油",
+        "开开心心",
+        "亮晶晶",
+        "红通通"
+      ],
+      "correct_index": 1,
+      "explanation": "开开心心是 AABB。",
+      "tags": [
+        "AABB式"
+      ]
+    },
+    {
+      "id": 2028,
+      "question": "下面哪个词是 ABAC 式？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "自言自语",
+        "高高兴兴",
+        "干干净净",
+        "明明白白"
+      ],
+      "correct_index": 0,
+      "explanation": "自言自语是 ABAC。",
+      "tags": [
+        "ABAC式"
+      ]
+    },
+    {
+      "id": 2029,
+      "question": "“一____鱼塘”，括号里应填？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "方",
+        "艘",
+        "只",
+        "条"
+      ],
+      "correct_index": 0,
+      "explanation": "方方鱼塘，常见“一方鱼塘”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 2030,
+      "question": "“____的灯光”，填哪个最恰当？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "明亮",
+        "明亮亮",
+        "亮光",
+        "亮光光"
+      ],
+      "correct_index": 0,
+      "explanation": "形容词+的+名词：明亮的灯光。",
+      "tags": [
+        "词语搭配"
+      ]
+    },
+    {
+      "id": 2031,
+      "question": "“寒号鸟”故事里，寒号鸟最后怎样了？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "过上好日子",
+        "冻死了",
+        "飞出了窝",
+        "找到了同伴"
+      ],
+      "correct_index": 1,
+      "explanation": "寒号鸟只顾玩，不听劝，冬天冻死了。",
+      "tags": [
+        "成语故事"
+      ]
+    },
+    {
+      "id": 2032,
+      "question": "“把”字句：“我把窗户打开了。”改成“被”字句是？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "窗户被我打开了",
+        "我被窗户打开了",
+        "窗户打开我了",
+        "窗户我被打开了"
+      ],
+      "correct_index": 0,
+      "explanation": "主动者+被+被动者+动作。",
+      "tags": [
+        "被字句"
+      ]
+    },
+    {
+      "id": 2033,
+      "question": "“被”字句：“杯子被弟弟打碎了。”改成“把”字句是？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "弟弟把杯子打碎了",
+        "杯子把弟弟打碎了",
+        "弟弟打碎杯子了",
+        "打碎弟弟把杯子"
+      ],
+      "correct_index": 0,
+      "explanation": "弟弟把杯子打碎了。",
+      "tags": [
+        "把字句"
+      ]
+    },
+    {
+      "id": 2034,
+      "question": "下面句子末尾应用句号的是？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "你吃饭了吗",
+        "多么美丽的花啊",
+        "今天是星期一",
+        "你怎么迟到了"
+      ],
+      "correct_index": 2,
+      "explanation": "陈述句末尾用句号。",
+      "tags": [
+        "标点"
+      ]
+    },
+    {
+      "id": 2035,
+      "question": "“你吃饭了吗？”这句话是什么句？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "陈述句",
+        "疑问句",
+        "感叹句",
+        "祈使句"
+      ],
+      "correct_index": 1,
+      "explanation": "带问号，问问题。",
+      "tags": [
+        "句式"
+      ]
+    },
+    {
+      "id": 2036,
+      "question": "“叶子上的虫还用治？”这句话实际意思是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "叶子上的虫不用治",
+        "叶子上的虫要治",
+        "叶子上的虫很难治",
+        "叶子上的虫好不好治"
+      ],
+      "correct_index": 0,
+      "explanation": "反问，意思是“不用治”。",
+      "tags": [
+        "反问句"
+      ]
+    },
+    {
+      "id": 2037,
+      "question": "“有几个虫子怕什么！”这句话意思是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "有虫子很可怕",
+        "有虫子不可怕",
+        "虫子怕人",
+        "虫子很多"
+      ],
+      "correct_index": 1,
+      "explanation": "感叹句，意思是有虫子没什么可怕。",
+      "tags": [
+        "句子理解"
+      ]
+    },
+    {
+      "id": 2038,
+      "question": "“____天空飘着____云朵。”填哪个最恰当？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "蓝蓝的、白白的",
+        "蓝蓝、白白",
+        "蓝、白",
+        "蓝蓝地、白白地"
+      ],
+      "correct_index": 0,
+      "explanation": "形容词+的+名词：蓝蓝的天空、白白的云朵。",
+      "tags": [
+        "扩句"
+      ]
+    },
+    {
+      "id": 2039,
+      "question": "“洪水被禹治好了。”改成“把”字句是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "禹把洪水治好了",
+        "洪水把禹治好了",
+        "禹治水好了",
+        "洪水治好了禹"
+      ],
+      "correct_index": 0,
+      "explanation": "禹把洪水治好了。",
+      "tags": [
+        "把字句"
+      ]
+    },
+    {
+      "id": 2040,
+      "question": "“纸船漂到了小熊家门口。”这句话中“漂”的意思是？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "在水面浮着",
+        "漂漂亮亮",
+        "漂移",
+        "漂浮"
+      ],
+      "correct_index": 0,
+      "explanation": "纸船在水面漂。",
+      "tags": [
+        "字义"
+      ]
+    },
+    {
+      "id": 2041,
+      "question": "“北风像狮子一样狂吼。”这是什么句？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "拟人句",
+        "比喻句",
+        "排比句",
+        "夸张句"
+      ],
+      "correct_index": 1,
+      "explanation": "把北风比作狮子。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 2042,
+      "question": "《望庐山瀑布》的作者是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "杜甫",
+        "李白",
+        "白居易",
+        "孟浩然"
+      ],
+      "correct_index": 1,
+      "explanation": "《望庐山瀑布》作者李白。",
+      "tags": [
+        "古诗",
+        "望庐山瀑布"
+      ]
+    },
+    {
+      "id": 2043,
+      "question": "“日照香炉生紫烟”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "遥看瀑布挂前川",
+        "飞流直下三千尺",
+        "疑是银河落九天",
+        "疑是银河落九天"
+      ],
+      "correct_index": 0,
+      "explanation": "“遥看瀑布挂前川”。",
+      "tags": [
+        "古诗",
+        "望庐山瀑布"
+      ]
+    },
+    {
+      "id": 2044,
+      "question": "“飞流直下三千尺”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "疑是银河落九天",
+        "遥看瀑布挂前川",
+        "日照香炉生紫烟",
+        "黄河入海流"
+      ],
+      "correct_index": 0,
+      "explanation": "“疑是银河落九天”。",
+      "tags": [
+        "古诗",
+        "望庐山瀑布"
+      ]
+    },
+    {
+      "id": 2045,
+      "question": "《绝句》“两个黄鹂鸣翠柳”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "一行白鹭上青天",
+        "窗含西岭千秋雪",
+        "门泊东吴万里船",
+        "春风又绿江南岸"
+      ],
+      "correct_index": 0,
+      "explanation": "“一行白鹭上青天”。",
+      "tags": [
+        "古诗",
+        "绝句"
+      ]
+    },
+    {
+      "id": 2046,
+      "question": "《敕勒歌》“天苍苍，野茫茫”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "风吹草低见牛羊",
+        "风吹草低见牛羊",
+        "天似穹庐",
+        "笼盖四野"
+      ],
+      "correct_index": 1,
+      "explanation": "“风吹草低见牛羊”。",
+      "tags": [
+        "古诗",
+        "敕勒歌"
+      ]
+    },
+    {
+      "id": 2047,
+      "question": "《夜宿山寺》“危楼高百尺”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "手可摘星辰",
+        "不敢高声语",
+        "恐惊天上人",
+        "疑是地上霜"
+      ],
+      "correct_index": 0,
+      "explanation": "“手可摘星辰”。",
+      "tags": [
+        "古诗",
+        "夜宿山寺"
+      ]
+    },
+    {
+      "id": 2048,
+      "question": "“不敢高声语”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "恐惊天上人",
+        "手可摘星辰",
+        "危楼高百尺",
+        "疑是银河落九天"
+      ],
+      "correct_index": 0,
+      "explanation": "“恐惊天上人”。",
+      "tags": [
+        "古诗",
+        "夜宿山寺"
+      ]
+    },
+    {
+      "id": 2049,
+      "question": "《登鹳雀楼》“白日依山尽”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "黄河入海流",
+        "欲穷千里目",
+        "更上一层楼",
+        "低头思故乡"
+      ],
+      "correct_index": 0,
+      "explanation": "“黄河入海流”。",
+      "tags": [
+        "古诗",
+        "登鹳雀楼"
+      ]
+    },
+    {
+      "id": 2050,
+      "question": "“欲穷千里目”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "黄河入海流",
+        "更上一层楼",
+        "白日依山尽",
+        "疑是银河落九天"
+      ],
+      "correct_index": 1,
+      "explanation": "“更上一层楼”。",
+      "tags": [
+        "古诗",
+        "登鹳雀楼"
+      ]
+    },
+    {
+      "id": 2051,
+      "question": "《江雪》的作者是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "柳宗元",
+        "韩愈",
+        "欧阳修",
+        "苏轼"
+      ],
+      "correct_index": 0,
+      "explanation": "《江雪》作者柳宗元。",
+      "tags": [
+        "古诗",
+        "江雪"
+      ]
+    },
+    {
+      "id": 2052,
+      "question": "“千山鸟飞绝”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "万径人踪灭",
+        "孤舟蓑笠翁",
+        "独钓寒江雪",
+        "独钓寒江雪"
+      ],
+      "correct_index": 0,
+      "explanation": "“万径人踪灭”。",
+      "tags": [
+        "古诗",
+        "江雪"
+      ]
+    },
+    {
+      "id": 2053,
+      "question": "“孤舟蓑笠翁”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "万径人踪灭",
+        "独钓寒江雪",
+        "千山鸟飞绝",
+        "遥看瀑布"
+      ],
+      "correct_index": 1,
+      "explanation": "“独钓寒江雪”。",
+      "tags": [
+        "古诗",
+        "江雪"
+      ]
+    },
+    {
+      "id": 2054,
+      "question": "《梅花》“墙角数枝梅”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "凌寒独自开",
+        "遥知不是雪",
+        "为有暗香来",
+        "凌寒独自开"
+      ],
+      "correct_index": 0,
+      "explanation": "“凌寒独自开”。",
+      "tags": [
+        "古诗",
+        "梅花"
+      ]
+    },
+    {
+      "id": 2055,
+      "question": "“遥知不是雪”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "为有暗香来",
+        "凌寒独自开",
+        "墙角数枝梅",
+        "春风送暖"
+      ],
+      "correct_index": 0,
+      "explanation": "“为有暗香来”。",
+      "tags": [
+        "古诗",
+        "梅花"
+      ]
+    },
+    {
+      "id": 2056,
+      "question": "《小儿垂钓》“蓬头稚子学垂纶”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "侧坐莓苔草映身",
+        "路人借问遥招手",
+        "怕得鱼惊不应人",
+        "侧坐莓苔草映身"
+      ],
+      "correct_index": 0,
+      "explanation": "“侧坐莓苔草映身”。",
+      "tags": [
+        "古诗",
+        "小儿垂钓"
+      ]
+    },
+    {
+      "id": 2057,
+      "question": "“路人借问遥招手”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "怕得鱼惊不应人",
+        "侧坐莓苔草映身",
+        "蓬头稚子学垂纶",
+        "牧童遥指杏花村"
+      ],
+      "correct_index": 0,
+      "explanation": "“怕得鱼惊不应人”。",
+      "tags": [
+        "古诗",
+        "小儿垂钓"
+      ]
+    },
+    {
+      "id": 2058,
+      "question": "《村居》“草长莺飞二月天”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "拂堤杨柳醉春烟",
+        "儿童散学归来早",
+        "忙趁东风放纸鸢",
+        "忙趁东风放纸鸢"
+      ],
+      "correct_index": 0,
+      "explanation": "“拂堤杨柳醉春烟”。",
+      "tags": [
+        "古诗",
+        "村居"
+      ]
+    },
+    {
+      "id": 2059,
+      "question": "“儿童散学归来早”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "忙趁东风放纸鸢",
+        "拂堤杨柳醉春烟",
+        "草长莺飞二月天",
+        "二月春风似剪刀"
+      ],
+      "correct_index": 0,
+      "explanation": "“忙趁东风放纸鸢”。",
+      "tags": [
+        "古诗",
+        "村居"
+      ]
+    },
+    {
+      "id": 2060,
+      "question": "《坐井观天》中，青蛙认为天有多大？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "很大很大",
+        "只有井口那么大",
+        "只有井那么深",
+        "无边无际"
+      ],
+      "correct_index": 1,
+      "explanation": "坐在井里看天，天只有井口大。",
+      "tags": [
+        "阅读",
+        "坐井观天"
+      ]
+    },
+    {
+      "id": 2061,
+      "question": "《坐井观天》告诉我们什么道理？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "坐井很舒服",
+        "看问题要全面",
+        "天很小",
+        "井里很安全"
+      ],
+      "correct_index": 1,
+      "explanation": "看问题、认识事物要全面。",
+      "tags": [
+        "阅读",
+        "坐井观天"
+      ]
+    },
+    {
+      "id": 2062,
+      "question": "《寒号鸟》中，寒号鸟为什么冻死了？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "它太懒，不听劝告，不做窝",
+        "它太怕冷",
+        "它找不到食物",
+        "它被同伴赶走"
+      ],
+      "correct_index": 0,
+      "explanation": "寒号鸟只顾玩，不听喜鹊劝告。",
+      "tags": [
+        "阅读",
+        "寒号鸟"
+      ]
+    },
+    {
+      "id": 2063,
+      "question": "《我要的是葫芦》中，种葫芦的人为什么没得到葫芦？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "他没浇水",
+        "他不治叶子上的蚜虫",
+        "他没施肥",
+        "他把葫芦摘了"
+      ],
+      "correct_index": 1,
+      "explanation": "叶子上长蚜虫不治，葫芦也掉了。",
+      "tags": [
+        "阅读",
+        "我要的是葫芦"
+      ]
+    },
+    {
+      "id": 2064,
+      "question": "《曹冲称象》中，曹冲用什么办法称象？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "用大秤",
+        "用船和石头",
+        "用大象",
+        "问大臣"
+      ],
+      "correct_index": 1,
+      "explanation": "把象赶上船刻水痕，再换石头称重。",
+      "tags": [
+        "阅读",
+        "曹冲称象"
+      ]
+    },
+    {
+      "id": 2065,
+      "question": "《大禹治水》中，大禹用什么方法治水？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "堵",
+        "疏导",
+        "搬家",
+        "祈祷"
+      ],
+      "correct_index": 1,
+      "explanation": "禹采用疏导的办法，引水入海。",
+      "tags": [
+        "阅读",
+        "大禹治水"
+      ]
+    },
+    {
+      "id": 2066,
+      "question": "《朱德的扁担》故事发生在哪个时期？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "抗日战争",
+        "井冈山斗争",
+        "解放战争",
+        "抗美援朝"
+      ],
+      "correct_index": 1,
+      "explanation": "朱德在井冈山时期和战士们一起挑粮。",
+      "tags": [
+        "阅读",
+        "朱德的扁担"
+      ]
+    },
+    {
+      "id": 2067,
+      "question": "《植物妈妈有办法》中，蒲公英靠什么传播种子？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "动物",
+        "风",
+        "水",
+        "太阳"
+      ],
+      "correct_index": 1,
+      "explanation": "蒲公英靠风传播。",
+      "tags": [
+        "阅读",
+        "植物妈妈有办法"
+      ]
+    },
+    {
+      "id": 2068,
+      "question": "《植物妈妈有办法》中，苍耳靠什么传播种子？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "风",
+        "水",
+        "挂住动物皮毛",
+        "太阳"
+      ],
+      "correct_index": 2,
+      "explanation": "苍耳带刺挂住动物皮毛。",
+      "tags": [
+        "阅读",
+        "植物妈妈有办法"
+      ]
+    },
+    {
+      "id": 2069,
+      "question": "《我是什么》中，“我”会变，变成云、雨、冰雹、雪，“我”是？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "风",
+        "水",
+        "雾",
+        "雷电"
+      ],
+      "correct_index": 1,
+      "explanation": "水能变成云、雨、冰雹、雪。",
+      "tags": [
+        "阅读",
+        "我是什么"
+      ]
+    },
+    {
+      "id": 2070,
+      "question": "《狐狸分奶酪》中，狐狸最后把奶酪怎样了？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "分给两只小熊",
+        "自己吃光了",
+        "扔了",
+        "藏起来了"
+      ],
+      "correct_index": 1,
+      "explanation": "狐狸借分奶酪把奶酪全吃了。",
+      "tags": [
+        "阅读",
+        "狐狸分奶酪"
+      ]
+    },
+    {
+      "id": 2071,
+      "question": "《狐狸和乌鸦》中，乌鸦嘴里的肉怎么掉的？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "乌鸦自己扔的",
+        "狐狸骗乌鸦唱歌，肉掉了",
+        "狐狸抢的",
+        "风吹掉的"
+      ],
+      "correct_index": 1,
+      "explanation": "狐狸夸乌鸦唱歌好听，乌鸦开口肉掉。",
+      "tags": [
+        "阅读",
+        "狐狸和乌鸦"
+      ]
+    },
+    {
+      "id": 2072,
+      "question": "《狐假虎威》中，百兽害怕的是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "狐狸",
+        "老虎",
+        "狐狸背后的老虎",
+        "小鹿"
+      ],
+      "correct_index": 1,
+      "explanation": "百兽怕的是老虎，狐狸借老虎威风。",
+      "tags": [
+        "阅读",
+        "狐假虎威"
+      ]
+    },
+    {
+      "id": 2073,
+      "question": "《狼和小羊》故事告诉我们什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "狼很善良",
+        "坏人想干坏事，总能找到借口",
+        "小羊很聪明",
+        "狼和小羊是朋友"
+      ],
+      "correct_index": 1,
+      "explanation": "坏人想干坏事，借口总是有的。",
+      "tags": [
+        "阅读",
+        "狼和小羊"
+      ]
+    },
+    {
+      "id": 2074,
+      "question": "《小毛虫》中，小毛虫最后变成了什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "蚂蚁",
+        "蝴蝶",
+        "蜜蜂",
+        "蜻蜓"
+      ],
+      "correct_index": 1,
+      "explanation": "小毛虫破茧成蝶。",
+      "tags": [
+        "阅读",
+        "小毛虫"
+      ]
+    },
+    {
+      "id": 2075,
+      "question": "《千人糕》告诉我们什么道理？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "米糕很贵",
+        "粮食和劳动来之不易，要珍惜",
+        "米糕很好吃",
+        "千人做的糕"
+      ],
+      "correct_index": 1,
+      "explanation": "一块米糕要很多人劳动，来之不易。",
+      "tags": [
+        "阅读",
+        "千人糕"
+      ]
+    },
+    {
+      "id": 2076,
+      "question": "“十年树木”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "百年树人",
+        "百年树木",
+        "十年树人",
+        "百年大计"
+      ],
+      "correct_index": 0,
+      "explanation": "十年树木，百年树人。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 2077,
+      "question": "“树高百尺”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "叶落归根",
+        "叶落回家",
+        "落叶归根",
+        "叶落归根"
+      ],
+      "correct_index": 0,
+      "explanation": "树高百尺，叶落归根。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 2078,
+      "question": "“飞流直下三千尺”用了什么修辞手法？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "比喻",
+        "夸张",
+        "拟人",
+        "排比"
+      ],
+      "correct_index": 1,
+      "explanation": "三千尺是夸张。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2079,
+      "question": "“不以规矩”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "不成方圆",
+        "不能成方圆",
+        "不成规矩",
+        "难成方圆"
+      ],
+      "correct_index": 1,
+      "explanation": "不以规矩，不能成方圆。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 2080,
+      "question": "“己所不欲”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "勿施于人",
+        "勿施于人",
+        "勿欲于人",
+        "勿加于人"
+      ],
+      "correct_index": 0,
+      "explanation": "己所不欲，勿施于人。",
+      "tags": [
+        "论语"
+      ]
+    },
+    {
+      "id": 2081,
+      "question": "“与朋友交”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "言而有信",
+        "言而有信",
+        "言而有信",
+        "言而有信"
+      ],
+      "correct_index": 0,
+      "explanation": "与朋友交，言而有信。",
+      "tags": [
+        "论语"
+      ]
+    },
+    {
+      "id": 2082,
+      "question": "“白日依山尽”描写的是哪里的景色？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "黄河",
+        "庐山",
+        "鹳雀楼",
+        "天门山"
+      ],
+      "correct_index": 2,
+      "explanation": "《登鹳雀楼》写鹳雀楼所见。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2083,
+      "question": "“天苍苍，野茫茫，风吹草低见牛羊”描写的是哪里？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "江南",
+        "草原",
+        "大海",
+        "森林"
+      ],
+      "correct_index": 1,
+      "explanation": "敕勒歌描写北方草原。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2084,
+      "question": "“欲穷千里目，更上一层楼”告诉我们什么？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "楼很高",
+        "要站得高才能看得远",
+        "上楼很累",
+        "楼可以爬"
+      ],
+      "correct_index": 1,
+      "explanation": "站得高看得远，要不断努力。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2085,
+      "question": "“遥知不是雪，为有暗香来”写的是什么花？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "梅花",
+        "菊花",
+        "荷花",
+        "桃花"
+      ],
+      "correct_index": 0,
+      "explanation": "梅花凌寒开放，有暗香。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2086,
+      "question": "“路人借问遥招手，怕得鱼惊不应人”写的是哪个小孩？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "放牛娃",
+        "钓鱼的小孩",
+        "放风筝的小孩",
+        "摘花的小孩"
+      ],
+      "correct_index": 1,
+      "explanation": "《小儿垂钓》写钓鱼的小孩。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2087,
+      "question": "下列哪个节日在秋天？",
+      "type": "综合性学习",
+      "difficulty": 1,
+      "options": [
+        "春节",
+        "端午节",
+        "中秋节",
+        "清明节"
+      ],
+      "correct_index": 2,
+      "explanation": "中秋节在农历八月，秋天。",
+      "tags": [
+        "节日"
+      ]
+    },
+    {
+      "id": 2088,
+      "question": "中秋节我们会吃什么？",
+      "type": "综合性学习",
+      "difficulty": 1,
+      "options": [
+        "粽子",
+        "月饼",
+        "汤圆",
+        "饺子"
+      ],
+      "correct_index": 1,
+      "explanation": "中秋赏月吃月饼。",
+      "tags": [
+        "节日"
+      ]
+    },
+    {
+      "id": 2089,
+      "question": "端午节是为了纪念谁？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "李白",
+        "屈原",
+        "杜甫",
+        "孔子"
+      ],
+      "correct_index": 1,
+      "explanation": "端午节纪念屈原。",
+      "tags": [
+        "节日"
+      ]
+    },
+    {
+      "id": 2090,
+      "question": "下面哪种做法是节约用水？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "洗完手不关水龙头",
+        "随手关水龙头",
+        "玩水",
+        "用长流水洗碗"
+      ],
+      "correct_index": 1,
+      "explanation": "随手关水节约用水。",
+      "tags": [
+        "环保"
+      ]
+    },
+    {
+      "id": 2091,
+      "question": "春天到了，我们常会做什么？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "堆雪人",
+        "植树",
+        "游泳",
+        "吃冰棍"
+      ],
+      "correct_index": 1,
+      "explanation": "春天适合植树。",
+      "tags": [
+        "季节活动"
+      ]
+    },
+    {
+      "id": 2092,
+      "question": "在图书馆里，我们应该怎样做？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "大声说话",
+        "安静看书",
+        "追逐打闹",
+        "吃东西"
+      ],
+      "correct_index": 1,
+      "explanation": "图书馆要安静。",
+      "tags": [
+        "公共规则"
+      ]
+    },
+    {
+      "id": 2093,
+      "question": "过马路时，红灯应该？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "跑过去",
+        "停下等绿灯",
+        "慢慢走",
+        "绕过去"
+      ],
+      "correct_index": 1,
+      "explanation": "红灯停绿灯行。",
+      "tags": [
+        "交通规则"
+      ]
+    },
+    {
+      "id": 2094,
+      "question": "“园”和“圆”，“____形”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "圆",
+        "园",
+        "原",
+        "员"
+      ],
+      "correct_index": 0,
+      "explanation": "形状用“圆”。",
+      "tags": [
+        "同音字辨析"
+      ]
+    },
+    {
+      "id": 2095,
+      "question": "“一（  ）铅笔”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "只",
+        "支",
+        "艘",
+        "条"
+      ],
+      "correct_index": 1,
+      "explanation": "铅笔量词用“支”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 2096,
+      "question": "“友好”的反义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "友爱",
+        "友好",
+        "敌对",
+        "亲切"
+      ],
+      "correct_index": 2,
+      "explanation": "友好与敌对相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 2097,
+      "question": "“他把书放进了书包。”改成“被”字句是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "书被他放进了书包",
+        "他被书放进了书包",
+        "书包被他放进了书",
+        "书放进了他书包"
+      ],
+      "correct_index": 0,
+      "explanation": "书被他放进了书包。",
+      "tags": [
+        "被字句"
+      ]
+    },
+    {
+      "id": 2098,
+      "question": "《望庐山瀑布》中“香炉”指的是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "烧香的炉子",
+        "香炉峰",
+        "香炉",
+        "庐山香炉"
+      ],
+      "correct_index": 1,
+      "explanation": "香炉指庐山香炉峰。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2099,
+      "question": "《狐狸和乌鸦》告诉我们什么？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "狐狸很聪明",
+        "不要轻信别人的奉承",
+        "乌鸦爱唱歌",
+        "肉很好吃"
+      ],
+      "correct_index": 1,
+      "explanation": "不要轻信花言巧语的奉承。",
+      "tags": [
+        "阅读",
+        "狐狸和乌鸦"
+      ]
+    },
+    {
+      "id": 2100,
+      "question": "“树无根不长”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "人无志不立",
+        "人无志不立",
+        "人无志不成",
+        "人无志不立"
+      ],
+      "correct_index": 3,
+      "explanation": "树无根不长，人无志不立。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 2101,
+      "question": "下列哪种行为是有礼貌的？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "见到老师问好",
+        "随地吐痰",
+        "插队",
+        "说脏话"
+      ],
+      "correct_index": 0,
+      "explanation": "见到老师问好是有礼貌。",
+      "tags": [
+        "礼仪"
+      ]
+    },
+    {
+      "id": 2102,
+      "question": "“队”字的偏旁是？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "阝",
+        "人",
+        "丨",
+        "丿"
+      ],
+      "correct_index": 0,
+      "explanation": "队左边是双耳旁。",
+      "tags": [
+        "偏旁"
+      ]
+    },
+    {
+      "id": 2103,
+      "question": "“一（  ）战马”，括号里应填？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "艘",
+        "匹",
+        "条",
+        "棵"
+      ],
+      "correct_index": 1,
+      "explanation": "马的量词用“匹”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 2104,
+      "question": "“今天的天气真好！”这是什么句？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "陈述句",
+        "疑问句",
+        "感叹句",
+        "祈使句"
+      ],
+      "correct_index": 2,
+      "explanation": "带感叹号，是感叹句。",
+      "tags": [
+        "句式"
+      ]
+    },
+    {
+      "id": 2105,
+      "question": "《夜宿山寺》中“危楼”指的是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "危险的楼",
+        "高楼",
+        "破楼",
+        "矮楼"
+      ],
+      "correct_index": 1,
+      "explanation": "危是高的意思，危楼指高楼。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2106,
+      "question": "《狐假虎威》中“假”的意思是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "假的",
+        "借",
+        "假装",
+        "假如"
+      ],
+      "correct_index": 1,
+      "explanation": "假是借的意思，狐狸借老虎威风。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 2107,
+      "question": "“天似穹庐，笼盖四野”中“穹庐”指的是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "帐篷",
+        "天空",
+        "房子",
+        "草原"
+      ],
+      "correct_index": 0,
+      "explanation": "穹庐指游牧民族的毡帐。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 2108,
+      "question": "我们平时应该怎样对待长辈？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "顶嘴",
+        "尊敬、听话",
+        "不理睬",
+        "吵架"
+      ],
+      "correct_index": 1,
+      "explanation": "尊敬长辈是传统美德。",
+      "tags": [
+        "礼仪"
+      ]
+    },
+    {
+      "id": 2109,
+      "question": "“乐”在“音乐”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "lè",
+        "yuè",
+        "lē",
+        "luō"
+      ],
+      "correct_index": 1,
+      "explanation": "音乐的乐读 yuè。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 2110,
+      "question": "“一（  ）明月”，括号里应填？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "轮",
+        "艘",
+        "只",
+        "条"
+      ],
+      "correct_index": 0,
+      "explanation": "明月量词用“轮”。",
+      "tags": [
+        "量词"
+      ]
+    },
+    {
+      "id": 2111,
+      "question": "“弯弯的月亮像小船。”句中把月亮比作什么？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "圆盘",
+        "小船",
+        "镰刀",
+        "香蕉"
+      ],
+      "correct_index": 1,
+      "explanation": "句中明确比作小船。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 2112,
+      "question": "《我是什么》中，“我”做过的好事不包括？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "灌溉田地",
+        "发动机器",
+        "淹没庄稼",
+        "帮助人们工作"
+      ],
+      "correct_index": 2,
+      "explanation": "淹没庄稼是坏事。",
+      "tags": [
+        "阅读",
+        "我是什么"
+      ]
+    },
+    {
+      "id": 2113,
+      "question": "“一寸光阴一寸金”告诉我们要珍惜什么？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "金子",
+        "时间",
+        "粮食",
+        "友谊"
+      ],
+      "correct_index": 1,
+      "explanation": "时间宝贵，要珍惜。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 2114,
+      "question": "“重”在“重复”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "chóng",
+        "zhòng",
+        "zhōng",
+        "zhǒng"
+      ],
+      "correct_index": 0,
+      "explanation": "重复的重读 chóng。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 2115,
+      "question": "“立刻”的近义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "慢慢",
+        "马上",
+        "以后",
+        "常常"
+      ],
+      "correct_index": 1,
+      "explanation": "立刻和马上意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 2116,
+      "question": "“一片片叶子从树上落下来。”这句话把句子写具体，用了什么？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "比喻",
+        "数量词重叠",
+        "拟人",
+        "排比"
+      ],
+      "correct_index": 1,
+      "explanation": "“一片片”是数量词重叠。",
+      "tags": [
+        "句子"
+      ]
+    },
+    {
+      "id": 2117,
+      "question": "《登鹳雀楼》的作者是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "王之涣",
+        "李白",
+        "杜甫",
+        "王维"
+      ],
+      "correct_index": 0,
+      "explanation": "《登鹳雀楼》作者王之涣。",
+      "tags": [
+        "古诗",
+        "登鹳雀楼"
+      ]
+    },
+    {
+      "id": 2118,
+      "question": "《狐假虎威》中，狐狸是借着谁的威风吓跑百兽的？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "自己的",
+        "老虎的",
+        "狮子的",
+        "大象的"
+      ],
+      "correct_index": 1,
+      "explanation": "狐狸借老虎的威风。",
+      "tags": [
+        "阅读",
+        "狐假虎威"
+      ]
+    },
+    {
+      "id": 2119,
+      "question": "下列哪种行为是爱护公物的？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "在课桌上乱写",
+        "爱护桌椅，不乱刻画",
+        "踩草坪",
+        "摘公园里的花"
+      ],
+      "correct_index": 1,
+      "explanation": "爱护桌椅不乱刻画是爱护公物。",
+      "tags": [
+        "公共道德"
+      ]
+    },
+    {
+      "id": 2120,
+      "question": "“青”加三点水是“清”，加日字旁是“晴”，这是利用什么识字？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "象形",
+        "形声字",
+        "会意",
+        "指事"
+      ],
+      "correct_index": 1,
+      "explanation": "形旁表义、声旁表音，是形声字。",
+      "tags": [
+        "形声字"
+      ]
+    }
+  ]
+}

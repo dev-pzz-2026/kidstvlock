@@ -1,0 +1,2172 @@
+{
+  "bank_id": "grade1_english",
+  "bank_name": "一年级英语",
+  "grade": 1,
+  "subject": "english",
+  "subject_name": "英语",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 1001,
+      "question": "英语字母表中，第一个大写字母是哪一个？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "B",
+        "C",
+        "A",
+        "D"
+      ],
+      "correct_index": 2,
+      "explanation": "英语字母表按顺序为 A B C D……，第一个字母是 A。",
+      "tags": [
+        "字母",
+        "认读"
+      ]
+    },
+    {
+      "id": 1002,
+      "question": "下列哪个字母是小写字母？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "B",
+        "C",
+        "g",
+        "D"
+      ],
+      "correct_index": 2,
+      "explanation": "A、C、D 都是大写字母，只有 g 是小写字母。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1003,
+      "question": "字母 B 的大写形式是哪一个？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "D",
+        "b",
+        "P",
+        "B"
+      ],
+      "correct_index": 3,
+      "explanation": "B 的大写形式是 B，b 是其小写形式。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1004,
+      "question": "字母 d 对应的大写字母是？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "O",
+        "D",
+        "P",
+        "B"
+      ],
+      "correct_index": 1,
+      "explanation": "小写 d 的大写形式是 D。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1005,
+      "question": "下列哪一组字母按字母表顺序排列正确？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "B C D",
+        "C A B",
+        "D B C",
+        "A C B"
+      ],
+      "correct_index": 0,
+      "explanation": "字母表顺序为 A B C D，只有 B C D 是连续正确的。",
+      "tags": [
+        "字母",
+        "顺序"
+      ]
+    },
+    {
+      "id": 1006,
+      "question": "字母 E 的后面紧跟着哪个字母？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "D",
+        "H",
+        "F",
+        "G"
+      ],
+      "correct_index": 2,
+      "explanation": "字母表中 E 后面是 F。",
+      "tags": [
+        "字母",
+        "顺序"
+      ]
+    },
+    {
+      "id": 1007,
+      "question": "字母 Q 前面的字母是？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "P",
+        "R",
+        "O",
+        "S"
+      ],
+      "correct_index": 0,
+      "explanation": "字母表中 Q 前面是 P。",
+      "tags": [
+        "字母",
+        "顺序"
+      ]
+    },
+    {
+      "id": 1008,
+      "question": "单词 apple（苹果）是以哪个字母开头的？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "a",
+        "c",
+        "d",
+        "b"
+      ],
+      "correct_index": 0,
+      "explanation": "apple 首字母是 a，发音 /æ/。",
+      "tags": [
+        "字母音",
+        "单词"
+      ]
+    },
+    {
+      "id": 1009,
+      "question": "单词 cat（猫）中含有哪个首字母发音？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "/h/",
+        "/s/",
+        "/tʃ/",
+        "/k/"
+      ],
+      "correct_index": 3,
+      "explanation": "cat 首字母 c 发 /k/ 音。",
+      "tags": [
+        "字母音",
+        "c"
+      ]
+    },
+    {
+      "id": 1010,
+      "question": "单词 dog（狗）首字母的发音是？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "/t/",
+        "/g/",
+        "/b/",
+        "/d/"
+      ],
+      "correct_index": 3,
+      "explanation": "dog 首字母 d 发 /d/ 音。",
+      "tags": [
+        "字母音",
+        "d"
+      ]
+    },
+    {
+      "id": 1011,
+      "question": "下列颜色单词中，表示“红色”的是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "correct_index": 0,
+      "explanation": "red 表示红色；blue 蓝色，green 绿色，yellow 黄色。",
+      "tags": [
+        "颜色",
+        "red"
+      ]
+    },
+    {
+      "id": 1012,
+      "question": "天空常被形容为什么颜色？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "blue",
+        "black",
+        "pink",
+        "red"
+      ],
+      "correct_index": 0,
+      "explanation": "sky 通常是 blue（蓝色）。",
+      "tags": [
+        "颜色",
+        "blue"
+      ]
+    },
+    {
+      "id": 1013,
+      "question": "草（grass）通常是什么颜色？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "brown",
+        "white",
+        "red",
+        "green"
+      ],
+      "correct_index": 3,
+      "explanation": "草是 green（绿色）的。",
+      "tags": [
+        "颜色",
+        "green"
+      ]
+    },
+    {
+      "id": 1014,
+      "question": "香蕉（banana）成熟时是什么颜色？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "yellow",
+        "black",
+        "blue",
+        "red"
+      ],
+      "correct_index": 0,
+      "explanation": "成熟的香蕉是 yellow（黄色）的。",
+      "tags": [
+        "颜色",
+        "yellow"
+      ]
+    },
+    {
+      "id": 1015,
+      "question": "下列表示“黑色”的单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "red",
+        "green",
+        "white",
+        "black"
+      ],
+      "correct_index": 3,
+      "explanation": "black 黑色；white 白色。",
+      "tags": [
+        "颜色",
+        "black"
+      ]
+    },
+    {
+      "id": 1016,
+      "question": "雪（snow）是什么颜色？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "white",
+        "blue",
+        "red",
+        "green"
+      ],
+      "correct_index": 0,
+      "explanation": "雪是 white（白色）的。",
+      "tags": [
+        "颜色",
+        "white"
+      ]
+    },
+    {
+      "id": 1017,
+      "question": "数字 1 的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "four",
+        "two",
+        "one",
+        "three"
+      ],
+      "correct_index": 2,
+      "explanation": "1 是 one。",
+      "tags": [
+        "数字",
+        "1-10"
+      ]
+    },
+    {
+      "id": 1018,
+      "question": "数字 3 的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "five",
+        "three",
+        "two",
+        "four"
+      ],
+      "correct_index": 1,
+      "explanation": "3 是 three。",
+      "tags": [
+        "数字",
+        "1-10"
+      ]
+    },
+    {
+      "id": 1019,
+      "question": "数字 5 的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "four",
+        "five",
+        "six",
+        "seven"
+      ],
+      "correct_index": 1,
+      "explanation": "5 是 five。",
+      "tags": [
+        "数字",
+        "1-10"
+      ]
+    },
+    {
+      "id": 1020,
+      "question": "数字 8 的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "ten",
+        "eight",
+        "nine",
+        "seven"
+      ],
+      "correct_index": 1,
+      "explanation": "8 是 eight。",
+      "tags": [
+        "数字",
+        "1-10"
+      ]
+    },
+    {
+      "id": 1021,
+      "question": "数字 10 的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "ten",
+        "two",
+        "nine",
+        "eleven"
+      ],
+      "correct_index": 0,
+      "explanation": "10 是 ten。",
+      "tags": [
+        "数字",
+        "1-10"
+      ]
+    },
+    {
+      "id": 1022,
+      "question": "“我有两支铅笔”用英语应说：I have ___ pencils.",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "one",
+        "ten",
+        "zero",
+        "two"
+      ],
+      "correct_index": 3,
+      "explanation": "two 表示“两个”。",
+      "tags": [
+        "数字",
+        "1-10"
+      ]
+    },
+    {
+      "id": 1023,
+      "question": "下列哪个单词表示“猫”？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "dog",
+        "cat",
+        "duck",
+        "pig"
+      ],
+      "correct_index": 1,
+      "explanation": "cat 猫；dog 狗；duck 鸭子；pig 猪。",
+      "tags": [
+        "动物",
+        "cat"
+      ]
+    },
+    {
+      "id": 1024,
+      "question": "下列哪个动物会“汪汪”叫？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "dog",
+        "bird",
+        "fish",
+        "cat"
+      ],
+      "correct_index": 0,
+      "explanation": "dog 狗会汪汪叫。",
+      "tags": [
+        "动物",
+        "dog"
+      ]
+    },
+    {
+      "id": 1025,
+      "question": "会游泳、嘎嘎叫的动物是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "duck",
+        "bird",
+        "cat",
+        "tiger"
+      ],
+      "correct_index": 0,
+      "explanation": "duck 鸭子嘎嘎叫，会游泳。",
+      "tags": [
+        "动物",
+        "duck"
+      ]
+    },
+    {
+      "id": 1026,
+      "question": "下列哪个单词表示“鸟”？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "pig",
+        "cow",
+        "lion",
+        "bird"
+      ],
+      "correct_index": 3,
+      "explanation": "bird 鸟。",
+      "tags": [
+        "动物",
+        "bird"
+      ]
+    },
+    {
+      "id": 1027,
+      "question": "“猴子”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "elephant",
+        "lion",
+        "monkey",
+        "tiger"
+      ],
+      "correct_index": 2,
+      "explanation": "monkey 猴子；tiger 老虎；lion 狮子；elephant 大象。",
+      "tags": [
+        "动物",
+        "monkey"
+      ]
+    },
+    {
+      "id": 1028,
+      "question": "“大象”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "elephant",
+        "bear",
+        "panda",
+        "snake"
+      ],
+      "correct_index": 0,
+      "explanation": "elephant 大象。",
+      "tags": [
+        "动物",
+        "elephant"
+      ]
+    },
+    {
+      "id": 1029,
+      "question": "“苹果”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "banana",
+        "apple",
+        "orange",
+        "pear"
+      ],
+      "correct_index": 1,
+      "explanation": "apple 苹果。",
+      "tags": [
+        "水果",
+        "apple"
+      ]
+    },
+    {
+      "id": 1030,
+      "question": "下列哪个是水果？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "pen",
+        "dog",
+        "book",
+        "apple"
+      ],
+      "correct_index": 3,
+      "explanation": "apple 苹果是水果。",
+      "tags": [
+        "水果",
+        "分类"
+      ]
+    },
+    {
+      "id": 1031,
+      "question": "“香蕉”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "banana",
+        "red",
+        "apple",
+        "cat"
+      ],
+      "correct_index": 0,
+      "explanation": "banana 香蕉。",
+      "tags": [
+        "水果",
+        "banana"
+      ]
+    },
+    {
+      "id": 1032,
+      "question": "“橙子”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "dog",
+        "orange",
+        "pear",
+        "yellow"
+      ],
+      "correct_index": 1,
+      "explanation": "orange 橙子；yellow 黄色。",
+      "tags": [
+        "水果",
+        "orange"
+      ]
+    },
+    {
+      "id": 1033,
+      "question": "“妈妈”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "father",
+        "sister",
+        "mother",
+        "brother"
+      ],
+      "correct_index": 2,
+      "explanation": "mother 妈妈；father 爸爸。",
+      "tags": [
+        "家庭成员",
+        "mother"
+      ]
+    },
+    {
+      "id": 1034,
+      "question": "“爸爸”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "father",
+        "grandma",
+        "mother",
+        "sister"
+      ],
+      "correct_index": 0,
+      "explanation": "father 爸爸。",
+      "tags": [
+        "家庭成员",
+        "father"
+      ]
+    },
+    {
+      "id": 1035,
+      "question": "“哥哥/弟弟”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "father",
+        "sister",
+        "mother",
+        "brother"
+      ],
+      "correct_index": 3,
+      "explanation": "brother 兄弟；sister 姐妹。",
+      "tags": [
+        "家庭成员",
+        "brother"
+      ]
+    },
+    {
+      "id": 1036,
+      "question": "“姐姐/妹妹”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "sister",
+        "dad",
+        "grandpa",
+        "brother"
+      ],
+      "correct_index": 0,
+      "explanation": "sister 姐妹。",
+      "tags": [
+        "家庭成员",
+        "sister"
+      ]
+    },
+    {
+      "id": 1037,
+      "question": "早上见面打招呼，应说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Goodbye!",
+        "Good morning!",
+        "Good night!",
+        "Thank you!"
+      ],
+      "correct_index": 1,
+      "explanation": "早上问好说 Good morning。",
+      "tags": [
+        "问候",
+        "早晨"
+      ]
+    },
+    {
+      "id": 1038,
+      "question": "放学和老师同学道别，应说：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "Good morning!",
+        "Hello!",
+        "Sit down!",
+        "Goodbye!"
+      ],
+      "correct_index": 3,
+      "explanation": "道别说 Goodbye。",
+      "tags": [
+        "告别",
+        ""
+      ]
+    },
+    {
+      "id": 1039,
+      "question": "别人对你说 Thank you，你应回答：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "Hello!",
+        "No thanks.",
+        "Goodbye!",
+        "You're welcome."
+      ],
+      "correct_index": 3,
+      "explanation": "感谢的回应是 You're welcome（不客气）。",
+      "tags": [
+        "感谢",
+        "回应"
+      ]
+    },
+    {
+      "id": 1040,
+      "question": "别人对你说 Hello，你应回答：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "Goodbye!",
+        "Thank you!",
+        "Hello!",
+        "Sorry."
+      ],
+      "correct_index": 2,
+      "explanation": "Hello 的回应是 Hello/Hi。",
+      "tags": [
+        "问候",
+        ""
+      ]
+    },
+    {
+      "id": 1041,
+      "question": "老师让你“坐下”，英语应说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "Show me.",
+        "Open the door.",
+        "Sit down.",
+        "Stand up."
+      ],
+      "correct_index": 2,
+      "explanation": "Sit down 坐下；Stand up 起立。",
+      "tags": [
+        "指令",
+        "课堂"
+      ]
+    },
+    {
+      "id": 1042,
+      "question": "老师让你“起立”，英语应说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "Sit down.",
+        "Goodbye.",
+        "Close the book.",
+        "Stand up."
+      ],
+      "correct_index": 3,
+      "explanation": "Stand up 起立。",
+      "tags": [
+        "指令",
+        "课堂"
+      ]
+    },
+    {
+      "id": 1043,
+      "question": "老师让你“打开书本”，应说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "Open your book.",
+        "Stand up.",
+        "Sit down.",
+        "Close your book."
+      ],
+      "correct_index": 0,
+      "explanation": "Open your book 打开书本。",
+      "tags": [
+        "指令",
+        "课堂"
+      ]
+    },
+    {
+      "id": 1044,
+      "question": "介绍自己时说“我是 Lily”，应说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "I am Lily.",
+        "He is Lily.",
+        "She is Lily.",
+        "You are Lily."
+      ],
+      "correct_index": 0,
+      "explanation": "自我介绍用 I am...。",
+      "tags": [
+        "自我介绍",
+        "I am"
+      ]
+    },
+    {
+      "id": 1045,
+      "question": "询问对方名字，应说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "How are you?",
+        "Thank you.",
+        "What's your name?",
+        "Goodbye!"
+      ],
+      "correct_index": 2,
+      "explanation": "What's your name? 问名字。",
+      "tags": [
+        "询问",
+        "名字"
+      ]
+    },
+    {
+      "id": 1046,
+      "question": "别人问你“How are you?”，你应回答：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "My name is Tom.",
+        "I'm fine, thank you.",
+        "Yes.",
+        "Goodbye."
+      ],
+      "correct_index": 1,
+      "explanation": "How are you? 回答 I'm fine, thank you.",
+      "tags": [
+        "问候",
+        "身体"
+      ]
+    },
+    {
+      "id": 1047,
+      "question": "“这是一只猫。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "This is a dog.",
+        "I am a cat.",
+        "This is a cat.",
+        "It's red."
+      ],
+      "correct_index": 2,
+      "explanation": "This is... 表示“这是……”。",
+      "tags": [
+        "句型",
+        "This is"
+      ]
+    },
+    {
+      "id": 1048,
+      "question": "“它是红色的。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "It is red.",
+        "It is a cat.",
+        "I am red.",
+        "You are red."
+      ],
+      "correct_index": 0,
+      "explanation": "It is... 表示“它是……”。",
+      "tags": [
+        "句型",
+        "It is"
+      ]
+    },
+    {
+      "id": 1049,
+      "question": "下列哪个单词表示“猪”？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "pig",
+        "cat",
+        "dog",
+        "duck"
+      ],
+      "correct_index": 0,
+      "explanation": "pig 猪。",
+      "tags": [
+        "动物",
+        "pig"
+      ]
+    },
+    {
+      "id": 1050,
+      "question": "下列哪个单词表示“熊”？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "bird",
+        "panda",
+        "bear",
+        "pear"
+      ],
+      "correct_index": 2,
+      "explanation": "bear 熊；pear 梨。",
+      "tags": [
+        "动物",
+        "bear"
+      ]
+    },
+    {
+      "id": 1051,
+      "question": "“奶奶/外婆”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 1,
+      "options": [
+        "sister",
+        "grandpa",
+        "brother",
+        "grandma"
+      ],
+      "correct_index": 3,
+      "explanation": "grandma 奶奶/外婆。",
+      "tags": [
+        "家庭成员",
+        "grandma"
+      ]
+    },
+    {
+      "id": 1052,
+      "question": "“你好”除了 Hello，还可以说：",
+      "type": "情景交际",
+      "difficulty": 1,
+      "options": [
+        "Bye",
+        "Hi",
+        "Thank",
+        "Good night"
+      ],
+      "correct_index": 1,
+      "explanation": "Hi 也是“你好”。",
+      "tags": [
+        "问候",
+        ""
+      ]
+    },
+    {
+      "id": 1053,
+      "question": "晚上睡觉前和家人道别说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Goodbye!",
+        "Good night!",
+        "Good morning!",
+        "Hello!"
+      ],
+      "correct_index": 1,
+      "explanation": "睡前道别说 Good night（晚安）。",
+      "tags": [
+        "告别",
+        "晚上"
+      ]
+    },
+    {
+      "id": 1054,
+      "question": "字母 b 的小写形式是？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "d",
+        "q",
+        "b",
+        "p"
+      ],
+      "correct_index": 2,
+      "explanation": "b 的小写仍是 b，注意与 d、p、q 区分。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1055,
+      "question": "字母 G 的小写形式是？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "y",
+        "g",
+        "j",
+        "q"
+      ],
+      "correct_index": 1,
+      "explanation": "G 的小写是 g。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1056,
+      "question": "下列哪个字母是元音字母？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "B",
+        "C",
+        "D",
+        "A"
+      ],
+      "correct_index": 3,
+      "explanation": "A、E、I、O、U 是元音字母，选 A。",
+      "tags": [
+        "字母",
+        "元音"
+      ]
+    },
+    {
+      "id": 1057,
+      "question": "下列哪个不是元音字母？",
+      "type": "语音",
+      "difficulty": 1,
+      "options": [
+        "B",
+        "I",
+        "A",
+        "E"
+      ],
+      "correct_index": 0,
+      "explanation": "A、E、I 是元音字母，B 是辅音字母。",
+      "tags": [
+        "字母",
+        "元音"
+      ]
+    },
+    {
+      "id": 1058,
+      "question": "单词 bag（包）首字母发音是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "/d/",
+        "/b/",
+        "/g/",
+        "/p/"
+      ],
+      "correct_index": 1,
+      "explanation": "bag 首字母 b 发 /b/ 音。",
+      "tags": [
+        "字母音",
+        "b"
+      ]
+    },
+    {
+      "id": 1059,
+      "question": "单词 fish（鱼）首字母发音是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "/s/",
+        "/h/",
+        "/f/",
+        "/v/"
+      ],
+      "correct_index": 2,
+      "explanation": "fish 首字母 f 发 /f/ 音。",
+      "tags": [
+        "字母音",
+        "f"
+      ]
+    },
+    {
+      "id": 1060,
+      "question": "“我有一个苹果。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I have an apple.",
+        "I have a apple.",
+        "I is an apple.",
+        "You have an apple."
+      ],
+      "correct_index": 0,
+      "explanation": "apple 以元音音素开头，用 an；主语是 I。",
+      "tags": [
+        "句型",
+        "have"
+      ]
+    },
+    {
+      "id": 1061,
+      "question": "“这是我的妈妈。”用英语说：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "This is me mother.",
+        "This is my mother.",
+        "He is my mother.",
+        "I mother."
+      ],
+      "correct_index": 1,
+      "explanation": "This is my... 介绍家人。",
+      "tags": [
+        "句型",
+        "介绍"
+      ]
+    },
+    {
+      "id": 1062,
+      "question": "下列哪个是学校物品？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "apple",
+        "dog",
+        "cat",
+        "book"
+      ],
+      "correct_index": 3,
+      "explanation": "book 书是学习用品。",
+      "tags": [
+        "学习用品",
+        "分类"
+      ]
+    },
+    {
+      "id": 1063,
+      "question": "“钢笔”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "pen",
+        "book",
+        "pencil",
+        "bag"
+      ],
+      "correct_index": 0,
+      "explanation": "pen 钢笔；pencil 铅笔。",
+      "tags": [
+        "学习用品",
+        "pen"
+      ]
+    },
+    {
+      "id": 1064,
+      "question": "“铅笔”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "ruler",
+        "pen",
+        "eraser",
+        "pencil"
+      ],
+      "correct_index": 3,
+      "explanation": "pencil 铅笔。",
+      "tags": [
+        "学习用品",
+        "pencil"
+      ]
+    },
+    {
+      "id": 1065,
+      "question": "“书包”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "bag",
+        "desk",
+        "book",
+        "pen"
+      ],
+      "correct_index": 0,
+      "explanation": "bag 书包。",
+      "tags": [
+        "学习用品",
+        "bag"
+      ]
+    },
+    {
+      "id": 1066,
+      "question": "“尺子”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "crayon",
+        "eraser",
+        "ruler",
+        "pen"
+      ],
+      "correct_index": 2,
+      "explanation": "ruler 尺子。",
+      "tags": [
+        "学习用品",
+        "ruler"
+      ]
+    },
+    {
+      "id": 1067,
+      "question": "早上到学校见到老师，应说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Goodbye, teacher!",
+        "Good morning, teacher!",
+        "Thank you, teacher!",
+        "Good night!"
+      ],
+      "correct_index": 1,
+      "explanation": "早上到校问好 Good morning。",
+      "tags": [
+        "问候",
+        "学校"
+      ]
+    },
+    {
+      "id": 1068,
+      "question": "别人帮了你，你应说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Bye.",
+        "Sorry.",
+        "Thank you.",
+        "Hello."
+      ],
+      "correct_index": 2,
+      "explanation": "别人帮助后要说 Thank you。",
+      "tags": [
+        "感谢",
+        ""
+      ]
+    },
+    {
+      "id": 1069,
+      "question": "“这是一只鸭子。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "This is a cat.",
+        "This is a duck.",
+        "It is duck.",
+        "This is a dog."
+      ],
+      "correct_index": 1,
+      "explanation": "duck 鸭子；a 用于辅音音素开头的词前。",
+      "tags": [
+        "句型",
+        "This is"
+      ]
+    },
+    {
+      "id": 1070,
+      "question": "“它是一只鸟。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "It is a bird.",
+        "Is it a bird.",
+        "It are a bird.",
+        "It is bird."
+      ],
+      "correct_index": 0,
+      "explanation": "It is a bird 正确。",
+      "tags": [
+        "句型",
+        "It is"
+      ]
+    },
+    {
+      "id": 1071,
+      "question": "1+1=？用英语回答是：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "four",
+        "two",
+        "one",
+        "three"
+      ],
+      "correct_index": 1,
+      "explanation": "1+1=2，即 two。",
+      "tags": [
+        "数字",
+        "计算"
+      ]
+    },
+    {
+      "id": 1072,
+      "question": "2+3=？用英语说是：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "five",
+        "four",
+        "seven",
+        "six"
+      ],
+      "correct_index": 0,
+      "explanation": "2+3=5，即 five。",
+      "tags": [
+        "数字",
+        "计算"
+      ]
+    },
+    {
+      "id": 1073,
+      "question": "“熊猫”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "bear",
+        "monkey",
+        "panda",
+        "snake"
+      ],
+      "correct_index": 2,
+      "explanation": "panda 熊猫。",
+      "tags": [
+        "动物",
+        "panda"
+      ]
+    },
+    {
+      "id": 1074,
+      "question": "下列哪个单词表示“蛇”？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "cake",
+        "make",
+        "snake",
+        "lake"
+      ],
+      "correct_index": 2,
+      "explanation": "snake 蛇。",
+      "tags": [
+        "动物",
+        "snake"
+      ]
+    },
+    {
+      "id": 1075,
+      "question": "“你几岁了？”用英语问：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "What's your name?",
+        "How old are you?",
+        "How are you?",
+        "How many?"
+      ],
+      "correct_index": 1,
+      "explanation": "How old are you? 问年龄。",
+      "tags": [
+        "询问",
+        "年龄"
+      ]
+    },
+    {
+      "id": 1076,
+      "question": "别人问你 How old are you?，你今年7岁，应回答：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Goodbye.",
+        "My name is Tom.",
+        "I'm seven.",
+        "I'm fine."
+      ],
+      "correct_index": 2,
+      "explanation": "回答年龄用 I'm + 数字。",
+      "tags": [
+        "询问",
+        "年龄"
+      ]
+    },
+    {
+      "id": 1077,
+      "question": "字母表中元音字母一共有几个？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "3 个",
+        "4 个",
+        "5 个",
+        "6 个"
+      ],
+      "correct_index": 2,
+      "explanation": "英语有 5 个元音字母：A E I O U。",
+      "tags": [
+        "字母",
+        "元音"
+      ]
+    },
+    {
+      "id": 1078,
+      "question": "下列哪个单词首字母是大写？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "cat",
+        "apple",
+        "Book",
+        "dog"
+      ],
+      "correct_index": 2,
+      "explanation": "句首或专有名词首字母大写，Book 中 B 大写。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1079,
+      "question": "“请出示你的铅笔。”老师说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "Sit down.",
+        "Show me your pencil.",
+        "Stand up.",
+        "Open the book."
+      ],
+      "correct_index": 1,
+      "explanation": "Show me... 表示“出示给我看”。",
+      "tags": [
+        "指令",
+        "课堂"
+      ]
+    },
+    {
+      "id": 1080,
+      "question": "“把书合上。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "Put up your hand.",
+        "Close your book.",
+        "Show me your book.",
+        "Open your book."
+      ],
+      "correct_index": 1,
+      "explanation": "Close your book 合上书。",
+      "tags": [
+        "指令",
+        "课堂"
+      ]
+    },
+    {
+      "id": 1081,
+      "question": "下列哪个是食物？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "book",
+        "dog",
+        "apple",
+        "red"
+      ],
+      "correct_index": 2,
+      "explanation": "apple 苹果是食物。",
+      "tags": [
+        "食物",
+        "分类"
+      ]
+    },
+    {
+      "id": 1082,
+      "question": "“鸡蛋”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "bag",
+        "cat",
+        "dog",
+        "egg"
+      ],
+      "correct_index": 3,
+      "explanation": "egg 鸡蛋。",
+      "tags": [
+        "食物",
+        "egg"
+      ]
+    },
+    {
+      "id": 1083,
+      "question": "“牛奶”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "tea",
+        "water",
+        "juice",
+        "milk"
+      ],
+      "correct_index": 3,
+      "explanation": "milk 牛奶。",
+      "tags": [
+        "食物",
+        "milk"
+      ]
+    },
+    {
+      "id": 1084,
+      "question": "“水”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "bread",
+        "water",
+        "milk",
+        "juice"
+      ],
+      "correct_index": 1,
+      "explanation": "water 水。",
+      "tags": [
+        "食物",
+        "water"
+      ]
+    },
+    {
+      "id": 1085,
+      "question": "男孩的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "man",
+        "woman",
+        "girl",
+        "boy"
+      ],
+      "correct_index": 3,
+      "explanation": "boy 男孩；girl 女孩。",
+      "tags": [
+        "人物",
+        "boy"
+      ]
+    },
+    {
+      "id": 1086,
+      "question": "女孩的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "boy",
+        "mother",
+        "father",
+        "girl"
+      ],
+      "correct_index": 3,
+      "explanation": "girl 女孩。",
+      "tags": [
+        "人物",
+        "girl"
+      ]
+    },
+    {
+      "id": 1087,
+      "question": "“老师”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "student",
+        "pupil",
+        "doctor",
+        "teacher"
+      ],
+      "correct_index": 3,
+      "explanation": "teacher 老师。",
+      "tags": [
+        "人物",
+        "teacher"
+      ]
+    },
+    {
+      "id": 1088,
+      "question": "“学生”的英语单词是？",
+      "type": "词汇",
+      "difficulty": 2,
+      "options": [
+        "driver",
+        "farmer",
+        "teacher",
+        "student"
+      ],
+      "correct_index": 3,
+      "explanation": "student 学生。",
+      "tags": [
+        "人物",
+        "student"
+      ]
+    },
+    {
+      "id": 1089,
+      "question": "见面握手说“见到你很高兴”，应说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Goodbye.",
+        "Sorry.",
+        "Nice to meet you.",
+        "Thank you."
+      ],
+      "correct_index": 2,
+      "explanation": "Nice to meet you. 初次见面问候。",
+      "tags": [
+        "问候",
+        "初次"
+      ]
+    },
+    {
+      "id": 1090,
+      "question": "下列哪个句子是问候语？",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Open the book.",
+        "Stand up.",
+        "Sit down.",
+        "Good morning!"
+      ],
+      "correct_index": 3,
+      "explanation": "Good morning 是问候语。",
+      "tags": [
+        "问候",
+        ""
+      ]
+    },
+    {
+      "id": 1091,
+      "question": "下列哪个是告别语？",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Hello!",
+        "Hi!",
+        "Thank you!",
+        "Goodbye!"
+      ],
+      "correct_index": 3,
+      "explanation": "Goodbye 是告别语。",
+      "tags": [
+        "告别",
+        ""
+      ]
+    },
+    {
+      "id": 1092,
+      "question": "字母 C 的小写形式是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "a",
+        "o",
+        "c",
+        "e"
+      ],
+      "correct_index": 2,
+      "explanation": "C 的小写是 c。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1093,
+      "question": "字母 L 的小写形式是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "i",
+        "t",
+        "k",
+        "l"
+      ],
+      "correct_index": 3,
+      "explanation": "L 的小写是 l。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1094,
+      "question": "字母 M 的小写形式是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "m",
+        "n",
+        "w",
+        "v"
+      ],
+      "correct_index": 0,
+      "explanation": "M 的小写是 m。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1095,
+      "question": "字母 S 的小写形式是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "a",
+        "s",
+        "x",
+        "z"
+      ],
+      "correct_index": 1,
+      "explanation": "S 的小写是 s。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1096,
+      "question": "字母 T 的小写形式是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "t",
+        "i",
+        "l",
+        "j"
+      ],
+      "correct_index": 0,
+      "explanation": "T 的小写是 t。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1097,
+      "question": "字母 X 的小写形式是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "z",
+        "y",
+        "x",
+        "w"
+      ],
+      "correct_index": 2,
+      "explanation": "X 的小写是 x。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1098,
+      "question": "字母 Z 的小写形式是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "x",
+        "z",
+        "v",
+        "s"
+      ],
+      "correct_index": 1,
+      "explanation": "Z 的小写是 z。",
+      "tags": [
+        "字母",
+        "大小写"
+      ]
+    },
+    {
+      "id": 1099,
+      "question": "“这是一本书。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "This is book.",
+        "It are a book.",
+        "Is this a book.",
+        "This is a book."
+      ],
+      "correct_index": 3,
+      "explanation": "This is a book. 正确。",
+      "tags": [
+        "句型",
+        "This is"
+      ]
+    },
+    {
+      "id": 1100,
+      "question": "“我有一支钢笔。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "I have an pen.",
+        "I have a pen.",
+        "I has a pen.",
+        "I am a pen."
+      ],
+      "correct_index": 1,
+      "explanation": "pen 以辅音音素开头用 a，主语 I 用 have。",
+      "tags": [
+        "句型",
+        "have"
+      ]
+    },
+    {
+      "id": 1101,
+      "question": "下列哪个单词表示“红色的苹果”？",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "a apple red",
+        "a red apple",
+        "red a apple",
+        "an red apple"
+      ],
+      "correct_index": 1,
+      "explanation": "形容词 red 放在名词前：a red apple。",
+      "tags": [
+        "形容词",
+        "颜色"
+      ]
+    },
+    {
+      "id": 1102,
+      "question": "“一只黄色的香蕉”用英语是：",
+      "type": "句型",
+      "difficulty": 2,
+      "options": [
+        "an yellow banana",
+        "a banana yellow",
+        "a yellow banana",
+        "yellow a banana"
+      ],
+      "correct_index": 2,
+      "explanation": "a yellow banana 正确。",
+      "tags": [
+        "形容词",
+        "颜色"
+      ]
+    },
+    {
+      "id": 1103,
+      "question": "遇到熟人，挥手说“嗨”，应说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Night!",
+        "Goodbye!",
+        "Hi!",
+        "Sorry!"
+      ],
+      "correct_index": 2,
+      "explanation": "Hi 是熟人打招呼。",
+      "tags": [
+        "问候",
+        ""
+      ]
+    },
+    {
+      "id": 1104,
+      "question": "做错事向人道歉，应说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Hello.",
+        "Sorry.",
+        "Goodbye.",
+        "Thank you."
+      ],
+      "correct_index": 1,
+      "explanation": "道歉用 Sorry。",
+      "tags": [
+        "道歉",
+        ""
+      ]
+    },
+    {
+      "id": 1105,
+      "question": "“再见，妈妈！”用英语说：",
+      "type": "情景交际",
+      "difficulty": 2,
+      "options": [
+        "Good morning, Mum!",
+        "Goodbye, Mum!",
+        "Sorry, Mum!",
+        "Thank you, Mum!"
+      ],
+      "correct_index": 1,
+      "explanation": "Goodbye, Mum! 道别。",
+      "tags": [
+        "告别",
+        ""
+      ]
+    },
+    {
+      "id": 1106,
+      "question": "字母表最后一个字母是？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "W",
+        "Y",
+        "X",
+        "Z"
+      ],
+      "correct_index": 3,
+      "explanation": "字母表最后一个字母是 Z。",
+      "tags": [
+        "字母",
+        "顺序"
+      ]
+    },
+    {
+      "id": 1107,
+      "question": "字母 B 的读音是下列哪一个？",
+      "type": "语音",
+      "difficulty": 2,
+      "options": [
+        "/diː/",
+        "/siː/",
+        "/biː/",
+        "/eɪ/"
+      ],
+      "correct_index": 2,
+      "explanation": "B 的字母读音是 /biː/。",
+      "tags": [
+        "字母",
+        "发音"
+      ]
+    },
+    {
+      "id": 1108,
+      "question": "下列哪个单词表示“六只猫”？",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "six the cat",
+        "six cats",
+        "six a cat",
+        "six cat"
+      ],
+      "correct_index": 1,
+      "explanation": "大于1时名词用复数 cats。",
+      "tags": [
+        "名词复数",
+        "six"
+      ]
+    },
+    {
+      "id": 1109,
+      "question": "“两支铅笔”用英语是：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "two pencils",
+        "two a pencil",
+        "two pencil",
+        "two the pencil"
+      ],
+      "correct_index": 0,
+      "explanation": "two pencils 正确。",
+      "tags": [
+        "名词复数",
+        "two"
+      ]
+    },
+    {
+      "id": 1110,
+      "question": "“我妈妈是老师。”用英语说：",
+      "type": "句型",
+      "difficulty": 3,
+      "options": [
+        "My mother are a teacher.",
+        "I mother is teacher.",
+        "My mother am teacher.",
+        "My mother is a teacher."
+      ],
+      "correct_index": 3,
+      "explanation": "mother 是单数第三人称，用 is。",
+      "tags": [
+        "句型",
+        "职业"
+      ]
+    },
+    {
+      "id": 1111,
+      "question": "听短文，判断对错：I am Tom. I am a boy. I am nine. I like apples.  Tom 是男孩吗？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "短文未说。",
+        "不是，他是女孩。",
+        "是，他是男孩。",
+        "他是老师。"
+      ],
+      "correct_index": 2,
+      "explanation": "短文中 I am a boy 说明 Tom 是男孩。",
+      "tags": [
+        "阅读",
+        "短文"
+      ]
+    },
+    {
+      "id": 1112,
+      "question": "听短文：Amy has a cat. The cat is white.  What colour is the cat?",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "It is red.",
+        "It is white.",
+        "It is black.",
+        "It is yellow."
+      ],
+      "correct_index": 1,
+      "explanation": "短文中 The cat is white. 说明猫是白色的。",
+      "tags": [
+        "阅读",
+        "短文"
+      ]
+    },
+    {
+      "id": 1113,
+      "question": "短文中：I get up at seven. I go to school at eight.  我几点去上学？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "At eight.",
+        "At nine.",
+        "At seven.",
+        "At six."
+      ],
+      "correct_index": 0,
+      "explanation": "go to school at eight 说明八点上学。",
+      "tags": [
+        "阅读",
+        "短文"
+      ]
+    },
+    {
+      "id": 1114,
+      "question": "短文中：This is my father. He is a doctor.  爸爸的职业是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Farmer.",
+        "Driver.",
+        "Doctor.",
+        "Teacher."
+      ],
+      "correct_index": 2,
+      "explanation": "He is a doctor 说明爸爸是医生。",
+      "tags": [
+        "阅读",
+        "短文"
+      ]
+    },
+    {
+      "id": 1115,
+      "question": "短文中：I have three rulers and two pens.  我有几支钢笔？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Three.",
+        "Five.",
+        "One.",
+        "Two."
+      ],
+      "correct_index": 3,
+      "explanation": "two pens 说明有两支钢笔。",
+      "tags": [
+        "阅读",
+        "短文"
+      ]
+    },
+    {
+      "id": 1116,
+      "question": "短文中：The dog is under the chair.  狗在哪里？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Under the chair.",
+        "On the wall.",
+        "In the box.",
+        "On the desk."
+      ],
+      "correct_index": 0,
+      "explanation": "under the chair 表示在椅子下面。",
+      "tags": [
+        "阅读",
+        "位置"
+      ]
+    },
+    {
+      "id": 1117,
+      "question": "短文中：I like red. I have a red bag.  书包是什么颜色？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Blue.",
+        "Red.",
+        "Yellow.",
+        "Green."
+      ],
+      "correct_index": 1,
+      "explanation": "a red bag 说明书包是红色的。",
+      "tags": [
+        "阅读",
+        "颜色"
+      ]
+    },
+    {
+      "id": 1118,
+      "question": "短文中：Mum gives me an apple. I eat it.  我吃了什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "An apple.",
+        "An orange.",
+        "A pear.",
+        "A banana."
+      ],
+      "correct_index": 0,
+      "explanation": "an apple 说明吃的是苹果。",
+      "tags": [
+        "阅读",
+        "食物"
+      ]
+    },
+    {
+      "id": 1119,
+      "question": "短文中：It is a cat. It is fat.  下列哪句正确？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "The cat is small.",
+        "The cat is thin.",
+        "The cat is fat.",
+        "The cat is black."
+      ],
+      "correct_index": 2,
+      "explanation": "It is fat 说明猫很胖。",
+      "tags": [
+        "阅读",
+        "描述"
+      ]
+    },
+    {
+      "id": 1120,
+      "question": "短文中：I am hungry. I want some bread.  我想吃什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "Some water.",
+        "Some milk.",
+        "Some juice.",
+        "Some bread."
+      ],
+      "correct_index": 3,
+      "explanation": "want some bread 说明想吃面包。",
+      "tags": [
+        "阅读",
+        "食物"
+      ]
+    }
+  ]
+}

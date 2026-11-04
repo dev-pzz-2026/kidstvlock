@@ -1,12 +1,14 @@
 package com.kidslock.app;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.PowerManager;
+import android.provider.Settings;
 import android.text.InputType;
 import android.view.View;
 import android.view.WindowManager;
@@ -17,11 +19,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-/**
- * 设置主界面。
- * 家长可以在这里配置：开机自启、观看时长、解锁题数、家长PIN码。
- * 还可以开始/停止计时、立即锁屏、查看剩余时间。
- */
 public class MainActivity extends AppCompatActivity {
 
     private PrefManager pref;
@@ -32,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
     private Button btnAutoStart;
     private TextView tvWatchTime;
     private TextView tvUnlockCount;
+    private TextView tvLockInterval;
+    private TextView tvRelockDelay;
+    private TextView tvLockDuration;
 
     private final Runnable updateRunnable = new Runnable() {
         @Override
@@ -46,7 +46,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         pref = new PrefManager(this);
 
-        // 如果当前处于锁屏状态，禁止进入设置页（防止从桌面图标绕过锁屏解锁）
+        // 清理残留状态：若当前未锁定，确保 HOME alias 已禁用，避免卸载/重启后卡死
+        if (!pref.isLocked()) {
+            pref.setHomeAliasEnabled(this, false);
+        }
+
+        requestAllPermissions();
+        ensureServicesRunning();
+
         if (pref.isLocked()) {
             Intent lockIntent = new Intent(this, LockScreenActivity.class);
             lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -55,11 +62,30 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        setContentView(R.layout.activity_main);
-
-        initViews();
-        setupListeners();
-        updateStatus();
+        // 首次打开或每次打开时自动启动计时器
+        if (!pref.isTimerActive()) {
+            int minutes = pref.getWatchLimitMinutes();
+            pref.startTimer(minutes);
+            startLockService();
+            if (!pref.isFirstLaunchShown()) {
+                Toast.makeText(this, "儿童锁屏已启动，默认" + minutes + "分钟后锁屏", Toast.LENGTH_LONG).show();
+                pref.setFirstLaunchShown(true);
+            } else {
+                Toast.makeText(this, "计时已启动：" + minutes + " 分钟后锁屏", Toast.LENGTH_SHORT).show();
+            }
+            new Handler(Looper.getMainLooper()).postDelayed(this::finish, 1500);
+        } else {
+            startLockService();
+            long remaining = pref.getRemainingMillis();
+            long min = remaining / 60000;
+            long sec = (remaining / 1000) % 60;
+            if (remaining <= 0) {
+                Toast.makeText(this, "计时已到期，即将锁屏", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, String.format("计时器运行中，剩余 %02d:%02d", min, sec), Toast.LENGTH_SHORT).show();
+            }
+            new Handler(Looper.getMainLooper()).postDelayed(this::finish, 1500);
+        }
     }
 
     @Override
@@ -80,10 +106,12 @@ public class MainActivity extends AppCompatActivity {
         btnAutoStart = findViewById(R.id.btnAutoStart);
         tvWatchTime = findViewById(R.id.tvWatchTime);
         tvUnlockCount = findViewById(R.id.tvUnlockCount);
+        tvLockInterval = findViewById(R.id.tvLockInterval);
+        tvRelockDelay = findViewById(R.id.tvRelockDelay);
+        tvLockDuration = findViewById(R.id.tvLockDuration);
     }
 
     private void setupListeners() {
-        // 开机自启
         btnAutoStart.setOnClickListener(v -> {
             boolean newVal = !pref.isAutoStart();
             pref.setAutoStart(newVal);
@@ -91,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
             toast(newVal ? "已开启开机自启" : "已关闭开机自启");
         });
 
-        // 观看时长预设
         int[] timeButtons = {R.id.btnTime15, R.id.btnTime30, R.id.btnTime45,
                 R.id.btnTime60, R.id.btnTime90, R.id.btnTime120};
         int[] timeValues = {15, 30, 45, 60, 90, 120};
@@ -103,8 +130,8 @@ public class MainActivity extends AppCompatActivity {
                 toast("观看时长设为 " + minutes + " 分钟");
             });
         }
+        findViewById(R.id.btnTimeCustom).setOnClickListener(v -> showCustomWatchTimeDialog());
 
-        // 解锁题数预设
         int[] countButtons = {R.id.btnUnlock3, R.id.btnUnlock5, R.id.btnUnlock10};
         int[] countValues = {3, 5, 10};
         for (int i = 0; i < countButtons.length; i++) {
@@ -115,113 +142,292 @@ public class MainActivity extends AppCompatActivity {
                 toast("解锁题数设为 " + count + " 题");
             });
         }
+        findViewById(R.id.btnUnlockCustom).setOnClickListener(v -> showCustomUnlockCountDialog());
 
-        // 设置PIN码
-        findViewById(R.id.btnSetPin).setOnClickListener(v -> showPinDialog());
+        int[] lockIntervalButtons = {R.id.btnLockInterval15, R.id.btnLockInterval30, R.id.btnLockInterval60};
+        int[] lockIntervalValues = {15, 30, 60};
+        for (int i = 0; i < lockIntervalButtons.length; i++) {
+            final int minutes = lockIntervalValues[i];
+            findViewById(lockIntervalButtons[i]).setOnClickListener(v -> {
+                pref.setLockIntervalMinutes(minutes);
+                updateStatus();
+                toast("锁屏间隔设为 " + minutes + " 分钟");
+            });
+        }
+        findViewById(R.id.btnLockIntervalCustom).setOnClickListener(v -> showCustomLockIntervalDialog());
 
-        // 开始计时
+        int[] lockDurationButtons = {R.id.btnLockDuration0, R.id.btnLockDuration15, R.id.btnLockDuration30, R.id.btnLockDuration60};
+        int[] lockDurationValues = {0, 15, 30, 60};
+        for (int i = 0; i < lockDurationButtons.length; i++) {
+            final int minutes = lockDurationValues[i];
+            findViewById(lockDurationButtons[i]).setOnClickListener(v -> {
+                pref.setLockDurationMinutes(minutes);
+                updateStatus();
+                toast(minutes == 0 ? "锁定时长设为：手动解锁（无限）" : "锁定时长设为 " + minutes + " 分钟（超时自动解锁）");
+            });
+        }
+        findViewById(R.id.btnLockDurationCustom).setOnClickListener(v -> showCustomLockDurationDialog());
+
+        int[] relockButtons = {R.id.btnRelockDelay1, R.id.btnRelockDelay2, R.id.btnRelockDelay5};
+        int[] relockValues = {1, 2, 5};
+        for (int i = 0; i < relockButtons.length; i++) {
+            final int seconds = relockValues[i];
+            findViewById(relockButtons[i]).setOnClickListener(v -> {
+                pref.setRelockDelaySeconds(seconds);
+                updateStatus();
+                toast("重新锁屏延迟设为 " + seconds + " 秒");
+            });
+        }
+        findViewById(R.id.btnRelockDelayCustom).setOnClickListener(v -> showCustomRelockDelayDialog());
+
         findViewById(R.id.btnStartTimer).setOnClickListener(v -> {
             int minutes = pref.getWatchLimitMinutes();
             pref.startTimer(minutes);
             startLockService();
-            toast("计时开始：" + minutes + " 分钟后锁屏");
             updateStatus();
+            toast("计时开始：" + minutes + " 分钟后锁屏");
         });
 
-        // 停止计时
         findViewById(R.id.btnStopTimer).setOnClickListener(v -> {
             pref.stopTimer();
-            stopService(new Intent(this, LockService.class));
-            toast("计时已停止");
+            stopLockService();
             updateStatus();
+            toast("计时已停止");
         });
 
-        // 立即锁屏
         findViewById(R.id.btnLockNow).setOnClickListener(v -> {
-            pref.setLocked(true);
-            pref.setHomeAliasEnabled(this, true);
-            pref.stopTimer();
-            startLockService();
-            Intent lockIntent = new Intent(this, LockScreenActivity.class);
-            lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(lockIntent);
+            Intent intent = new Intent(this, LockScreenActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
         });
 
-        // 立即解锁（如果在锁屏状态，从设置页解锁）
         findViewById(R.id.btnUnlock).setOnClickListener(v -> {
             pref.setLocked(false);
             pref.setHomeAliasEnabled(this, false);
-            toast("已解锁");
+            pref.stopTimer();
+            stopLockService();
             updateStatus();
+            toast("已解锁");
         });
-    }
 
-    private void showPinDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("设置家长PIN码（4位数字）");
-
-        final EditText input = new EditText(this);
-        input.setInputType(InputType.TYPE_CLASS_NUMBER);
-        input.setRawInputType(android.text.InputType.TYPE_CLASS_NUMBER);
-        input.setFilters(new android.text.InputFilter[]{new android.text.InputFilter.LengthFilter(4)});
-        builder.setView(input);
-
-        builder.setPositiveButton("确定", (dialog, which) -> {
-            String pin = input.getText().toString().trim();
-            if (pin.length() == 4) {
-                pref.setParentPin(pin);
-                toast("PIN码已设置");
-            } else {
-                toast("PIN码必须是4位数字");
-            }
-        });
-        builder.setNegativeButton("取消", null);
-        builder.show();
-    }
-
-    private void startLockService() {
-        Intent serviceIntent = new Intent(this, LockService.class);
-        serviceIntent.putExtra("action", "start_timer");
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            startForegroundService(serviceIntent);
-        } else {
-            startService(serviceIntent);
-        }
     }
 
     private void updateStatus() {
-        // 开机自启
-        btnAutoStart.setText(pref.isAutoStart() ? "开机自启：已开启" : "开机自启：已关闭");
-
-        // 观看时长
-        tvWatchTime.setText("观看时长：" + pref.getWatchLimitMinutes() + " 分钟");
-
-        // 解锁题数
-        tvUnlockCount.setText("解锁题数：" + pref.getUnlockCount() + " 道连续答对");
-
-        // 状态
         if (pref.isLocked()) {
-            tvStatus.setText("当前状态：已锁屏");
-            tvStatus.setTextColor(getResources().getColor(R.color.wrong_red));
-            tvRemaining.setText("请答题解锁");
+            tvStatus.setText("状态：已锁定");
         } else if (pref.isTimerActive()) {
-            long remaining = pref.getRemainingMillis();
-            if (remaining <= 0) {
-                tvStatus.setText("当前状态：时间到");
-                tvStatus.setTextColor(getResources().getColor(R.color.wrong_red));
-            } else {
-                tvStatus.setText("当前状态：计时中");
-                tvStatus.setTextColor(getResources().getColor(R.color.correct_green));
-                long totalSec = remaining / 1000;
-                long min = totalSec / 60;
-                long sec = totalSec % 60;
-                tvRemaining.setText("剩余时间：" + String.format("%02d:%02d", min, sec));
-            }
+            tvStatus.setText("状态：计时中");
         } else {
-            tvStatus.setText("当前状态：未计时");
-            tvStatus.setTextColor(getResources().getColor(R.color.text_secondary));
-            tvRemaining.setText("");
+            tvStatus.setText("状态：空闲");
         }
+
+        if (pref.isTimerActive()) {
+            long remaining = pref.getRemainingMillis();
+            long min = remaining / 60000;
+            long sec = (remaining / 1000) % 60;
+            tvRemaining.setText(String.format("剩余：%02d:%02d", min, sec));
+        } else {
+            tvRemaining.setText("剩余：--:--");
+        }
+
+        btnAutoStart.setText(pref.isAutoStart() ? "开机自启：已开启" : "开机自启：已关闭");
+        tvWatchTime.setText("观看时长：每次计时 " + pref.getWatchLimitMinutes() + " 分钟到时锁屏");
+        tvUnlockCount.setText("解锁题数：连续答对 " + pref.getUnlockCount() + " 题才能解锁");
+        if (tvLockInterval != null) {
+            tvLockInterval.setText("锁屏间隔：每 " + pref.getLockIntervalMinutes() + " 分钟自动锁屏（0表示不自动）");
+        }
+        if (tvRelockDelay != null) {
+            tvRelockDelay.setText("重新锁屏延迟：" + pref.getRelockDelaySeconds() + " 秒（离开锁屏界面后）");
+        }
+        if (tvLockDuration != null) {
+            int d = pref.getLockDurationMinutes();
+            if (d == 0) {
+                tvLockDuration.setText("锁定时长：无限（需答题解锁）");
+            } else {
+                tvLockDuration.setText("锁定时长：锁定后 " + d + " 分钟自动解锁（0表示无限）");
+            }
+        }
+    }
+
+    private void showCustomWatchTimeDialog() {
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_NUMBER);
+        input.setHint("1-480");
+        new AlertDialog.Builder(this)
+                .setTitle("自定义观看时长（分钟）")
+                .setView(input)
+                .setPositiveButton("确定", (dialog, which) -> {
+                    try {
+                        int val = Integer.parseInt(input.getText().toString().trim());
+                        if (val < 1) val = 1;
+                        if (val > 480) val = 480;
+                        pref.setWatchLimitMinutes(val);
+                        updateStatus();
+                        toast("观看时长设为 " + val + " 分钟");
+                    } catch (Exception e) {
+                        toast("请输入有效数字");
+                    }
+                })
+                .setNegativeButton("取消", null)
+                .show();
+    }
+
+    private void showCustomUnlockCountDialog() {
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_NUMBER);
+        input.setHint("1-20");
+        new AlertDialog.Builder(this)
+                .setTitle("自定义解锁题数")
+                .setView(input)
+                .setPositiveButton("确定", (dialog, which) -> {
+                    try {
+                        int val = Integer.parseInt(input.getText().toString().trim());
+                        if (val < 1) val = 1;
+                        if (val > 20) val = 20;
+                        pref.setUnlockCount(val);
+                        updateStatus();
+                        toast("解锁题数设为 " + val + " 题");
+                    } catch (Exception e) {
+                        toast("请输入有效数字");
+                    }
+                })
+                .setNegativeButton("取消", null)
+                .show();
+    }
+
+    private void showCustomLockIntervalDialog() {
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_NUMBER);
+        input.setHint("0-480（0表示不自动）");
+        new AlertDialog.Builder(this)
+                .setTitle("自定义锁屏间隔（分钟）")
+                .setView(input)
+                .setPositiveButton("确定", (dialog, which) -> {
+                    try {
+                        int val = Integer.parseInt(input.getText().toString().trim());
+                        if (val < 0) val = 0;
+                        if (val > 480) val = 480;
+                        pref.setLockIntervalMinutes(val);
+                        updateStatus();
+                        toast("锁屏间隔设为 " + val + " 分钟");
+                    } catch (Exception e) {
+                        toast("请输入有效数字");
+                    }
+                })
+                .setNegativeButton("取消", null)
+                .show();
+    }
+
+    private void showCustomLockDurationDialog() {
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_NUMBER);
+        input.setHint("0-480（0表示无限）");
+        new AlertDialog.Builder(this)
+                .setTitle("自定义锁定时长（分钟）")
+                .setView(input)
+                .setPositiveButton("确定", (dialog, which) -> {
+                    try {
+                        int val = Integer.parseInt(input.getText().toString().trim());
+                        if (val < 0) val = 0;
+                        if (val > 480) val = 480;
+                        pref.setLockDurationMinutes(val);
+                        updateStatus();
+                        toast(val == 0 ? "锁定时长设为：无限" : "锁定时长设为 " + val + " 分钟");
+                    } catch (Exception e) {
+                        toast("请输入有效数字");
+                    }
+                })
+                .setNegativeButton("取消", null)
+                .show();
+    }
+
+    private void showCustomRelockDelayDialog() {
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_NUMBER);
+        input.setHint("0-30");
+        new AlertDialog.Builder(this)
+                .setTitle("自定义重新锁屏延迟（秒）")
+                .setView(input)
+                .setPositiveButton("确定", (dialog, which) -> {
+                    try {
+                        int val = Integer.parseInt(input.getText().toString().trim());
+                        if (val < 0) val = 0;
+                        if (val > 30) val = 30;
+                        pref.setRelockDelaySeconds(val);
+                        updateStatus();
+                        toast("重新锁屏延迟设为 " + val + " 秒");
+                    } catch (Exception e) {
+                        toast("请输入有效数字");
+                    }
+                })
+                .setNegativeButton("取消", null)
+                .show();
+    }
+
+    private void ensureServicesRunning() {
+        try {
+            WebConfigService.start(this);
+        } catch (Exception e) {
+        }
+        try {
+            startLockService();
+        } catch (Exception e) {
+        }
+    }
+
+    private void requestAllPermissions() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            requestPermissions(new String[]{android.Manifest.permission.POST_NOTIFICATIONS}, 1001);
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
+            try {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName()));
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            } catch (Exception e) {
+            }
+        }
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
+                if (pm != null && !pm.isIgnoringBatteryOptimizations(getPackageName())) {
+                    Intent intent = new Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS, Uri.parse("package:" + getPackageName()));
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                }
+            }
+        } catch (Exception e) {
+        }
+        try {
+            if (!isAccessibilityServiceEnabled()) {
+                Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                Toast.makeText(this, "请开启「儿童锁屏」无障碍服务以增强锁定效果", Toast.LENGTH_LONG).show();
+            }
+        } catch (Exception e) {
+        }
+    }
+
+    private boolean isAccessibilityServiceEnabled() {
+        String service = getPackageName() + "/" + KidsLockAccessibilityService.class.getCanonicalName();
+        String enabled = Settings.Secure.getString(getContentResolver(), Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES);
+        if (enabled == null) return false;
+        return enabled.contains(service);
+    }
+
+    private void startLockService() {
+        Intent intent = new Intent(this, LockService.class);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            startForegroundService(intent);
+        } else {
+            startService(intent);
+        }
+    }
+
+    private void stopLockService() {
+        Intent intent = new Intent(this, LockService.class);
+        stopService(intent);
     }
 
     private void toast(String msg) {

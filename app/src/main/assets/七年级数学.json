@@ -1,0 +1,2088 @@
+{
+  "bank_id": "grade7_math",
+  "bank_name": "七年级数学",
+  "grade": 7,
+  "subject": "math",
+  "subject_name": "数学",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 7001,
+      "question": "(-3)+5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "3",
+        "1",
+        "12"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 (-3)+5，结果为 2。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7002,
+      "question": "(-7)+(-2) = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "-8",
+        "-9",
+        "-10",
+        "1"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 (-7)+(-2)，结果为 -9。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7003,
+      "question": "(-8)-(-3) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-4",
+        "-6",
+        "-5",
+        "5"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 (-8)-(-3)，结果为 -5。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7004,
+      "question": "6+(-4) = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "1",
+        "12",
+        "2"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 6+(-4)，结果为 2。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7005,
+      "question": "(-2)×3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "-6",
+        "-5",
+        "-7",
+        "4"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 (-2)×3，结果为 -6。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7006,
+      "question": "(-4)×(-5) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "21",
+        "20",
+        "19",
+        "30"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 (-4)×(-5)，结果为 20。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7007,
+      "question": "(-12)÷3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "-3",
+        "-5",
+        "-4",
+        "6"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 (-12)÷3，结果为 -4。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7008,
+      "question": "(-18)÷(-6) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "4",
+        "2",
+        "13",
+        "3"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 (-18)÷(-6)，结果为 3。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7009,
+      "question": "(-2)×(-2)×(-2) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-8",
+        "-7",
+        "-9",
+        "2"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 (-2)×(-2)×(-2)，结果为 -8。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7010,
+      "question": "(-3)×(-3) = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "10",
+        "9",
+        "8",
+        "19"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 (-3)×(-3)，结果为 9。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7011,
+      "question": "25+(-15) = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "11",
+        "9",
+        "10",
+        "20"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 25+(-15)，结果为 10。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7012,
+      "question": "(-9)-4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-12",
+        "-14",
+        "-3",
+        "-13"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 (-9)-4，结果为 -13。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7013,
+      "question": "(-1/2)+1/2 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "10"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 (-1/2)+1/2，结果为 0。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7014,
+      "question": "3/4-(-1/4) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "2",
+        "1",
+        "0",
+        "11"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 3/4-(-1/4)，结果为 1。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7015,
+      "question": "(-0.5)+1.5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "2",
+        "0",
+        "1",
+        "11"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 (-0.5)+1.5，结果为 1。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7016,
+      "question": "(-2)×3+(-4) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-9",
+        "-11",
+        "0",
+        "-10"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 (-2)×3+(-4)，结果为 -10。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7017,
+      "question": "10-(-5) = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "15",
+        "16",
+        "14",
+        "25"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 10-(-5)，结果为 15。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7018,
+      "question": "(-6)+(-6)+6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-5",
+        "-6",
+        "-7",
+        "4"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 (-6)+(-6)+6，结果为 -6。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7019,
+      "question": "(-36)÷9 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "-3",
+        "-5",
+        "-4",
+        "6"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 (-36)÷9，结果为 -4。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7020,
+      "question": "(-1)×(-1)×(-1) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "0",
+        "-2",
+        "9",
+        "-1"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 (-1)×(-1)×(-1)，结果为 -1。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7021,
+      "question": "(-2)×(-3)×(-4) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-24",
+        "-23",
+        "-25",
+        "-14"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 (-2)×(-3)×(-4)，结果为 -24。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7022,
+      "question": "12-20 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "-7",
+        "-8",
+        "-9",
+        "2"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 12-20，结果为 -8。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7023,
+      "question": "(-5)+8-3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1",
+        "-1",
+        "0",
+        "10"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 (-5)+8-3，结果为 0。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7024,
+      "question": "(-7)×2-(-10) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-3",
+        "-5",
+        "6",
+        "-4"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 (-7)×2-(-10)，结果为 -4。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7025,
+      "question": "(-1/3)×6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "-2",
+        "-1",
+        "-3",
+        "8"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 (-1/3)×6，结果为 -2。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7026,
+      "question": "(-4/5)÷(-2/5) = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "3",
+        "2",
+        "1",
+        "12"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 (-4/5)÷(-2/5)，结果为 2。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7027,
+      "question": "2.5+(-1.5) = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "0",
+        "1",
+        "11"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 2.5+(-1.5)，结果为 1。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7028,
+      "question": "(-10)+(-20)+30 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1",
+        "-1",
+        "10",
+        "0"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 (-10)+(-20)+30，结果为 0。",
+      "tags": [
+        "有理数运算"
+      ]
+    },
+    {
+      "id": 7029,
+      "question": "2千米 = ? 米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "2000",
+        "2001",
+        "2010",
+        "1999"
+      ],
+      "correct_index": 0,
+      "explanation": "2千米 = 2000米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 7030,
+      "question": "3千克 = ? 克",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "3001",
+        "3000",
+        "3010",
+        "2999"
+      ],
+      "correct_index": 1,
+      "explanation": "3千克 = 3000克，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 7031,
+      "question": "2时 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "121",
+        "130",
+        "120",
+        "119"
+      ],
+      "correct_index": 2,
+      "explanation": "2时 = 120分，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 7032,
+      "question": "1立方米 = ? 立方分米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "1001",
+        "1010",
+        "999",
+        "1000"
+      ],
+      "correct_index": 3,
+      "explanation": "1立方米 = 1000立方分米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 7033,
+      "question": "如果向东走5米记作+5米，那么向西走3米记作？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "-3米",
+        "+3米",
+        "3米",
+        "-8米"
+      ],
+      "correct_index": 0,
+      "explanation": "西与东相反，记作-3米。",
+      "tags": [
+        "正负数"
+      ]
+    },
+    {
+      "id": 7034,
+      "question": "-2的相反数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "-2",
+        "2",
+        "1/2",
+        "-1/2"
+      ],
+      "correct_index": 1,
+      "explanation": "只有符号不同的两个数互为相反数。",
+      "tags": [
+        "相反数"
+      ]
+    },
+    {
+      "id": 7035,
+      "question": "-5的绝对值是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "-5",
+        "1/5",
+        "5",
+        "0"
+      ],
+      "correct_index": 2,
+      "explanation": "负数的绝对值是它的相反数。",
+      "tags": [
+        "绝对值"
+      ]
+    },
+    {
+      "id": 7036,
+      "question": "在数轴上，原点表示的数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "-1",
+        "不确定",
+        "0"
+      ],
+      "correct_index": 3,
+      "explanation": "原点表示0。",
+      "tags": [
+        "数轴"
+      ]
+    },
+    {
+      "id": 7037,
+      "question": "比较 -2 和 1，哪个大？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1大",
+        "-2大",
+        "一样大",
+        "无法比较"
+      ],
+      "correct_index": 0,
+      "explanation": "正数大于负数。",
+      "tags": [
+        "比较"
+      ]
+    },
+    {
+      "id": 7038,
+      "question": "-3的倒数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1/3",
+        "-1/3",
+        "3",
+        "-3"
+      ],
+      "correct_index": 1,
+      "explanation": "-3×(-1/3)=1。",
+      "tags": [
+        "倒数"
+      ]
+    },
+    {
+      "id": 7039,
+      "question": "单项式 -3xy² 的系数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "-3xy²",
+        "-3",
+        "1"
+      ],
+      "correct_index": 2,
+      "explanation": "数字因数是系数。",
+      "tags": [
+        "单项式"
+      ]
+    },
+    {
+      "id": 7040,
+      "question": "多项式 2x²-3x+1 的次数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3次",
+        "1次",
+        "0次",
+        "2次"
+      ],
+      "correct_index": 3,
+      "explanation": "最高次项2x²的次数是2。",
+      "tags": [
+        "多项式"
+      ]
+    },
+    {
+      "id": 7041,
+      "question": "合并同类项：3a+2a=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "5a",
+        "6a",
+        "5",
+        "a"
+      ],
+      "correct_index": 0,
+      "explanation": "系数相加字母不变。",
+      "tags": [
+        "合并同类项"
+      ]
+    },
+    {
+      "id": 7042,
+      "question": "化简：-(x-2)=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "-x-2",
+        "-x+2",
+        "x-2",
+        "x+2"
+      ],
+      "correct_index": 1,
+      "explanation": "去括号变号。",
+      "tags": [
+        "去括号"
+      ]
+    },
+    {
+      "id": 7043,
+      "question": "方程 2x+3=7 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=5",
+        "x=4",
+        "x=2",
+        "x=1"
+      ],
+      "correct_index": 2,
+      "explanation": "2x=4，x=2。",
+      "tags": [
+        "解方程"
+      ]
+    },
+    {
+      "id": 7044,
+      "question": "方程 3x-5=x+1 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=2",
+        "x=1",
+        "x=4",
+        "x=3"
+      ],
+      "correct_index": 3,
+      "explanation": "2x=6，x=3。",
+      "tags": [
+        "解方程"
+      ]
+    },
+    {
+      "id": 7045,
+      "question": "等式两边同时加上同一个数，等式？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "仍成立",
+        "不成立",
+        "可能变",
+        "无法确定"
+      ],
+      "correct_index": 0,
+      "explanation": "等式性质1。",
+      "tags": [
+        "等式性质"
+      ]
+    },
+    {
+      "id": 7046,
+      "question": "16的算术平方根是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "±4",
+        "4",
+        "8",
+        "2"
+      ],
+      "correct_index": 1,
+      "explanation": "算术平方根是正的4。",
+      "tags": [
+        "平方根"
+      ]
+    },
+    {
+      "id": 7047,
+      "question": "9的平方根是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "-3",
+        "±3",
+        "81"
+      ],
+      "correct_index": 2,
+      "explanation": "平方根有两个±3。",
+      "tags": [
+        "平方根"
+      ]
+    },
+    {
+      "id": 7048,
+      "question": "-8的立方根是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "2",
+        "±2",
+        "4",
+        "-2"
+      ],
+      "correct_index": 3,
+      "explanation": "(-2)³=-8。",
+      "tags": [
+        "立方根"
+      ]
+    },
+    {
+      "id": 7049,
+      "question": "无限不循环小数叫？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "无理数",
+        "有理数",
+        "整数",
+        "分数"
+      ],
+      "correct_index": 0,
+      "explanation": "无理数是无限不循环小数。",
+      "tags": [
+        "实数"
+      ]
+    },
+    {
+      "id": 7050,
+      "question": "下列各数中是无理数的是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "0",
+        "π",
+        "1/3",
+        "-2"
+      ],
+      "correct_index": 1,
+      "explanation": "π是无限不循环小数。",
+      "tags": [
+        "无理数"
+      ]
+    },
+    {
+      "id": 7051,
+      "question": "在平面直角坐标系中，点(3,4)在第几象限？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "第二象限",
+        "第三象限",
+        "第一象限",
+        "第四象限"
+      ],
+      "correct_index": 2,
+      "explanation": "横纵都正，第一象限。",
+      "tags": [
+        "坐标系"
+      ]
+    },
+    {
+      "id": 7052,
+      "question": "点(-2,3)在第几象限？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "第一象限",
+        "第三象限",
+        "第四象限",
+        "第二象限"
+      ],
+      "correct_index": 3,
+      "explanation": "横负纵正，第二象限。",
+      "tags": [
+        "坐标系"
+      ]
+    },
+    {
+      "id": 7053,
+      "question": "在x轴上的点，纵坐标是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "0",
+        "1",
+        "正数",
+        "负数"
+      ],
+      "correct_index": 0,
+      "explanation": "x轴上点纵坐标为0。",
+      "tags": [
+        "坐标系"
+      ]
+    },
+    {
+      "id": 7054,
+      "question": "二元一次方程组 x+y=5, x-y=1 的解是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x=2,y=3",
+        "x=3,y=2",
+        "x=4,y=1",
+        "x=3,y=3"
+      ],
+      "correct_index": 1,
+      "explanation": "两式相加2x=6，x=3，y=2。",
+      "tags": [
+        "二元一次方程组"
+      ]
+    },
+    {
+      "id": 7055,
+      "question": "不等式 x+2＞5 的解集是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "x＜3",
+        "x＞7",
+        "x＞3",
+        "x＜7"
+      ],
+      "correct_index": 2,
+      "explanation": "x＞3。",
+      "tags": [
+        "不等式"
+      ]
+    },
+    {
+      "id": 7056,
+      "question": "不等式 -2x＞4 的解集是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "x＞-2",
+        "x＜2",
+        "x＞2",
+        "x＜-2"
+      ],
+      "correct_index": 3,
+      "explanation": "除以负数不等号变向。",
+      "tags": [
+        "不等式"
+      ]
+    },
+    {
+      "id": 7057,
+      "question": "单项式 2x²y 的次数是？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "3次",
+        "2次",
+        "1次",
+        "4次"
+      ],
+      "correct_index": 0,
+      "explanation": "2+1=3次。",
+      "tags": [
+        "单项式次数"
+      ]
+    },
+    {
+      "id": 7058,
+      "question": "计算 3x²+2x²=？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "5x⁴",
+        "5x²",
+        "6x²",
+        "x²"
+      ],
+      "correct_index": 1,
+      "explanation": "合并同类项。",
+      "tags": [
+        "整式加减"
+      ]
+    },
+    {
+      "id": 7059,
+      "question": "-2的绝对值的相反数是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "2",
+        "0",
+        "-2",
+        "1/2"
+      ],
+      "correct_index": 2,
+      "explanation": "|-2|=2，2的相反数是-2。",
+      "tags": [
+        "绝对值相反数"
+      ]
+    },
+    {
+      "id": 7060,
+      "question": "数轴上表示 -1 和 3 的两点之间距离是？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "2",
+        "-4",
+        "3",
+        "4"
+      ],
+      "correct_index": 3,
+      "explanation": "|3-(-1)|=4。",
+      "tags": [
+        "数轴距离"
+      ]
+    },
+    {
+      "id": 7061,
+      "question": "若 |a|=3，则 a=？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "±3",
+        "3",
+        "-3",
+        "9"
+      ],
+      "correct_index": 0,
+      "explanation": "绝对值为3的数有两个。",
+      "tags": [
+        "绝对值"
+      ]
+    },
+    {
+      "id": 7062,
+      "question": "不等式组 x＞1, x＜4 的解集是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "x＞1",
+        "1＜x＜4",
+        "x＜4",
+        "无解"
+      ],
+      "correct_index": 1,
+      "explanation": "公共部分是1＜x＜4。",
+      "tags": [
+        "不等式组"
+      ]
+    },
+    {
+      "id": 7063,
+      "question": "经过两点能画几条直线？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "两条",
+        "无数条",
+        "一条",
+        "0条"
+      ],
+      "correct_index": 2,
+      "explanation": "两点确定一条直线。",
+      "tags": [
+        "直线"
+      ]
+    },
+    {
+      "id": 7064,
+      "question": "两点之间什么最短？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "直线",
+        "曲线",
+        "折线",
+        "线段"
+      ],
+      "correct_index": 3,
+      "explanation": "两点之间线段最短。",
+      "tags": [
+        "线段"
+      ]
+    },
+    {
+      "id": 7065,
+      "question": "1周角等于多少度？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "360度",
+        "180度",
+        "90度",
+        "270度"
+      ],
+      "correct_index": 0,
+      "explanation": "周角360度。",
+      "tags": [
+        "角"
+      ]
+    },
+    {
+      "id": 7066,
+      "question": "1个平角等于几个直角？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "1个",
+        "2个",
+        "3个",
+        "4个"
+      ],
+      "correct_index": 1,
+      "explanation": "平角180=2×90。",
+      "tags": [
+        "角"
+      ]
+    },
+    {
+      "id": 7067,
+      "question": "如果两条直线都和第三条直线平行，那么这两条直线？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "互相垂直",
+        "相交",
+        "互相平行",
+        "重合"
+      ],
+      "correct_index": 2,
+      "explanation": "平行公理的推论。",
+      "tags": [
+        "平行线"
+      ]
+    },
+    {
+      "id": 7068,
+      "question": "两直线平行，同位角？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "互补",
+        "互余",
+        "不确定",
+        "相等"
+      ],
+      "correct_index": 3,
+      "explanation": "两直线平行同位角相等。",
+      "tags": [
+        "平行线性质"
+      ]
+    },
+    {
+      "id": 7069,
+      "question": "两直线平行，同旁内角？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "互补",
+        "相等",
+        "互余",
+        "不确定"
+      ],
+      "correct_index": 0,
+      "explanation": "同旁内角互补。",
+      "tags": [
+        "平行线性质"
+      ]
+    },
+    {
+      "id": 7070,
+      "question": "对顶角？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "互补",
+        "相等",
+        "互余",
+        "和为90度"
+      ],
+      "correct_index": 1,
+      "explanation": "对顶角相等。",
+      "tags": [
+        "对顶角"
+      ]
+    },
+    {
+      "id": 7071,
+      "question": "过直线外一点，有几条直线与已知直线平行？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "两条",
+        "无数条",
+        "一条",
+        "0条"
+      ],
+      "correct_index": 2,
+      "explanation": "平行公理。",
+      "tags": [
+        "平行线"
+      ]
+    },
+    {
+      "id": 7072,
+      "question": "互补的两个角和为多少度？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "90度",
+        "360度",
+        "270度",
+        "180度"
+      ],
+      "correct_index": 3,
+      "explanation": "互补即和为180度。",
+      "tags": [
+        "角"
+      ]
+    },
+    {
+      "id": 7073,
+      "question": "互余的两个角和为多少度？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "90度",
+        "180度",
+        "360度",
+        "270度"
+      ],
+      "correct_index": 0,
+      "explanation": "互余即和为90度。",
+      "tags": [
+        "角"
+      ]
+    },
+    {
+      "id": 7074,
+      "question": "把一个周角7等分，每份大约是多少度？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "约45度",
+        "约51度",
+        "约60度",
+        "约30度"
+      ],
+      "correct_index": 1,
+      "explanation": "360÷7≈51度。",
+      "tags": [
+        "角的计算"
+      ]
+    },
+    {
+      "id": 7075,
+      "question": "点A在点B的北偏东30度，则点B在点A的？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "北偏东30度",
+        "南偏东30度",
+        "南偏西30度",
+        "北偏西30度"
+      ],
+      "correct_index": 2,
+      "explanation": "方向相反角度不变。",
+      "tags": [
+        "方向角"
+      ]
+    },
+    {
+      "id": 7076,
+      "question": "正方体有几条棱？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "6条",
+        "8条",
+        "4条",
+        "12条"
+      ],
+      "correct_index": 3,
+      "explanation": "正方体12条棱。",
+      "tags": [
+        "立体图形"
+      ]
+    },
+    {
+      "id": 7077,
+      "question": "三棱柱有几个面？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "5个",
+        "3个",
+        "4个",
+        "6个"
+      ],
+      "correct_index": 0,
+      "explanation": "2个三角形底面+3个侧面=5个。",
+      "tags": [
+        "立体图形"
+      ]
+    },
+    {
+      "id": 7078,
+      "question": "展开图是一个长方形和两个圆的立体图形是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "圆锥",
+        "圆柱",
+        "球",
+        "正方体"
+      ],
+      "correct_index": 1,
+      "explanation": "圆柱展开侧面长方形+两个圆底面。",
+      "tags": [
+        "展开图"
+      ]
+    },
+    {
+      "id": 7079,
+      "question": "为了了解全校学生的视力情况，从各年级抽查200名学生，这个样本是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "全校学生",
+        "200",
+        "被抽查的200名学生视力",
+        "一个年级"
+      ],
+      "correct_index": 2,
+      "explanation": "样本是被抽查的个体集合。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 7080,
+      "question": "下列调查中，适合用全面调查（普查）的是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "了解一批灯泡寿命",
+        "了解全国中学生视力",
+        "了解河流污染",
+        "了解某班学生的身高"
+      ],
+      "correct_index": 3,
+      "explanation": "班级人数少适合普查。",
+      "tags": [
+        "调查方式"
+      ]
+    },
+    {
+      "id": 7081,
+      "question": "要反映某城市一周气温变化，用？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "折线图",
+        "条形图",
+        "扇形图",
+        "表格"
+      ],
+      "correct_index": 0,
+      "explanation": "变化趋势用折线图。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 7082,
+      "question": "数据3、5、5、7、10的众数是？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "5",
+        "7",
+        "10"
+      ],
+      "correct_index": 1,
+      "explanation": "5出现两次最多。",
+      "tags": [
+        "众数"
+      ]
+    },
+    {
+      "id": 7083,
+      "question": "抛一枚质地均匀的硬币，正面朝上的概率是？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "0",
+        "1/2",
+        "1/4"
+      ],
+      "correct_index": 2,
+      "explanation": "正反等可能。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 7084,
+      "question": "一个袋中有3个红球2个白球，任意摸一个是红球的概率是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "2/5",
+        "1/5",
+        "1",
+        "3/5"
+      ],
+      "correct_index": 3,
+      "explanation": "红球3个共5个，3/5。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 7085,
+      "question": "某天气温从零下3℃上升了5℃，现在气温是多少？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2℃",
+        "-8℃",
+        "-2℃",
+        "8℃"
+      ],
+      "correct_index": 0,
+      "explanation": "-3+5=2℃。",
+      "tags": [
+        "有理数",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7086,
+      "question": "小明存折上原有800元，取出500元，又存入300元，现在有多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1600元",
+        "600元",
+        "1000元",
+        "0元"
+      ],
+      "correct_index": 1,
+      "explanation": "800-500+300=600元。",
+      "tags": [
+        "有理数",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7087,
+      "question": "一艘潜水艇在海面下40米处，一条鲨鱼在它上方15米处，鲨鱼在海面下多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "55米",
+        "15米",
+        "25米",
+        "25米上方"
+      ],
+      "correct_index": 2,
+      "explanation": "-40+15=-25米，即海面下25米。",
+      "tags": [
+        "有理数",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7088,
+      "question": "解方程：一个数的3倍减去5等于16，求这个数。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "11",
+        "3",
+        "21",
+        "7"
+      ],
+      "correct_index": 3,
+      "explanation": "3x-5=16，3x=21，x=7。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7089,
+      "question": "学校买了4张办公桌和9把椅子共用252元，已知1张桌子和3把椅子价钱相等，一张桌子多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "36元",
+        "24元",
+        "12元",
+        "48元"
+      ],
+      "correct_index": 0,
+      "explanation": "1桌=3椅，4桌=12椅，共21椅=252，每椅12元，桌36元。",
+      "tags": [
+        "二元一次",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7090,
+      "question": "甲、乙两地相距360千米，一辆汽车从甲地开往乙地，每小时行72千米，返回时每小时行90千米，往返平均速度是多少？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "81千米/时",
+        "80千米/时",
+        "75千米/时",
+        "90千米/时"
+      ],
+      "correct_index": 1,
+      "explanation": "去360÷72=5时，回360÷90=4时，总720÷9=80。",
+      "tags": [
+        "行程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7091,
+      "question": "某班有学生45人，会下象棋的人数是会下围棋人数的3.5倍，两种棋都会及都不会的人数都是5人，只会下围棋的有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "15人",
+        "5人",
+        "10人",
+        "20人"
+      ],
+      "correct_index": 1,
+      "explanation": "设会围棋x人，会象棋3.5x人，x+3.5x-5=45-5，4.5x=45，x=10。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7092,
+      "question": "一件工作，甲单独做20天完成，乙单独做30天完成，两人合做几天完成？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10天",
+        "25天",
+        "15天",
+        "12天"
+      ],
+      "correct_index": 3,
+      "explanation": "1÷(1/20+1/30)=12天。",
+      "tags": [
+        "工程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7093,
+      "question": "小明把1000元压岁钱存入银行，年利率3%，存期2年，到期可得利息多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "60元",
+        "30元",
+        "600元",
+        "1060元"
+      ],
+      "correct_index": 0,
+      "explanation": "1000×3%×2=60元。",
+      "tags": [
+        "利率",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7094,
+      "question": "某商品进价200元，标价300元，打折后仍获利5%，这件商品打几折？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "8折",
+        "7折",
+        "6折",
+        "9折"
+      ],
+      "correct_index": 1,
+      "explanation": "售价=200×1.05=210，210÷300=0.7即7折。",
+      "tags": [
+        "折扣",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7095,
+      "question": "在平面直角坐标系中，点A(2,3)先向右平移3个单位，再向下平移2个单位，得到点B的坐标是？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "(5,5)",
+        "(-1,1)",
+        "(5,1)",
+        "(2,1)"
+      ],
+      "correct_index": 2,
+      "explanation": "右移加3，下移减2，(2+3,3-2)=(5,1)。",
+      "tags": [
+        "坐标系",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7096,
+      "question": "甲、乙两人同时从相距27千米的两地相向而行，甲每小时行5千米，乙每小时行4千米，几小时后相遇？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2小时",
+        "4小时",
+        "5小时",
+        "3小时"
+      ],
+      "correct_index": 3,
+      "explanation": "27÷(5+4)=3小时。",
+      "tags": [
+        "相遇",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7097,
+      "question": "某工厂去年总收入比总支出多50万元，今年总收入比去年增加10%，总支出比去年节约20%，结果总收入比总支出多100万元，去年总收入是多少万元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "200万元",
+        "150万元",
+        "100万元",
+        "250万元"
+      ],
+      "correct_index": 0,
+      "explanation": "设去年总收入x，支出x-50，1.1x-0.8(x-50)=100，0.3x+40=100，x=200。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7098,
+      "question": "一个角的补角是它的余角的3倍，求这个角。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "30度",
+        "45度",
+        "60度",
+        "90度"
+      ],
+      "correct_index": 1,
+      "explanation": "180-x=3(90-x)，180-x=270-3x，2x=90，x=45度。",
+      "tags": [
+        "角",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7099,
+      "question": "某数的一半比它的2倍少6，求这个数。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "3",
+        "6",
+        "4",
+        "8"
+      ],
+      "correct_index": 2,
+      "explanation": "2x-1/2x=6，1.5x=6，x=4。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7100,
+      "question": "学校组织植树，原计划每天种40棵，实际每天多种10棵，结果提前2天完成，一共要种多少棵？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "200棵",
+        "300棵",
+        "500棵",
+        "400棵"
+      ],
+      "correct_index": 3,
+      "explanation": "设x棵，x/40-x/50=2，5x-4x=400，x=400。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7101,
+      "question": "一列火车通过一座长300米的桥需要20秒，以同样速度通过一座长500米的桥需要30秒，求火车长。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "100米",
+        "150米",
+        "200米",
+        "50米"
+      ],
+      "correct_index": 0,
+      "explanation": "设车速v车长L，(300+L)/20=(500+L)/30，9000+30L=10000+20L，L=100。",
+      "tags": [
+        "行程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7102,
+      "question": "某班数学期末考试，及格人数是不及格人数的4倍，后来又有2人及格，此时及格人数是不及格人数的6倍，全班共多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10人",
+        "35人",
+        "12人",
+        "20人"
+      ],
+      "correct_index": 1,
+      "explanation": "设原不及格x，及格4x，4x+2=6(x-2)，4x+2=6x-12，x=7，全班共5x=35人。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7103,
+      "question": "某次测验共20道题，答对一题得5分，答错或不答倒扣2分，小明得79分，他答对几道题？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "18道",
+        "16道",
+        "17道",
+        "15道"
+      ],
+      "correct_index": 2,
+      "explanation": "设答对x，5x-2(20-x)=79，7x=119，x=17。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7104,
+      "question": "甲、乙两人练习跑步，甲每秒跑7米，乙每秒跑6.5米，甲让乙先跑1秒，甲经过几秒追上乙？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "14秒",
+        "12秒",
+        "15秒",
+        "13秒"
+      ],
+      "correct_index": 3,
+      "explanation": "设x秒，7x=6.5(x+1)，0.5x=6.5，x=13。",
+      "tags": [
+        "追及",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7105,
+      "question": "一个长方形的周长是24厘米，长比宽多2厘米，求长方形的长。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "7厘米",
+        "5厘米",
+        "8厘米",
+        "6厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "设宽x，长x+2，2(x+x+2)=24，4x=20，x=5，长7。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7106,
+      "question": "某商店把一件商品按进价提高40%后标价，再打八折卖出，结果仍获利270元，进价是多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2000元",
+        "2250元",
+        "2500元",
+        "1800元"
+      ],
+      "correct_index": 1,
+      "explanation": "设进价x，1.4x×0.8-x=270，1.12x-x=270，0.12x=270，x=2250。",
+      "tags": [
+        "利润",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7107,
+      "question": "有大小两个水桶，小水桶能盛水4千克，大水桶能盛水11千克，不用秤称，怎样盛出5千克水？最少操作几次？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "无法做到",
+        "3次",
+        "用大桶倒满小桶2次余3千克等方法",
+        "直接称"
+      ],
+      "correct_index": 2,
+      "explanation": "这是经典操作题，用容量差凑出5千克。",
+      "tags": [
+        "逻辑",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7108,
+      "question": "某队参加足球联赛，胜一场得3分，平一场得1分，负一场得0分，共赛8场得17分，其中平的场数是负的场数的2倍，该队胜了几场？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "4场",
+        "6场",
+        "3场",
+        "5场"
+      ],
+      "correct_index": 3,
+      "explanation": "设负x场，平2x，胜8-3x，3(8-3x)+2x=17，24-7x=17，x=1，胜5场。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7109,
+      "question": "某工人按规定时间完成一批零件，如果每天做10个，就超额完成9个，如果每天做11个，就提前1天完成，这批零件有多少个？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "11个",
+        "121个",
+        "100个",
+        "110个"
+      ],
+      "correct_index": 0,
+      "explanation": "设计划x天，10x-9=11(x-1)，10x-9=11x-11，x=2，零件10×2-9=11个。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7110,
+      "question": "甲、乙两站相距240千米，一列慢车从甲站开出每小时行48千米，一列快车从乙站开出每小时行72千米，两车同时相向而行，几小时相遇？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1.5小时",
+        "2小时",
+        "2.5小时",
+        "3小时"
+      ],
+      "correct_index": 1,
+      "explanation": "240÷(48+72)=2小时。",
+      "tags": [
+        "相遇",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7111,
+      "question": "一个两位数，十位数字与个位数字之和是7，若把十位数字与个位数字对调，所得新数比原数大27，求原数。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "34",
+        "52",
+        "25",
+        "16"
+      ],
+      "correct_index": 2,
+      "explanation": "设十位x个位7-x，10(7-x)+x-(10x+7-x)=27，63-18x=27，x=2，原数25。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7112,
+      "question": "某班同学去划船，如果增加一条船，正好每条船坐6人，如果减少一条船，正好每条船坐9人，这个班有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "30人",
+        "45人",
+        "27人",
+        "36人"
+      ],
+      "correct_index": 3,
+      "explanation": "设原x条船，6(x+1)=9(x-1)，6x+6=9x-9，x=5，人数6×6=36。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7113,
+      "question": "某市出租车收费标准：起步价8元（3千米以内），超过3千米每千米1.8元，小明付了26元，他乘车多少千米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "13千米",
+        "12千米",
+        "15千米",
+        "10千米"
+      ],
+      "correct_index": 0,
+      "explanation": "超出费用26-8=18元，18÷1.8=10千米，共3+10=13千米。",
+      "tags": [
+        "分段",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7114,
+      "question": "某工厂第一车间人数比第二车间人数的4/5少30人，如果从第二车间调10人到第一车间，第一车间人数就是第二车间的3/4，第二车间原有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "200人",
+        "250人",
+        "300人",
+        "180人"
+      ],
+      "correct_index": 1,
+      "explanation": "设二车间x，一车间4/5x-30，4/5x-30+10=3/4(x-10)，0.8x-20=0.75x-7.5，0.05x=12.5，x=250。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7115,
+      "question": "用白铁皮做罐头盒，每张铁皮可制盒身25个或盒底40个，一个盒身配两个盒底，现有36张铁皮，用多少张制盒身正好配套？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "18张",
+        "20张",
+        "16张",
+        "12张"
+      ],
+      "correct_index": 2,
+      "explanation": "设x张盒身，25x×2=40(36-x)，50x=1440-40x，90x=1440，x=16。",
+      "tags": [
+        "配套",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7116,
+      "question": "一架飞机在两城之间飞行，风速为24千米/时，顺风飞行需要2小时50分，逆风飞行需要3小时，求无风时飞机速度。",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "800千米/时",
+        "900千米/时",
+        "750千米/时",
+        "840千米/时"
+      ],
+      "correct_index": 3,
+      "explanation": "设无风速度v，(v+24)×17/6=(v-24)×3，17v+408=18v-432，v=840。",
+      "tags": [
+        "行程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7117,
+      "question": "某班组织学生去旅游，旅行社收费标准：人数不超过25人人均1000元，超过25人每增加1人人均降低20元，该班共支付27000元，该班有多少人参加？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "30人",
+        "25人",
+        "35人",
+        "40人"
+      ],
+      "correct_index": 0,
+      "explanation": "设x人(>25)，x[1000-20(x-25)]=27000，x(1500-20x)=27000，解得x=30。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7118,
+      "question": "某商场购进甲、乙两种商品共50件，甲种每件进价35元利润率20%，乙种每件进价20元利润率15%，共获利278元，甲种商品进了多少件？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "18件",
+        "32件",
+        "25件",
+        "40件"
+      ],
+      "correct_index": 1,
+      "explanation": "设甲x件，35×20%x+20×15%(50-x)=278，7x+150-3x=278，4x=128，x=32。",
+      "tags": [
+        "利润",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7119,
+      "question": "一次数学竞赛共20题，评分标准：每做对一题得5分，每做错或不做一题倒扣1分，小华参加了这次竞赛得了64分，小华做对了几道题？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "15道",
+        "13道",
+        "14道",
+        "16道"
+      ],
+      "correct_index": 2,
+      "explanation": "设做对x，5x-(20-x)=64，6x=84，x=14。",
+      "tags": [
+        "方程",
+        "七年级"
+      ]
+    },
+    {
+      "id": 7120,
+      "question": "甲、乙二人在400米环形跑道上练习跑步，甲每秒跑6米，乙每秒跑4米，两人同时同地同向出发，经过多少秒两人首次相遇？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "100秒",
+        "300秒",
+        "400秒",
+        "200秒"
+      ],
+      "correct_index": 3,
+      "explanation": "追及400÷(6-4)=200秒。",
+      "tags": [
+        "环形",
+        "七年级"
+      ]
+    }
+  ]
+}

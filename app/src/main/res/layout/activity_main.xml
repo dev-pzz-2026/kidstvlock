@@ -211,6 +211,17 @@
                 android:textColor="@color/btn_text"
                 android:focusable="true"
                 android:clickable="true" />
+            <Button android:id="@+id/btnTimeCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_margin="@dimen/btn_margin"
+                android:minWidth="80dp"
+                android:text="自定义"
+                android:textSize="@dimen/text_body"
+                android:background="@drawable/btn_settings_bg"
+                android:textColor="@color/btn_text"
+                android:focusable="true"
+                android:clickable="true" />
         </LinearLayout>
 
         <!-- 解锁题数 -->
@@ -261,27 +272,95 @@
                 android:textColor="@color/btn_text"
                 android:focusable="true"
                 android:clickable="true" />
+            <Button android:id="@+id/btnUnlockCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_margin="@dimen/btn_margin"
+                android:minWidth="80dp"
+                android:text="自定义"
+                android:textSize="@dimen/text_body"
+                android:background="@drawable/btn_settings_bg"
+                android:textColor="@color/btn_text"
+                android:focusable="true"
+                android:clickable="true" />
         </LinearLayout>
 
-        <!-- 设置PIN -->
-        <Button
-            android:id="@+id/btnSetPin"
+        <!-- 锁屏设置 -->
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/btn_height"
-            android:layout_marginTop="@dimen/spacing_medium"
-            android:minWidth="300dp"
-            android:text="@string/btn_set_pin"
-            android:textSize="@dimen/text_button"
-            android:background="@drawable/btn_settings_bg"
-            android:textColor="@color/btn_text"
-            android:focusable="true"
-            android:clickable="true" />
+            android:layout_height="wrap_content"
+            android:text="锁屏设置"
+            android:textColor="@color/highlight"
+            android:textSize="@dimen/text_subtitle"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <TextView
+            android:id="@+id/tvLockInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_body"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/spacing_medium">
+
+            <Button android:id="@+id/btnLockInterval15" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="15分钟" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnLockInterval30" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="30分钟" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnLockInterval60" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="60分钟" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnLockIntervalCustom" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="自定义" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLockDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_body"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/spacing_medium">
+
+            <Button android:id="@+id/btnLockDuration0" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="无限" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnLockDuration15" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="15分钟" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnLockDuration30" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="30分钟" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnLockDuration60" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="60分钟" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnLockDurationCustom" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="自定义" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRelockDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_body"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/spacing_medium">
+
+            <Button android:id="@+id/btnRelockDelay1" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="1秒" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnRelockDelay2" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="2秒" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnRelockDelay5" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="5秒" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+            <Button android:id="@+id/btnRelockDelayCustom" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/btn_margin" android:minWidth="80dp" android:text="自定义" android:textSize="@dimen/text_body" android:background="@drawable/btn_settings_bg" android:textColor="@color/btn_text" android:focusable="true" android:clickable="true" />
+        </LinearLayout>
 
         <!-- 说明文字 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="默认PIN码：1234"
+            android:text="锁定后将直接显示答题页面"
             android:textColor="@color/text_secondary"
             android:textSize="@dimen/text_body"
             android:layout_marginTop="@dimen/spacing_large" />

@@ -70,8 +70,9 @@ public class LockService extends Service {
         // 已锁屏 → 进入锁屏守护模式
         if (pref.isLocked()) {
             Log.i(TAG, "Device locked, starting lock watchdog");
+            hideOverlay();
             startWatchdog();
-            showOverlayIfPermitted();
+            startLockScreenActivity();
             return START_STICKY;
         }
 
@@ -102,9 +103,10 @@ public class LockService extends Service {
             @Override
             public void run() {
                 if (pref.isLocked()) {
-                    // 已被锁屏接管，切换为守护模式
+                    // 已被锁屏接管
+                    hideOverlay();
                     startWatchdog();
-                    showOverlayIfPermitted();
+                    startLockScreenActivity();
                     return;
                 }
                 if (pref.isTimerExpired()) {
@@ -126,10 +128,9 @@ public class LockService extends Service {
         pref.setHomeAliasEnabled(this, true);
         pref.stopTimer();
 
-        // 尝试直接拉起锁屏界面；在 Android 10+ 上可能被系统阻止，
-        // 因此同时启动悬浮窗兜底。
+        // 直接进入答题锁屏页面，不显示中间覆盖层
         startLockScreenActivity();
-        showOverlayIfPermitted();
+        hideOverlay();
 
         // 转为锁屏守护模式
         startWatchdog();
@@ -159,18 +160,14 @@ public class LockService extends Service {
 
                 // 如果锁屏界面本身已经跑到前台，就不需要重复拉起，避免刷屏
                 if (!isLockScreenOnTop()) {
-                    // 只有悬浮窗权限没开、且锁屏不在前台时，才尝试直接 startActivity。
-                    // 否则靠悬浮窗拦截即可。
-                    if (!canDrawOverlays()) {
-                        Log.i(TAG, "Lock screen not on top, trying direct pull");
-                        startLockScreenActivity();
-                    }
+                    Log.i(TAG, "Lock screen not on top, pulling again");
+                    startLockScreenActivity();
+                    hideOverlay();
+                } else {
+                    hideOverlay();
                 }
 
-                // 悬浮窗应该一直显示，防止被桌面覆盖
-                showOverlayIfPermitted();
-
-                handler.postDelayed(this, 800);
+                handler.postDelayed(this, 500);
             }
         };
         handler.post(watchdogRunnable);
@@ -250,11 +247,22 @@ public class LockService extends Service {
      */
     private void startLockScreenActivity() {
         Intent lockIntent = new Intent(this, LockScreenActivity.class);
-        lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK 
+                | Intent.FLAG_ACTIVITY_CLEAR_TOP 
+                | Intent.FLAG_ACTIVITY_SINGLE_TOP
+                | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        lockIntent.addCategory(Intent.CATEGORY_LAUNCHER);
         try {
             startActivity(lockIntent);
         } catch (Exception e) {
             Log.e(TAG, "Start LockScreenActivity failed", e);
+            try {
+                lockIntent = new Intent(this, LockScreenActivity.class);
+                lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(lockIntent);
+            } catch (Exception ex) {
+                Log.e(TAG, "Retry start LockScreenActivity failed", ex);
+            }
         }
     }
 
@@ -279,7 +287,6 @@ public class LockService extends Service {
         pref.setLocked(false);
         pref.setHomeAliasEnabled(this, false);
         pref.stopTimer();
-        pref.resetPinFailures();
         hideOverlay();
         stopForeground(true);
         stopSelf();
@@ -351,6 +358,14 @@ public class LockService extends Service {
             handler.removeCallbacks(watchdogRunnable);
         }
         hideOverlay();
+        // 卸载/停止时释放 HOME alias 与锁屏状态，避免系统卡死
+        try {
+            pref.setHomeAliasEnabled(this, false);
+            pref.setLocked(false);
+            pref.stopTimer();
+        } catch (Exception e) {
+            Log.e(TAG, "cleanup on destroy failed", e);
+        }
         Log.i(TAG, "LockService destroyed");
         super.onDestroy();
     }

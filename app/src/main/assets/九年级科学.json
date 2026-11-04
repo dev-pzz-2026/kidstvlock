@@ -1,0 +1,2181 @@
+{
+  "bank_id": "grade9_science",
+  "bank_name": "九年级科学",
+  "grade": 9,
+  "subject": "science",
+  "subject_name": "科学",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 9001,
+      "question": "保持物质化学性质的最小粒子是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "分子",
+        "原子",
+        "离子",
+        "电子"
+      ],
+      "correct_index": 0,
+      "explanation": "分子是保持物质化学性质的最小粒子。",
+      "tags": [
+        "物质构成",
+        "分子"
+      ]
+    },
+    {
+      "id": 9002,
+      "question": "化学变化中的最小粒子是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "分子",
+        "原子",
+        "离子",
+        "电子"
+      ],
+      "correct_index": 1,
+      "explanation": "在化学变化中，分子可分而原子不可分，原子是化学变化中的最小粒子。",
+      "tags": [
+        "物质构成",
+        "原子"
+      ]
+    },
+    {
+      "id": 9003,
+      "question": "原子是由什么构成的？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "质子和中子",
+        "电子和原子核",
+        "原子核和核外电子",
+        "电子和质子"
+      ],
+      "correct_index": 2,
+      "explanation": "原子由居于中心的原子核和核外电子构成。",
+      "tags": [
+        "物质构成",
+        "原子结构"
+      ]
+    },
+    {
+      "id": 9004,
+      "question": "原子核是由什么构成的？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "电子和质子",
+        "电子和中子",
+        "以上都不对",
+        "质子和中子"
+      ],
+      "correct_index": 3,
+      "explanation": "原子核由质子和中子构成。",
+      "tags": [
+        "物质构成",
+        "原子核"
+      ]
+    },
+    {
+      "id": 9005,
+      "question": "带正电的粒子是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "质子",
+        "电子",
+        "中子",
+        "分子"
+      ],
+      "correct_index": 0,
+      "explanation": "质子带正电，电子带负电，中子不带电。",
+      "tags": [
+        "物质构成",
+        "粒子"
+      ]
+    },
+    {
+      "id": 9006,
+      "question": "带负电的粒子是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "质子",
+        "电子",
+        "中子",
+        "原子核"
+      ],
+      "correct_index": 1,
+      "explanation": "电子带负电。",
+      "tags": [
+        "物质构成",
+        "粒子"
+      ]
+    },
+    {
+      "id": 9007,
+      "question": "决定元素种类的是原子的？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "电子数",
+        "中子数",
+        "质子数(核电荷数)",
+        "相对原子质量"
+      ],
+      "correct_index": 2,
+      "explanation": "元素是具有相同质子数的一类原子的总称。",
+      "tags": [
+        "物质构成",
+        "元素"
+      ]
+    },
+    {
+      "id": 9008,
+      "question": "地壳中含量最多的元素是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "硅",
+        "铝",
+        "铁",
+        "氧"
+      ],
+      "correct_index": 3,
+      "explanation": "地壳中元素含量前四位：氧、硅、铝、铁，最多的是氧。",
+      "tags": [
+        "物质构成",
+        "元素"
+      ]
+    },
+    {
+      "id": 9009,
+      "question": "地壳中含量最多的金属元素是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "铝",
+        "铁",
+        "铜",
+        "铁"
+      ],
+      "correct_index": 0,
+      "explanation": "铝是地壳中含量最多的金属元素。",
+      "tags": [
+        "物质构成",
+        "元素"
+      ]
+    },
+    {
+      "id": 9010,
+      "question": "元素符号‘O’表示的意义是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "一个氧分子",
+        "氧元素或一个氧原子",
+        "一个氧离子",
+        "氧气"
+      ],
+      "correct_index": 1,
+      "explanation": "元素符号表示一种元素，还表示该元素的一个原子。",
+      "tags": [
+        "物质构成",
+        "元素符号"
+      ]
+    },
+    {
+      "id": 9011,
+      "question": "钠原子失去一个电子后变成？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "钠离子Na+",
+        "钠离子Na-",
+        "钠离子(Na+)",
+        "钠分子"
+      ],
+      "correct_index": 2,
+      "explanation": "钠原子失去最外层1个电子，形成带正电的钠离子Na+。",
+      "tags": [
+        "物质构成",
+        "离子"
+      ]
+    },
+    {
+      "id": 9012,
+      "question": "氯原子得到一个电子后变成？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "氯离子Cl+",
+        "氯分子",
+        "氯原子不变",
+        "氯离子(Cl-)"
+      ],
+      "correct_index": 3,
+      "explanation": "氯原子得到1个电子，形成带负电的氯离子Cl-。",
+      "tags": [
+        "物质构成",
+        "离子"
+      ]
+    },
+    {
+      "id": 9013,
+      "question": "构成物质的基本粒子不包括？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "电子",
+        "分子",
+        "原子",
+        "离子"
+      ],
+      "correct_index": 0,
+      "explanation": "分子、原子、离子都能直接构成物质；电子不能。",
+      "tags": [
+        "物质构成",
+        "构成"
+      ]
+    },
+    {
+      "id": 9014,
+      "question": "水(H2O)是由什么组成的？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "氢气和氧气",
+        "氢元素和氧元素",
+        "一个氢分子和一个氧原子",
+        "氢原子和氧分子"
+      ],
+      "correct_index": 1,
+      "explanation": "水由氢元素和氧元素组成，由水分子构成。",
+      "tags": [
+        "物质构成",
+        "宏观组成"
+      ]
+    },
+    {
+      "id": 9015,
+      "question": "一个水分子(H2O)由什么构成？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "氢元素和氧元素",
+        "两个氢元素和一个氧元素",
+        "两个氢原子和一个氧原子",
+        "氢气和氧气"
+      ],
+      "correct_index": 2,
+      "explanation": "一个水分子由两个氢原子和一个氧原子构成。",
+      "tags": [
+        "物质构成",
+        "微观构成"
+      ]
+    },
+    {
+      "id": 9016,
+      "question": "相对原子质量主要决定于？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "电子数",
+        "质子数",
+        "中子数",
+        "质子数和中子数"
+      ],
+      "correct_index": 3,
+      "explanation": "电子质量很小，相对原子质量≈质子数+中子数。",
+      "tags": [
+        "物质构成",
+        "相对原子质量"
+      ]
+    },
+    {
+      "id": 9017,
+      "question": "元素的化学性质主要决定于原子的？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "最外层电子数",
+        "电子层数",
+        "质子数",
+        "中子数"
+      ],
+      "correct_index": 0,
+      "explanation": "最外层电子数决定元素的化学性质。",
+      "tags": [
+        "物质构成",
+        "最外层电子"
+      ]
+    },
+    {
+      "id": 9018,
+      "question": "下列符号中，表示2个氢原子的是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "H2",
+        "2H",
+        "2H2",
+        "H"
+      ],
+      "correct_index": 1,
+      "explanation": "元素符号前加数字表示原子个数，2H表示2个氢原子；H2表示一个氢分子。",
+      "tags": [
+        "化学用语",
+        "原子"
+      ]
+    },
+    {
+      "id": 9019,
+      "question": "下列符号中，表示一个氢分子的是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "2H",
+        "H",
+        "H2",
+        "2H2"
+      ],
+      "correct_index": 2,
+      "explanation": "H2表示氢气或一个氢分子，由两个氢原子构成。",
+      "tags": [
+        "化学用语",
+        "分子"
+      ]
+    },
+    {
+      "id": 9020,
+      "question": "二氧化碳的化学式是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "CO",
+        "O2C",
+        "C2O",
+        "CO2"
+      ],
+      "correct_index": 3,
+      "explanation": "二氧化碳由一个碳原子和两个氧原子构成，化学式CO2。",
+      "tags": [
+        "化学式",
+        "书写"
+      ]
+    },
+    {
+      "id": 9021,
+      "question": "水的化学式是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "H2O",
+        "HO",
+        "H2O2",
+        "HO2"
+      ],
+      "correct_index": 0,
+      "explanation": "水的化学式是H2O。",
+      "tags": [
+        "化学式",
+        "书写"
+      ]
+    },
+    {
+      "id": 9022,
+      "question": "氧气的化学式是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "O",
+        "O2",
+        "O3",
+        "2O"
+      ],
+      "correct_index": 1,
+      "explanation": "氧气是双原子分子，化学式O2。",
+      "tags": [
+        "化学式",
+        "书写"
+      ]
+    },
+    {
+      "id": 9023,
+      "question": "在化合物中，氧元素通常显？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "+1价",
+        "+2价",
+        "-2价",
+        "-1价"
+      ],
+      "correct_index": 2,
+      "explanation": "化合物中氧通常显-2价，氢显+1价。",
+      "tags": [
+        "化合价",
+        "常见"
+      ]
+    },
+    {
+      "id": 9024,
+      "question": "在化合物中，氢元素通常显？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "-1价",
+        "-2价",
+        "+2价",
+        "+1价"
+      ],
+      "correct_index": 3,
+      "explanation": "氢通常显+1价。",
+      "tags": [
+        "化合价",
+        "常见"
+      ]
+    },
+    {
+      "id": 9025,
+      "question": "氯化钠(NaCl)中，钠元素的化合价是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "+1",
+        "-1",
+        "+2",
+        "+3"
+      ],
+      "correct_index": 0,
+      "explanation": "NaCl中Cl为-1价，Na为+1价，正负化合价代数和为零。",
+      "tags": [
+        "化合价",
+        "计算"
+      ]
+    },
+    {
+      "id": 9026,
+      "question": "水中氢元素的化合价是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "-1",
+        "+1",
+        "-2",
+        "0"
+      ],
+      "correct_index": 1,
+      "explanation": "H2O中O为-2价，两个H共+2价，每个H为+1价。",
+      "tags": [
+        "化合价",
+        "计算"
+      ]
+    },
+    {
+      "id": 9027,
+      "question": "根据化学式CO2，碳元素的化合价是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "+1",
+        "+2",
+        "+4",
+        "+4"
+      ],
+      "correct_index": 2,
+      "explanation": "O为-2价，两个O共-4价，C为+4价，代数和为零。",
+      "tags": [
+        "化合价",
+        "计算"
+      ]
+    },
+    {
+      "id": 9028,
+      "question": "二氧化碳(CO2)的相对分子质量是？(C=12,O=16)",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "28",
+        "32",
+        "44",
+        "44"
+      ],
+      "correct_index": 3,
+      "explanation": "CO2相对分子质量=12+16×2=44。",
+      "tags": [
+        "化学式",
+        "计算"
+      ]
+    },
+    {
+      "id": 9029,
+      "question": "水(H2O)的相对分子质量是？(H=1,O=16)",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "18",
+        "16",
+        "17",
+        "18"
+      ],
+      "correct_index": 0,
+      "explanation": "H2O=1×2+16=18。",
+      "tags": [
+        "化学式",
+        "计算"
+      ]
+    },
+    {
+      "id": 9030,
+      "question": "二氧化碳中碳、氧元素的质量比是？(C=12,O=16)",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "1:2",
+        "3:8",
+        "3:8",
+        "1:8"
+      ],
+      "correct_index": 1,
+      "explanation": "C:O=12:(16×2)=12:32=3:8。",
+      "tags": [
+        "化学式",
+        "计算"
+      ]
+    },
+    {
+      "id": 9031,
+      "question": "化学反应前后，肯定不变的是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "分子种类",
+        "分子数目",
+        "原子种类、数目和质量",
+        "物质种类"
+      ],
+      "correct_index": 2,
+      "explanation": "质量守恒：反应前后原子种类、数目、质量都不变。",
+      "tags": [
+        "质量守恒",
+        "内容"
+      ]
+    },
+    {
+      "id": 9032,
+      "question": "质量守恒定律的本质原因是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "反应中分子不变",
+        "反应中物质不变",
+        "反应中元素改变",
+        "反应前后原子种类、数目、质量都不变"
+      ],
+      "correct_index": 3,
+      "explanation": "化学反应只是原子重新组合，原子本身不变。",
+      "tags": [
+        "质量守恒",
+        "原因"
+      ]
+    },
+    {
+      "id": 9033,
+      "question": "蜡烛燃烧后质量变小，这是否违反质量守恒定律？",
+      "type": "实验观察",
+      "difficulty": 1,
+      "options": [
+        "不违反，生成的二氧化碳和水蒸气逸散了",
+        "违反，因为质量减少",
+        "不违反，因为生成的气体逸散到空气中",
+        "无法判断"
+      ],
+      "correct_index": 0,
+      "explanation": "蜡烛燃烧生成CO2和水蒸气逸散到空气中，总质量仍守恒。",
+      "tags": [
+        "质量守恒",
+        "辨析"
+      ]
+    },
+    {
+      "id": 9034,
+      "question": "铁丝在氧气中燃烧后，生成物的质量比原来铁丝？",
+      "type": "实验观察",
+      "difficulty": 1,
+      "options": [
+        "小",
+        "大",
+        "相等",
+        "无法判断"
+      ],
+      "correct_index": 1,
+      "explanation": "铁丝结合了氧气的质量，生成四氧化三铁质量比铁大。",
+      "tags": [
+        "质量守恒",
+        "应用"
+      ]
+    },
+    {
+      "id": 9035,
+      "question": "化学方程式2H2+O2→(点燃)2H2O，反应前后各物质质量比是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "1:8:9",
+        "2:1:2",
+        "4:32:36(即1:8:9)",
+        "2:32:18"
+      ],
+      "correct_index": 2,
+      "explanation": "H2:O2:H2O=(2×2):32:(2×18)=4:32:36=1:8:9。",
+      "tags": [
+        "化学方程式",
+        "计算"
+      ]
+    },
+    {
+      "id": 9036,
+      "question": "书写化学方程式必须遵循的两个原则是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "以主观想象为依据、任意配平",
+        "只写生成物、不写条件",
+        "随意写",
+        "以客观事实为依据、遵守质量守恒定律"
+      ],
+      "correct_index": 3,
+      "explanation": "不能凭空臆造，必须配平使两边原子个数相等。",
+      "tags": [
+        "化学方程式",
+        "原则"
+      ]
+    },
+    {
+      "id": 9037,
+      "question": "化学方程式配平的目的是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "使两边各种原子的数目相等",
+        "让式子好看",
+        "让反应更快",
+        "让反应更剧烈"
+      ],
+      "correct_index": 0,
+      "explanation": "配平使反应前后原子种类数目相等，符合质量守恒。",
+      "tags": [
+        "化学方程式",
+        "配平"
+      ]
+    },
+    {
+      "id": 9038,
+      "question": "碳在氧气中充分燃烧的产物是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "CO",
+        "二氧化碳(CO2)",
+        "C",
+        "CO2"
+      ],
+      "correct_index": 1,
+      "explanation": "碳充分燃烧生成CO2；不充分燃烧生成CO。",
+      "tags": [
+        "碳",
+        "燃烧"
+      ]
+    },
+    {
+      "id": 9039,
+      "question": "碳在氧气不充足时燃烧生成？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "CO2",
+        "C",
+        "一氧化碳(CO)",
+        "H2CO3"
+      ],
+      "correct_index": 2,
+      "explanation": "氧气不足时碳燃烧生成有毒的CO。",
+      "tags": [
+        "碳",
+        "燃烧"
+      ]
+    },
+    {
+      "id": 9040,
+      "question": "二氧化碳能使澄清石灰水变浑浊，是因为生成了？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "CaO",
+        "Ca(OH)2",
+        "Ca(HCO3)2",
+        "碳酸钙(CaCO3)"
+      ],
+      "correct_index": 3,
+      "explanation": "CO2+Ca(OH)2→CaCO3↓+H2O，碳酸钙沉淀使石灰水变浑。",
+      "tags": [
+        "碳",
+        "CO2",
+        "检验"
+      ]
+    },
+    {
+      "id": 9041,
+      "question": "二氧化碳能灭火，是因为它？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "不燃烧也不支持燃烧，且密度比空气大",
+        "能燃烧",
+        "能支持燃烧",
+        "比空气轻"
+      ],
+      "correct_index": 0,
+      "explanation": "CO2覆盖在可燃物上，隔绝氧气，且不燃烧不助燃。",
+      "tags": [
+        "碳",
+        "CO2",
+        "灭火"
+      ]
+    },
+    {
+      "id": 9042,
+      "question": "二氧化碳通入紫色石蕊试液，试液变？",
+      "type": "实验观察",
+      "difficulty": 1,
+      "options": [
+        "蓝色",
+        "红色",
+        "无色",
+        "不变"
+      ],
+      "correct_index": 1,
+      "explanation": "CO2与水生成碳酸，碳酸使紫色石蕊变红。",
+      "tags": [
+        "碳",
+        "CO2",
+        "性质"
+      ]
+    },
+    {
+      "id": 9043,
+      "question": "一氧化碳使人中毒的原因是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "它有毒性、能与血红蛋白结合",
+        "它有颜色",
+        "它与血红蛋白结合，使人体缺氧",
+        "它有臭味"
+      ],
+      "correct_index": 2,
+      "explanation": "CO与血红蛋白结合能力强，使血液失去输氧能力。",
+      "tags": [
+        "碳",
+        "CO",
+        "毒性"
+      ]
+    },
+    {
+      "id": 9044,
+      "question": "下面哪种气体有毒，会污染空气？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "二氧化碳",
+        "氧气",
+        "氮气",
+        "一氧化碳"
+      ],
+      "correct_index": 3,
+      "explanation": "CO有毒，是空气污染物。",
+      "tags": [
+        "碳",
+        "CO",
+        "污染"
+      ]
+    },
+    {
+      "id": 9045,
+      "question": "实验室制取二氧化碳常用的药品是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "大理石(石灰石)和稀盐酸",
+        "大理石和稀硫酸",
+        "碳酸钠和稀硫酸",
+        "木炭燃烧"
+      ],
+      "correct_index": 0,
+      "explanation": "实验室用大理石和稀盐酸反应制取CO2。",
+      "tags": [
+        "碳",
+        "CO2",
+        "制取"
+      ]
+    },
+    {
+      "id": 9046,
+      "question": "收集二氧化碳的方法是？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "排水法",
+        "向上排空气法",
+        "向下排空气法",
+        "排水或向上排空气"
+      ],
+      "correct_index": 1,
+      "explanation": "CO2密度比空气大、能溶于水，用向上排空气法收集。",
+      "tags": [
+        "碳",
+        "CO2",
+        "收集"
+      ]
+    },
+    {
+      "id": 9047,
+      "question": "燃烧需要的三个条件不包括？",
+      "type": "化学",
+      "difficulty": 1,
+      "options": [
+        "可燃物",
+        "氧气(或空气)",
+        "阳光",
+        "达到着火点"
+      ],
+      "correct_index": 2,
+      "explanation": "燃烧三条件：可燃物、与氧气接触、温度达到着火点，缺一不可。",
+      "tags": [
+        "燃烧",
+        "条件"
+      ]
+    },
+    {
+      "id": 9048,
+      "question": "下面哪种灭火方法是隔绝氧气？",
+      "type": "实验观察",
+      "difficulty": 1,
+      "options": [
+        "用水浇",
+        "吹灭",
+        "扇风",
+        "用灯帽盖灭酒精灯"
+      ],
+      "correct_index": 3,
+      "explanation": "盖上灯帽隔绝氧气，火焰因缺氧熄灭。",
+      "tags": [
+        "燃烧",
+        "灭火"
+      ]
+    },
+    {
+      "id": 9049,
+      "question": "炒菜时油锅着火，最好的灭火方法是？",
+      "type": "实验观察",
+      "difficulty": 2,
+      "options": [
+        "盖上锅盖",
+        "用水浇",
+        "用嘴吹",
+        "拨打119"
+      ],
+      "correct_index": 0,
+      "explanation": "盖上锅盖隔绝空气，火熄灭；不能用水浇油。",
+      "tags": [
+        "燃烧",
+        "灭火"
+      ]
+    },
+    {
+      "id": 9050,
+      "question": "扑灭森林火灾时，常开辟隔离带，其原理是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "隔绝氧气",
+        "清除可燃物",
+        "降低温度",
+        "降低着火点"
+      ],
+      "correct_index": 1,
+      "explanation": "开辟隔离带把树木移走，清除可燃物，阻止火势蔓延。",
+      "tags": [
+        "燃烧",
+        "灭火"
+      ]
+    },
+    {
+      "id": 9051,
+      "question": "发现有人一氧化碳中毒，首先应？",
+      "type": "实验观察",
+      "difficulty": 2,
+      "options": [
+        "在原地打电话",
+        "关紧门窗",
+        "打开门窗通风、将人移到空气新鲜处",
+        "继续待在室内"
+      ],
+      "correct_index": 2,
+      "explanation": "先通风、将中毒者移到空气新鲜处，再就医。",
+      "tags": [
+        "燃烧",
+        "安全"
+      ]
+    },
+    {
+      "id": 9052,
+      "question": "下面哪种金属在空气中最容易生锈？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "金",
+        "银",
+        "铝",
+        "铁"
+      ],
+      "correct_index": 3,
+      "explanation": "铁在潮湿空气中易与氧气、水作用生锈。",
+      "tags": [
+        "金属",
+        "生锈"
+      ]
+    },
+    {
+      "id": 9053,
+      "question": "铁生锈是铁与什么共同作用的结果？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "氧气和水",
+        "只有氧气",
+        "只有水",
+        "只有阳光"
+      ],
+      "correct_index": 0,
+      "explanation": "铁与氧气、水同时接触才会生锈。",
+      "tags": [
+        "金属",
+        "生锈"
+      ]
+    },
+    {
+      "id": 9054,
+      "question": "下面哪种方法能防止铁生锈？",
+      "type": "技术与工程",
+      "difficulty": 2,
+      "options": [
+        "放在潮湿处",
+        "在铁表面刷漆涂油",
+        "让铁沾水",
+        "让铁裸露"
+      ],
+      "correct_index": 1,
+      "explanation": "刷漆涂油隔绝氧气和水，防止生锈。",
+      "tags": [
+        "金属",
+        "防锈"
+      ]
+    },
+    {
+      "id": 9055,
+      "question": "下面哪种金属活动性最强？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "铜",
+        "银",
+        "铁",
+        "金"
+      ],
+      "correct_index": 2,
+      "explanation": "常见金属活动性：K Ca Na Mg Al Zn Fe Sn Pb (H) Cu Hg Ag Pt Au，铁比铜银金活泼。",
+      "tags": [
+        "金属",
+        "活动性"
+      ]
+    },
+    {
+      "id": 9056,
+      "question": "下面哪种金属活动性最弱？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "铁",
+        "锌",
+        "镁",
+        "金"
+      ],
+      "correct_index": 3,
+      "explanation": "金在金属活动性顺序最后，最不活泼。",
+      "tags": [
+        "金属",
+        "活动性"
+      ]
+    },
+    {
+      "id": 9057,
+      "question": "合金与组成它的纯金属相比，特点是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "硬度大、熔点低",
+        "硬度小、熔点高",
+        "硬度大、熔点低",
+        "硬度小、熔点低"
+      ],
+      "correct_index": 0,
+      "explanation": "合金一般比纯金属硬度大、熔点低、抗腐蚀性好。",
+      "tags": [
+        "金属",
+        "合金"
+      ]
+    },
+    {
+      "id": 9058,
+      "question": "下面哪种属于合金？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "纯铁",
+        "不锈钢",
+        "纯铜",
+        "铝"
+      ],
+      "correct_index": 1,
+      "explanation": "不锈钢是铁、铬、镍等组成的合金。",
+      "tags": [
+        "金属",
+        "合金"
+      ]
+    },
+    {
+      "id": 9059,
+      "question": "把铁钉放入硫酸铜溶液中，铁钉表面会出现？",
+      "type": "实验观察",
+      "difficulty": 2,
+      "options": [
+        "银白色",
+        "铜绿色",
+        "红色的铜",
+        "无变化"
+      ],
+      "correct_index": 2,
+      "explanation": "Fe+CuSO4→FeSO4+Cu，铁置换出红色的铜。",
+      "tags": [
+        "金属",
+        "置换反应"
+      ]
+    },
+    {
+      "id": 9060,
+      "question": "溶液是一种什么样的混合物？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "均一、稳定的",
+        "不均一、不稳定",
+        "浑浊的",
+        "均一、稳定的混合物"
+      ],
+      "correct_index": 3,
+      "explanation": "溶液是一种或几种物质分散到另一种物质里，形成均一、稳定的混合物。",
+      "tags": [
+        "溶液",
+        "概念"
+      ]
+    },
+    {
+      "id": 9061,
+      "question": "溶液由什么组成？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "溶质和溶剂",
+        "溶质",
+        "溶剂",
+        "溶质和溶剂"
+      ],
+      "correct_index": 0,
+      "explanation": "溶液=溶质+溶剂，被溶解的物质叫溶质，能溶解其他物质的叫溶剂。",
+      "tags": [
+        "溶液",
+        "组成"
+      ]
+    },
+    {
+      "id": 9062,
+      "question": "最常见的溶剂是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "酒精",
+        "水",
+        "汽油",
+        "油"
+      ],
+      "correct_index": 1,
+      "explanation": "水是最常用的溶剂，能溶解很多物质。",
+      "tags": [
+        "溶液",
+        "溶剂"
+      ]
+    },
+    {
+      "id": 9063,
+      "question": "把食盐溶于水，食盐是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "溶剂",
+        "溶液",
+        "溶质",
+        "水"
+      ],
+      "correct_index": 2,
+      "explanation": "被溶解的食盐是溶质，水是溶剂。",
+      "tags": [
+        "溶液",
+        "溶质"
+      ]
+    },
+    {
+      "id": 9064,
+      "question": "在一定温度下，某固态物质在100g溶剂里达到饱和状态时所溶解的质量叫？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "溶解度",
+        "浓度",
+        "质量分数",
+        "溶解度"
+      ],
+      "correct_index": 3,
+      "explanation": "溶解度表示一定温度下，100g溶剂里达到饱和时溶解的溶质质量。",
+      "tags": [
+        "溶液",
+        "溶解度"
+      ]
+    },
+    {
+      "id": 9065,
+      "question": "要使接近饱和的硝酸钾溶液变成饱和溶液，不能采取的方法是？",
+      "type": "实验观察",
+      "difficulty": 2,
+      "options": [
+        "升高温度",
+        "加入硝酸钾",
+        "蒸发溶剂",
+        "降低温度"
+      ],
+      "correct_index": 0,
+      "explanation": "硝酸钾溶解度随温度升高而增大，升温会更不饱和。",
+      "tags": [
+        "溶液",
+        "饱和"
+      ]
+    },
+    {
+      "id": 9066,
+      "question": "溶质质量分数的计算公式是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "溶质质量/溶液质量×100%",
+        "溶质质量/溶液质量×100%",
+        "溶质质量/溶剂质量×100%",
+        "溶剂质量/溶液质量×100%"
+      ],
+      "correct_index": 1,
+      "explanation": "溶质质量分数=溶质质量/溶液质量×100%。",
+      "tags": [
+        "溶液",
+        "质量分数"
+      ]
+    },
+    {
+      "id": 9067,
+      "question": "把10g食盐溶于90g水中，所得溶液的溶质质量分数是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "10%",
+        "9%",
+        "10%",
+        "11%"
+      ],
+      "correct_index": 2,
+      "explanation": "溶质10g，溶液100g，质量分数=10/100×100%=10%。",
+      "tags": [
+        "溶液",
+        "计算"
+      ]
+    },
+    {
+      "id": 9068,
+      "question": "盐酸是哪一种酸的水溶液？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "硫酸",
+        "硝酸",
+        "碳酸",
+        "盐酸(HCl)"
+      ],
+      "correct_index": 3,
+      "explanation": "盐酸是氯化氢气体的水溶液。",
+      "tags": [
+        "酸碱",
+        "盐酸"
+      ]
+    },
+    {
+      "id": 9069,
+      "question": "氢氧化钠的俗称是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "烧碱、火碱、苛性钠",
+        "熟石灰",
+        "石灰石",
+        "纯碱"
+      ],
+      "correct_index": 0,
+      "explanation": "氢氧化钠俗称烧碱、火碱、苛性钠。",
+      "tags": [
+        "酸碱",
+        "氢氧化钠"
+      ]
+    },
+    {
+      "id": 9070,
+      "question": "氢氧化钙的俗称是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "烧碱",
+        "熟石灰、消石灰",
+        "火碱",
+        "纯碱"
+      ],
+      "correct_index": 1,
+      "explanation": "氢氧化钙俗称熟石灰、消石灰。",
+      "tags": [
+        "酸碱",
+        "氢氧化钙"
+      ]
+    },
+    {
+      "id": 9071,
+      "question": "溶液的酸碱性常用什么表示？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "颜色",
+        "温度",
+        "pH",
+        "浓度"
+      ],
+      "correct_index": 2,
+      "explanation": "pH表示溶液酸碱性强弱，pH<7酸性，pH=7中性，pH>7碱性。",
+      "tags": [
+        "酸碱",
+        "pH"
+      ]
+    },
+    {
+      "id": 9072,
+      "question": "pH<7的溶液呈？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "碱性",
+        "中性",
+        "无法判断",
+        "酸性"
+      ],
+      "correct_index": 3,
+      "explanation": "pH小于7呈酸性，越小酸性越强。",
+      "tags": [
+        "酸碱",
+        "pH"
+      ]
+    },
+    {
+      "id": 9073,
+      "question": "pH>7的溶液呈？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "碱性",
+        "酸性",
+        "中性",
+        "无法判断"
+      ],
+      "correct_index": 0,
+      "explanation": "pH大于7呈碱性，越大碱性越强。",
+      "tags": [
+        "酸碱",
+        "pH"
+      ]
+    },
+    {
+      "id": 9074,
+      "question": "人体内胃液的pH通常呈？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "碱性",
+        "强酸性",
+        "中性",
+        "弱碱性"
+      ],
+      "correct_index": 1,
+      "explanation": "胃液中含盐酸，呈强酸性，帮助消化。",
+      "tags": [
+        "酸碱",
+        "pH"
+      ]
+    },
+    {
+      "id": 9075,
+      "question": "改良酸性土壤常用？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "烧碱",
+        "食盐",
+        "熟石灰",
+        "盐酸"
+      ],
+      "correct_index": 2,
+      "explanation": "熟石灰(氢氧化钙)呈碱性，能中和土壤中的酸。",
+      "tags": [
+        "酸碱",
+        "中和",
+        "应用"
+      ]
+    },
+    {
+      "id": 9076,
+      "question": "酸碱中和反应的实质是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "氢离子和氢氧根离子结合生成水",
+        "金属和酸反应",
+        "盐和水反应",
+        "H+和OH-结合生成H2O"
+      ],
+      "correct_index": 3,
+      "explanation": "中和反应实质是H+ + OH- → H2O。",
+      "tags": [
+        "酸碱",
+        "中和"
+      ]
+    },
+    {
+      "id": 9077,
+      "question": "胃酸过多的病人常服用含氢氧化铝的药物，这是利用了？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "酸碱中和反应",
+        "化合反应",
+        "分解反应",
+        "置换反应"
+      ],
+      "correct_index": 0,
+      "explanation": "氢氧化铝中和过多胃酸(盐酸)，是中和反应。",
+      "tags": [
+        "酸碱",
+        "中和",
+        "应用"
+      ]
+    },
+    {
+      "id": 9078,
+      "question": "下面哪种物质能使紫色石蕊试液变红？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "氢氧化钠溶液",
+        "稀盐酸",
+        "食盐水",
+        "石灰水"
+      ],
+      "correct_index": 1,
+      "explanation": "酸性溶液使紫色石蕊变红；碱性溶液使它变蓝。",
+      "tags": [
+        "酸碱",
+        "指示剂"
+      ]
+    },
+    {
+      "id": 9079,
+      "question": "下面哪种物质能使无色酚酞试液变红？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "稀盐酸",
+        "食盐水",
+        "氢氧化钠溶液",
+        "水"
+      ],
+      "correct_index": 2,
+      "explanation": "碱性溶液使无色酚酞变红；酸性和中性不变色。",
+      "tags": [
+        "酸碱",
+        "指示剂"
+      ]
+    },
+    {
+      "id": 9080,
+      "question": "遗传物质的主要载体是？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "蛋白质",
+        "基因",
+        "氨基酸",
+        "染色体"
+      ],
+      "correct_index": 3,
+      "explanation": "染色体主要由DNA和蛋白质组成，是遗传物质的主要载体。",
+      "tags": [
+        "遗传",
+        "染色体"
+      ]
+    },
+    {
+      "id": 9081,
+      "question": "DNA分子上有许多决定生物性状的小片段叫？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "基因",
+        "染色体",
+        "蛋白质",
+        "细胞核"
+      ],
+      "correct_index": 0,
+      "explanation": "基因是DNA上有遗传效应的片段，决定生物性状。",
+      "tags": [
+        "遗传",
+        "基因"
+      ]
+    },
+    {
+      "id": 9082,
+      "question": "生物体的形态结构、生理特性等叫？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "遗传",
+        "性状",
+        "变异",
+        "发育"
+      ],
+      "correct_index": 1,
+      "explanation": "性状是生物体形态结构、生理和行为等特征。",
+      "tags": [
+        "遗传",
+        "性状"
+      ]
+    },
+    {
+      "id": 9083,
+      "question": "亲子间的相似性叫？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "变异",
+        "遗传",
+        "遗传",
+        "进化"
+      ],
+      "correct_index": 2,
+      "explanation": "亲子间的相似性叫遗传；亲子间或子代个体间的差异叫变异。",
+      "tags": [
+        "遗传",
+        "遗传"
+      ]
+    },
+    {
+      "id": 9084,
+      "question": "亲子间或子代个体间的差异叫？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "遗传",
+        "遗传",
+        "进化",
+        "变异"
+      ],
+      "correct_index": 3,
+      "explanation": "亲子间或子代个体间的差异叫变异。",
+      "tags": [
+        "遗传",
+        "变异"
+      ]
+    },
+    {
+      "id": 9085,
+      "question": "下面哪种变异是可遗传的？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "基因突变引起的变异",
+        "晒黑的皮肤",
+        "整容后的双眼皮",
+        "外伤造成的伤疤"
+      ],
+      "correct_index": 0,
+      "explanation": "遗传物质改变引起的变异能遗传；环境引起的不能遗传。",
+      "tags": [
+        "遗传",
+        "变异"
+      ]
+    },
+    {
+      "id": 9086,
+      "question": "下面哪种变异是不可遗传的？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "基因突变",
+        "晒黑的皮肤",
+        "基因重组",
+        "染色体变异"
+      ],
+      "correct_index": 1,
+      "explanation": "由环境引起、遗传物质未改变的变异不能遗传。",
+      "tags": [
+        "遗传",
+        "变异"
+      ]
+    },
+    {
+      "id": 9087,
+      "question": "生物进化的总体趋势是？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "由复杂到简单",
+        "由陆生到水生",
+        "由简单到复杂、由低等到高等、由水生到陆生",
+        "由高等到低等"
+      ],
+      "correct_index": 2,
+      "explanation": "生物进化趋势：简单→复杂、低等→高等、水生→陆生。",
+      "tags": [
+        "进化",
+        "趋势"
+      ]
+    },
+    {
+      "id": 9088,
+      "question": "达尔文提出的生物进化理论是？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "神创论",
+        "用进废退论",
+        "灾变论",
+        "自然选择学说"
+      ],
+      "correct_index": 3,
+      "explanation": "达尔文在《物种起源》中提出自然选择学说。",
+      "tags": [
+        "进化",
+        "自然选择"
+      ]
+    },
+    {
+      "id": 9089,
+      "question": "自然界中的生物，通过激烈的生存斗争，适者生存、不适者被淘汰，这叫？",
+      "type": "生物",
+      "difficulty": 2,
+      "options": [
+        "自然选择",
+        "遗传",
+        "变异",
+        "人工选择"
+      ],
+      "correct_index": 0,
+      "explanation": "自然选择是适者生存、不适者被淘汰的过程。",
+      "tags": [
+        "进化",
+        "自然选择"
+      ]
+    },
+    {
+      "id": 9090,
+      "question": "能穿过电阻的电流，其大小与电压、电阻的关系是？(欧姆定律)",
+      "type": "物理",
+      "difficulty": 2,
+      "options": [
+        "I=UR",
+        "I=U/R",
+        "I=U/R",
+        "I=R/U"
+      ],
+      "correct_index": 1,
+      "explanation": "欧姆定律：导体中的电流跟导体两端电压成正比，跟电阻成反比。",
+      "tags": [
+        "电学",
+        "欧姆定律"
+      ]
+    },
+    {
+      "id": 9091,
+      "question": "某导体两端电压为6V，电阻为10Ω，通过它的电流是？",
+      "type": "物理",
+      "difficulty": 2,
+      "options": [
+        "0.6A",
+        "6A",
+        "0.6A",
+        "60A"
+      ],
+      "correct_index": 2,
+      "explanation": "I=U/R=6V/10Ω=0.6A。",
+      "tags": [
+        "电学",
+        "计算"
+      ]
+    },
+    {
+      "id": 9092,
+      "question": "串联电路中，各处电流？",
+      "type": "物理",
+      "difficulty": 2,
+      "options": [
+        "不等",
+        "逐渐减小",
+        "逐渐增大",
+        "处处相等"
+      ],
+      "correct_index": 3,
+      "explanation": "串联电路电流处处相等：I=I1=I2。",
+      "tags": [
+        "电学",
+        "串联"
+      ]
+    },
+    {
+      "id": 9093,
+      "question": "并联电路中，干路电流等于？",
+      "type": "物理",
+      "difficulty": 2,
+      "options": [
+        "各支路电流之和",
+        "各支路电流之差",
+        "各支路电流之积",
+        "各支路电流相等"
+      ],
+      "correct_index": 0,
+      "explanation": "并联电路干路电流等于各支路电流之和：I=I1+I2。",
+      "tags": [
+        "电学",
+        "并联"
+      ]
+    },
+    {
+      "id": 9094,
+      "question": "串联电路中，总电压等于？",
+      "type": "物理",
+      "difficulty": 2,
+      "options": [
+        "各部分电压之差",
+        "各部分电路两端电压之和",
+        "各部分电压之积",
+        "各支路电压相等"
+      ],
+      "correct_index": 1,
+      "explanation": "串联总电压等于各部分电压之和：U=U1+U2。",
+      "tags": [
+        "电学",
+        "串联"
+      ]
+    },
+    {
+      "id": 9095,
+      "question": "并联电路中，各支路两端电压？",
+      "type": "物理",
+      "difficulty": 2,
+      "options": [
+        "不等",
+        "逐渐减小",
+        "相等且等于总电压",
+        "等于总电压的一半"
+      ],
+      "correct_index": 2,
+      "explanation": "并联各支路电压相等，都等于电源电压。",
+      "tags": [
+        "电学",
+        "并联"
+      ]
+    },
+    {
+      "id": 9096,
+      "question": "下面哪种说法正确？",
+      "type": "化学",
+      "difficulty": 2,
+      "options": [
+        "分子是化学变化中的最小粒子",
+        "原子保持物质化学性质",
+        "分子可分原子不可分",
+        "分子是保持物质化学性质的最小粒子"
+      ],
+      "correct_index": 3,
+      "explanation": "分子保持物质化学性质，原子是化学变化中的最小粒子。",
+      "tags": [
+        "物质构成",
+        "辨析"
+      ]
+    },
+    {
+      "id": 9097,
+      "question": "下面哪种物质由离子构成？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "氯化钠",
+        "水",
+        "氧气",
+        "铁"
+      ],
+      "correct_index": 0,
+      "explanation": "氯化钠由Na+和Cl-构成；水、氧气由分子构成，铁由原子构成。",
+      "tags": [
+        "物质构成",
+        "构成"
+      ]
+    },
+    {
+      "id": 9098,
+      "question": "下面哪种物质由原子直接构成？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "水",
+        "铁",
+        "氧气",
+        "氯化钠"
+      ],
+      "correct_index": 1,
+      "explanation": "金属、稀有气体等由原子直接构成。",
+      "tags": [
+        "物质构成",
+        "构成"
+      ]
+    },
+    {
+      "id": 9099,
+      "question": "下面哪种物质由分子构成？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "铁",
+        "铜",
+        "水",
+        "金刚石"
+      ],
+      "correct_index": 2,
+      "explanation": "水、氧气、二氧化碳等由分子构成。",
+      "tags": [
+        "物质构成",
+        "构成"
+      ]
+    },
+    {
+      "id": 9100,
+      "question": "保持水的化学性质的最小粒子是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "氢原子",
+        "氧原子",
+        "氢分子和氧分子",
+        "水分子"
+      ],
+      "correct_index": 3,
+      "explanation": "水由水分子构成，水分子保持水的化学性质。",
+      "tags": [
+        "物质构成",
+        "分子"
+      ]
+    },
+    {
+      "id": 9101,
+      "question": "化学变化的实质是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "分子分裂成原子，原子重新组合成新分子",
+        "分子不变、原子重新组合",
+        "分子间隔不变",
+        "分子种类不变"
+      ],
+      "correct_index": 0,
+      "explanation": "化学变化中分子分裂为原子，原子重新组合成新分子。",
+      "tags": [
+        "物质构成",
+        "实质"
+      ]
+    },
+    {
+      "id": 9102,
+      "question": "下面关于原子的说法，正确的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "原子是实心球体",
+        "原子由原子核和核外电子构成",
+        "原子比分子大",
+        "原子不能再分"
+      ],
+      "correct_index": 1,
+      "explanation": "原子不是实心球体，由原子核和电子构成。",
+      "tags": [
+        "物质构成",
+        "原子"
+      ]
+    },
+    {
+      "id": 9103,
+      "question": "决定元素化学性质的是原子的？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "质子数",
+        "中子数",
+        "最外层电子数",
+        "相对原子质量"
+      ],
+      "correct_index": 2,
+      "explanation": "最外层电子数决定元素化学性质。",
+      "tags": [
+        "物质构成",
+        "最外层"
+      ]
+    },
+    {
+      "id": 9104,
+      "question": "下列化学用语中，数字‘2’表示一个分子中含两个原子的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "2H",
+        "2H2",
+        "2H2O",
+        "H2"
+      ],
+      "correct_index": 3,
+      "explanation": "H2中2表示一个氢分子含两个氢原子。",
+      "tags": [
+        "化学用语",
+        "数字"
+      ]
+    },
+    {
+      "id": 9105,
+      "question": "下列物质中，属于氧化物的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "CO2",
+        "O2",
+        "H2SO4",
+        "NaOH"
+      ],
+      "correct_index": 0,
+      "explanation": "氧化物由两种元素组成、其中一种是氧元素，CO2是氧化物。",
+      "tags": [
+        "物质分类",
+        "氧化物"
+      ]
+    },
+    {
+      "id": 9106,
+      "question": "下列物质中，属于酸的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "NaOH",
+        "HCl",
+        "NaCl",
+        "H2O"
+      ],
+      "correct_index": 1,
+      "explanation": "HCl是酸；NaOH是碱，NaCl是盐。",
+      "tags": [
+        "物质分类",
+        "酸"
+      ]
+    },
+    {
+      "id": 9107,
+      "question": "下列物质中，属于碱的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "H2SO4",
+        "NaCl",
+        "NaOH",
+        "CO2"
+      ],
+      "correct_index": 2,
+      "explanation": "NaOH是碱；H2SO4是酸，NaCl是盐。",
+      "tags": [
+        "物质分类",
+        "碱"
+      ]
+    },
+    {
+      "id": 9108,
+      "question": "下列物质中，属于盐的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "HCl",
+        "NaOH",
+        "H2O",
+        "NaCl"
+      ],
+      "correct_index": 3,
+      "explanation": "NaCl由金属离子和酸根离子构成，是盐。",
+      "tags": [
+        "物质分类",
+        "盐"
+      ]
+    },
+    {
+      "id": 9109,
+      "question": "下列变化属于化学变化的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "铁生锈",
+        "冰融化",
+        "玻璃破碎",
+        "汽油挥发"
+      ],
+      "correct_index": 0,
+      "explanation": "铁生锈生成新物质铁锈，是化学变化；其他只是状态形状改变。",
+      "tags": [
+        "物质变化",
+        "辨析"
+      ]
+    },
+    {
+      "id": 9110,
+      "question": "下列变化属于物理变化的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "木炭燃烧",
+        "酒精挥发",
+        "铁生锈",
+        "食物腐败"
+      ],
+      "correct_index": 1,
+      "explanation": "酒精挥发只是状态改变，没有新物质，是物理变化。",
+      "tags": [
+        "物质变化",
+        "辨析"
+      ]
+    },
+    {
+      "id": 9111,
+      "question": "下列性质属于化学性质的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "颜色",
+        "状态",
+        "可燃性",
+        "熔点"
+      ],
+      "correct_index": 2,
+      "explanation": "可燃性需要通过化学变化表现，是化学性质。",
+      "tags": [
+        "物质变化",
+        "性质"
+      ]
+    },
+    {
+      "id": 9112,
+      "question": "下列性质属于物理性质的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "可燃性",
+        "氧化性",
+        "酸性",
+        "颜色、状态、熔点"
+      ],
+      "correct_index": 3,
+      "explanation": "颜色、状态、熔点不需要化学变化就能表现，是物理性质。",
+      "tags": [
+        "物质变化",
+        "性质"
+      ]
+    },
+    {
+      "id": 9113,
+      "question": "实验室制取氧气时，用向上排空气法收集，是因为氧气？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "密度比空气大且不易溶于水",
+        "密度比空气小",
+        "能溶于水",
+        "无色无味"
+      ],
+      "correct_index": 0,
+      "explanation": "氧气密度比空气大，可用向上排空气法；不易溶于水也可用排水法。",
+      "tags": [
+        "化学实验",
+        "气体收集"
+      ]
+    },
+    {
+      "id": 9114,
+      "question": "用高锰酸钾制取氧气时，试管口要略向下倾斜，是为了？",
+      "type": "实验观察",
+      "difficulty": 3,
+      "options": [
+        "便于加热",
+        "防止冷凝水倒流炸裂试管",
+        "防止冷凝水倒流炸裂试管",
+        "好看"
+      ],
+      "correct_index": 1,
+      "explanation": "防止加热时产生的水蒸气冷凝倒流，使试管炸裂。",
+      "tags": [
+        "化学实验",
+        "操作"
+      ]
+    },
+    {
+      "id": 9115,
+      "question": "下列关于燃烧和灭火的说法，正确的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "只要温度达到着火点就能燃烧",
+        "燃烧一定发光发热",
+        "燃烧一定发光放热",
+        "水能扑灭一切火"
+      ],
+      "correct_index": 2,
+      "explanation": "燃烧三条件缺一不可；着火点是物质属性，不能降低。",
+      "tags": [
+        "燃烧",
+        "综合"
+      ]
+    },
+    {
+      "id": 9116,
+      "question": "下列关于金属的说法，正确的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "金属都能与酸反应",
+        "金属都比水轻",
+        "金属都导电导热",
+        "大多数金属具有金属光泽、导电导热"
+      ],
+      "correct_index": 3,
+      "explanation": "金属一般有光泽、导电导热、延展性好；不是所有金属都与酸反应。",
+      "tags": [
+        "金属",
+        "性质"
+      ]
+    },
+    {
+      "id": 9117,
+      "question": "下列关于溶液的说法，正确的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "溶液一定是均一、稳定的混合物",
+        "溶液都是无色的",
+        "均一稳定的液体都是溶液",
+        "溶质只能是固体"
+      ],
+      "correct_index": 0,
+      "explanation": "溶液是均一稳定的混合物；可以有色，溶质可以是固液气。",
+      "tags": [
+        "溶液",
+        "概念"
+      ]
+    },
+    {
+      "id": 9118,
+      "question": "下列关于酸碱的说法，正确的是？",
+      "type": "化学",
+      "difficulty": 3,
+      "options": [
+        "pH越小酸性越弱",
+        "pH<7的溶液呈酸性",
+        "pH越大碱性越弱",
+        "石蕊遇碱变红"
+      ],
+      "correct_index": 1,
+      "explanation": "pH<7酸性，越小越强；pH>7碱性，越大越强。",
+      "tags": [
+        "酸碱",
+        "综合"
+      ]
+    },
+    {
+      "id": 9119,
+      "question": "下列关于遗传和变异的说法，正确的是？",
+      "type": "生物",
+      "difficulty": 3,
+      "options": [
+        "遗传物质改变引起的变异不能遗传",
+        "亲子间的相似性叫变异",
+        "基因控制生物的性状",
+        "基因控制生物性状"
+      ],
+      "correct_index": 2,
+      "explanation": "基因通过指导蛋白质合成控制生物性状。",
+      "tags": [
+        "遗传",
+        "综合"
+      ]
+    },
+    {
+      "id": 9120,
+      "question": "下列关于欧姆定律的说法，正确的是？",
+      "type": "物理",
+      "difficulty": 3,
+      "options": [
+        "电流与电阻成正比",
+        "电流与电压成反比",
+        "电阻与电压成正比",
+        "电流与电压成正比、与电阻成反比"
+      ],
+      "correct_index": 3,
+      "explanation": "欧姆定律：I=U/R，电流与电压成正比、与电阻成反比。",
+      "tags": [
+        "电学",
+        "欧姆定律"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2130 @@
+{
+  "bank_id": "grade1_math",
+  "bank_name": "一年级数学",
+  "grade": 1,
+  "subject": "math",
+  "subject_name": "数学",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 1001,
+      "question": "8+5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "13",
+        "14",
+        "12",
+        "23"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 8+5，结果为 13。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1002,
+      "question": "7+6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "14",
+        "13",
+        "12",
+        "23"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 7+6，结果为 13。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1003,
+      "question": "9+4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "14",
+        "12",
+        "13",
+        "23"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 9+4，结果为 13。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1004,
+      "question": "6+8 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "15",
+        "13",
+        "24",
+        "14"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 6+8，结果为 14。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1005,
+      "question": "7+5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "12",
+        "13",
+        "11",
+        "22"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 7+5，结果为 12。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1006,
+      "question": "9+6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "16",
+        "15",
+        "14",
+        "25"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 9+6，结果为 15。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1007,
+      "question": "8+4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "13",
+        "11",
+        "12",
+        "22"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 8+4，结果为 12。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1008,
+      "question": "5+7 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "13",
+        "11",
+        "22",
+        "12"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 5+7，结果为 12。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1009,
+      "question": "15-7 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "8",
+        "9",
+        "7",
+        "18"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 15-7，结果为 8。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1010,
+      "question": "13-6 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "8",
+        "7",
+        "6",
+        "17"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 13-6，结果为 7。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1011,
+      "question": "14-8 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "7",
+        "5",
+        "6",
+        "16"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 14-8，结果为 6。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1012,
+      "question": "11-5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "7",
+        "5",
+        "16",
+        "6"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 11-5，结果为 6。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1013,
+      "question": "12-9 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "3",
+        "4",
+        "2",
+        "13"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 12-9，结果为 3。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1014,
+      "question": "16-7 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "10",
+        "9",
+        "8",
+        "19"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 16-7，结果为 9。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1015,
+      "question": "17-9 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "9",
+        "7",
+        "8",
+        "18"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 17-9，结果为 8。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1016,
+      "question": "15-8 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "8",
+        "6",
+        "17",
+        "7"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 15-8，结果为 7。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1017,
+      "question": "20+30 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "50",
+        "51",
+        "49",
+        "60"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 20+30，结果为 50。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1018,
+      "question": "40+50 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "91",
+        "90",
+        "89",
+        "100"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 40+50，结果为 90。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1019,
+      "question": "60-20 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "41",
+        "39",
+        "40",
+        "50"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 60-20，结果为 40。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1020,
+      "question": "80-40 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "41",
+        "39",
+        "50",
+        "40"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 80-40，结果为 40。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1021,
+      "question": "23+5 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "28",
+        "29",
+        "27",
+        "38"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 23+5，结果为 28。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1022,
+      "question": "34+4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "39",
+        "38",
+        "37",
+        "48"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 34+4，结果为 38。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1023,
+      "question": "56-3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "54",
+        "52",
+        "53",
+        "63"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 56-3，结果为 53。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1024,
+      "question": "48-6 = ?",
+      "type": "math_calculation",
+      "difficulty": 2,
+      "options": [
+        "43",
+        "41",
+        "52",
+        "42"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 48-6，结果为 42。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1025,
+      "question": "12+6 = ?",
+      "type": "math_calculation",
+      "difficulty": 2,
+      "options": [
+        "18",
+        "19",
+        "17",
+        "28"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 12+6，结果为 18。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1026,
+      "question": "18-5 = ?",
+      "type": "math_calculation",
+      "difficulty": 2,
+      "options": [
+        "14",
+        "13",
+        "12",
+        "23"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 18-5，结果为 13。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1027,
+      "question": "9+9 = ?",
+      "type": "math_calculation",
+      "difficulty": 2,
+      "options": [
+        "19",
+        "17",
+        "18",
+        "28"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 9+9，结果为 18。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1028,
+      "question": "7+7 = ?",
+      "type": "math_calculation",
+      "difficulty": 2,
+      "options": [
+        "15",
+        "13",
+        "24",
+        "14"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 7+7，结果为 14。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1029,
+      "question": "14-6 = ?",
+      "type": "math_calculation",
+      "difficulty": 2,
+      "options": [
+        "8",
+        "9",
+        "7",
+        "18"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 14-6，结果为 8。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1030,
+      "question": "11-8 = ?",
+      "type": "math_calculation",
+      "difficulty": 2,
+      "options": [
+        "4",
+        "3",
+        "2",
+        "13"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 11-8，结果为 3。",
+      "tags": [
+        "口算",
+        "20以内"
+      ]
+    },
+    {
+      "id": 1031,
+      "question": "1元 = ? 角",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "11",
+        "20",
+        "10",
+        "9"
+      ],
+      "correct_index": 2,
+      "explanation": "1元 = 10角，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1032,
+      "question": "2元 = ? 角",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "21",
+        "30",
+        "19",
+        "20"
+      ],
+      "correct_index": 3,
+      "explanation": "2元 = 20角，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1033,
+      "question": "5元 = ? 角",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "50",
+        "51",
+        "60",
+        "49"
+      ],
+      "correct_index": 0,
+      "explanation": "5元 = 50角，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1034,
+      "question": "10元 = ? 角",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "101",
+        "100",
+        "110",
+        "99"
+      ],
+      "correct_index": 1,
+      "explanation": "10元 = 100角，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1035,
+      "question": "1角 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "11",
+        "20",
+        "10",
+        "9"
+      ],
+      "correct_index": 2,
+      "explanation": "1角 = 10分，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1036,
+      "question": "3角 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "31",
+        "40",
+        "29",
+        "30"
+      ],
+      "correct_index": 3,
+      "explanation": "3角 = 30分，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1037,
+      "question": "7角 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "70",
+        "71",
+        "80",
+        "69"
+      ],
+      "correct_index": 0,
+      "explanation": "7角 = 70分，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1038,
+      "question": "1元 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "101",
+        "100",
+        "110",
+        "99"
+      ],
+      "correct_index": 1,
+      "explanation": "1元 = 100分，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1039,
+      "question": "4元 = ? 角",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "41",
+        "50",
+        "40",
+        "39"
+      ],
+      "correct_index": 2,
+      "explanation": "4元 = 40角，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1040,
+      "question": "6角 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "61",
+        "70",
+        "59",
+        "60"
+      ],
+      "correct_index": 3,
+      "explanation": "6角 = 60分，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1041,
+      "question": "8元 = ? 角",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "80",
+        "81",
+        "90",
+        "79"
+      ],
+      "correct_index": 0,
+      "explanation": "8元 = 80角，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1042,
+      "question": "2角 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "21",
+        "20",
+        "30",
+        "19"
+      ],
+      "correct_index": 1,
+      "explanation": "2角 = 20分，根据进率换算。",
+      "tags": [
+        "人民币",
+        "换算"
+      ]
+    },
+    {
+      "id": 1043,
+      "question": "7个十和5个一组成的数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "57",
+        "705",
+        "75",
+        "12"
+      ],
+      "correct_index": 2,
+      "explanation": "7个十是70，5个一是5，合起来是75。",
+      "tags": [
+        "数的组成"
+      ]
+    },
+    {
+      "id": 1044,
+      "question": "9个十是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "9",
+        "99",
+        "900",
+        "90"
+      ],
+      "correct_index": 3,
+      "explanation": "9个十就是9×10=90。",
+      "tags": [
+        "数的组成"
+      ]
+    },
+    {
+      "id": 1045,
+      "question": "46里面有几个十和几个一？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "4个十和6个一",
+        "6个十和4个一",
+        "4个一和6个十",
+        "46个一"
+      ],
+      "correct_index": 0,
+      "explanation": "46的十位是4表示4个十，个位是6表示6个一。",
+      "tags": [
+        "数的组成"
+      ]
+    },
+    {
+      "id": 1046,
+      "question": "与79相邻的两个数是？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "77和80",
+        "78和80",
+        "79和80",
+        "78和79"
+      ],
+      "correct_index": 1,
+      "explanation": "相邻的数就是比它少1和多1的数：78和80。",
+      "tags": [
+        "相邻数"
+      ]
+    },
+    {
+      "id": 1047,
+      "question": "比15大3的数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "12",
+        "16",
+        "18",
+        "19"
+      ],
+      "correct_index": 2,
+      "explanation": "15+3=18。",
+      "tags": [
+        "比多"
+      ]
+    },
+    {
+      "id": 1048,
+      "question": "比12小4的数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "16",
+        "9",
+        "7",
+        "8"
+      ],
+      "correct_index": 3,
+      "explanation": "12-4=8。",
+      "tags": [
+        "比少"
+      ]
+    },
+    {
+      "id": 1049,
+      "question": "按规律填数：2、4、6、8、？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "10",
+        "9",
+        "11",
+        "12"
+      ],
+      "correct_index": 0,
+      "explanation": "每次多2，下一个是10。",
+      "tags": [
+        "找规律"
+      ]
+    },
+    {
+      "id": 1050,
+      "question": "按规律填数：1、3、5、7、？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct_index": 1,
+      "explanation": "每次多2，下一个是9。",
+      "tags": [
+        "找规律"
+      ]
+    },
+    {
+      "id": 1051,
+      "question": "按规律填数：20、18、16、？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "15",
+        "13",
+        "14",
+        "12"
+      ],
+      "correct_index": 2,
+      "explanation": "每次少2，下一个是14。",
+      "tags": [
+        "找规律"
+      ]
+    },
+    {
+      "id": 1052,
+      "question": "下列哪个数最大？9、19、90、99",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "90",
+        "19",
+        "9",
+        "99"
+      ],
+      "correct_index": 3,
+      "explanation": "两位数中99最大。",
+      "tags": [
+        "比大小"
+      ]
+    },
+    {
+      "id": 1053,
+      "question": "100里面有几个十？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "10",
+        "1",
+        "100",
+        "5"
+      ],
+      "correct_index": 0,
+      "explanation": "10个十是100。",
+      "tags": [
+        "数的组成"
+      ]
+    },
+    {
+      "id": 1054,
+      "question": "一个数个位是3，十位是5，这个数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "35",
+        "53",
+        "503",
+        "8"
+      ],
+      "correct_index": 1,
+      "explanation": "十位5个位3，写作53。",
+      "tags": [
+        "读数写数"
+      ]
+    },
+    {
+      "id": 1055,
+      "question": "30前面的一个数是？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "31",
+        "20",
+        "29",
+        "40"
+      ],
+      "correct_index": 2,
+      "explanation": "前面一个数是比30少1，即29。",
+      "tags": [
+        "顺序"
+      ]
+    },
+    {
+      "id": 1056,
+      "question": "钟面上分针指向12，时针指向8，是几时？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "12时",
+        "4时",
+        "8时半",
+        "8时"
+      ],
+      "correct_index": 3,
+      "explanation": "分针指12是整时，时针指8就是8时。",
+      "tags": [
+        "钟表"
+      ]
+    },
+    {
+      "id": 1057,
+      "question": "钟面上时针在3和4之间，分针指向6，是几时几分？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "3时30分",
+        "4时30分",
+        "3时6分",
+        "4时半"
+      ],
+      "correct_index": 0,
+      "explanation": "时针在3和4之间是3时多，分针指6是30分。",
+      "tags": [
+        "钟表"
+      ]
+    },
+    {
+      "id": 1058,
+      "question": "1元=（ ）角，括号里填？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "10",
+        "100",
+        "5"
+      ],
+      "correct_index": 1,
+      "explanation": "1元等于10角。",
+      "tags": [
+        "人民币"
+      ]
+    },
+    {
+      "id": 1059,
+      "question": "1张5元可以换几张1元？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "1张",
+        "10张",
+        "5张",
+        "50张"
+      ],
+      "correct_index": 2,
+      "explanation": "5元就是5个1元。",
+      "tags": [
+        "人民币"
+      ]
+    },
+    {
+      "id": 1060,
+      "question": "最小的两位数是？",
+      "type": "数与代数",
+      "difficulty": 2,
+      "options": [
+        "1",
+        "11",
+        "9",
+        "10"
+      ],
+      "correct_index": 3,
+      "explanation": "两位数从10开始，最小是10。",
+      "tags": [
+        "数的认识"
+      ]
+    },
+    {
+      "id": 1061,
+      "question": "最大的一位数是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "9",
+        "10",
+        "99",
+        "0"
+      ],
+      "correct_index": 0,
+      "explanation": "一位数中最大是9。",
+      "tags": [
+        "数的认识"
+      ]
+    },
+    {
+      "id": 1062,
+      "question": "18里面有几个十和几个一？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "8个十和1个一",
+        "1个十和8个一",
+        "18个十",
+        "8个一"
+      ],
+      "correct_index": 1,
+      "explanation": "十位1个位8，是1个十和8个一。",
+      "tags": [
+        "数的组成"
+      ]
+    },
+    {
+      "id": 1063,
+      "question": "足球的形状像下面哪种立体图形？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "正方体",
+        "长方体",
+        "球",
+        "圆柱"
+      ],
+      "correct_index": 2,
+      "explanation": "足球圆圆的可以滚动，像球。",
+      "tags": [
+        "立体图形"
+      ]
+    },
+    {
+      "id": 1064,
+      "question": "魔方的形状像哪种立体图形？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "球",
+        "圆柱",
+        "长方体",
+        "正方体"
+      ],
+      "correct_index": 3,
+      "explanation": "魔方六个面都是正方形，是正方体。",
+      "tags": [
+        "立体图形"
+      ]
+    },
+    {
+      "id": 1065,
+      "question": "数学课本封面是什么形状？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "长方形",
+        "正方形",
+        "圆",
+        "三角形"
+      ],
+      "correct_index": 0,
+      "explanation": "课本封面长长方方是长方形。",
+      "tags": [
+        "平面图形"
+      ]
+    },
+    {
+      "id": 1066,
+      "question": "硬币的正面是什么形状？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "长方形",
+        "圆",
+        "正方形",
+        "三角形"
+      ],
+      "correct_index": 1,
+      "explanation": "硬币面是圆圆的，是圆。",
+      "tags": [
+        "平面图形"
+      ]
+    },
+    {
+      "id": 1067,
+      "question": "三角尺上有一个什么角？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "钝角",
+        "平角",
+        "直角",
+        "周角"
+      ],
+      "correct_index": 2,
+      "explanation": "三角尺上有一个直角。",
+      "tags": [
+        "角"
+      ]
+    },
+    {
+      "id": 1068,
+      "question": "太阳从哪个方向升起？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "西方",
+        "南方",
+        "北方",
+        "东方"
+      ],
+      "correct_index": 3,
+      "explanation": "太阳从东方升起。",
+      "tags": [
+        "位置方向"
+      ]
+    },
+    {
+      "id": 1069,
+      "question": "小明面向东站着，他的后面是？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "西方",
+        "东方",
+        "南方",
+        "北方"
+      ],
+      "correct_index": 0,
+      "explanation": "东与西相对，后面是西。",
+      "tags": [
+        "位置方向"
+      ]
+    },
+    {
+      "id": 1070,
+      "question": "写字时我们通常用哪只手？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "左手",
+        "右手",
+        "两只都不用",
+        "随便"
+      ],
+      "correct_index": 1,
+      "explanation": "通常用右手写字。",
+      "tags": [
+        "左右"
+      ]
+    },
+    {
+      "id": 1071,
+      "question": "长方形有几条边？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "3条",
+        "5条",
+        "4条",
+        "6条"
+      ],
+      "correct_index": 2,
+      "explanation": "长方形是四边形，有4条边。",
+      "tags": [
+        "图形"
+      ]
+    },
+    {
+      "id": 1072,
+      "question": "三角形有几个角？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "2个",
+        "4个",
+        "5个",
+        "3个"
+      ],
+      "correct_index": 3,
+      "explanation": "三角形有3条边3个角。",
+      "tags": [
+        "图形"
+      ]
+    },
+    {
+      "id": 1073,
+      "question": "圆柱上下两个面是什么形状？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "圆",
+        "正方形",
+        "长方形",
+        "三角形"
+      ],
+      "correct_index": 0,
+      "explanation": "圆柱上下两个底面是圆。",
+      "tags": [
+        "立体图形"
+      ]
+    },
+    {
+      "id": 1074,
+      "question": "停车场里汽车的前面和后面，属于哪种位置？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "上下",
+        "前后",
+        "左右",
+        "东南西北"
+      ],
+      "correct_index": 1,
+      "explanation": "车头车尾方向是前后。",
+      "tags": [
+        "位置"
+      ]
+    },
+    {
+      "id": 1075,
+      "question": "正方形的四条边怎么样？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "都不相等",
+        "两条相等",
+        "都相等",
+        "只有一条"
+      ],
+      "correct_index": 2,
+      "explanation": "正方形四条边都相等。",
+      "tags": [
+        "平面图形"
+      ]
+    },
+    {
+      "id": 1076,
+      "question": "我们在教室里，电灯在天花板的哪一面？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "下面",
+        "左面",
+        "右面",
+        "上面"
+      ],
+      "correct_index": 3,
+      "explanation": "电灯在天花板上，是上面。",
+      "tags": [
+        "上下"
+      ]
+    },
+    {
+      "id": 1077,
+      "question": "要统计全班同学喜欢的水果，应该先做什么？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "举手调查",
+        "直接猜",
+        "不用记录",
+        "随便写"
+      ],
+      "correct_index": 0,
+      "explanation": "收集数据要先调查再记录。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 1078,
+      "question": "掷一枚硬币，落下后可能是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "一定正面",
+        "正面或反面",
+        "一定反面",
+        "立起来"
+      ],
+      "correct_index": 1,
+      "explanation": "硬币有正反两面，都可能。",
+      "tags": [
+        "可能性"
+      ]
+    },
+    {
+      "id": 1079,
+      "question": "盒子里全是红球，摸一个是什么球？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "可能是白球",
+        "可能是黄球",
+        "一定是红球",
+        "不可能是红球"
+      ],
+      "correct_index": 2,
+      "explanation": "全是红球，一定摸到红球。",
+      "tags": [
+        "可能性"
+      ]
+    },
+    {
+      "id": 1080,
+      "question": "盒子里有3个红球和1个白球，摸到哪种球的可能性大？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "白球",
+        "一样大",
+        "都不可能",
+        "红球"
+      ],
+      "correct_index": 3,
+      "explanation": "红球多，摸到红球可能性大。",
+      "tags": [
+        "可能性"
+      ]
+    },
+    {
+      "id": 1081,
+      "question": "下图中哪种图形最多？△△△○○□",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "三角形",
+        "圆",
+        "正方形",
+        "一样多"
+      ],
+      "correct_index": 0,
+      "explanation": "三角形有3个最多。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 1082,
+      "question": "记录调查结果常用的方法是？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "不用记",
+        "画√或画正字",
+        "只记一个",
+        "凭记忆"
+      ],
+      "correct_index": 1,
+      "explanation": "常用画正字或打勾记录数据。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 1083,
+      "question": "太阳从西边落下，这是？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "不可能",
+        "可能发生",
+        "一定发生的事",
+        "不确定"
+      ],
+      "correct_index": 2,
+      "explanation": "太阳东升西落是一定的。",
+      "tags": [
+        "可能性"
+      ]
+    },
+    {
+      "id": 1084,
+      "question": "盒子里有红球没有绿球，能摸到绿球吗？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "一定可能",
+        "很可能",
+        "一定",
+        "不可能"
+      ],
+      "correct_index": 3,
+      "explanation": "没有绿球，不可能摸到。",
+      "tags": [
+        "可能性"
+      ]
+    },
+    {
+      "id": 1085,
+      "question": "小红有8支铅笔，妈妈又给她买了5支，现在一共有多少支？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "13",
+        "3",
+        "12",
+        "4"
+      ],
+      "correct_index": 0,
+      "explanation": "8+5=13（支）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1086,
+      "question": "树上有15只小鸟，飞走了7只，还剩多少只？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "22",
+        "8",
+        "9",
+        "11"
+      ],
+      "correct_index": 1,
+      "explanation": "15-7=8（只）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1087,
+      "question": "小明做了9朵花，小芳做了6朵，两人一共做了多少朵？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "3",
+        "16",
+        "15",
+        "12"
+      ],
+      "correct_index": 2,
+      "explanation": "9+6=15（朵）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1088,
+      "question": "停车场有12辆车，开走了4辆，还剩多少辆？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "16",
+        "9",
+        "7",
+        "8"
+      ],
+      "correct_index": 3,
+      "explanation": "12-4=8（辆）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1089,
+      "question": "妈妈买了14个苹果，吃了6个，还剩多少个？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "8",
+        "20",
+        "9",
+        "10"
+      ],
+      "correct_index": 0,
+      "explanation": "14-6=8（个）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1090,
+      "question": "一班有男生9人，女生8人，全班一共多少人？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "17",
+        "16",
+        "18"
+      ],
+      "correct_index": 1,
+      "explanation": "9+8=17（人）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1091,
+      "question": "小丽有13元钱，买文具用了5元，还剩多少元？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "18",
+        "9",
+        "8",
+        "7"
+      ],
+      "correct_index": 2,
+      "explanation": "13-5=8（元）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1092,
+      "question": "花坛里有7朵红花，8朵黄花，一共有多少朵花？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "16",
+        "14",
+        "15"
+      ],
+      "correct_index": 3,
+      "explanation": "7+8=15（朵）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1093,
+      "question": "有16个同学排队，小明前面有7人，他后面有几人？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "8",
+        "9",
+        "10",
+        "7"
+      ],
+      "correct_index": 0,
+      "explanation": "16-7-1=8（人）。",
+      "tags": [
+        "排队问题",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1094,
+      "question": "小华拍球，第一次拍了8下，第二次拍了9下，两次一共拍了多少下？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "1",
+        "17",
+        "16",
+        "18"
+      ],
+      "correct_index": 1,
+      "explanation": "8+9=17（下）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1095,
+      "question": "一根绳子长18米，剪去9米，还剩多少米？",
+      "type": "应用题",
+      "difficulty": 1,
+      "options": [
+        "27",
+        "10",
+        "9",
+        "8"
+      ],
+      "correct_index": 2,
+      "explanation": "18-9=9（米）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1096,
+      "question": "学校买来15个篮球，借走了8个，还剩多少个？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "23",
+        "8",
+        "9",
+        "7"
+      ],
+      "correct_index": 3,
+      "explanation": "15-8=7（个）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1097,
+      "question": "哥哥今年12岁，弟弟比哥哥小5岁，弟弟今年几岁？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "7",
+        "17",
+        "8",
+        "6"
+      ],
+      "correct_index": 0,
+      "explanation": "12-5=7（岁）。",
+      "tags": [
+        "年龄",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1098,
+      "question": "停车场先开来6辆车，又开来7辆，现在比原来多了多少辆？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "1",
+        "13",
+        "12",
+        "14"
+      ],
+      "correct_index": 1,
+      "explanation": "6+7=13（辆）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1099,
+      "question": "小红有10块糖，给了弟弟4块，还剩几块？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "14",
+        "7",
+        "6",
+        "5"
+      ],
+      "correct_index": 2,
+      "explanation": "10-4=6（块）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1100,
+      "question": "同学们排队做操，从前面数小明排第5，从后面数排第4，这一队共有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "9",
+        "7",
+        "10",
+        "8"
+      ],
+      "correct_index": 3,
+      "explanation": "5+4-1=8（人）。",
+      "tags": [
+        "排队问题",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1101,
+      "question": "一本故事书有18页，小明看了9页，还有多少页没看？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "9",
+        "27",
+        "10",
+        "8"
+      ],
+      "correct_index": 0,
+      "explanation": "18-9=9（页）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1102,
+      "question": "妈妈买了3元的白菜和5元的萝卜，一共花了多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2元",
+        "8元",
+        "15元",
+        "9元"
+      ],
+      "correct_index": 1,
+      "explanation": "3+5=8（元）。",
+      "tags": [
+        "人民币",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1103,
+      "question": "有12个桃子，每只小猴分2个，可以分给几只小猴？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "10只",
+        "14只",
+        "6只",
+        "2只"
+      ],
+      "correct_index": 2,
+      "explanation": "12个每2个一份，12÷2=6（只）。",
+      "tags": [
+        "平均分",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1104,
+      "question": "白兔有7只，黑兔和白兔同样多，两种兔一共有多少只？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "7只",
+        "9只",
+        "16只",
+        "14只"
+      ],
+      "correct_index": 3,
+      "explanation": "7+7=14（只）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1105,
+      "question": "教室里有8盏灯，关掉了3盏，还亮着几盏？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5盏",
+        "11盏",
+        "6盏",
+        "4盏"
+      ],
+      "correct_index": 0,
+      "explanation": "8-3=5（盏）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1106,
+      "question": "小丽做了15朵花，送给同学8朵，还剩多少朵？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "23朵",
+        "7朵",
+        "8朵",
+        "9朵"
+      ],
+      "correct_index": 1,
+      "explanation": "15-8=7（朵）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1107,
+      "question": "停车场原来有9辆车，又开来5辆，现在有多少辆？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "4辆",
+        "13辆",
+        "14辆",
+        "15辆"
+      ],
+      "correct_index": 2,
+      "explanation": "9+5=14（辆）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1108,
+      "question": "小明有17张贴纸，用了9张，还剩多少张？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "26张",
+        "9张",
+        "7张",
+        "8张"
+      ],
+      "correct_index": 3,
+      "explanation": "17-9=8（张）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1109,
+      "question": "小猫钓了6条鱼，猫妈妈比它多钓了5条，猫妈妈钓了多少条？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "11条",
+        "1条",
+        "10条",
+        "12条"
+      ],
+      "correct_index": 0,
+      "explanation": "6+5=11（条）。",
+      "tags": [
+        "比多",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1110,
+      "question": "一（1）班有图书13本，一（2）班有图书9本，一（1）班比一（2）班多几本？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "22本",
+        "4本",
+        "5本",
+        "3本"
+      ],
+      "correct_index": 1,
+      "explanation": "13-9=4（本）。",
+      "tags": [
+        "比多比少",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1111,
+      "question": "小华有14元，买玩具车花了8元，还剩多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "22元",
+        "7元",
+        "6元",
+        "5元"
+      ],
+      "correct_index": 2,
+      "explanation": "14-8=6（元）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1112,
+      "question": "妈妈买了8个苹果和6个梨，一共买了多少个水果？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2个",
+        "13个",
+        "15个",
+        "14个"
+      ],
+      "correct_index": 3,
+      "explanation": "8+6=14（个）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1113,
+      "question": "有15个小朋友，其中男生有8人，女生有几人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "7人",
+        "23人",
+        "8人",
+        "9人"
+      ],
+      "correct_index": 0,
+      "explanation": "15-8=7（人）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1114,
+      "question": "小明跳绳，第一次跳了7下，第二次和第一次同样多，两次共跳多少下？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "7下",
+        "14下",
+        "13下",
+        "15下"
+      ],
+      "correct_index": 1,
+      "explanation": "7+7=14（下）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1115,
+      "question": "一根铁丝长16米，做手工用去7米，还剩多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "23米",
+        "10米",
+        "9米",
+        "8米"
+      ],
+      "correct_index": 2,
+      "explanation": "16-7=9（米）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1116,
+      "question": "哥哥有9本故事书，弟弟有6本，两人一共有多少本？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "3本",
+        "14本",
+        "16本",
+        "15本"
+      ],
+      "correct_index": 3,
+      "explanation": "9+6=15（本）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1117,
+      "question": "有12只小鸡，走了5只，还剩几只？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "7只",
+        "17只",
+        "8只",
+        "6只"
+      ],
+      "correct_index": 0,
+      "explanation": "12-5=7（只）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1118,
+      "question": "小红今年7岁，爸爸比她大30岁，爸爸今年多少岁？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "23岁",
+        "37岁",
+        "36岁",
+        "47岁"
+      ],
+      "correct_index": 1,
+      "explanation": "7+30=37（岁）。",
+      "tags": [
+        "年龄",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1119,
+      "question": "一盘包子有10个，吃了4个，还剩几个？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "14个",
+        "7个",
+        "6个",
+        "5个"
+      ],
+      "correct_index": 2,
+      "explanation": "10-4=6（个）。",
+      "tags": [
+        "减法",
+        "一年级"
+      ]
+    },
+    {
+      "id": 1120,
+      "question": "学校门口两边各插了5面彩旗，一共插了多少面？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5面",
+        "9面",
+        "11面",
+        "10面"
+      ],
+      "correct_index": 3,
+      "explanation": "5+5=10（面）。",
+      "tags": [
+        "加法",
+        "一年级"
+      ]
+    }
+  ]
+}

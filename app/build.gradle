@@ -5,6 +5,7 @@ plugins {
 android {
     namespace 'com.kidslock.app'
     compileSdk 34
+    buildToolsVersion "36.0.0"
 
     defaultConfig {
         applicationId "com.kidslock.app"
@@ -25,6 +26,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
+    // buildToolsVersion "36.0.0"
 
     // Bundle APK splits for different ABIs - smaller APK for TV
     splits {

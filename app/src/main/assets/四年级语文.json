@@ -1,0 +1,2096 @@
+{
+  "bank_id": "grade4_chinese",
+  "bank_name": "四年级语文",
+  "grade": 4,
+  "subject": "chinese",
+  "subject_name": "语文",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 4001,
+      "question": "“闷”在“闷热”中读？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "mēn",
+        "mèn",
+        "mēn",
+        "mén"
+      ],
+      "correct_index": 0,
+      "explanation": "闷热的闷读 mēn。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4002,
+      "question": "“号”在“号叫”中读？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "hào",
+        "háo",
+        "hāo",
+        "hǎo"
+      ],
+      "correct_index": 1,
+      "explanation": "号叫的号读 háo。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4003,
+      "question": "“薄”在“薄雾”中读？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "bó",
+        "báo",
+        "bò",
+        "bō"
+      ],
+      "correct_index": 0,
+      "explanation": "薄雾的薄读 bó。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4004,
+      "question": "“称”在“匀称”中读？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "chēng",
+        "chèn",
+        "chèng",
+        "chēn"
+      ],
+      "correct_index": 1,
+      "explanation": "匀称的称读 chèn。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4005,
+      "question": "“暮”和“幕”，“____江吟”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "暮",
+        "幕",
+        "慕",
+        "墓"
+      ],
+      "correct_index": 0,
+      "explanation": "《暮江吟》傍晚的暮。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 4006,
+      "question": "“缘”和“绿”，“身在此山中”前面是“____”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "缘",
+        "绿",
+        "椽",
+        "绿"
+      ],
+      "correct_index": 0,
+      "explanation": "《题西林壁》“不识庐山真面目，只缘身在此山中”。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 4007,
+      "question": "“费”和“废”，“____力”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "费",
+        "废",
+        "沸",
+        "费"
+      ],
+      "correct_index": 0,
+      "explanation": "费力的费。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 4008,
+      "question": "“疑”和“凝”，“____惑”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "疑",
+        "凝",
+        "疑",
+        "凝"
+      ],
+      "correct_index": 2,
+      "explanation": "疑惑的疑。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 4009,
+      "question": "“降”在“投降”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "jiàng",
+        "xiáng",
+        "xiǎng",
+        "jiāng"
+      ],
+      "correct_index": 1,
+      "explanation": "投降的降读 xiáng。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4010,
+      "question": "“曲”在“弯曲”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "qǔ",
+        "qū",
+        "qǔ",
+        "qù"
+      ],
+      "correct_index": 1,
+      "explanation": "弯曲的曲读 qū。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4011,
+      "question": "“系”在“系铃铛”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "xì",
+        "jì",
+        "jī",
+        "xī"
+      ],
+      "correct_index": 1,
+      "explanation": "系铃铛的系读 jì。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4012,
+      "question": "“雀”在“家雀儿”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "què",
+        "qiǎo",
+        "qiāo",
+        "què"
+      ],
+      "correct_index": 1,
+      "explanation": "家雀儿的雀读 qiǎo。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4013,
+      "question": "“人山人海”形容什么？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "人很多",
+        "山很高",
+        "海很大",
+        "人山人海"
+      ],
+      "correct_index": 0,
+      "explanation": "人山人海形容聚集的人极多。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 4014,
+      "question": "“若隐若现”中“若”的意思是？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "如果",
+        "好像",
+        "如果",
+        "假如"
+      ],
+      "correct_index": 1,
+      "explanation": "若是好像，隐隐约约看不清楚。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 4015,
+      "question": "“横贯江面”中“贯”的意思是？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "穿、贯通",
+        "连贯",
+        "贯穿",
+        "习惯"
+      ],
+      "correct_index": 0,
+      "explanation": "贯是穿、贯通，横着穿过江面。",
+      "tags": [
+        "词语"
+      ]
+    },
+    {
+      "id": 4016,
+      "question": "“风平浪静”的反义词是？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "风平浪静",
+        "风号浪吼",
+        "水平如镜",
+        "微波粼粼"
+      ],
+      "correct_index": 1,
+      "explanation": "风平浪静与风号浪吼相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 4017,
+      "question": "“优美”的近义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "丑陋",
+        "优雅",
+        "优美",
+        "丑恶"
+      ],
+      "correct_index": 1,
+      "explanation": "优美和优雅意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 4018,
+      "question": "“镇静”的反义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "镇定",
+        "慌张",
+        "从容",
+        "冷静"
+      ],
+      "correct_index": 1,
+      "explanation": "镇静与慌张相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 4019,
+      "question": "“牢固”的近义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "松散",
+        "坚固",
+        "脆弱",
+        "薄弱"
+      ],
+      "correct_index": 1,
+      "explanation": "牢固和坚固意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 4020,
+      "question": "“胸有成竹”讲的是谁的故事？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "文与可",
+        "苏轼",
+        "郑板桥",
+        "王维"
+      ],
+      "correct_index": 0,
+      "explanation": "胸有成竹讲文与可画竹。",
+      "tags": [
+        "成语故事"
+      ]
+    },
+    {
+      "id": 4021,
+      "question": "“画龙点睛”比喻什么？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "在关键处用一两句话点明实质",
+        "画龙要画眼睛",
+        "画画要仔细",
+        "龙很有神"
+      ],
+      "correct_index": 0,
+      "explanation": "比喻在关键处用精辟语句点明实质。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 4022,
+      "question": "“____地跳动”，填哪个最恰当？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "剧烈",
+        "剧烈地",
+        "剧烈得",
+        "剧烈的"
+      ],
+      "correct_index": 1,
+      "explanation": "副词修饰动词：剧烈地跳动。",
+      "tags": [
+        "词语搭配"
+      ]
+    },
+    {
+      "id": 4023,
+      "question": "“____的阳光”，填哪个最恰当？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "温和",
+        "温和地",
+        "温和得",
+        "温和的"
+      ],
+      "correct_index": 3,
+      "explanation": "形容词+的+名词：温和的阳光。",
+      "tags": [
+        "词语搭配"
+      ]
+    },
+    {
+      "id": 4024,
+      "question": "“随遇而安”中“遇”的意思是？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "遇到",
+        "境遇",
+        "遇见",
+        "相遇"
+      ],
+      "correct_index": 1,
+      "explanation": "遇是境遇，能适应各种环境。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 4025,
+      "question": "“枉费心机”中“枉”的意思是？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "白白地",
+        "冤枉",
+        "曲",
+        "枉然"
+      ],
+      "correct_index": 0,
+      "explanation": "枉是白白地，白费心思。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 4026,
+      "question": "“____他生长在异乡，____他怀念故乡。”填哪个关联词最恰当？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "因为……所以……",
+        "虽然……但是……",
+        "如果……就……",
+        "不但……而且……"
+      ],
+      "correct_index": 0,
+      "explanation": "因果关系：因为生长在异乡，所以怀念。",
+      "tags": [
+        "关联词"
+      ]
+    },
+    {
+      "id": 4027,
+      "question": "“____明天不下雨，我们____去春游。”填哪个？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "如果……就……",
+        "虽然……但是……",
+        "因为……所以……",
+        "不但……而且……"
+      ],
+      "correct_index": 0,
+      "explanation": "假设关系：如果不下雨就去春游。",
+      "tags": [
+        "关联词"
+      ]
+    },
+    {
+      "id": 4028,
+      "question": "“他____学习好，____乐于助人。”填哪个？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "虽然……但是……",
+        "因为……所以……",
+        "不但……而且……",
+        "如果……就……"
+      ],
+      "correct_index": 2,
+      "explanation": "递进关系：不但学习好，而且乐于助人。",
+      "tags": [
+        "关联词"
+      ]
+    },
+    {
+      "id": 4029,
+      "question": "“这是伟大的奇观。”改成反问句是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "这难道不是伟大的奇观吗",
+        "这是伟大的奇观吗",
+        "这不是伟大的奇观",
+        "这难道是伟大的奇观"
+      ],
+      "correct_index": 0,
+      "explanation": "陈述句改反问：加难道、不、吗。",
+      "tags": [
+        "句式转换"
+      ]
+    },
+    {
+      "id": 4030,
+      "question": "“难道我们能被困难吓倒吗？”改成陈述句是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "我们不能被困难吓倒",
+        "我们能被困难吓倒",
+        "我们不被困难吓倒",
+        "我们被困难吓倒"
+      ],
+      "correct_index": 0,
+      "explanation": "反问改陈述：去掉难道、吗，加不。",
+      "tags": [
+        "句式转换"
+      ]
+    },
+    {
+      "id": 4031,
+      "question": "“太阳跳出了海面。”这是什么句？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "比喻句",
+        "拟人句",
+        "排比句",
+        "夸张句"
+      ],
+      "correct_index": 1,
+      "explanation": "“跳”把太阳当人写。",
+      "tags": [
+        "拟人句"
+      ]
+    },
+    {
+      "id": 4032,
+      "question": "“那声音如同山崩地裂。”这是什么句？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "比喻",
+        "夸张",
+        "拟人",
+        "排比"
+      ],
+      "correct_index": 0,
+      "explanation": "山崩地裂夸张形容声音大。",
+      "tags": [
+        "夸张句"
+      ]
+    },
+    {
+      "id": 4033,
+      "question": "“蟋蟀在平台上弹琴。”这是什么句？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "比喻句",
+        "拟人句",
+        "排比句",
+        "夸张句"
+      ],
+      "correct_index": 1,
+      "explanation": "“弹琴”把蟋蟀当人写。",
+      "tags": [
+        "拟人句"
+      ]
+    },
+    {
+      "id": 4034,
+      "question": "“爬山虎的脚像蜗牛的触角。”这是什么句？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "拟人句",
+        "排比句",
+        "比喻句",
+        "夸张句"
+      ],
+      "correct_index": 2,
+      "explanation": "把爬山虎的脚比作蜗牛触角。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 4035,
+      "question": "“我们不能忘记老师的教诲。”改成反问句是？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "我们难道能忘记老师的教诲吗",
+        "我们能忘记老师的教诲吗",
+        "我们不能忘记老师的教诲",
+        "我们难道不能忘记老师的教诲"
+      ],
+      "correct_index": 0,
+      "explanation": "加难道、不、吗。",
+      "tags": [
+        "句式转换"
+      ]
+    },
+    {
+      "id": 4036,
+      "question": "“他的话完全没有错。”改成反问句是？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "他的话难道完全没有错吗",
+        "他的话难道有错吗",
+        "他的话完全有错吗",
+        "他的话难道完全有错"
+      ],
+      "correct_index": 1,
+      "explanation": "双重否定改反问。",
+      "tags": [
+        "句式转换"
+      ]
+    },
+    {
+      "id": 4037,
+      "question": "《暮江吟》的作者是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "白居易",
+        "苏轼",
+        "李白",
+        "杜甫"
+      ],
+      "correct_index": 0,
+      "explanation": "《暮江吟》作者白居易。",
+      "tags": [
+        "古诗",
+        "暮江吟"
+      ]
+    },
+    {
+      "id": 4038,
+      "question": "“一道残阳铺水中”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "半江瑟瑟半江红",
+        "可怜九月初三夜",
+        "露似真珠月似弓",
+        "露似真珠月似弓"
+      ],
+      "correct_index": 0,
+      "explanation": "“半江瑟瑟半江红”。",
+      "tags": [
+        "古诗",
+        "暮江吟"
+      ]
+    },
+    {
+      "id": 4039,
+      "question": "“可怜九月初三夜”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "露似真珠月似弓",
+        "半江瑟瑟半江红",
+        "一道残阳铺水中",
+        "疑是地上霜"
+      ],
+      "correct_index": 0,
+      "explanation": "“露似真珠月似弓”。",
+      "tags": [
+        "古诗",
+        "暮江吟"
+      ]
+    },
+    {
+      "id": 4040,
+      "question": "《题西林壁》的作者是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "苏轼",
+        "陆游",
+        "杜甫",
+        "李白"
+      ],
+      "correct_index": 0,
+      "explanation": "《题西林壁》作者苏轼。",
+      "tags": [
+        "古诗",
+        "题西林壁"
+      ]
+    },
+    {
+      "id": 4041,
+      "question": "“横看成岭侧成峰”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "远近高低各不同",
+        "不识庐山真面目",
+        "只缘身在此山中",
+        "只缘身在此山中"
+      ],
+      "correct_index": 0,
+      "explanation": "“远近高低各不同”。",
+      "tags": [
+        "古诗",
+        "题西林壁"
+      ]
+    },
+    {
+      "id": 4042,
+      "question": "“不识庐山真面目”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "只缘身在此山中",
+        "远近高低各不同",
+        "横看成岭侧成峰",
+        "不畏浮云遮望眼"
+      ],
+      "correct_index": 0,
+      "explanation": "“只缘身在此山中”。",
+      "tags": [
+        "古诗",
+        "题西林壁"
+      ]
+    },
+    {
+      "id": 4043,
+      "question": "《雪梅》“梅雪争春未肯降”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "骚人阁笔费评章",
+        "梅须逊雪三分白",
+        "雪却输梅一段香",
+        "雪却输梅一段香"
+      ],
+      "correct_index": 0,
+      "explanation": "“骚人阁笔费评章”。",
+      "tags": [
+        "古诗",
+        "雪梅"
+      ]
+    },
+    {
+      "id": 4044,
+      "question": "“梅须逊雪三分白”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "雪却输梅一段香",
+        "骚人阁笔费评章",
+        "梅雪争春未肯降",
+        "凌寒独自开"
+      ],
+      "correct_index": 0,
+      "explanation": "“雪却输梅一段香”。",
+      "tags": [
+        "古诗",
+        "雪梅"
+      ]
+    },
+    {
+      "id": 4045,
+      "question": "《出塞》的作者是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "王昌龄",
+        "王之涣",
+        "王翰",
+        "陆游"
+      ],
+      "correct_index": 0,
+      "explanation": "《出塞》作者王昌龄。",
+      "tags": [
+        "古诗",
+        "出塞"
+      ]
+    },
+    {
+      "id": 4046,
+      "question": "“秦时明月汉时关”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "万里长征人未还",
+        "但使龙城飞将在",
+        "不教胡马度阴山",
+        "不教胡马度阴山"
+      ],
+      "correct_index": 0,
+      "explanation": "“万里长征人未还”。",
+      "tags": [
+        "古诗",
+        "出塞"
+      ]
+    },
+    {
+      "id": 4047,
+      "question": "“但使龙城飞将在”中“飞将”指的是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "李广",
+        "霍去病",
+        "卫青",
+        "飞将军"
+      ],
+      "correct_index": 0,
+      "explanation": "飞将指汉代李广将军。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 4048,
+      "question": "《凉州词》“葡萄美酒夜光杯”的作者是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "王翰",
+        "王昌龄",
+        "王之涣",
+        "王翰"
+      ],
+      "correct_index": 0,
+      "explanation": "《凉州词》作者王翰。",
+      "tags": [
+        "古诗",
+        "凉州词"
+      ]
+    },
+    {
+      "id": 4049,
+      "question": "“葡萄美酒夜光杯”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "欲饮琵琶马上催",
+        "醉卧沙场君莫笑",
+        "古来征战几人回",
+        "古来征战几人回"
+      ],
+      "correct_index": 0,
+      "explanation": "“欲饮琵琶马上催”。",
+      "tags": [
+        "古诗",
+        "凉州词"
+      ]
+    },
+    {
+      "id": 4050,
+      "question": "《夏日绝句》的作者是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "李清照",
+        "李白",
+        "杜甫",
+        "苏轼"
+      ],
+      "correct_index": 0,
+      "explanation": "《夏日绝句》作者李清照。",
+      "tags": [
+        "古诗",
+        "夏日绝句"
+      ]
+    },
+    {
+      "id": 4051,
+      "question": "“生当作人杰”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "死亦为鬼雄",
+        "至今思项羽",
+        "不肯过江东",
+        "不肯过江东"
+      ],
+      "correct_index": 0,
+      "explanation": "“死亦为鬼雄”。",
+      "tags": [
+        "古诗",
+        "夏日绝句"
+      ]
+    },
+    {
+      "id": 4052,
+      "question": "“至今思项羽”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "不肯过江东",
+        "死亦为鬼雄",
+        "生当作人杰",
+        "遥知不是雪"
+      ],
+      "correct_index": 0,
+      "explanation": "“不肯过江东”。",
+      "tags": [
+        "古诗",
+        "夏日绝句"
+      ]
+    },
+    {
+      "id": 4053,
+      "question": "《精卫填海》中，精卫是什么变成的？",
+      "type": "文言文",
+      "difficulty": 1,
+      "options": [
+        "炎帝的小女儿",
+        "一只鸟",
+        "一只鸟",
+        "炎帝"
+      ],
+      "correct_index": 0,
+      "explanation": "精卫本是炎帝少女女娃，溺水而亡化为鸟。",
+      "tags": [
+        "文言文",
+        "精卫填海"
+      ]
+    },
+    {
+      "id": 4054,
+      "question": "“女娃游于东海，溺而不返”中“溺”的意思是？",
+      "type": "文言文",
+      "difficulty": 1,
+      "options": [
+        "溺水",
+        "淹死",
+        "沉迷",
+        "溺水"
+      ],
+      "correct_index": 3,
+      "explanation": "溺是淹没、淹死。",
+      "tags": [
+        "文言实词"
+      ]
+    },
+    {
+      "id": 4055,
+      "question": "“常衔西山之木石”中“衔”的意思是？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "用嘴含",
+        "衔着",
+        "头衔",
+        "连接"
+      ],
+      "correct_index": 0,
+      "explanation": "衔是用嘴含着。",
+      "tags": [
+        "文言实词"
+      ]
+    },
+    {
+      "id": 4056,
+      "question": "《王戎不取道旁李》中，王戎为什么不摘道旁李子？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "他知道李子是苦的",
+        "他不想吃",
+        "他在思考",
+        "他不敢"
+      ],
+      "correct_index": 0,
+      "explanation": "树在道边而多子，此必苦李。",
+      "tags": [
+        "文言文",
+        "王戎不取道旁李"
+      ]
+    },
+    {
+      "id": 4057,
+      "question": "“诸儿竞走取之”中“走”的意思是？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "跑",
+        "走",
+        "行走",
+        "离开"
+      ],
+      "correct_index": 0,
+      "explanation": "走在文言文中是跑。",
+      "tags": [
+        "文言实词"
+      ]
+    },
+    {
+      "id": 4058,
+      "question": "“人问之，答曰：‘树在道边而多子，此必苦李。’”王戎的推理说明他？",
+      "type": "文言文",
+      "difficulty": 3,
+      "options": [
+        "善于观察思考",
+        "很聪明",
+        "喜欢李子",
+        "很勇敢"
+      ],
+      "correct_index": 0,
+      "explanation": "王戎善于观察和推理。",
+      "tags": [
+        "文言文",
+        "王戎不取道旁李"
+      ]
+    },
+    {
+      "id": 4059,
+      "question": "《囊萤夜读》讲的是谁的故事？",
+      "type": "文言文",
+      "difficulty": 3,
+      "options": [
+        "车胤",
+        "孙康",
+        "匡衡",
+        "李白"
+      ],
+      "correct_index": 0,
+      "explanation": "车胤家贫，囊萤照明读书。",
+      "tags": [
+        "文言文",
+        "囊萤夜读"
+      ]
+    },
+    {
+      "id": 4060,
+      "question": "《铁杵成针》讲的是谁的故事？",
+      "type": "文言文",
+      "difficulty": 3,
+      "options": [
+        "李白",
+        "杜甫",
+        "白居易",
+        "苏轼"
+      ],
+      "correct_index": 0,
+      "explanation": "李白读书未成，遇老妪磨铁杵，受感动。",
+      "tags": [
+        "文言文",
+        "铁杵成针"
+      ]
+    },
+    {
+      "id": 4061,
+      "question": "“太白感其意，还卒业”中“卒”的意思是？",
+      "type": "文言文",
+      "difficulty": 3,
+      "options": [
+        "完成",
+        "士兵",
+        "死",
+        "终了"
+      ],
+      "correct_index": 0,
+      "explanation": "卒是完成，完成了学业。",
+      "tags": [
+        "文言实词"
+      ]
+    },
+    {
+      "id": 4062,
+      "question": "《观潮》写的是哪里的潮？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "钱塘江大潮",
+        "长江大潮",
+        "黄河大潮",
+        "珠江大潮"
+      ],
+      "correct_index": 0,
+      "explanation": "《观潮》写钱塘江大潮。",
+      "tags": [
+        "阅读",
+        "观潮"
+      ]
+    },
+    {
+      "id": 4063,
+      "question": "《观潮》中，潮来时的声音像？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "山崩地裂",
+        "风平浪静",
+        "闷雷滚动",
+        "风号浪吼"
+      ],
+      "correct_index": 0,
+      "explanation": "潮声如山崩地裂。",
+      "tags": [
+        "阅读",
+        "观潮"
+      ]
+    },
+    {
+      "id": 4064,
+      "question": "《走月亮》中，“我”和谁一起走月亮？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "妈妈",
+        "爸爸",
+        "奶奶",
+        "姐姐"
+      ],
+      "correct_index": 0,
+      "explanation": "《走月亮》写和妈妈一起在月光下散步。",
+      "tags": [
+        "阅读",
+        "走月亮"
+      ]
+    },
+    {
+      "id": 4065,
+      "question": "《繁星》的作者是？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "巴金",
+        "冰心",
+        "老舍",
+        "茅盾"
+      ],
+      "correct_index": 0,
+      "explanation": "《繁星》作者巴金。",
+      "tags": [
+        "阅读",
+        "繁星"
+      ]
+    },
+    {
+      "id": 4066,
+      "question": "《一个豆荚里的五粒豆》中，最后一粒豆落到了？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "一个顶楼窗子下的裂缝里",
+        "水沟里",
+        "鸽子肚子里",
+        "水里"
+      ],
+      "correct_index": 0,
+      "explanation": "最后一粒豆落到顶楼窗子下的裂缝里。",
+      "tags": [
+        "阅读",
+        "一个豆荚里的五粒豆"
+      ]
+    },
+    {
+      "id": 4067,
+      "question": "《蝙蝠和雷达》中，蝙蝠在夜里靠什么飞行？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "眼睛",
+        "耳朵和嘴",
+        "翅膀",
+        "鼻子"
+      ],
+      "correct_index": 1,
+      "explanation": "蝙蝠靠嘴和耳朵配合探路。",
+      "tags": [
+        "阅读",
+        "蝙蝠和雷达"
+      ]
+    },
+    {
+      "id": 4068,
+      "question": "《呼风唤雨的世纪》中，“呼风唤雨”指的是？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "人类利用科学技术支配自然",
+        "神仙的本领",
+        "刮风下雨",
+        "天气变化"
+      ],
+      "correct_index": 0,
+      "explanation": "指人类利用科学技术改造自然。",
+      "tags": [
+        "阅读",
+        "呼风唤雨的世纪"
+      ]
+    },
+    {
+      "id": 4069,
+      "question": "《爬山虎的脚》作者叶圣陶，爬山虎的脚长在？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "茎上",
+        "叶子上",
+        "根上",
+        "花上"
+      ],
+      "correct_index": 0,
+      "explanation": "爬山虎的脚长在茎上。",
+      "tags": [
+        "阅读",
+        "爬山虎的脚"
+      ]
+    },
+    {
+      "id": 4070,
+      "question": "《蟋蟀的住宅》作者是？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "法布尔",
+        "布封",
+        "达尔文",
+        "华佗"
+      ],
+      "correct_index": 0,
+      "explanation": "《蟋蟀的住宅》选自法布尔《昆虫记》。",
+      "tags": [
+        "阅读",
+        "蟋蟀的住宅"
+      ]
+    },
+    {
+      "id": 4071,
+      "question": "《蟋蟀的住宅》中，蟋蟀的住宅有什么特点？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "向阳、隐蔽、干燥、有门有平台",
+        "很豪华",
+        "很大",
+        "很简陋"
+      ],
+      "correct_index": 0,
+      "explanation": "蟋蟀住宅向阳、隐蔽、干燥、有门有平台。",
+      "tags": [
+        "阅读",
+        "蟋蟀的住宅"
+      ]
+    },
+    {
+      "id": 4072,
+      "question": "《为中华之崛起而读书》讲的是谁少年时代的故事？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "周恩来",
+        "毛泽东",
+        "邓小平",
+        "孙中山"
+      ],
+      "correct_index": 0,
+      "explanation": "周恩来少年立下“为中华之崛起而读书”。",
+      "tags": [
+        "阅读",
+        "为中华之崛起而读书"
+      ]
+    },
+    {
+      "id": 4073,
+      "question": "《那片绿绿的爬山虎》中，叶圣陶先生请谁到家里做客？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "肖复兴",
+        "冰心",
+        "老舍",
+        "巴金"
+      ],
+      "correct_index": 0,
+      "explanation": "肖复兴回忆叶圣陶先生。",
+      "tags": [
+        "阅读",
+        "那片绿绿的爬山虎"
+      ]
+    },
+    {
+      "id": 4074,
+      "question": "《麻雀》的作者是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "屠格涅夫",
+        "托尔斯泰",
+        "雨果",
+        "狄更斯"
+      ],
+      "correct_index": 0,
+      "explanation": "《麻雀》作者俄国屠格涅夫。",
+      "tags": [
+        "阅读",
+        "麻雀"
+      ]
+    },
+    {
+      "id": 4075,
+      "question": "《麻雀》中，老麻雀为了保护小麻雀？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "从树上飞下来挡在猎狗面前",
+        "逃跑",
+        "叫",
+        "战斗"
+      ],
+      "correct_index": 0,
+      "explanation": "老麻雀奋不顾身飞下来保护小麻雀。",
+      "tags": [
+        "阅读",
+        "麻雀"
+      ]
+    },
+    {
+      "id": 4076,
+      "question": "《爬天都峰》中，天都峰在？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "黄山",
+        "泰山",
+        "华山",
+        "庐山"
+      ],
+      "correct_index": 0,
+      "explanation": "天都峰是黄山主峰之一。",
+      "tags": [
+        "阅读",
+        "爬天都峰"
+      ]
+    },
+    {
+      "id": 4077,
+      "question": "《颐和园》是一篇什么体裁的文章？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "游记",
+        "说明文",
+        "议论文",
+        "散文"
+      ],
+      "correct_index": 0,
+      "explanation": "《颐和园》是游记。",
+      "tags": [
+        "阅读",
+        "颐和园"
+      ]
+    },
+    {
+      "id": 4078,
+      "question": "《七月的天山》中，天山在哪个自治区？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "新疆",
+        "西藏",
+        "内蒙古",
+        "宁夏"
+      ],
+      "correct_index": 0,
+      "explanation": "天山在新疆维吾尔自治区。",
+      "tags": [
+        "阅读",
+        "七月的天山"
+      ]
+    },
+    {
+      "id": 4079,
+      "question": "《巨人的花园》中，巨人最后明白了什么？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "没有孩子的地方就没有春天",
+        "花园要好看",
+        "孩子很可爱",
+        "春天很美"
+      ],
+      "correct_index": 0,
+      "explanation": "快乐要和大家分享。",
+      "tags": [
+        "阅读",
+        "巨人的花园"
+      ]
+    },
+    {
+      "id": 4080,
+      "question": "“尺有所短”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "寸有所长",
+        "寸有所短",
+        "尺有所短",
+        "寸有所长"
+      ],
+      "correct_index": 0,
+      "explanation": "尺有所短，寸有所长。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4081,
+      "question": "“机不可失”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "时不再来",
+        "失不再来",
+        "时不再来",
+        "机不再来"
+      ],
+      "correct_index": 0,
+      "explanation": "机不可失，时不再来。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4082,
+      "question": "“差之毫厘”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "谬以千里",
+        "失之千里",
+        "谬以千里",
+        "差以千里"
+      ],
+      "correct_index": 0,
+      "explanation": "差之毫厘，谬以千里。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4083,
+      "question": "“病从口入”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "祸从口出",
+        "祸从口出",
+        "祸从口入",
+        "祸从口出"
+      ],
+      "correct_index": 1,
+      "explanation": "病从口入，祸从口出。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4084,
+      "question": "“一言既出”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "驷马难追",
+        "驷马难追",
+        "驷马难追",
+        "驷马难追"
+      ],
+      "correct_index": 3,
+      "explanation": "一言既出，驷马难追。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4085,
+      "question": "“比上不足”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "比下有余",
+        "比下有余",
+        "比下有余",
+        "比下有余"
+      ],
+      "correct_index": 0,
+      "explanation": "比上不足，比下有余。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4086,
+      "question": "“不识庐山真面目，只缘身在此山中”告诉我们什么道理？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "当局者迷，旁观者清",
+        "庐山很美",
+        "山很大",
+        "要爬庐山"
+      ],
+      "correct_index": 0,
+      "explanation": "当局者迷，旁观者清。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 4087,
+      "question": "“梅须逊雪三分白，雪却输梅一段香”告诉我们什么？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "事物各有所长",
+        "梅和雪都美",
+        "梅和雪都香",
+        "梅和雪都白"
+      ],
+      "correct_index": 0,
+      "explanation": "事物各有所长，也各有所短。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 4088,
+      "question": "“但使龙城飞将在，不教胡马度阴山”表达了诗人怎样的愿望？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "希望起任良将，早日平息边塞战争",
+        "希望李广还活着",
+        "希望胡人不再来",
+        "希望战争胜利"
+      ],
+      "correct_index": 0,
+      "explanation": "希望良将镇守边疆，平息战争。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 4089,
+      "question": "“生当作人杰，死亦为鬼雄”赞美了谁？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "项羽",
+        "刘邦",
+        "岳飞",
+        "文天祥"
+      ],
+      "correct_index": 0,
+      "explanation": "赞美项羽宁死不屈。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 4090,
+      "question": "“醉卧沙场君莫笑，古来征战几人回”表达了什么？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "将士们豪迈豁达的气概",
+        "战争的残酷",
+        "将士们喝酒",
+        "战争的胜利"
+      ],
+      "correct_index": 0,
+      "explanation": "豪迈豁达，视死如归。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 4091,
+      "question": "“一道残阳铺水中，半江瑟瑟半江红”描写的是什么时候的景色？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "傍晚",
+        "早晨",
+        "中午",
+        "夜晚"
+      ],
+      "correct_index": 0,
+      "explanation": "残阳是傍晚的夕阳。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 4092,
+      "question": "下列哪种行为是爱护公物的？",
+      "type": "综合性学习",
+      "difficulty": 1,
+      "options": [
+        "在墙上乱画",
+        "爱护桌椅",
+        "踩草坪",
+        "摘花"
+      ],
+      "correct_index": 1,
+      "explanation": "爱护桌椅是爱护公物。",
+      "tags": [
+        "公共道德"
+      ]
+    },
+    {
+      "id": 4093,
+      "question": "下列哪种做法是节约用电的？",
+      "type": "综合性学习",
+      "difficulty": 1,
+      "options": [
+        "随手关灯",
+        "开着灯睡觉",
+        "长时间开着电视",
+        "空调开很低"
+      ],
+      "correct_index": 0,
+      "explanation": "随手关灯节约用电。",
+      "tags": [
+        "节约"
+      ]
+    },
+    {
+      "id": 4094,
+      "question": "我们读书时应该怎样做？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "专心致志",
+        "三心二意",
+        "边玩边读",
+        "一目十行"
+      ],
+      "correct_index": 0,
+      "explanation": "专心致志才能学好。",
+      "tags": [
+        "学习方法"
+      ]
+    },
+    {
+      "id": 4095,
+      "question": "下列哪种行为是保护环境的？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "植树造林",
+        "乱砍滥伐",
+        "乱扔垃圾",
+        "排放污水"
+      ],
+      "correct_index": 0,
+      "explanation": "植树造林是保护环境。",
+      "tags": [
+        "环保"
+      ]
+    },
+    {
+      "id": 4096,
+      "question": "下列哪种行为是文明上网的？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "不浏览不良信息",
+        "沉迷游戏",
+        "随便加陌生人",
+        "说脏话"
+      ],
+      "correct_index": 0,
+      "explanation": "不浏览不良信息是文明上网。",
+      "tags": [
+        "网络文明"
+      ]
+    },
+    {
+      "id": 4097,
+      "question": "下列哪种行为是尊重他人的？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "认真听别人说话",
+        "打断别人",
+        "嘲笑别人",
+        "给别人起外号"
+      ],
+      "correct_index": 0,
+      "explanation": "认真听别人说话是尊重他人。",
+      "tags": [
+        "礼仪"
+      ]
+    },
+    {
+      "id": 4098,
+      "question": "“颤”在“颤抖”中读？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "zhàn",
+        "chàn",
+        "chǎn",
+        "zhǎn"
+      ],
+      "correct_index": 1,
+      "explanation": "颤抖的颤读 chàn。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4099,
+      "question": "“突如其来”中“其”的意思是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "助词无实义",
+        "他",
+        "那",
+        "其中"
+      ],
+      "correct_index": 0,
+      "explanation": "突如其来，其是助词。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 4100,
+      "question": "“她的脸红得像苹果。”这是什么句？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "拟人句",
+        "排比句",
+        "比喻句",
+        "夸张句"
+      ],
+      "correct_index": 2,
+      "explanation": "把脸红比作苹果。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 4101,
+      "question": "《别董大》“莫愁前路无知己”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "天下谁人不识君",
+        "千里黄云白日曛",
+        "北风吹雁雪纷纷",
+        "天下谁人不识君"
+      ],
+      "correct_index": 0,
+      "explanation": "“天下谁人不识君”。",
+      "tags": [
+        "古诗",
+        "别董大"
+      ]
+    },
+    {
+      "id": 4102,
+      "question": "“女娃游于东海”中“于”的意思是？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "在",
+        "到",
+        "向",
+        "从"
+      ],
+      "correct_index": 0,
+      "explanation": "于是在、到。",
+      "tags": [
+        "文言虚词"
+      ]
+    },
+    {
+      "id": 4103,
+      "question": "《蟋蟀的住宅》中，蟋蟀用什么工具挖掘住宅？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "前足和钳子",
+        "后足",
+        "嘴",
+        "翅膀"
+      ],
+      "correct_index": 0,
+      "explanation": "蟋蟀用前足和钳子挖掘。",
+      "tags": [
+        "阅读",
+        "蟋蟀的住宅"
+      ]
+    },
+    {
+      "id": 4104,
+      "question": "“云母屏风烛影深”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "长河渐落晓星沉",
+        "嫦娥应悔偷灵药",
+        "碧海青天夜夜心",
+        "碧海青天夜夜心"
+      ],
+      "correct_index": 0,
+      "explanation": "“长河渐落晓星沉”。",
+      "tags": [
+        "古诗",
+        "嫦娥"
+      ]
+    },
+    {
+      "id": 4105,
+      "question": "下列哪种行为是爱护动物的？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "不伤害野生动物",
+        "捉鸟",
+        "掏鸟蛋",
+        "追打动物"
+      ],
+      "correct_index": 0,
+      "explanation": "不伤害野生动物是爱护动物。",
+      "tags": [
+        "动物保护"
+      ]
+    },
+    {
+      "id": 4106,
+      "question": "“号”在“号码”中读？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "háo",
+        "hào",
+        "hāo",
+        "hǎo"
+      ],
+      "correct_index": 1,
+      "explanation": "号码的号读 hào。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4107,
+      "question": "“屏息凝视”中“屏”的意思是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "忍住、抑制",
+        "屏风",
+        "屏幕",
+        "屏障"
+      ],
+      "correct_index": 0,
+      "explanation": "屏是忍住、抑制，忍住呼吸。",
+      "tags": [
+        "词语"
+      ]
+    },
+    {
+      "id": 4108,
+      "question": "“如果没有春天的播种，就没有秋天的收获。”这是什么关系？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "假设关系",
+        "因果关系",
+        "转折关系",
+        "递进关系"
+      ],
+      "correct_index": 0,
+      "explanation": "如果……就……是假设关系。",
+      "tags": [
+        "关联词"
+      ]
+    },
+    {
+      "id": 4109,
+      "question": "《雪梅》的作者是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "卢钺",
+        "苏轼",
+        "陆游",
+        "杜甫"
+      ],
+      "correct_index": 0,
+      "explanation": "《雪梅》作者卢钺。",
+      "tags": [
+        "古诗",
+        "雪梅"
+      ]
+    },
+    {
+      "id": 4110,
+      "question": "“醉卧沙场君莫笑”中“沙场”指的是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "战场",
+        "沙滩",
+        "沙漠",
+        "场地"
+      ],
+      "correct_index": 0,
+      "explanation": "沙场指战场。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 4111,
+      "question": "“炎帝之少女”中“少女”的意思是？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "小女儿",
+        "年轻女子",
+        "少女",
+        "小女儿"
+      ],
+      "correct_index": 3,
+      "explanation": "少女在文言文中指小女儿。",
+      "tags": [
+        "文言实词"
+      ]
+    },
+    {
+      "id": 4112,
+      "question": "《爬山虎的脚》中，爬山虎的脚触着墙的时候，细丝头上变成？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "小圆片",
+        "小圆片",
+        "小圆片",
+        "小圆片"
+      ],
+      "correct_index": 1,
+      "explanation": "细丝头上变成小圆片巴住墙。",
+      "tags": [
+        "阅读",
+        "爬山虎的脚"
+      ]
+    },
+    {
+      "id": 4113,
+      "question": "《巨人的花园》的作者是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "王尔德",
+        "安徒生",
+        "格林兄弟",
+        "格林"
+      ],
+      "correct_index": 0,
+      "explanation": "《巨人的花园》作者英国王尔德。",
+      "tags": [
+        "阅读",
+        "巨人的花园"
+      ]
+    },
+    {
+      "id": 4114,
+      "question": "“立了秋”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "把扇丢",
+        "把扇丢",
+        "把扇丢",
+        "把扇丢"
+      ],
+      "correct_index": 0,
+      "explanation": "立了秋，把扇丢。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4115,
+      "question": "“二八月”下一句是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "乱穿衣",
+        "乱穿衣",
+        "乱穿衣",
+        "乱穿衣"
+      ],
+      "correct_index": 3,
+      "explanation": "二八月，乱穿衣。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4116,
+      "question": "“夏雨少”下一句是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "秋霜早",
+        "秋霜早",
+        "秋霜早",
+        "秋霜早"
+      ],
+      "correct_index": 1,
+      "explanation": "夏雨少，秋霜早。",
+      "tags": [
+        "谚语"
+      ]
+    },
+    {
+      "id": 4117,
+      "question": "下列哪种行为是诚实守信的？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "答应别人的事努力做到",
+        "说谎",
+        "撒谎",
+        "言而无信"
+      ],
+      "correct_index": 0,
+      "explanation": "答应别人的事努力做到是诚实守信。",
+      "tags": [
+        "诚信"
+      ]
+    },
+    {
+      "id": 4118,
+      "question": "“降”在“降落”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "xiáng",
+        "jiàng",
+        "jiāng",
+        "xiǎng"
+      ],
+      "correct_index": 1,
+      "explanation": "降落的降读 jiàng。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 4119,
+      "question": "“胸有成竹”比喻什么？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "做事之前已有通盘的考虑",
+        "画竹子很在行",
+        "心里有竹子",
+        "竹子画得好"
+      ],
+      "correct_index": 0,
+      "explanation": "比喻做事之前已有完整谋划。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 4120,
+      "question": "《凉州词》中“古来征战几人回”表达了诗人怎样的感情？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "战争的残酷和将士们的豪迈",
+        "将士们害怕",
+        "战争胜利",
+        "思念家乡"
+      ],
+      "correct_index": 0,
+      "explanation": "既写战争残酷，也显豪迈豁达。",
+      "tags": [
+        "古诗赏析"
+      ]
+    }
+  ]
+}

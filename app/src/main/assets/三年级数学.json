@@ -1,0 +1,2120 @@
+{
+  "bank_id": "grade3_math",
+  "bank_name": "三年级数学",
+  "grade": 3,
+  "subject": "math",
+  "subject_name": "数学",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 3001,
+      "question": "356+247 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "603",
+        "604",
+        "602",
+        "613"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 356+247，结果为 603。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3002,
+      "question": "803-356 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "448",
+        "447",
+        "446",
+        "457"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 803-356，结果为 447。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3003,
+      "question": "428+195 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "624",
+        "622",
+        "623",
+        "633"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 428+195，结果为 623。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3004,
+      "question": "600-237 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "364",
+        "362",
+        "373",
+        "363"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 600-237，结果为 363。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3005,
+      "question": "234+567 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "801",
+        "802",
+        "800",
+        "811"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 234+567，结果为 801。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3006,
+      "question": "901-458 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "444",
+        "443",
+        "442",
+        "453"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 901-458，结果为 443。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3007,
+      "question": "123×3 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "370",
+        "368",
+        "369",
+        "379"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 123×3，结果为 369。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3008,
+      "question": "214×2 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "429",
+        "427",
+        "438",
+        "428"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 214×2，结果为 428。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3009,
+      "question": "312×4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "1248",
+        "1249",
+        "1247",
+        "1258"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 312×4，结果为 1248。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3010,
+      "question": "24×12 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "289",
+        "288",
+        "287",
+        "298"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 24×12，结果为 288。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3011,
+      "question": "35×11 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "386",
+        "384",
+        "385",
+        "395"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 35×11，结果为 385。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3012,
+      "question": "42×13 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "547",
+        "545",
+        "556",
+        "546"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 42×13，结果为 546。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3013,
+      "question": "84÷4 = ?",
+      "type": "math_calculation",
+      "difficulty": 3,
+      "options": [
+        "21",
+        "22",
+        "20",
+        "31"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 84÷4，结果为 21。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3014,
+      "question": "96÷3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "33",
+        "32",
+        "31",
+        "42"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 96÷3，结果为 32。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3015,
+      "question": "125÷5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "26",
+        "24",
+        "25",
+        "35"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 125÷5，结果为 25。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3016,
+      "question": "256÷4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "65",
+        "63",
+        "74",
+        "64"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 256÷4，结果为 64。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3017,
+      "question": "78÷6 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "13",
+        "14",
+        "12",
+        "23"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 78÷6，结果为 13。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3018,
+      "question": "95÷5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "20",
+        "19",
+        "18",
+        "29"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 95÷5，结果为 19。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3019,
+      "question": "1/5+2/5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.6",
+        "-0.4",
+        "0.6",
+        "10.6"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 1/5+2/5，结果为 0.6。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3020,
+      "question": "3/7+2/7 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "12/7",
+        "-2/7",
+        "75/7",
+        "5/7"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 3/7+2/7，结果为 5/7。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3021,
+      "question": "5/8-2/8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "0.375",
+        "1.375",
+        "-0.625",
+        "10.375"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 5/8-2/8，结果为 0.375。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3022,
+      "question": "1-3/4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "1.25",
+        "0.25",
+        "-0.75",
+        "10.25"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 1-3/4，结果为 0.25。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3023,
+      "question": "3.5+2.4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "6.9",
+        "4.9",
+        "5.9",
+        "15.9"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 3.5+2.4，结果为 5.9。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3024,
+      "question": "5.6-1.3 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "5.3",
+        "3.3",
+        "14.3",
+        "4.3"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 5.6-1.3，结果为 4.3。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3025,
+      "question": "2.8+3.5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "6.3",
+        "7.3",
+        "5.3",
+        "16.3"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 2.8+3.5，结果为 6.3。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3026,
+      "question": "7.2-4.6 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "3.6",
+        "2.6",
+        "1.6",
+        "12.6"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 7.2-4.6，结果为 2.6。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3027,
+      "question": "25×4×2 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "201",
+        "199",
+        "200",
+        "210"
+      ],
+      "correct_index": 2,
+      "explanation": "计算算式 25×4×2，结果为 200。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3028,
+      "question": "120÷3÷4 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "11",
+        "9",
+        "20",
+        "10"
+      ],
+      "correct_index": 3,
+      "explanation": "计算算式 120÷3÷4，结果为 10。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3029,
+      "question": "36+64÷8 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "44",
+        "45",
+        "43",
+        "54"
+      ],
+      "correct_index": 0,
+      "explanation": "计算算式 36+64÷8，结果为 44。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3030,
+      "question": "(15+25)÷5 = ?",
+      "type": "math_calculation",
+      "difficulty": 1,
+      "options": [
+        "9",
+        "8",
+        "7",
+        "18"
+      ],
+      "correct_index": 1,
+      "explanation": "计算算式 (15+25)÷5，结果为 8。",
+      "tags": [
+        "口算",
+        "笔算"
+      ]
+    },
+    {
+      "id": 3031,
+      "question": "2千米 = ? 米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "2001",
+        "2010",
+        "2000",
+        "1999"
+      ],
+      "correct_index": 2,
+      "explanation": "2千米 = 2000米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3032,
+      "question": "5千米 = ? 米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "5001",
+        "5010",
+        "4999",
+        "5000"
+      ],
+      "correct_index": 3,
+      "explanation": "5千米 = 5000米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3033,
+      "question": "1吨 = ? 千克",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "1000",
+        "1001",
+        "1010",
+        "999"
+      ],
+      "correct_index": 0,
+      "explanation": "1吨 = 1000千克，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3034,
+      "question": "3吨 = ? 千克",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "3001",
+        "3000",
+        "3010",
+        "2999"
+      ],
+      "correct_index": 1,
+      "explanation": "3吨 = 3000千克，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3035,
+      "question": "2千克 = ? 克",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "2001",
+        "2010",
+        "2000",
+        "1999"
+      ],
+      "correct_index": 2,
+      "explanation": "2千克 = 2000克，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3036,
+      "question": "4千克 = ? 克",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "4001",
+        "4010",
+        "3999",
+        "4000"
+      ],
+      "correct_index": 3,
+      "explanation": "4千克 = 4000克，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3037,
+      "question": "2时 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "120",
+        "121",
+        "130",
+        "119"
+      ],
+      "correct_index": 0,
+      "explanation": "2时 = 120分，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3038,
+      "question": "3时 = ? 分",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "181",
+        "180",
+        "190",
+        "179"
+      ],
+      "correct_index": 1,
+      "explanation": "3时 = 180分，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3039,
+      "question": "2分 = ? 秒",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "121",
+        "130",
+        "120",
+        "119"
+      ],
+      "correct_index": 2,
+      "explanation": "2分 = 120秒，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3040,
+      "question": "1日 = ? 时",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "25",
+        "34",
+        "23",
+        "24"
+      ],
+      "correct_index": 3,
+      "explanation": "1日 = 24时，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3041,
+      "question": "2日 = ? 时",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "48",
+        "49",
+        "58",
+        "47"
+      ],
+      "correct_index": 0,
+      "explanation": "2日 = 48时，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3042,
+      "question": "1年 = ? 月",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "13",
+        "12",
+        "22",
+        "11"
+      ],
+      "correct_index": 1,
+      "explanation": "1年 = 12月，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3043,
+      "question": "6千米 = ? 米",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "6001",
+        "6010",
+        "6000",
+        "5999"
+      ],
+      "correct_index": 2,
+      "explanation": "6千米 = 6000米，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3044,
+      "question": "2吨 = ? 千克",
+      "type": "单位换算",
+      "difficulty": 1,
+      "options": [
+        "2001",
+        "2010",
+        "1999",
+        "2000"
+      ],
+      "correct_index": 3,
+      "explanation": "2吨 = 2000千克，根据进率换算。",
+      "tags": [
+        "单位换算"
+      ]
+    },
+    {
+      "id": 3045,
+      "question": "把一个圆平均分成4份，其中1份是这个圆的？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "四分之一",
+        "四分之一（1/4）这样读",
+        "一分之四",
+        "4倍"
+      ],
+      "correct_index": 0,
+      "explanation": "平均分后1份是1/4，读作四分之一。",
+      "tags": [
+        "分数初步"
+      ]
+    },
+    {
+      "id": 3046,
+      "question": "1/3 + 1/3 = ？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1/6",
+        "2/3",
+        "2/6",
+        "1/9"
+      ],
+      "correct_index": 1,
+      "explanation": "同分母分数相加，分母不变分子相加：1/3+1/3=2/3。",
+      "tags": [
+        "分数"
+      ]
+    },
+    {
+      "id": 3047,
+      "question": "比较 1/2 和 1/3，哪个大？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "1/3大",
+        "一样大",
+        "1/2大",
+        "无法比较"
+      ],
+      "correct_index": 2,
+      "explanation": "分子相同分母小的分数大，1/2＞1/3。",
+      "tags": [
+        "分数比较"
+      ]
+    },
+    {
+      "id": 3048,
+      "question": "0.5元表示几角？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "50角",
+        "5分",
+        "0.5角",
+        "5角"
+      ],
+      "correct_index": 3,
+      "explanation": "0.5元=5角。",
+      "tags": [
+        "小数初步"
+      ]
+    },
+    {
+      "id": 3049,
+      "question": "3.45读作？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "三点四五",
+        "三百四十五",
+        "三四五",
+        "三点四十五"
+      ],
+      "correct_index": 0,
+      "explanation": "小数读作三点四五。",
+      "tags": [
+        "小数"
+      ]
+    },
+    {
+      "id": 3050,
+      "question": "一年有几个月？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "10个",
+        "12个",
+        "11个",
+        "365个"
+      ],
+      "correct_index": 1,
+      "explanation": "一年12个月。",
+      "tags": [
+        "年月日"
+      ]
+    },
+    {
+      "id": 3051,
+      "question": "平年2月有多少天？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "29天",
+        "30天",
+        "28天",
+        "31天"
+      ],
+      "correct_index": 2,
+      "explanation": "平年2月28天，闰年2月29天。",
+      "tags": [
+        "年月日"
+      ]
+    },
+    {
+      "id": 3052,
+      "question": "下午3时用24时计时法是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "3时",
+        "13时",
+        "14时",
+        "15时"
+      ],
+      "correct_index": 3,
+      "explanation": "下午3时+12=15时。",
+      "tags": [
+        "计时法"
+      ]
+    },
+    {
+      "id": 3053,
+      "question": "用3、5、7三张数字卡片，可以组成多少个不同的两位数？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "6个",
+        "3个",
+        "4个",
+        "9个"
+      ],
+      "correct_index": 0,
+      "explanation": "十位3选、个位2选，3×2=6个。",
+      "tags": [
+        "搭配"
+      ]
+    },
+    {
+      "id": 3054,
+      "question": "早晨面向太阳，前面是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "西",
+        "东",
+        "南",
+        "北"
+      ],
+      "correct_index": 1,
+      "explanation": "早晨太阳在东方。",
+      "tags": [
+        "方向"
+      ]
+    },
+    {
+      "id": 3055,
+      "question": "与东南相对的方向是？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "东北",
+        "西南",
+        "西北",
+        "东南"
+      ],
+      "correct_index": 2,
+      "explanation": "东南与西北相对。",
+      "tags": [
+        "方向"
+      ]
+    },
+    {
+      "id": 3056,
+      "question": "25×4的积末尾有几个0？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "1个",
+        "3个",
+        "0个",
+        "2个"
+      ],
+      "correct_index": 3,
+      "explanation": "25×4=100，末尾2个0。",
+      "tags": [
+        "乘法"
+      ]
+    },
+    {
+      "id": 3057,
+      "question": "0和任何数相乘都得？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "0",
+        "原数",
+        "1",
+        "不确定"
+      ],
+      "correct_index": 0,
+      "explanation": "0乘任何数都得0。",
+      "tags": [
+        "乘法"
+      ]
+    },
+    {
+      "id": 3058,
+      "question": "在有余数的除法里，余数必须比除数？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "大",
+        "小",
+        "相等",
+        "随便"
+      ],
+      "correct_index": 1,
+      "explanation": "余数要比除数小。",
+      "tags": [
+        "除法"
+      ]
+    },
+    {
+      "id": 3059,
+      "question": "验算除法用什么方法？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "商+除数",
+        "被除数-除数",
+        "商×除数+余数",
+        "随便"
+      ],
+      "correct_index": 2,
+      "explanation": "商×除数+余数=被除数。",
+      "tags": [
+        "验算"
+      ]
+    },
+    {
+      "id": 3060,
+      "question": "2024年是平年还是闰年？",
+      "type": "数与代数",
+      "difficulty": 3,
+      "options": [
+        "平年",
+        "都不是",
+        "无法判断",
+        "闰年"
+      ],
+      "correct_index": 3,
+      "explanation": "2024能被4整除，是闰年。",
+      "tags": [
+        "年月日"
+      ]
+    },
+    {
+      "id": 3061,
+      "question": "每两个相邻常用长度单位之间的进率是？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "10（千米除外）",
+        "100",
+        "1000",
+        "10000"
+      ],
+      "correct_index": 0,
+      "explanation": "米、分米、厘米相邻进率10，千米与米是1000。",
+      "tags": [
+        "长度单位"
+      ]
+    },
+    {
+      "id": 3062,
+      "question": "一箱苹果重约10（ ），括号填？",
+      "type": "数与代数",
+      "difficulty": 1,
+      "options": [
+        "克",
+        "千克",
+        "吨",
+        "米"
+      ],
+      "correct_index": 1,
+      "explanation": "一箱苹果用千克作单位。",
+      "tags": [
+        "质量单位"
+      ]
+    },
+    {
+      "id": 3063,
+      "question": "长方形的周长公式是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "长×宽",
+        "长+宽",
+        "（长+宽）×2",
+        "长×4"
+      ],
+      "correct_index": 2,
+      "explanation": "长方形周长=（长+宽）×2。",
+      "tags": [
+        "周长"
+      ]
+    },
+    {
+      "id": 3064,
+      "question": "一个长方形长5厘米宽3厘米，周长是多少？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "8厘米",
+        "15厘米",
+        "11厘米",
+        "16厘米"
+      ],
+      "correct_index": 3,
+      "explanation": "（5+3）×2=16厘米。",
+      "tags": [
+        "周长"
+      ]
+    },
+    {
+      "id": 3065,
+      "question": "正方形边长4厘米，周长是多少？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "16厘米",
+        "8厘米",
+        "12厘米",
+        "20厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "4×4=16厘米。",
+      "tags": [
+        "周长"
+      ]
+    },
+    {
+      "id": 3066,
+      "question": "长方形的面积公式是？",
+      "type": "图形几何",
+      "difficulty": 1,
+      "options": [
+        "（长+宽）×2",
+        "长×宽",
+        "长+宽",
+        "边长×4"
+      ],
+      "correct_index": 1,
+      "explanation": "长方形面积=长×宽。",
+      "tags": [
+        "面积"
+      ]
+    },
+    {
+      "id": 3067,
+      "question": "一个长方形长6厘米宽2厘米，面积是多少？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "8平方厘米",
+        "16平方厘米",
+        "12平方厘米",
+        "4平方厘米"
+      ],
+      "correct_index": 2,
+      "explanation": "6×2=12平方厘米。",
+      "tags": [
+        "面积"
+      ]
+    },
+    {
+      "id": 3068,
+      "question": "正方形边长5分米，面积是多少？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "20平方分米",
+        "10平方分米",
+        "15平方分米",
+        "25平方分米"
+      ],
+      "correct_index": 3,
+      "explanation": "5×5=25平方分米。",
+      "tags": [
+        "面积"
+      ]
+    },
+    {
+      "id": 3069,
+      "question": "常用的面积单位有平方米和？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "平方分米、平方厘米",
+        "米、厘米",
+        "千克、克",
+        "时、分"
+      ],
+      "correct_index": 0,
+      "explanation": "面积单位有平方米、平方分米、平方厘米。",
+      "tags": [
+        "面积单位"
+      ]
+    },
+    {
+      "id": 3070,
+      "question": "1平方米等于多少平方分米？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "10",
+        "100",
+        "1000",
+        "1"
+      ],
+      "correct_index": 1,
+      "explanation": "1平方米=100平方分米。",
+      "tags": [
+        "面积单位"
+      ]
+    },
+    {
+      "id": 3071,
+      "question": "地图上通常按什么规定方向？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "上南下北",
+        "上东下西",
+        "上北下南左西右东",
+        "随便"
+      ],
+      "correct_index": 2,
+      "explanation": "地图一般上北下南左西右东。",
+      "tags": [
+        "方向"
+      ]
+    },
+    {
+      "id": 3072,
+      "question": "正方形的周长是它边长的几倍？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "2倍",
+        "3倍",
+        "1倍",
+        "4倍"
+      ],
+      "correct_index": 3,
+      "explanation": "正方形4条边，周长=边长×4。",
+      "tags": [
+        "周长"
+      ]
+    },
+    {
+      "id": 3073,
+      "question": "一个正方形周长是20厘米，它的边长是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "5厘米",
+        "10厘米",
+        "4厘米",
+        "80厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "20÷4=5厘米。",
+      "tags": [
+        "周长逆运算"
+      ]
+    },
+    {
+      "id": 3074,
+      "question": "把一个长方形拉成平行四边形，周长怎样？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "变大",
+        "不变",
+        "变小",
+        "无法确定"
+      ],
+      "correct_index": 1,
+      "explanation": "边长没变，周长不变。",
+      "tags": [
+        "周长"
+      ]
+    },
+    {
+      "id": 3075,
+      "question": "测量教室地面的面积，用什么单位合适？",
+      "type": "图形几何",
+      "difficulty": 2,
+      "options": [
+        "平方分米",
+        "平方厘米",
+        "平方米",
+        "米"
+      ],
+      "correct_index": 2,
+      "explanation": "教室面积用平方米。",
+      "tags": [
+        "面积单位"
+      ]
+    },
+    {
+      "id": 3076,
+      "question": "边长是100米的正方形，面积是？",
+      "type": "图形几何",
+      "difficulty": 3,
+      "options": [
+        "1平方千米",
+        "100平方米",
+        "1000平方米",
+        "1公顷"
+      ],
+      "correct_index": 3,
+      "explanation": "100×100=10000平方米=1公顷。",
+      "tags": [
+        "面积单位"
+      ]
+    },
+    {
+      "id": 3077,
+      "question": "要表示同学们喜欢各种运动的人数，用什么统计图？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "条形统计图",
+        "折线图",
+        "不用图",
+        "饼图"
+      ],
+      "correct_index": 0,
+      "explanation": "条形图便于比较数量。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 3078,
+      "question": "袋中3红2白，摸到哪种球可能性大？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "白球",
+        "红球",
+        "一样",
+        "都摸不到"
+      ],
+      "correct_index": 1,
+      "explanation": "红球多可能性大。",
+      "tags": [
+        "可能性"
+      ]
+    },
+    {
+      "id": 3079,
+      "question": "抛一枚硬币100次，正面朝上的次数大约是？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "100次",
+        "0次",
+        "50次左右",
+        "一定100次"
+      ],
+      "correct_index": 2,
+      "explanation": "正反概率各一半，约50次。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 3080,
+      "question": "天气预报说降水概率80%，明天出门最好？",
+      "type": "统计概率",
+      "difficulty": 2,
+      "options": [
+        "不带伞",
+        "不可能下雨",
+        "一定不下",
+        "带伞"
+      ],
+      "correct_index": 3,
+      "explanation": "降水概率大，带伞稳妥。",
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": 3081,
+      "question": "全班同学身高最多的一段，叫？",
+      "type": "统计概率",
+      "difficulty": 3,
+      "options": [
+        "众数所在段",
+        "平均数",
+        "最小",
+        "最大"
+      ],
+      "correct_index": 0,
+      "explanation": "出现最多的是众数。",
+      "tags": [
+        "统计"
+      ]
+    },
+    {
+      "id": 3082,
+      "question": "盒子里全是绿球，不可能摸到？",
+      "type": "统计概率",
+      "difficulty": 1,
+      "options": [
+        "绿球",
+        "红球",
+        "任何球",
+        "绿和红"
+      ],
+      "correct_index": 1,
+      "explanation": "没有红球，不可能摸到红球。",
+      "tags": [
+        "可能性"
+      ]
+    },
+    {
+      "id": 3083,
+      "question": "学校图书馆有故事书350本，科技书比故事书少120本，科技书有多少本？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "470本",
+        "220本",
+        "230本",
+        "240本"
+      ],
+      "correct_index": 2,
+      "explanation": "350-120=230（本）。",
+      "tags": [
+        "减法",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3084,
+      "question": "三年级同学去春游，每辆车坐45人，4辆车正好坐满，一共去了多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "49人",
+        "40人",
+        "160人",
+        "180人"
+      ],
+      "correct_index": 3,
+      "explanation": "45×4=180（人）。",
+      "tags": [
+        "乘法",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3085,
+      "question": "一箱饮料有24瓶，8箱一共有多少瓶？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "192瓶",
+        "32瓶",
+        "16瓶",
+        "200瓶"
+      ],
+      "correct_index": 0,
+      "explanation": "24×8=192（瓶）。",
+      "tags": [
+        "乘法",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3086,
+      "question": "一根铁丝长360米，第一次用去120米，第二次用去150米，还剩多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "630米",
+        "90米",
+        "270米",
+        "80米"
+      ],
+      "correct_index": 1,
+      "explanation": "360-120-150=90（米）。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3087,
+      "question": "小明从家走到学校用了15分钟，他7时30分出门，几时几分到校？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "7时15分",
+        "8时45分",
+        "7时45分",
+        "8时"
+      ],
+      "correct_index": 2,
+      "explanation": "7时30分+15分=7时45分。",
+      "tags": [
+        "时间",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3088,
+      "question": "一块长方形菜地长8米宽5米，它的周长是多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "13米",
+        "40米",
+        "30米",
+        "26米"
+      ],
+      "correct_index": 3,
+      "explanation": "（8+5）×2=26（米）。",
+      "tags": [
+        "周长",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3089,
+      "question": "一块正方形手帕边长20厘米，它的面积是多少平方厘米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "400平方厘米",
+        "80平方厘米",
+        "40平方厘米",
+        "200平方厘米"
+      ],
+      "correct_index": 0,
+      "explanation": "20×20=400（平方厘米）。",
+      "tags": [
+        "面积",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3090,
+      "question": "商店上午卖出苹果180千克，下午卖出240千克，一天共卖出多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "60千克",
+        "420千克",
+        "410千克",
+        "430千克"
+      ],
+      "correct_index": 1,
+      "explanation": "180+240=420（千克）。",
+      "tags": [
+        "加法",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3091,
+      "question": "有960本书，平均放在3个书架上，每个书架放多少本？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2880本",
+        "330本",
+        "320本",
+        "310本"
+      ],
+      "correct_index": 2,
+      "explanation": "960÷3=320（本）。",
+      "tags": [
+        "除法",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3092,
+      "question": "一辆汽车每小时行60千米，4小时行多少千米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "15千米",
+        "56千米",
+        "200千米",
+        "240千米"
+      ],
+      "correct_index": 3,
+      "explanation": "60×4=240（千米）。",
+      "tags": [
+        "行程",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3093,
+      "question": "小明看一本200页的书，已经看了80页，剩下的要4天看完，平均每天看多少页？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "30页",
+        "50页",
+        "20页",
+        "40页"
+      ],
+      "correct_index": 0,
+      "explanation": "剩200-80=120页，120÷4=30页。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3094,
+      "question": "一块长方形菜地长12米宽6米，它的面积是多少平方米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "36平方米",
+        "72平方米",
+        "18平方米",
+        "60平方米"
+      ],
+      "correct_index": 1,
+      "explanation": "12×6=72（平方米）。",
+      "tags": [
+        "面积",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3095,
+      "question": "三年级有4个班，每班45人，其中男生有90人，女生有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "270人",
+        "180人",
+        "90人",
+        "80人"
+      ],
+      "correct_index": 2,
+      "explanation": "共4×45=180人，女生180-90=90人。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3096,
+      "question": "一袋大米重25千克，8袋大米重多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "33千克",
+        "17千克",
+        "180千克",
+        "200千克"
+      ],
+      "correct_index": 3,
+      "explanation": "25×8=200（千克）。",
+      "tags": [
+        "乘法",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3097,
+      "question": "从A地到B地的公路长240千米，一辆汽车已经行了100千米，剩下的路程每小时行70千米，还要行几小时？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2小时",
+        "3小时",
+        "4小时",
+        "5小时"
+      ],
+      "correct_index": 0,
+      "explanation": "剩240-100=140千米，140÷70=2小时。",
+      "tags": [
+        "行程",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3098,
+      "question": "小明有35元，买一支钢笔用了12元，剩下的钱买4元一本的笔记本，可以买几本？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "6本",
+        "5本",
+        "3本",
+        "4本"
+      ],
+      "correct_index": 1,
+      "explanation": "剩35-12=23元，23÷4=5本余3元。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3099,
+      "question": "一块正方形草地边长30米，绕它走一圈是多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "90米",
+        "60米",
+        "120米",
+        "150米"
+      ],
+      "correct_index": 2,
+      "explanation": "30×4=120（米）。",
+      "tags": [
+        "周长",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3100,
+      "question": "商店运来5箱苹果，每箱15千克，卖出40千克后，还剩多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "115千克",
+        "25千克",
+        "45千克",
+        "35千克"
+      ],
+      "correct_index": 3,
+      "explanation": "共5×15=75千克，75-40=35千克。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3101,
+      "question": "一列火车上午9时出发，下午2时到达，一共行了几小时？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "5小时",
+        "7小时",
+        "11小时",
+        "3小时"
+      ],
+      "correct_index": 0,
+      "explanation": "下午2时=14时，14-9=5小时。",
+      "tags": [
+        "时间",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3102,
+      "question": "学校买了3个篮球花了135元，每个篮球多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "132元",
+        "45元",
+        "405元",
+        "40元"
+      ],
+      "correct_index": 1,
+      "explanation": "135÷3=45（元）。",
+      "tags": [
+        "除法",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3103,
+      "question": "一块长方形玻璃长10分米宽6分米，它的面积是多少平方分米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "16平方分米",
+        "32平方分米",
+        "60平方分米",
+        "60分米"
+      ],
+      "correct_index": 2,
+      "explanation": "10×6=60（平方分米）。",
+      "tags": [
+        "面积",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3104,
+      "question": "三年级同学做了80朵红花，送给幼儿园大班25朵，小班28朵，还剩多少朵？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "133朵",
+        "53朵",
+        "32朵",
+        "27朵"
+      ],
+      "correct_index": 3,
+      "explanation": "80-25-28=27（朵）。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3105,
+      "question": "一篇文章有400个字，小明每分钟打50个字，几分钟能打完？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "8分钟",
+        "6分钟",
+        "7分钟",
+        "9分钟"
+      ],
+      "correct_index": 0,
+      "explanation": "400÷50=8（分钟）。",
+      "tags": [
+        "工程",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3106,
+      "question": "一个长方形操场长80米宽40米，小明绕操场跑了2圈，一共跑了多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "240米",
+        "480米",
+        "120米",
+        "400米"
+      ],
+      "correct_index": 1,
+      "explanation": "一圈（80+40）×2=240米，2圈480米。",
+      "tags": [
+        "周长",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3107,
+      "question": "果园里有桃树120棵，梨树比桃树多40棵，两种树一共多少棵？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "160棵",
+        "80棵",
+        "280棵",
+        "260棵"
+      ],
+      "correct_index": 2,
+      "explanation": "梨树120+40=160棵，共120+160=280棵。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3108,
+      "question": "学校买了4套桌椅，桌子每张60元，椅子每把20元，一共花了多少元？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "80元",
+        "240元",
+        "400元",
+        "320元"
+      ],
+      "correct_index": 3,
+      "explanation": "一套60+20=80元，4套320元。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3109,
+      "question": "小明家到学校有500米，他每天上学放学走2个来回，一共走多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "2000米",
+        "1000米",
+        "1500米",
+        "500米"
+      ],
+      "correct_index": 0,
+      "explanation": "一个来回1000米，2个来回2000米。",
+      "tags": [
+        "行程",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3110,
+      "question": "一块布长15米，做衣服用去7米，剩下的每2米做一块手帕，能做几块？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "8块",
+        "4块",
+        "3块",
+        "5块"
+      ],
+      "correct_index": 1,
+      "explanation": "剩15-7=8米，8÷2=4块。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3111,
+      "question": "商店运来8箱粉笔，每箱24盒，卖出120盒，还剩多少盒？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "312盒",
+        "192盒",
+        "72盒",
+        "60盒"
+      ],
+      "correct_index": 2,
+      "explanation": "共8×24=192盒，192-120=72盒。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3112,
+      "question": "三年级同学排队做操，每排站12人，站了6排，一共有多少人？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "18人",
+        "60人",
+        "78人",
+        "72人"
+      ],
+      "correct_index": 3,
+      "explanation": "12×6=72（人）。",
+      "tags": [
+        "乘法",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3113,
+      "question": "小明看一本故事书，每天看25页，看了4天，还剩30页，这本书一共多少页？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "130页",
+        "100页",
+        "70页",
+        "120页"
+      ],
+      "correct_index": 0,
+      "explanation": "已看25×4=100页，共100+30=130页。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3114,
+      "question": "一块长方形地长15米宽8米，如果每平方米种4棵白菜，一共种多少棵？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "120棵",
+        "480棵",
+        "92棵",
+        "500棵"
+      ],
+      "correct_index": 1,
+      "explanation": "面积15×8=120平方米，120×4=480棵。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3115,
+      "question": "文具店有钢笔80支，圆珠笔比钢笔少35支，两种笔一共有多少支？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "45支",
+        "115支",
+        "125支",
+        "150支"
+      ],
+      "correct_index": 2,
+      "explanation": "圆珠笔80-35=45支，共80+45=125支。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3116,
+      "question": "一辆汽车3小时行180千米，照这样计算，5小时行多少千米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "60千米",
+        "210千米",
+        "250千米",
+        "300千米"
+      ],
+      "correct_index": 3,
+      "explanation": "每小时180÷3=60千米，5小时300千米。",
+      "tags": [
+        "行程",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3117,
+      "question": "学校组织看电影，三年级去了150人，四年级去了180人，礼堂有400个座位，还空多少个？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "70个",
+        "330个",
+        "270个",
+        "60个"
+      ],
+      "correct_index": 0,
+      "explanation": "共150+180=330人，400-330=70个。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3118,
+      "question": "小明用一根36厘米长的铁丝围成一个正方形，这个正方形的边长是多少厘米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "6厘米",
+        "9厘米",
+        "12厘米",
+        "18厘米"
+      ],
+      "correct_index": 1,
+      "explanation": "36÷4=9（厘米）。",
+      "tags": [
+        "周长逆运算",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3119,
+      "question": "水果店运来苹果和梨各8箱，苹果每箱15千克，梨每箱10千克，一共运来多少千克？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "120千克",
+        "80千克",
+        "200千克",
+        "150千克"
+      ],
+      "correct_index": 2,
+      "explanation": "苹果8×15=120，梨8×10=80，共200千克。",
+      "tags": [
+        "两步",
+        "三年级"
+      ]
+    },
+    {
+      "id": 3120,
+      "question": "一块长方形菜地长10米宽4米，四周围上篱笆，篱笆长多少米？",
+      "type": "应用题",
+      "difficulty": 2,
+      "options": [
+        "14米",
+        "40米",
+        "24米",
+        "28米"
+      ],
+      "correct_index": 3,
+      "explanation": "（10+4）×2=28（米）。",
+      "tags": [
+        "周长",
+        "三年级"
+      ]
+    }
+  ]
+}

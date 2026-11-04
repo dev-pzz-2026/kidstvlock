@@ -1,0 +1,2094 @@
+{
+  "bank_id": "grade6_chinese",
+  "bank_name": "六年级语文",
+  "grade": 6,
+  "subject": "chinese",
+  "subject_name": "语文",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    {
+      "id": 6001,
+      "question": "“处”在“处所”中读？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "chǔ",
+        "chù",
+        "cù",
+        "chū"
+      ],
+      "correct_index": 1,
+      "explanation": "处所的处读 chù。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6002,
+      "question": "“薄”在“薄饼”中读？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "bó",
+        "báo",
+        "bò",
+        "bō"
+      ],
+      "correct_index": 1,
+      "explanation": "薄饼的薄读 báo。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6003,
+      "question": "“糊”在“糊涂”中读？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "hú",
+        "hù",
+        "hǔ",
+        "hū"
+      ],
+      "correct_index": 0,
+      "explanation": "糊涂的糊读 hú。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6004,
+      "question": "“晃”在“晃眼”中读？",
+      "type": "识字",
+      "difficulty": 1,
+      "options": [
+        "huàng",
+        "huǎng",
+        "huāng",
+        "huáng"
+      ],
+      "correct_index": 1,
+      "explanation": "晃眼的晃读 huǎng。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6005,
+      "question": "“腊”和“蜡”，“____月”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "腊",
+        "蜡",
+        "惜",
+        "腊"
+      ],
+      "correct_index": 0,
+      "explanation": "腊月的腊。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 6006,
+      "question": "“饺”和“绞”，“水____”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "饺",
+        "绞",
+        "咬",
+        "饺"
+      ],
+      "correct_index": 3,
+      "explanation": "水饺的饺。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 6007,
+      "question": "“拌”和“伴”，“搅____”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "拌",
+        "伴",
+        "拌",
+        "绊"
+      ],
+      "correct_index": 0,
+      "explanation": "搅拌的拌。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 6008,
+      "question": "“栗”和“粟”，“____子”应选？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "栗",
+        "粟",
+        "票",
+        "栗"
+      ],
+      "correct_index": 0,
+      "explanation": "栗子的栗。",
+      "tags": [
+        "形近字"
+      ]
+    },
+    {
+      "id": 6009,
+      "question": "“埋”在“埋怨”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "mái",
+        "mán",
+        "mǎn",
+        "mài"
+      ],
+      "correct_index": 1,
+      "explanation": "埋怨的埋读 mán。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6010,
+      "question": "“刨”在“刨土”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "páo",
+        "bào",
+        "pāo",
+        "bǎo"
+      ],
+      "correct_index": 0,
+      "explanation": "刨土的刨读 páo。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6011,
+      "question": "“邺”在“邺城”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "yè",
+        "yè",
+        "yiè",
+        "yé"
+      ],
+      "correct_index": 0,
+      "explanation": "邺城的邺读 yè。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6012,
+      "question": "“逶”在“逶迤”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "wēi",
+        "wěi",
+        "wēi",
+        "wēi"
+      ],
+      "correct_index": 2,
+      "explanation": "逶迤的逶读 wēi。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6013,
+      "question": "“万象更新”中“更”的意思是？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "改变",
+        "更加",
+        "更改",
+        "更换"
+      ],
+      "correct_index": 0,
+      "explanation": "更是改变，事物或景象改换了样子。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6014,
+      "question": "“张灯结彩”中“张”的意思是？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "铺排",
+        "张开",
+        "张挂",
+        "张贴"
+      ],
+      "correct_index": 2,
+      "explanation": "张是铺排，挂上灯笼系上彩绸。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6015,
+      "question": "“随心所欲”中“欲”的意思是？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "想要",
+        "欲望",
+        "将要",
+        "想要"
+      ],
+      "correct_index": 3,
+      "explanation": "欲是想要，随着自己的心意。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6016,
+      "question": "“前所未有”中“未”的意思是？",
+      "type": "词语",
+      "difficulty": 1,
+      "options": [
+        "没有",
+        "未来",
+        "未尝",
+        "不曾"
+      ],
+      "correct_index": 0,
+      "explanation": "未是没有，从来没有过。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6017,
+      "question": "“娴熟”的近义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "生疏",
+        "熟练",
+        "熟悉",
+        "陌生"
+      ],
+      "correct_index": 1,
+      "explanation": "娴熟和熟练意思相近。",
+      "tags": [
+        "近义词"
+      ]
+    },
+    {
+      "id": 6018,
+      "question": "“优美”的反义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "丑陋",
+        "美丽",
+        "优美",
+        "优雅"
+      ],
+      "correct_index": 0,
+      "explanation": "优美与丑陋相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 6019,
+      "question": "“简陋”的反义词是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "简陋",
+        "豪华",
+        "简单",
+        "粗陋"
+      ],
+      "correct_index": 1,
+      "explanation": "简陋与豪华相对。",
+      "tags": [
+        "反义词"
+      ]
+    },
+    {
+      "id": 6020,
+      "question": "“不解之缘”中“缘”的意思是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "缘分",
+        "缘故",
+        "边缘",
+        "因为"
+      ],
+      "correct_index": 0,
+      "explanation": "缘是缘分，不能分开的缘分。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6021,
+      "question": "“锲而不舍”中“锲”的意思是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "雕刻",
+        "锲而不舍",
+        "坚持",
+        "镂刻"
+      ],
+      "correct_index": 0,
+      "explanation": "锲是雕刻，坚持不懈。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6022,
+      "question": "“____地穿过”，填哪个最恰当？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "穿梭",
+        "穿梭地",
+        "穿梭得",
+        "穿梭的"
+      ],
+      "correct_index": 0,
+      "explanation": "副词修饰动词：穿梭地穿过。",
+      "tags": [
+        "词语搭配"
+      ]
+    },
+    {
+      "id": 6023,
+      "question": "“____的身影”，填哪个最恰当？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "高大",
+        "高大地",
+        "高大得",
+        "高大的"
+      ],
+      "correct_index": 3,
+      "explanation": "形容词+的+名词：高大的身影。",
+      "tags": [
+        "词语搭配"
+      ]
+    },
+    {
+      "id": 6024,
+      "question": "“无缘无故”中“缘”的意思是？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "缘故",
+        "缘分",
+        "边缘",
+        "因为"
+      ],
+      "correct_index": 0,
+      "explanation": "缘是缘故，没有一点原因。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6025,
+      "question": "“语重心长”中“重”的意思是？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "有分量",
+        "重量",
+        "重要",
+        "深刻"
+      ],
+      "correct_index": 0,
+      "explanation": "重是有分量，话语恳切有力。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6026,
+      "question": "“____种树是百年的基业，____树木自己要学会在土地里找水源。”填哪个关联词？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "因为……所以……",
+        "不是……而是……",
+        "如果……就……",
+        "不但……而且……"
+      ],
+      "correct_index": 1,
+      "explanation": "并列关系：不是……而是……。",
+      "tags": [
+        "关联词"
+      ]
+    },
+    {
+      "id": 6027,
+      "question": "“____我每天都来浇水，每天定时浇一定的量，树苗____会养成依赖的心。”填哪个？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "因为……所以……",
+        "虽然……但是……",
+        "如果……就……",
+        "不但……而且……"
+      ],
+      "correct_index": 2,
+      "explanation": "假设关系。",
+      "tags": [
+        "关联词"
+      ]
+    },
+    {
+      "id": 6028,
+      "question": "“____种树的人不再来了，桃花心木____不会枯萎了。”填哪个？",
+      "type": "句子",
+      "difficulty": 1,
+      "options": [
+        "虽然……但是……",
+        "因为……所以……",
+        "如果……就……",
+        "不但……而且……"
+      ],
+      "correct_index": 1,
+      "explanation": "转折关系。",
+      "tags": [
+        "关联词"
+      ]
+    },
+    {
+      "id": 6029,
+      "question": "“我们是为人民服务的。”改成反问句是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "我们难道不是为人民服务的吗",
+        "我们是为人民服务的吗",
+        "我们不是为人民服务的",
+        "我们难道是为人民服务的"
+      ],
+      "correct_index": 0,
+      "explanation": "加难道、不、吗。",
+      "tags": [
+        "句式转换"
+      ]
+    },
+    {
+      "id": 6030,
+      "question": "“我们的干部要关心每一个战士。”改成反问句是？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "我们的干部难道不要关心每一个战士吗",
+        "我们的干部要关心每一个战士吗",
+        "我们的干部不要关心每一个战士",
+        "我们的干部难道要关心每一个战士"
+      ],
+      "correct_index": 0,
+      "explanation": "加难道、不、吗。",
+      "tags": [
+        "句式转换"
+      ]
+    },
+    {
+      "id": 6031,
+      "question": "“那一摞碗在他的头上摇摇晃晃。”这是什么句？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "拟人句",
+        "比喻句",
+        "夸张句",
+        "排比句"
+      ],
+      "correct_index": 0,
+      "explanation": "把碗当人写。",
+      "tags": [
+        "拟人句"
+      ]
+    },
+    {
+      "id": 6032,
+      "question": "“他站在高台上，像一根钉子钉在那里。”这是什么句？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "拟人句",
+        "排比句",
+        "比喻句",
+        "夸张句"
+      ],
+      "correct_index": 2,
+      "explanation": "把他比作钉子。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 6033,
+      "question": "“种树人的一番话，使我非常感动。”这句话中“一番话”指的是？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "种树是百年的基业",
+        "我天天来浇水",
+        "树苗会枯萎",
+        "我种树不规律"
+      ],
+      "correct_index": 0,
+      "explanation": "种树人讲种树要让树苗自己找水源。",
+      "tags": [
+        "句子理解"
+      ]
+    },
+    {
+      "id": 6034,
+      "question": "“不只是树，人也是一样，在不确定中生活的人，能比较经得起生活的考验。”这句话中“不确定”的意思是？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "生活中不可预料的一些坎坷、曲折、磨难",
+        "不确定",
+        "不肯定",
+        "说不定"
+      ],
+      "correct_index": 0,
+      "explanation": "指生活中不可预料的坎坷曲折。",
+      "tags": [
+        "句子理解"
+      ]
+    },
+    {
+      "id": 6035,
+      "question": "“为人民利益而死，就比泰山还重。”这句话中“泰山”比喻什么？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "死得有价值、有意义",
+        "泰山很大",
+        "泰山很重",
+        "泰山很高"
+      ],
+      "correct_index": 0,
+      "explanation": "泰山比喻死得有价值。",
+      "tags": [
+        "句子理解"
+      ]
+    },
+    {
+      "id": 6036,
+      "question": "“张思德同志是为人民利益而死的，他的死是比泰山还要重的。”这句话中“重”的意思是？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "有价值、有意义",
+        "重量",
+        "重要",
+        "沉重"
+      ],
+      "correct_index": 0,
+      "explanation": "重指有价值、有意义。",
+      "tags": [
+        "句子理解"
+      ]
+    },
+    {
+      "id": 6037,
+      "question": "《寒食》的作者是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "韩翃",
+        "韩愈",
+        "杜甫",
+        "王维"
+      ],
+      "correct_index": 0,
+      "explanation": "《寒食》作者韩翃。",
+      "tags": [
+        "古诗",
+        "寒食"
+      ]
+    },
+    {
+      "id": 6038,
+      "question": "“春城无处不飞花”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "寒食东风御柳斜",
+        "日暮汉宫传蜡烛",
+        "轻烟散入五侯家",
+        "轻烟散入五侯家"
+      ],
+      "correct_index": 0,
+      "explanation": "“寒食东风御柳斜”。",
+      "tags": [
+        "古诗",
+        "寒食"
+      ]
+    },
+    {
+      "id": 6039,
+      "question": "“日暮汉宫传蜡烛”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "轻烟散入五侯家",
+        "寒食东风御柳斜",
+        "春城无处不飞花",
+        "轻烟散入五侯家"
+      ],
+      "correct_index": 0,
+      "explanation": "“轻烟散入五侯家”。",
+      "tags": [
+        "古诗",
+        "寒食"
+      ]
+    },
+    {
+      "id": 6040,
+      "question": "《迢迢牵牛星》选自？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "《古诗十九首》",
+        "《诗经》",
+        "《楚辞》",
+        "《乐府诗集》"
+      ],
+      "correct_index": 0,
+      "explanation": "选自《古诗十九首》。",
+      "tags": [
+        "古诗",
+        "迢迢牵牛星"
+      ]
+    },
+    {
+      "id": 6041,
+      "question": "“迢迢牵牛星”下一句是？",
+      "type": "古诗",
+      "difficulty": 1,
+      "options": [
+        "皎皎河汉女",
+        "纤纤擢素手",
+        "札札弄机杼",
+        "札札弄机杼"
+      ],
+      "correct_index": 0,
+      "explanation": "“皎皎河汉女”。",
+      "tags": [
+        "古诗",
+        "迢迢牵牛星"
+      ]
+    },
+    {
+      "id": 6042,
+      "question": "“纤纤擢素手”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "札札弄机杼",
+        "皎皎河汉女",
+        "迢迢牵牛星",
+        "脉脉不得语"
+      ],
+      "correct_index": 0,
+      "explanation": "“札札弄机杼”。",
+      "tags": [
+        "古诗",
+        "迢迢牵牛星"
+      ]
+    },
+    {
+      "id": 6043,
+      "question": "“盈盈一水间”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "脉脉不得语",
+        "札札弄机杼",
+        "皎皎河汉女",
+        "脉脉不得语"
+      ],
+      "correct_index": 0,
+      "explanation": "“脉脉不得语”。",
+      "tags": [
+        "古诗",
+        "迢迢牵牛星"
+      ]
+    },
+    {
+      "id": 6044,
+      "question": "《十五夜望月》的作者是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "王建",
+        "王安石",
+        "王维",
+        "王昌龄"
+      ],
+      "correct_index": 0,
+      "explanation": "《十五夜望月》作者王建。",
+      "tags": [
+        "古诗",
+        "十五夜望月"
+      ]
+    },
+    {
+      "id": 6045,
+      "question": "“中庭地白树栖鸦”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "冷露无声湿桂花",
+        "今夜月明人尽望",
+        "不知秋思落谁家",
+        "不知秋思落谁家"
+      ],
+      "correct_index": 0,
+      "explanation": "“冷露无声湿桂花”。",
+      "tags": [
+        "古诗",
+        "十五夜望月"
+      ]
+    },
+    {
+      "id": 6046,
+      "question": "“今夜月明人尽望”下一句是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "不知秋思落谁家",
+        "冷露无声湿桂花",
+        "中庭地白树栖鸦",
+        "不知秋思落谁家"
+      ],
+      "correct_index": 3,
+      "explanation": "“不知秋思落谁家”。",
+      "tags": [
+        "古诗",
+        "十五夜望月"
+      ]
+    },
+    {
+      "id": 6047,
+      "question": "《竹石》的作者是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "郑燮",
+        "郑板桥",
+        "龚自珍",
+        "于谦"
+      ],
+      "correct_index": 0,
+      "explanation": "《竹石》作者郑燮（郑板桥）。",
+      "tags": [
+        "古诗",
+        "竹石"
+      ]
+    },
+    {
+      "id": 6048,
+      "question": "“咬定青山不放松”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "立根原在破岩中",
+        "千磨万击还坚劲",
+        "任尔东西南北风",
+        "任尔东西南北风"
+      ],
+      "correct_index": 0,
+      "explanation": "“立根原在破岩中”。",
+      "tags": [
+        "古诗",
+        "竹石"
+      ]
+    },
+    {
+      "id": 6049,
+      "question": "“千磨万击还坚劲”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "任尔东西南北风",
+        "立根原在破岩中",
+        "咬定青山不放松",
+        "任尔东西南北风"
+      ],
+      "correct_index": 0,
+      "explanation": "“任尔东西南北风”。",
+      "tags": [
+        "古诗",
+        "竹石"
+      ]
+    },
+    {
+      "id": 6050,
+      "question": "《石灰吟》的作者是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "于谦",
+        "文天祥",
+        "岳飞",
+        "陆游"
+      ],
+      "correct_index": 0,
+      "explanation": "《石灰吟》作者于谦。",
+      "tags": [
+        "古诗",
+        "石灰吟"
+      ]
+    },
+    {
+      "id": 6051,
+      "question": "“千锤万凿出深山”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "烈火焚烧若等闲",
+        "粉骨碎身浑不怕",
+        "要留清白在人间",
+        "要留清白在人间"
+      ],
+      "correct_index": 0,
+      "explanation": "“烈火焚烧若等闲”。",
+      "tags": [
+        "古诗",
+        "石灰吟"
+      ]
+    },
+    {
+      "id": 6052,
+      "question": "“粉骨碎身浑不怕”下一句是？",
+      "type": "古诗",
+      "difficulty": 3,
+      "options": [
+        "要留清白在人间",
+        "烈火焚烧若等闲",
+        "千锤万凿出深山",
+        "要留清白在人间"
+      ],
+      "correct_index": 0,
+      "explanation": "“要留清白在人间”。",
+      "tags": [
+        "古诗",
+        "石灰吟"
+      ]
+    },
+    {
+      "id": 6053,
+      "question": "《学弈》选自？",
+      "type": "文言文",
+      "difficulty": 1,
+      "options": [
+        "《孟子·告子上》",
+        "《论语》",
+        "《庄子》",
+        "《列子》"
+      ],
+      "correct_index": 0,
+      "explanation": "《学弈》选自《孟子·告子上》。",
+      "tags": [
+        "文言文",
+        "学弈"
+      ]
+    },
+    {
+      "id": 6054,
+      "question": "《学弈》中，两个跟弈秋学下棋的人，学习结果不同是因为？",
+      "type": "文言文",
+      "difficulty": 1,
+      "options": [
+        "一人专心致志，一人三心二意",
+        "两人智力不同",
+        "两人基础不同",
+        "两人方法不同"
+      ],
+      "correct_index": 0,
+      "explanation": "一人专心致志，一人三心二意。",
+      "tags": [
+        "文言文",
+        "学弈"
+      ]
+    },
+    {
+      "id": 6055,
+      "question": "“虽与之俱学，弗若之矣”中“弗若”的意思是？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "不如",
+        "好像",
+        "如果",
+        "不如"
+      ],
+      "correct_index": 0,
+      "explanation": "弗不是不如。",
+      "tags": [
+        "文言实词"
+      ]
+    },
+    {
+      "id": 6056,
+      "question": "《两小儿辩日》选自？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "《列子·汤问》",
+        "《孟子》",
+        "《论语》",
+        "《庄子》"
+      ],
+      "correct_index": 0,
+      "explanation": "《两小儿辩日》选自《列子·汤问》。",
+      "tags": [
+        "文言文",
+        "两小儿辩日"
+      ]
+    },
+    {
+      "id": 6057,
+      "question": "《两小儿辩日》中，两个小孩争论的问题是？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "太阳什么时候离人近",
+        "太阳什么时候离人远",
+        "太阳大还是小",
+        "太阳热还是凉"
+      ],
+      "correct_index": 0,
+      "explanation": "两个小孩争论太阳什么时候离人近。",
+      "tags": [
+        "文言文",
+        "两小儿辩日"
+      ]
+    },
+    {
+      "id": 6058,
+      "question": "“孔子不能决也”中“决”的意思是？",
+      "type": "文言文",
+      "difficulty": 3,
+      "options": [
+        "判断",
+        "决定",
+        "判决",
+        "决定"
+      ],
+      "correct_index": 0,
+      "explanation": "决是判断，孔子也不能判断。",
+      "tags": [
+        "文言实词"
+      ]
+    },
+    {
+      "id": 6059,
+      "question": "《伯牙鼓琴》中，伯牙是谁的知音？",
+      "type": "文言文",
+      "difficulty": 3,
+      "options": [
+        "钟子期",
+        "锺子期",
+        "钟子期",
+        "锺子期"
+      ],
+      "correct_index": 0,
+      "explanation": "伯牙鼓琴，钟子期知音。",
+      "tags": [
+        "文言文",
+        "伯牙鼓琴"
+      ]
+    },
+    {
+      "id": 6060,
+      "question": "“伯牙破琴绝弦，终身不复鼓琴”是因为？",
+      "type": "文言文",
+      "difficulty": 3,
+      "options": [
+        "以为世无足复为鼓琴者",
+        "他不想弹了",
+        "他琴坏了",
+        "他累了"
+      ],
+      "correct_index": 0,
+      "explanation": "认为世上再没有值得他为之弹琴的人了。",
+      "tags": [
+        "文言文",
+        "伯牙鼓琴"
+      ]
+    },
+    {
+      "id": 6061,
+      "question": "《北京的春节》的作者是？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "老舍",
+        "冰心",
+        "巴金",
+        "茅盾"
+      ],
+      "correct_index": 0,
+      "explanation": "《北京的春节》作者老舍。",
+      "tags": [
+        "阅读",
+        "北京的春节"
+      ]
+    },
+    {
+      "id": 6062,
+      "question": "《北京的春节》中，北京的春节从腊月开始，到什么时候结束？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "正月十九",
+        "正月十五",
+        "正月初一",
+        "二月二"
+      ],
+      "correct_index": 0,
+      "explanation": "到正月十九结束。",
+      "tags": [
+        "阅读",
+        "北京的春节"
+      ]
+    },
+    {
+      "id": 6063,
+      "question": "《腊八粥》的作者是？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "沈从文",
+        "老舍",
+        "巴金",
+        "冰心"
+      ],
+      "correct_index": 0,
+      "explanation": "《腊八粥》作者沈从文。",
+      "tags": [
+        "阅读",
+        "腊八粥"
+      ]
+    },
+    {
+      "id": 6064,
+      "question": "《匆匆》的作者是？",
+      "type": "阅读",
+      "difficulty": 1,
+      "options": [
+        "朱自清",
+        "老舍",
+        "冰心",
+        "巴金"
+      ],
+      "correct_index": 0,
+      "explanation": "《匆匆》作者朱自清。",
+      "tags": [
+        "阅读",
+        "匆匆"
+      ]
+    },
+    {
+      "id": 6065,
+      "question": "《匆匆》中，作者朱自清写这篇文章是为了？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "感叹时光匆匆，要珍惜时间",
+        "时光很美好",
+        "时光过得慢",
+        "时光很有趣"
+      ],
+      "correct_index": 0,
+      "explanation": "感叹时光易逝，要珍惜时间。",
+      "tags": [
+        "阅读",
+        "匆匆"
+      ]
+    },
+    {
+      "id": 6066,
+      "question": "《那个星期天》的作者是？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "史铁生",
+        "莫言",
+        "贾平凹",
+        "刘震云"
+      ],
+      "correct_index": 0,
+      "explanation": "《那个星期天》作者史铁生。",
+      "tags": [
+        "阅读",
+        "那个星期天"
+      ]
+    },
+    {
+      "id": 6067,
+      "question": "《十六年前的回忆》中，回忆的是谁？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "李大钊",
+        "李大钊",
+        "李大钊",
+        "李大钊"
+      ],
+      "correct_index": 1,
+      "explanation": "回忆父亲李大钊。",
+      "tags": [
+        "阅读",
+        "十六年前的回忆"
+      ]
+    },
+    {
+      "id": 6068,
+      "question": "《为人民服务》的作者是？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "毛泽东",
+        "毛泽东",
+        "毛泽东",
+        "毛泽东"
+      ],
+      "correct_index": 0,
+      "explanation": "《为人民服务》是毛泽东在张思德追悼会上的演讲。",
+      "tags": [
+        "阅读",
+        "为人民服务"
+      ]
+    },
+    {
+      "id": 6069,
+      "question": "《为人民服务》中，“人固有一死，或重于泰山，或轻于鸿毛”这句话是谁说的？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "司马迁",
+        "毛泽东",
+        "张思德",
+        "朱自清"
+      ],
+      "correct_index": 0,
+      "explanation": "司马迁《报任安书》。",
+      "tags": [
+        "阅读",
+        "为人民服务"
+      ]
+    },
+    {
+      "id": 6070,
+      "question": "《金色的鱼钩》中，老班长最后怎样了？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "牺牲了",
+        "走出了草地",
+        "生病",
+        "回家了"
+      ],
+      "correct_index": 0,
+      "explanation": "老班长为了照顾伤员牺牲了。",
+      "tags": [
+        "阅读",
+        "金色的鱼钩"
+      ]
+    },
+    {
+      "id": 6071,
+      "question": "《卖火柴的小女孩》的作者是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "安徒生",
+        "格林兄弟",
+        "王尔德",
+        "安徒生"
+      ],
+      "correct_index": 0,
+      "explanation": "《卖火柴的小女孩》作者丹麦安徒生。",
+      "tags": [
+        "阅读",
+        "卖火柴的小女孩"
+      ]
+    },
+    {
+      "id": 6072,
+      "question": "《卖火柴的小女孩》中，小女孩最后？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "冻死在街头",
+        "和奶奶飞走了",
+        "回家了",
+        "被人救了"
+      ],
+      "correct_index": 0,
+      "explanation": "小女孩冻死在街头。",
+      "tags": [
+        "阅读",
+        "卖火柴的小女孩"
+      ]
+    },
+    {
+      "id": 6073,
+      "question": "《凡卡》的作者是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "契诃夫",
+        "莫泊桑",
+        "马克·吐温",
+        "欧·亨利"
+      ],
+      "correct_index": 0,
+      "explanation": "《凡卡》作者俄国契诃夫。",
+      "tags": [
+        "阅读",
+        "凡卡"
+      ]
+    },
+    {
+      "id": 6074,
+      "question": "《鲁滨逊漂流记》的作者是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "笛福",
+        "斯威夫特",
+        "丹尼尔·笛福",
+        "笛福"
+      ],
+      "correct_index": 2,
+      "explanation": "《鲁滨逊漂流记》作者英国笛福。",
+      "tags": [
+        "阅读",
+        "鲁滨逊漂流记"
+      ]
+    },
+    {
+      "id": 6075,
+      "question": "《汤姆·索亚历险记》的作者是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "马克·吐温",
+        "海明威",
+        "杰克·伦敦",
+        "欧·亨利"
+      ],
+      "correct_index": 0,
+      "explanation": "作者美国马克·吐温。",
+      "tags": [
+        "阅读",
+        "汤姆索亚历险记"
+      ]
+    },
+    {
+      "id": 6076,
+      "question": "《骑鹅旅行记》的作者是？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "拉格洛芙",
+        "安徒生",
+        "格林",
+        "王尔德"
+      ],
+      "correct_index": 0,
+      "explanation": "作者瑞典拉格洛芙。",
+      "tags": [
+        "阅读",
+        "骑鹅旅行记"
+      ]
+    },
+    {
+      "id": 6077,
+      "question": "“《长歌行》中少壮不努力”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "老大徒伤悲",
+        "老大徒伤悲",
+        "老大徒悲伤",
+        "老大徒伤悲"
+      ],
+      "correct_index": 0,
+      "explanation": "少壮不努力，老大徒伤悲。",
+      "tags": [
+        "长歌行"
+      ]
+    },
+    {
+      "id": 6078,
+      "question": "“百川东到海”下一句是？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "何时复西归",
+        "何时复西归",
+        "何时复西归",
+        "何时复西归"
+      ],
+      "correct_index": 0,
+      "explanation": "百川东到海，何时复西归。",
+      "tags": [
+        "长歌行"
+      ]
+    },
+    {
+      "id": 6079,
+      "question": "“粉骨碎身浑不怕，要留清白在人间”表达了诗人怎样的品格？",
+      "type": "积累运用",
+      "difficulty": 1,
+      "options": [
+        "不怕牺牲、坚守高洁情操",
+        "不怕死",
+        "很勇敢",
+        "很坚强"
+      ],
+      "correct_index": 0,
+      "explanation": "表达不怕牺牲、坚守高洁。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6080,
+      "question": "“千磨万击还坚劲，任尔东西南北风”表达了诗人怎样的品格？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "坚韧不拔、坚定顽强",
+        "很坚强",
+        "很勇敢",
+        "很坚定"
+      ],
+      "correct_index": 0,
+      "explanation": "坚韧不拔、坚定顽强。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6081,
+      "question": "“春城无处不飞花，寒食东风御柳斜”描写的是什么节日？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "寒食节",
+        "春节",
+        "端午节",
+        "中秋节"
+      ],
+      "correct_index": 0,
+      "explanation": "寒食节在清明前一两日。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6082,
+      "question": "“今夜月明人尽望，不知秋思落谁家”表达了诗人怎样的感情？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "思念家乡、思念亲人",
+        "喜悦",
+        "愤怒",
+        "思乡"
+      ],
+      "correct_index": 0,
+      "explanation": "中秋望月，思念家乡亲人。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6083,
+      "question": "“迢迢牵牛星，皎皎河汉女”写的是哪个节日？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "七夕",
+        "中秋节",
+        "春节",
+        "端午节"
+      ],
+      "correct_index": 0,
+      "explanation": "牛郎织女七夕相会。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6084,
+      "question": "“人固有一死，或重于泰山，或轻于鸿毛”中“固”的意思是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "本来",
+        "坚固",
+        "顽固",
+        "一定"
+      ],
+      "correct_index": 0,
+      "explanation": "固是本来。",
+      "tags": [
+        "古文名句"
+      ]
+    },
+    {
+      "id": 6085,
+      "question": "“树欲静而风不止”下一句是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "子欲养而亲不待",
+        "子欲养而亲不待",
+        "子欲养而亲不待",
+        "子欲养而亲不待"
+      ],
+      "correct_index": 3,
+      "explanation": "树欲静而风不止，子欲养而亲不待。",
+      "tags": [
+        "古文名句"
+      ]
+    },
+    {
+      "id": 6086,
+      "question": "“常将有日思无日”下一句是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "莫把无时当有时",
+        "莫把无时当有时",
+        "莫把无时当有时",
+        "莫把无时当有时"
+      ],
+      "correct_index": 0,
+      "explanation": "常将有日思无日，莫把无时当有时。",
+      "tags": [
+        "古文名句"
+      ]
+    },
+    {
+      "id": 6087,
+      "question": "“良药苦口利于病”下一句是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "忠言逆耳利于行",
+        "忠言逆耳利于行",
+        "忠言逆耳利于行",
+        "忠言逆耳利于行"
+      ],
+      "correct_index": 2,
+      "explanation": "良药苦口利于病，忠言逆耳利于行。",
+      "tags": [
+        "古文名句"
+      ]
+    },
+    {
+      "id": 6088,
+      "question": "“书到用时方恨少”下一句是？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "事非经过不知难",
+        "事非经过不知难",
+        "事非经过不知难",
+        "事非经过不知难"
+      ],
+      "correct_index": 1,
+      "explanation": "书到用时方恨少，事非经过不知难。",
+      "tags": [
+        "古文名句"
+      ]
+    },
+    {
+      "id": 6089,
+      "question": "下列哪种行为是爱护环境的？",
+      "type": "综合性学习",
+      "difficulty": 1,
+      "options": [
+        "垃圾分类",
+        "乱扔垃圾",
+        "乱砍滥伐",
+        "排放污水"
+      ],
+      "correct_index": 0,
+      "explanation": "垃圾分类是环保。",
+      "tags": [
+        "环保"
+      ]
+    },
+    {
+      "id": 6090,
+      "question": "下列哪种做法是节约资源的？",
+      "type": "综合性学习",
+      "difficulty": 1,
+      "options": [
+        "随手关灯",
+        "浪费粮食",
+        "用水长流",
+        "浪费纸张"
+      ],
+      "correct_index": 0,
+      "explanation": "随手关灯节约用电。",
+      "tags": [
+        "节约"
+      ]
+    },
+    {
+      "id": 6091,
+      "question": "我们读书时应该怎样做？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "做读书笔记",
+        "一目十行",
+        "边玩边读",
+        "只看不想"
+      ],
+      "correct_index": 0,
+      "explanation": "做读书笔记有助于理解。",
+      "tags": [
+        "学习方法"
+      ]
+    },
+    {
+      "id": 6092,
+      "question": "下列哪种行为是文明上网的？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "不浏览不良信息",
+        "沉迷游戏",
+        "随便加陌生人",
+        "说脏话"
+      ],
+      "correct_index": 0,
+      "explanation": "不浏览不良信息是文明上网。",
+      "tags": [
+        "网络文明"
+      ]
+    },
+    {
+      "id": 6093,
+      "question": "下列哪种行为是诚实守信的？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "不撒谎",
+        "说谎",
+        "撒谎",
+        "言而无信"
+      ],
+      "correct_index": 0,
+      "explanation": "不撒谎是诚实守信。",
+      "tags": [
+        "诚信"
+      ]
+    },
+    {
+      "id": 6094,
+      "question": "下列哪种行为是团结同学的？",
+      "type": "综合性学习",
+      "difficulty": 3,
+      "options": [
+        "互相帮助",
+        "欺负同学",
+        "孤立同学",
+        "嘲笑同学"
+      ],
+      "correct_index": 0,
+      "explanation": "互相帮助是团结同学。",
+      "tags": [
+        "同学关系"
+      ]
+    },
+    {
+      "id": 6095,
+      "question": "“兴”在“兴旺”中读？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "xīng",
+        "xìng",
+        "xǐng",
+        "xīng"
+      ],
+      "correct_index": 3,
+      "explanation": "兴旺的兴读 xīng。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6096,
+      "question": "“截然不同”中“截”的意思是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "割断",
+        "截止",
+        "截断",
+        "阻拦"
+      ],
+      "correct_index": 0,
+      "explanation": "截是割断，形容两件事物毫无共同之处。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6097,
+      "question": "“他坐在那里，像一尊石像。”这是什么句？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "拟人句",
+        "排比句",
+        "比喻句",
+        "夸张句"
+      ],
+      "correct_index": 2,
+      "explanation": "把他比作石像。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 6098,
+      "question": "《寒食》中“五侯”指的是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "天子宠幸的臣子",
+        "五个王侯",
+        "五个侯爵",
+        "五个大臣"
+      ],
+      "correct_index": 0,
+      "explanation": "五侯指天子宠幸的臣子。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6099,
+      "question": "“弈秋，通国之善弈者也”中“善”的意思是？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "擅长",
+        "善良",
+        "善于",
+        "好"
+      ],
+      "correct_index": 0,
+      "explanation": "善是擅长。",
+      "tags": [
+        "文言实词"
+      ]
+    },
+    {
+      "id": 6100,
+      "question": "《北京的春节》中，除夕的习俗不包括？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "吃月饼",
+        "吃团圆饭",
+        "守岁",
+        "贴春联"
+      ],
+      "correct_index": 0,
+      "explanation": "吃月饼是中秋节。",
+      "tags": [
+        "阅读",
+        "北京的春节"
+      ]
+    },
+    {
+      "id": 6101,
+      "question": "“春城无处不飞花”中“春城”指的是？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "春天的京城",
+        "昆明",
+        "春城",
+        "春天的城市"
+      ],
+      "correct_index": 0,
+      "explanation": "春城指春天的京城。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6102,
+      "question": "下列哪种行为是爱护公物的？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "爱护桌椅",
+        "在课桌上乱画",
+        "踩草坪",
+        "摘花"
+      ],
+      "correct_index": 0,
+      "explanation": "爱护桌椅是爱护公物。",
+      "tags": [
+        "公共道德"
+      ]
+    },
+    {
+      "id": 6103,
+      "question": "“哗”在“哗然”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "huā",
+        "huá",
+        "huā",
+        "huà"
+      ],
+      "correct_index": 1,
+      "explanation": "哗然的哗读 huá。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6104,
+      "question": "“独具匠心”中“匠心”的意思是？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "巧妙的心思",
+        "工匠的心思",
+        "匠心独运",
+        "匠人的心思"
+      ],
+      "correct_index": 0,
+      "explanation": "匠心是巧妙的心思。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6105,
+      "question": "“人固有一死，或重于泰山，或轻于鸿毛。”这句话中“或”的意思是？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "有的",
+        "或者",
+        "或许",
+        "有时"
+      ],
+      "correct_index": 0,
+      "explanation": "或是有的。",
+      "tags": [
+        "句子理解"
+      ]
+    },
+    {
+      "id": 6106,
+      "question": "《鲁滨逊漂流记》中，鲁滨逊在荒岛上生活了多少年？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "28年",
+        "10年",
+        "20年",
+        "30年"
+      ],
+      "correct_index": 0,
+      "explanation": "鲁滨逊在荒岛生活了28年。",
+      "tags": [
+        "阅读",
+        "鲁滨逊漂流记"
+      ]
+    },
+    {
+      "id": 6107,
+      "question": "“少壮不努力，老大徒伤悲”告诉我们什么道理？",
+      "type": "积累运用",
+      "difficulty": 3,
+      "options": [
+        "要珍惜时间，努力学习",
+        "要努力",
+        "要珍惜时间",
+        "要少壮努力"
+      ],
+      "correct_index": 0,
+      "explanation": "要珍惜时间，努力学习。",
+      "tags": [
+        "长歌行"
+      ]
+    },
+    {
+      "id": 6108,
+      "question": "“铺”在“铺张”中读？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "pū",
+        "pù",
+        "pǔ",
+        "pú"
+      ],
+      "correct_index": 0,
+      "explanation": "铺张的铺读 pū。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6109,
+      "question": "“鱼贯而入”中“贯”的意思是？",
+      "type": "词语",
+      "difficulty": 2,
+      "options": [
+        "连贯",
+        "穿过",
+        "习惯",
+        "贯穿"
+      ],
+      "correct_index": 0,
+      "explanation": "贯是连贯，像游鱼一样一个跟着一个地接连着走。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6110,
+      "question": "“他像一匹脱缰的野马。”这是什么句？",
+      "type": "句子",
+      "difficulty": 2,
+      "options": [
+        "拟人句",
+        "排比句",
+        "比喻句",
+        "夸张句"
+      ],
+      "correct_index": 2,
+      "explanation": "把他比作脱缰的野马。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 6111,
+      "question": "《迢迢牵牛星》中“纤纤擢素手”中“擢”的意思是？",
+      "type": "古诗",
+      "difficulty": 2,
+      "options": [
+        "举、抬起",
+        "提拔",
+        "选拔",
+        "举"
+      ],
+      "correct_index": 3,
+      "explanation": "擢是举、抬起。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6112,
+      "question": "“孔子不能决也”中“也”的作用是？",
+      "type": "文言文",
+      "difficulty": 2,
+      "options": [
+        "语气词，表判断",
+        "和‘亦’同",
+        "是‘也’",
+        "也可以"
+      ],
+      "correct_index": 0,
+      "explanation": "也是句末语气词，表判断。",
+      "tags": [
+        "文言虚词"
+      ]
+    },
+    {
+      "id": 6113,
+      "question": "《匆匆》中，作者用什么比喻时间流逝？",
+      "type": "阅读",
+      "difficulty": 2,
+      "options": [
+        "针尖上的一滴水",
+        "轻烟",
+        "薄雾",
+        "流水"
+      ],
+      "correct_index": 0,
+      "explanation": "像针尖上一滴水滴在大海里。",
+      "tags": [
+        "阅读",
+        "匆匆"
+      ]
+    },
+    {
+      "id": 6114,
+      "question": "“春城无处不飞花”描写的是哪个季节？",
+      "type": "积累运用",
+      "difficulty": 2,
+      "options": [
+        "春天",
+        "夏天",
+        "秋天",
+        "冬天"
+      ],
+      "correct_index": 0,
+      "explanation": "飞花是暮春。",
+      "tags": [
+        "古诗赏析"
+      ]
+    },
+    {
+      "id": 6115,
+      "question": "下列哪种行为是爱护图书的？",
+      "type": "综合性学习",
+      "difficulty": 2,
+      "options": [
+        "包书皮、不乱画",
+        "在书上乱画",
+        "撕书",
+        "折页"
+      ],
+      "correct_index": 0,
+      "explanation": "包书皮、不乱画是爱护图书。",
+      "tags": [
+        "阅读习惯"
+      ]
+    },
+    {
+      "id": 6116,
+      "question": "“颤”在“颤抖”中读？",
+      "type": "识字",
+      "difficulty": 3,
+      "options": [
+        "zhàn",
+        "chàn",
+        "chǎn",
+        "zhǎn"
+      ],
+      "correct_index": 1,
+      "explanation": "颤抖的颤读 chàn。",
+      "tags": [
+        "多音字"
+      ]
+    },
+    {
+      "id": 6117,
+      "question": "“精益求精”中“益”的意思是？",
+      "type": "词语",
+      "difficulty": 3,
+      "options": [
+        "更加",
+        "利益",
+        "益处",
+        "有益"
+      ],
+      "correct_index": 0,
+      "explanation": "益是更加，好了还求更好。",
+      "tags": [
+        "成语"
+      ]
+    },
+    {
+      "id": 6118,
+      "question": "“他的话像一盏明灯，照亮了我前进的方向。”这是什么句？",
+      "type": "句子",
+      "difficulty": 3,
+      "options": [
+        "拟人句",
+        "排比句",
+        "比喻句",
+        "夸张句"
+      ],
+      "correct_index": 2,
+      "explanation": "把话比作明灯。",
+      "tags": [
+        "比喻句"
+      ]
+    },
+    {
+      "id": 6119,
+      "question": "《汤姆·索亚历险记》中，汤姆和谁一起在山洞里迷路？",
+      "type": "阅读",
+      "difficulty": 3,
+      "options": [
+        "蓓姬",
+        "哈克",
+        "乔",
+        "妈妈"
+      ],
+      "correct_index": 0,
+      "explanation": "汤姆和蓓姬在山洞里迷路。",
+      "tags": [
+        "阅读",
+        "汤姆索亚历险记"
+      ]
+    },
+    {
+      "id": 6120,
+      "question": "“薄”在“单薄”中读？",
+      "type": "识字",
+      "difficulty": 2,
+      "options": [
+        "báo",
+        "bó",
+        "bò",
+        "bō"
+      ],
+      "correct_index": 1,
+      "explanation": "单薄的薄读 bó。",
+      "tags": [
+        "多音字"
+      ]
+    }
+  ]
+}
