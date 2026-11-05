@@ -51,16 +51,18 @@ public class WebConfigServer {
     }
     
     public synchronized void start() {
-        // 清理已关闭的 serverSocket，避免残留引用导致重复绑定
-        if (serverSocket != null && serverSocket.isClosed()) {
-            Log.w(TAG, "serverSocket is closed, clearing reference");
-            serverSocket = null;
-        }
         // 如果已有有效的 serverSocket（未关闭），直接复用，避免重复绑定导致 EADDRINUSE
         if (serverSocket != null && !serverSocket.isClosed()) {
             running = true;
             actualPort = PORT;
             Log.i(TAG, "Web server reusing existing serverSocket on port " + actualPort);
+            return;
+        }
+        // 如果端口已经在监听（可能是其他服务或之前的实例），视为已运行，避免重复绑定
+        if (isRunning()) {
+            running = true;
+            actualPort = PORT;
+            Log.i(TAG, "Web server already listening on port " + actualPort);
             return;
         }
         // 兜底：如果 running 为 true 但 serverSocket 已关闭/无效，重置状态并重新启动
@@ -84,9 +86,10 @@ public class WebConfigServer {
             Log.e(TAG, "Port " + PORT + " bind failed", e);
             running = false;
             serverSocket = null;
-            // 绑定失败后探测：端口可能已被其他进程占用，若已监听则无需重复启动
+            // 绑定失败后再次探测：端口可能已被其他服务占用，若已监听则视为已运行
             if (isRunning()) {
-                Log.w(TAG, "Bind failed but port " + PORT + " is already listening by another service");
+                Log.w(TAG, "Bind failed but port " + PORT + " is already listening by another service, treating as running");
+                running = true;
             }
             return;
         }
