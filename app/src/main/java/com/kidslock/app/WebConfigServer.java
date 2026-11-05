@@ -67,25 +67,17 @@ public class WebConfigServer {
             Log.i(TAG, "Web server already running on port " + actualPort);
             return;
         }
-        int[] ports = {8080, 8081, 8082, 8083, 8084};
-        boolean bound = false;
-        for (int port : ports) {
-            try {
-                serverSocket = new ServerSocket(port, 50, java.net.InetAddress.getByName("0.0.0.0"));
-                serverSocket.setReuseAddress(true);
-                actualPort = port;  // 记录实际绑定端口
-                running = true;
-                Log.i(TAG, "Web server started on port " + actualPort);
-                bound = true;
-                break;
-            } catch (Exception e) {
-                Log.e(TAG, "Port " + port + " bind failed", e);
-                running = false;
-                serverSocket = null;
-            }
-        }
-        if (!bound) {
-            Log.e(TAG, "All ports failed, web server not started");
+        // 默认只绑定 8080 端口，不使用多端口轮询
+        try {
+            serverSocket = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
+            serverSocket.setReuseAddress(true);
+            actualPort = PORT;  // 记录实际绑定端口
+            running = true;
+            Log.i(TAG, "Web server started on port " + actualPort);
+        } catch (Exception e) {
+            Log.e(TAG, "Port " + PORT + " bind failed", e);
+            running = false;
+            serverSocket = null;
             return;
         }
         executor.execute(() -> {
