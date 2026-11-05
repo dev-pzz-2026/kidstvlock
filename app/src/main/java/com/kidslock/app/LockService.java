@@ -311,17 +311,13 @@ public class LockService extends Service {
 
     /**
      * 统一锁屏并拉起答题页面（点击app、计时器到期、闹钟到期共用）。
+     * 不检查 lockScreenLaunching 标志，由 watchdog 通过 isForeground 持续重试，避免标志锁死导致答题页永不弹出。
      */
     public static void lockAndShow(Context context) {
-        if (LockScreenActivity.lockScreenLaunching) {
-            Log.i("LockService", "LockScreenActivity already launching, skipping duplicate");
-            return;
-        }
         PrefManager pref = new PrefManager(context.getApplicationContext());
         pref.setLocked(true);
         pref.setHomeAliasEnabled(context, true);
         pref.stopTimer();
-        LockScreenActivity.lockScreenLaunching = true;
         startLockScreenActivity(context);
         Log.i("LockService", "lockAndShow: locked and start LockScreenActivity");
     }
@@ -339,12 +335,10 @@ public class LockService extends Service {
             pendingIntent.send();
         } catch (Exception e) {
             Log.e("LockService", "PendingIntent.start LockScreenActivity failed", e);
-            LockScreenActivity.lockScreenLaunching = false;
             try {
                 context.startActivity(lockIntent);
             } catch (Exception ex) {
                 Log.e("LockService", "Retry start LockScreenActivity failed", ex);
-                LockScreenActivity.lockScreenLaunching = false;
             }
         }
     }

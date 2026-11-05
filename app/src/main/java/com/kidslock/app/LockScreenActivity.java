@@ -91,9 +91,9 @@ public class LockScreenActivity extends AppCompatActivity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
-        // singleTask 模式，重复启动会走这里，避免多次弹出锁屏界面
-        if (lockScreenLaunching) {
-            Log.w("LockScreenActivity", "LockScreenActivity already launching/visible, ignoring duplicate intent");
+        // singleTask 模式，重复启动会走这里；若已在前台可见则忽略，否则允许重新拉起
+        if (isForeground) {
+            Log.w("LockScreenActivity", "LockScreenActivity already visible, ignoring duplicate intent");
             return;
         }
     }
