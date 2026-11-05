@@ -307,14 +307,8 @@ public class LockScreenActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         handler.removeCallbacks(reLockRunnable);
-        if (pref != null && pref.isLocked()) {
-            try {
-                Intent lockIntent = new Intent(this, LockScreenActivity.class);
-                lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                startActivity(lockIntent);
-            } catch (Exception e) {
-            }
-        }
+        // 锁屏 Activity 暂停时不再自行重启，避免与 LockService watchdog 及 BootReceiver 并发冲突；
+        // 锁屏状态由 LockService watchdog 统一保持置顶
     }
 
     @Override

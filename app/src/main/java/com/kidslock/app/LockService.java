@@ -95,12 +95,12 @@ public class LockService extends Service {
             return START_STICKY;
         }
 
-        // 已锁屏 → 进入锁屏守护模式
+        // 已锁屏 → 进入锁屏守护模式，由 lockAndShow 统一弹锁屏（防重复由 lockScreenLaunching 控制）
         if (pref.isLocked()) {
             Log.i(TAG, "Device locked, starting lock watchdog");
             hideOverlay();
             startWatchdog();
-            startLockScreenActivity();
+            lockAndShow(this);
             return START_STICKY;
         }
 
