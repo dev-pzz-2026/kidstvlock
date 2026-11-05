@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 toastSafe("计时已启动：" + minutes + " 分钟后锁屏");
             }
-            new Handler(Looper.getMainLooper()).postDelayed(this::finish, 1500);
         } else {
             startLockService();
             WebConfigService.ensureRunning(this);
@@ -90,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 toastSafe(String.format("计时器运行中，剩余 %02d:%02d", min, sec));
             }
-            new Handler(Looper.getMainLooper()).postDelayed(this::finish, 1500);
         }
     }
 
