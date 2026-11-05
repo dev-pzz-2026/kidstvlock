@@ -132,6 +132,9 @@ adb shell pm grant com.kidslock.app android.permission.USE_FULL_SCREEN_INTENT
 # 4g. 授予禁用锁屏权限
 adb shell pm grant com.kidslock.app android.permission.DISABLE_KEYGUARD
 
+# 4h. 授予精确闹钟权限（Android 12+，用于计时器到期唤醒锁屏，缺省会自动回退到普通闹钟，误差最多1分钟）
+adb shell pm grant com.kidslock.app android.permission.SCHEDULE_EXACT_ALARM
+
 # 5. 授予电池优化白名单（防止被系统杀掉）
 adb shell dumpsys deviceidle whitelist +com.kidslock.app
 
@@ -167,6 +170,7 @@ adb logcat -s LockService KidsLockAccessibilityService BootReceiver WebConfigSer
 - `INTERNET` / `ACCESS_WIFI_STATE` / `ACCESS_NETWORK_STATE` — 网络
 - `USE_FULL_SCREEN_INTENT` — 全屏意图
 - `DISABLE_KEYGUARD` — 禁用锁屏
+- `SCHEDULE_EXACT_ALARM` — 精确闹钟（Android 12+，用于计时器到期唤醒锁屏；如未授权，应用会自动回退到普通闹钟，误差最多 1 分钟，锁屏唤醒仍可工作）
 
 电视建议将本应用加入白名单，避免被系统清理。
 
