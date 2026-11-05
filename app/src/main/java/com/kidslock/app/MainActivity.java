@@ -10,6 +10,7 @@ import android.os.Looper;
 import android.os.PowerManager;
 import android.provider.Settings;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -46,14 +47,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         pref = new PrefManager(this);
 
+        // 先启动 Web 监听服务，再申请权限，避免权限页面挂起后服务未启动
+        ensureServicesRunning();
+        android.util.Log.w("MainActivity", "App 启动，检查并启动 Web 监听服务");
+
         // 清理残留状态：若当前未锁定，确保 HOME alias 已禁用，避免卸载/重启后卡死
         if (!pref.isLocked()) {
             pref.setHomeAliasEnabled(this, false);
         }
 
         requestAllPermissions();
-        ensureServicesRunning();
-        android.util.Log.i("MainActivity", "App 启动，检查并启动 Web 监听服务");
 
         if (pref.isLocked()) {
             Intent lockIntent = new Intent(this, LockScreenActivity.class);
@@ -70,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
             startLockService();
             WebConfigService.ensureRunning(this);
             if (!pref.isFirstLaunchShown()) {
-                Toast.makeText(this, "儿童锁屏已启动，默认" + minutes + "分钟后锁屏", Toast.LENGTH_LONG).show();
+                toastSafe("儿童锁屏已启动，默认" + minutes + "分钟后锁屏");
                 pref.setFirstLaunchShown(true);
             } else {
-                Toast.makeText(this, "计时已启动：" + minutes + " 分钟后锁屏", Toast.LENGTH_SHORT).show();
+                toastSafe("计时已启动：" + minutes + " 分钟后锁屏");
             }
             new Handler(Looper.getMainLooper()).postDelayed(this::finish, 1500);
         } else {
@@ -83,12 +86,20 @@ public class MainActivity extends AppCompatActivity {
             long min = remaining / 60000;
             long sec = (remaining / 1000) % 60;
             if (remaining <= 0) {
-                Toast.makeText(this, "计时已到期，即将锁屏", Toast.LENGTH_SHORT).show();
+                toastSafe("计时已到期，即将锁屏");
             } else {
-                Toast.makeText(this, String.format("计时器运行中，剩余 %02d:%02d", min, sec), Toast.LENGTH_SHORT).show();
+                toastSafe(String.format("计时器运行中，剩余 %02d:%02d", min, sec));
             }
             new Handler(Looper.getMainLooper()).postDelayed(this::finish, 1500);
         }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        ensureServicesRunning();
+        android.util.Log.w("MainActivity", "App 前台恢复，检查并启动 Web 监听服务");
     }
 
     @Override
@@ -119,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             boolean newVal = !pref.isAutoStart();
             pref.setAutoStart(newVal);
             updateStatus();
-            toast(newVal ? "已开启开机自启" : "已关闭开机自启");
+            toastSafe(newVal ? "已开启开机自启" : "已关闭开机自启");
         });
 
         int[] timeButtons = {R.id.btnTime15, R.id.btnTime30, R.id.btnTime45,
@@ -130,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
             findViewById(timeButtons[i]).setOnClickListener(v -> {
                 pref.setWatchLimitMinutes(minutes);
                 updateStatus();
-                toast("观看时长设为 " + minutes + " 分钟");
+                toastSafe("观看时长设为 " + minutes + " 分钟");
             });
         }
         findViewById(R.id.btnTimeCustom).setOnClickListener(v -> showCustomWatchTimeDialog());
@@ -142,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
             findViewById(countButtons[i]).setOnClickListener(v -> {
                 pref.setUnlockCount(count);
                 updateStatus();
-                toast("解锁题数设为 " + count + " 题");
+                toastSafe("解锁题数设为 " + count + " 题");
             });
         }
         findViewById(R.id.btnUnlockCustom).setOnClickListener(v -> showCustomUnlockCountDialog());
@@ -154,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
             findViewById(lockIntervalButtons[i]).setOnClickListener(v -> {
                 pref.setLockIntervalMinutes(minutes);
                 updateStatus();
-                toast("锁屏间隔设为 " + minutes + " 分钟");
+                toastSafe("锁屏间隔设为 " + minutes + " 分钟");
             });
         }
         findViewById(R.id.btnLockIntervalCustom).setOnClickListener(v -> showCustomLockIntervalDialog());
@@ -166,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
             findViewById(lockDurationButtons[i]).setOnClickListener(v -> {
                 pref.setLockDurationMinutes(minutes);
                 updateStatus();
-                toast(minutes == 0 ? "锁定时长设为：手动解锁（无限）" : "锁定时长设为 " + minutes + " 分钟（超时自动解锁）");
+                toastSafe(minutes == 0 ? "锁定时长设为：手动解锁（无限）" : "锁定时长设为 " + minutes + " 分钟（超时自动解锁）");
             });
         }
         findViewById(R.id.btnLockDurationCustom).setOnClickListener(v -> showCustomLockDurationDialog());
@@ -178,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
             findViewById(relockButtons[i]).setOnClickListener(v -> {
                 pref.setRelockDelaySeconds(seconds);
                 updateStatus();
-                toast("重新锁屏延迟设为 " + seconds + " 秒");
+                toastSafe("重新锁屏延迟设为 " + seconds + " 秒");
             });
         }
         findViewById(R.id.btnRelockDelayCustom).setOnClickListener(v -> showCustomRelockDelayDialog());
@@ -188,14 +199,14 @@ public class MainActivity extends AppCompatActivity {
             pref.startTimer(minutes);
             startLockService();
             updateStatus();
-            toast("计时开始：" + minutes + " 分钟后锁屏");
+            toastSafe("计时开始：" + minutes + " 分钟后锁屏");
         });
 
         findViewById(R.id.btnStopTimer).setOnClickListener(v -> {
             pref.stopTimer();
             stopLockService();
             updateStatus();
-            toast("计时已停止");
+            toastSafe("计时已停止");
         });
 
         findViewById(R.id.btnLockNow).setOnClickListener(v -> {
@@ -210,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
             pref.stopTimer();
             stopLockService();
             updateStatus();
-            toast("已解锁");
+            toastSafe("已解锁");
         });
 
     }
@@ -266,9 +277,9 @@ public class MainActivity extends AppCompatActivity {
                         if (val > 480) val = 480;
                         pref.setWatchLimitMinutes(val);
                         updateStatus();
-                        toast("观看时长设为 " + val + " 分钟");
+                        toastSafe("观看时长设为 " + val + " 分钟");
                     } catch (Exception e) {
-                        toast("请输入有效数字");
+                        toastSafe("请输入有效数字");
                     }
                 })
                 .setNegativeButton("取消", null)
@@ -289,9 +300,9 @@ public class MainActivity extends AppCompatActivity {
                         if (val > 20) val = 20;
                         pref.setUnlockCount(val);
                         updateStatus();
-                        toast("解锁题数设为 " + val + " 题");
+                        toastSafe("解锁题数设为 " + val + " 题");
                     } catch (Exception e) {
-                        toast("请输入有效数字");
+                        toastSafe("请输入有效数字");
                     }
                 })
                 .setNegativeButton("取消", null)
@@ -312,9 +323,9 @@ public class MainActivity extends AppCompatActivity {
                         if (val > 480) val = 480;
                         pref.setLockIntervalMinutes(val);
                         updateStatus();
-                        toast("锁屏间隔设为 " + val + " 分钟");
+                        toastSafe("锁屏间隔设为 " + val + " 分钟");
                     } catch (Exception e) {
-                        toast("请输入有效数字");
+                        toastSafe("请输入有效数字");
                     }
                 })
                 .setNegativeButton("取消", null)
@@ -335,9 +346,9 @@ public class MainActivity extends AppCompatActivity {
                         if (val > 480) val = 480;
                         pref.setLockDurationMinutes(val);
                         updateStatus();
-                        toast(val == 0 ? "锁定时长设为：无限" : "锁定时长设为 " + val + " 分钟");
+                        toastSafe(val == 0 ? "锁定时长设为：无限" : "锁定时长设为 " + val + " 分钟");
                     } catch (Exception e) {
-                        toast("请输入有效数字");
+                        toastSafe("请输入有效数字");
                     }
                 })
                 .setNegativeButton("取消", null)
@@ -358,9 +369,9 @@ public class MainActivity extends AppCompatActivity {
                         if (val > 30) val = 30;
                         pref.setRelockDelaySeconds(val);
                         updateStatus();
-                        toast("重新锁屏延迟设为 " + val + " 秒");
+                        toastSafe("重新锁屏延迟设为 " + val + " 秒");
                     } catch (Exception e) {
-                        toast("请输入有效数字");
+                        toastSafe("请输入有效数字");
                     }
                 })
                 .setNegativeButton("取消", null)
@@ -368,13 +379,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ensureServicesRunning() {
-        try {
-            WebConfigService.start(this);
-        } catch (Exception e) {
+        // 兜底：直接启动 WebConfigServer，不依赖 Service 的异步 onStartCommand
+        WebConfigServer server = WebConfigServer.getInstance(getApplicationContext());
+        if (!server.isRunning()) {
+            Log.w("MainActivity", "Web 监听服务未运行，直接启动 WebConfigServer");
+            server.start();
+        } else {
+            Log.w("MainActivity", "Web 监听服务已运行");
         }
+        // 启动前台服务保持常驻
+        WebConfigService.ensureRunning(this);
         try {
             startLockService();
         } catch (Exception e) {
+            Log.e("MainActivity", "startLockService failed", e);
         }
     }
 
@@ -406,7 +424,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-                Toast.makeText(this, "请开启「儿童锁屏」无障碍服务以增强锁定效果", Toast.LENGTH_LONG).show();
+                toastSafe("请开启「儿童锁屏」无障碍服务以增强锁定效果");
             }
         } catch (Exception e) {
         }
@@ -433,7 +451,8 @@ public class MainActivity extends AppCompatActivity {
         stopService(intent);
     }
 
-    private void toast(String msg) {
+    private void toastSafe(String msg) {
+        if (isFinishing()) return;
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 }

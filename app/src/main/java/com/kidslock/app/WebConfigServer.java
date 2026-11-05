@@ -34,7 +34,7 @@ public class WebConfigServer {
     private static WebConfigServer instance;
     
     private ServerSocket serverSocket;
-    private boolean running = false;
+    private volatile boolean running = false;
     private ExecutorService executor = Executors.newCachedThreadPool();
     private Context context;
     
@@ -49,13 +49,16 @@ public class WebConfigServer {
         this.context = context;
     }
     
-    public void start() {
-        if (running) return;
+    public synchronized void start() {
+        if (running) {
+            Log.i(TAG, "Web server already running");
+            return;
+        }
+        running = true;
         executor.execute(() -> {
             try {
                 serverSocket = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
                 serverSocket.setReuseAddress(true);
-                running = true;
                 Log.i(TAG, "Web server started on port " + PORT);
                 while (running) {
                     try {
