@@ -63,24 +63,26 @@ public class WebConfigServer {
             Log.w(TAG, "serverSocket is closed, clearing reference");
             serverSocket = null;
         }
-        // 如果端口已经在监听（可能是其他服务或之前的实例），视为已运行，避免重复绑定
-        if (isRunning()) {
+        // 尝试 bind 试探端口是否可用：bind 失败 (EADDRINUSE) 说明端口已被占用（本应用或其他服务），视为已运行，不重复绑定
+        ServerSocket probe = null;
+        try {
+            probe = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
+            probe.setReuseAddress(true);
+            // bind 成功，说明端口空闲。关闭探测 socket，然后正式绑定
+            probe.close();
+            probe = null;
+        } catch (Exception e) {
+            // 端口已被占用，视为已运行（可能是本应用已在运行，或其他服务占用）
+            Log.w(TAG, "Port " + PORT + " bind probe failed, port may be already in use by another service", e);
+            if (probe != null) {
+                try { probe.close(); } catch (Exception ex) {}
+            }
             running = true;
             actualPort = PORT;
-            Log.i(TAG, "Web server already listening on port " + actualPort);
+            Log.i(TAG, "Web server port " + actualPort + " already in use, treating as running");
             return;
         }
-        // 兜底：如果 running 为 true 但 serverSocket 已关闭/无效，重置状态并重新启动
-        if (running && (serverSocket == null || serverSocket.isClosed())) {
-            Log.w(TAG, "running=true but serverSocket invalid, resetting state");
-            running = false;
-            actualPort = PORT;
-        }
-        if (running) {
-            Log.i(TAG, "Web server already running on port " + actualPort);
-            return;
-        }
-        // 默认只绑定 8080 端口，不使用多端口轮询
+        // 端口空闲，正式绑定
         try {
             serverSocket = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
             serverSocket.setReuseAddress(true);
@@ -91,11 +93,6 @@ public class WebConfigServer {
             Log.e(TAG, "Port " + PORT + " bind failed", e);
             running = false;
             serverSocket = null;
-            // 绑定失败后再次探测：端口可能已被其他服务占用，若已监听则视为已运行
-            if (isRunning()) {
-                Log.w(TAG, "Bind failed but port " + PORT + " is already listening by another service, treating as running");
-                running = true;
-            }
             return;
         }
         executor.execute(() -> {
@@ -125,27 +122,34 @@ public class WebConfigServer {
     
     /**
      * 查询端口真实监听状态（最高优先级）。
-     * 通过尝试连接实际绑定的端口来确认是否真正在监听，不依赖 running 内存标志。
-     * 本方法仅做只读探测，不得修改 serverSocket 状态，避免破坏已绑定的 socket。
+     * 通过尝试 bind 试探端口是否可用来判断：bind 成功说明端口空闲（未运行），bind 失败说明端口已被占用（已运行）。
+     * 本方法仅做只读探测，不修改 serverSocket 状态，避免破坏已绑定的 socket。
      */
     public synchronized boolean isRunning() {
-        // 最高优先级：通过查询端口真实监听状态判断
-        if (actualPort <= 0 || actualPort > 65535) {
-            running = false;
-            actualPort = PORT;
-            Log.w(TAG, "actualPort invalid, resetting state");
-            return false;
-        }
-        try (java.net.Socket probe = new java.net.Socket()) {
-            probe.connect(new java.net.InetSocketAddress("127.0.0.1", actualPort), 500);
+        // 如果已有有效的 serverSocket，直接视为运行中
+        if (serverSocket != null && !serverSocket.isClosed()) {
             running = true;
             return true;
-        } catch (Exception e) {
-            Log.w(TAG, "Port " + actualPort + " not actually listening");
+        }
+        // 尝试 bind 试探：bind 成功说明端口空闲，没有服务在监听
+        ServerSocket probe = null;
+        try {
+            probe = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
+            probe.setReuseAddress(true);
+            probe.close();
+            // bind 成功，端口空闲，未运行
             running = false;
             actualPort = PORT;
-            // 注意：不置 serverSocket = null，避免破坏已绑定的 socket 状态
             return false;
+        } catch (Exception e) {
+            // bind 失败，端口已被占用（本应用或其他服务），视为运行中
+            running = true;
+            actualPort = PORT;
+            if (probe != null) {
+                try { probe.close(); } catch (Exception ex) {}
+            }
+            Log.w(TAG, "Port " + PORT + " bind probe failed in isRunning, port already in use, treating as running");
+            return true;
         }
     }
     
