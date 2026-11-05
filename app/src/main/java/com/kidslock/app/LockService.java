@@ -189,18 +189,9 @@ public class LockService extends Service {
     }
 
     private boolean isLockScreenOnTop() {
-        try {
-            ActivityManager am = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-            if (am == null) return false;
-            List<ActivityManager.RunningTaskInfo> tasks = am.getRunningTasks(1);
-            if (tasks == null || tasks.isEmpty()) return false;
-            ComponentName top = tasks.get(0).topActivity;
-            if (top == null) return false;
-            return top.getClassName().contains("LockScreen");
-        } catch (Exception e) {
-            Log.e(TAG, "getRunningTasks failed", e);
-            return false;
-        }
+        // 无 GET_TASKS 权限时无法可靠获取栈顶，锁定状态下默认视为已置顶，
+        // 由 LockScreenActivity 自身的 onPause 保护避免重复启动
+        return pref.isLocked();
     }
 
     private boolean canDrawOverlays() {
@@ -221,17 +212,18 @@ public class LockService extends Service {
     private void startLockScreenActivity() {
         Intent lockIntent = new Intent(this, LockScreenActivity.class);
         lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                | Intent.FLAG_ACTIVITY_CLEAR_TOP
-                | Intent.FLAG_ACTIVITY_SINGLE_TOP
-                | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-        lockIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+                | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        lockIntent.setPackage(getPackageName());
         try {
-            startActivity(lockIntent);
+            // 使用 PendingIntent.send 绕过 Android 10+ 后台启动 Activity 限制
+            PendingIntent pendingIntent = PendingIntent.getActivity(
+                    this, 0, lockIntent,
+                    PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+            pendingIntent.send();
         } catch (Exception e) {
-            Log.e(TAG, "Start LockScreenActivity failed", e);
+            Log.e(TAG, "PendingIntent.start LockScreenActivity failed", e);
             try {
-                lockIntent = new Intent(this, LockScreenActivity.class);
-                lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(lockIntent);
             } catch (Exception ex) {
                 Log.e(TAG, "Retry start LockScreenActivity failed", ex);

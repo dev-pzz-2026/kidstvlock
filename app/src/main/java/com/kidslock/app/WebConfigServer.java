@@ -161,6 +161,17 @@ public class WebConfigServer {
                         String bankFile = json.getString("bankFile");
                         PrefManager pref = new PrefManager(context);
                         pref.setCurrentBankFile(bankFile);
+                        // 重启计时服务以应用新题库
+                        try {
+                            Intent svc = new Intent(context, LockService.class);
+                            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                                context.startForegroundService(svc);
+                            } else {
+                                context.startService(svc);
+                            }
+                        } catch (Exception e) {
+                            Log.e(TAG, "restart LockService failed", e);
+                        }
                         sendResponse(out, 200, "application/json; charset=utf-8", "{\"success\":true}");
                     } catch (Exception e) {
                         sendResponse(out, 400, "application/json; charset=utf-8", "{\"error\":\"" + e.getMessage() + "\"}");
@@ -199,6 +210,7 @@ public class WebConfigServer {
                 json.put("relockDelaySeconds", pref.getRelockDelaySeconds());
                 json.put("autoStart", pref.isAutoStart());
                 json.put("currentBankFile", pref.getCurrentBankFile());
+                json.put("answerMode", pref.getAnswerMode());
                 return json.toString();
             } catch (Exception e) {
                 return "{}";
@@ -218,6 +230,7 @@ public class WebConfigServer {
                 if (json.has("relockDelaySeconds")) pref.setRelockDelaySeconds(json.getInt("relockDelaySeconds"));
                 if (json.has("autoStart")) pref.setAutoStart(json.getBoolean("autoStart"));
                 if (json.has("currentBankFile")) pref.setCurrentBankFile(json.getString("currentBankFile"));
+                if (json.has("answerMode")) pref.setAnswerMode(json.getString("answerMode"));
                 // 如果计时器正在运行且观看时长变化，重新启动计时器
                 if (timerWasActive && json.has("watchLimitMinutes")) {
                     int newMinutes = json.getInt("watchLimitMinutes");
@@ -338,13 +351,14 @@ public class WebConfigServer {
                     "<button onclick=\"saveConfig()\">保存设置</button><span id=\"configMsg\" class=\"success\"></span>" +
                     "</div>" +
                     "<div class=\"card\"><h2>题库设置</h2>" +
+                    "<label>答题模式</label><select id=\"answerMode\"><option value=\"cumulative\">累计答题解锁</option><option value=\"continuous\">连续答题解锁</option></select><br>" +
                     "<label>默认生效题库</label><select id=\"bankSelect\"></select><button onclick=\"setDefaultBank()\">设置默认题库</button><br>" +
                     "<label>上传题库JSON文件</label><input type=\"text\" id=\"bankFilename\" placeholder=\"文件名.json\"><textarea id=\"bankContent\" style=\"width:100%;height:200px\" placeholder=\"粘贴JSON内容\"></textarea><br><button onclick=\"uploadBank()\">上传题库</button><span id=\"bankMsg\" class=\"success\"></span>" +
                     "</div>" +
                     "<script>" +
-                    "fetch('/api/config').then(r=>r.json()).then(d=>{document.getElementById('watchLimitMinutes').value=d.watchLimitMinutes||30;document.getElementById('unlockCount').value=d.unlockCount||3;document.getElementById('lockDurationMinutes').value=d.lockDurationMinutes||0;document.getElementById('lockIntervalMinutes').value=d.lockIntervalMinutes||30;document.getElementById('relockDelaySeconds').value=d.relockDelaySeconds||2;document.getElementById('autoStart').checked=d.autoStart!==false;window.currentBank=d.currentBankFile;});" +
+                    "fetch('/api/config').then(r=>r.json()).then(d=>{document.getElementById('watchLimitMinutes').value=d.watchLimitMinutes||30;document.getElementById('unlockCount').value=d.unlockCount||3;document.getElementById('lockDurationMinutes').value=d.lockDurationMinutes||0;document.getElementById('lockIntervalMinutes').value=d.lockIntervalMinutes||30;document.getElementById('relockDelaySeconds').value=d.relockDelaySeconds||2;document.getElementById('autoStart').checked=d.autoStart!==false;document.getElementById('answerMode').value=d.answerMode||'cumulative';window.currentBank=d.currentBankFile;});" +
                     "fetch('/api/banks').then(r=>r.json()).then(list=>{let sel=document.getElementById('bankSelect');list.forEach(b=>{let opt=document.createElement('option');opt.value=b.name;opt.text=b.name+(b.source==='assets'?' [内置]':' [上传]');if(window.currentBank===b.name) opt.selected=true;sel.add(opt);});});" +
-                    "function saveConfig(){fetch('/api/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({watchLimitMinutes:parseInt(document.getElementById('watchLimitMinutes').value),unlockCount:parseInt(document.getElementById('unlockCount').value),lockDurationMinutes:parseInt(document.getElementById('lockDurationMinutes').value),lockIntervalMinutes:parseInt(document.getElementById('lockIntervalMinutes').value),relockDelaySeconds:parseInt(document.getElementById('relockDelaySeconds').value),autoStart:document.getElementById('autoStart').checked})}).then(r=>r.json()).then(d=>{document.getElementById('configMsg').textContent='保存成功';setTimeout(()=>document.getElementById('configMsg').textContent='',2000);});}" +
+                    "function saveConfig(){fetch('/api/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({watchLimitMinutes:parseInt(document.getElementById('watchLimitMinutes').value),unlockCount:parseInt(document.getElementById('unlockCount').value),lockDurationMinutes:parseInt(document.getElementById('lockDurationMinutes').value),lockIntervalMinutes:parseInt(document.getElementById('lockIntervalMinutes').value),relockDelaySeconds:parseInt(document.getElementById('relockDelaySeconds').value),autoStart:document.getElementById('autoStart').checked,answerMode:document.getElementById('answerMode').value})}).then(r=>r.json()).then(d=>{document.getElementById('configMsg').textContent='保存成功，立即生效';setTimeout(()=>document.getElementById('configMsg').textContent='',2000);});}" +
                     "function setDefaultBank(){let f=document.getElementById('bankSelect').value;fetch('/api/bank/setdefault',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({bankFile:f})}).then(r=>r.json()).then(d=>{document.getElementById('bankMsg').textContent='设置成功';setTimeout(()=>document.getElementById('bankMsg').textContent='',2000);});}" +
                     "function uploadBank(){let fn=document.getElementById('bankFilename').value,ct=document.getElementById('bankContent').value;fetch('/api/bank/upload',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filename:fn,content:ct})}).then(r=>r.json()).then(d=>{document.getElementById('bankMsg').textContent=d.success?'上传成功':'上传失败';if(d.success){location.reload();}});}" +
                     "</script></body></html>";

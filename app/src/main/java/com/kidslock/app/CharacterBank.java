@@ -422,18 +422,22 @@ public class CharacterBank {
                     return;
                 }
             }
+            // 用户明确指定了题库文件但不存在或为空（如错题库.json 尚未产生错题），
+            // 保持当前 bankFile 不自动回退，等错题产生后会自动加载
+            currentBank = FALLBACK_BANK;
+            return;
         }
-        
+
         String bankId = pref.getCurrentBankId();
         if (bankId == null || bankId.isEmpty()) {
             bankId = "grade5_chinese";
         }
         // 尝试加载多种文件名格式
         String[] candidates = {
-            bankId + ".json",
-            "bank_" + bankId + ".json",
-            "五年级语文.json",
-            "背诵篇目1-6年级75篇.json"
+                bankId + ".json",
+                "bank_" + bankId + ".json",
+                "五年级语文.json",
+                "背诵篇目1-6年级75篇.json"
         };
         for (String name : candidates) {
             String json = readAssetFile(context, name);
@@ -466,6 +470,101 @@ public class CharacterBank {
         currentBank = FALLBACK_BANK;
     }
 
+    /**
+     * 添加题目到错题库
+     */
+    public void addToWrongBank(Context context, PrefManager pref, CharEntry entry) {
+        try {
+            String wrongFile = pref.getWrongBankFile();
+            if (wrongFile == null || wrongFile.isEmpty()) return;
+            java.io.File f = new java.io.File(context.getFilesDir(), wrongFile);
+            org.json.JSONObject root;
+            org.json.JSONArray questions;
+            if (f.exists()) {
+                java.io.FileInputStream fis = new java.io.FileInputStream(f);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(fis, "UTF-8"));
+                StringBuilder sb = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) sb.append(line).append('\n');
+                reader.close();
+                root = new org.json.JSONObject(sb.toString());
+                questions = root.optJSONArray("questions");
+                if (questions == null) questions = new org.json.JSONArray();
+            } else {
+                root = new org.json.JSONObject();
+                root.put("bank_id", "wrong_bank");
+                root.put("bank_name", "错题库");
+                root.put("grade", 0);
+                root.put("subject", "wrong");
+                root.put("subject_name", "错题");
+                root.put("version", 1);
+                root.put("total", 0);
+                questions = new org.json.JSONArray();
+            }
+            // 检查是否已存在
+            for (int i = 0; i < questions.length(); i++) {
+                org.json.JSONObject q = questions.optJSONObject(i);
+                if (q != null && q.optString("question").equals(entry.questionText != null ? entry.questionText : entry.character)) {
+                    return; // 已存在
+                }
+            }
+            // 添加新题目
+            org.json.JSONObject q = new org.json.JSONObject();
+            q.put("id", entry.hashCode());
+            q.put("question", entry.questionText != null && !entry.questionText.isEmpty() ? entry.questionText : entry.character);
+            q.put("type", entry.bankType != null ? entry.bankType : "char_to_pinyin");
+            q.put("difficulty", entry.difficulty);
+            q.put("options", new org.json.JSONArray(entry.options));
+            q.put("correct_index", entry.correctIndex);
+            q.put("explanation", entry.explanation);
+            q.put("character", entry.character);
+            q.put("pinyin", entry.pinyin);
+            questions.put(q);
+            root.put("questions", questions);
+            root.put("total", questions.length());
+            java.io.FileWriter fw = new java.io.FileWriter(f);
+            fw.write(root.toString(2));
+            fw.close();
+        } catch (Exception e) {
+            android.util.Log.e("CharacterBank", "addToWrongBank failed", e);
+        }
+    }
+
+    /**
+     * 从错题库移除题目
+     */
+    public void removeFromWrongBank(Context context, PrefManager pref, CharEntry entry) {
+        try {
+            String wrongFile = pref.getWrongBankFile();
+            if (wrongFile == null || wrongFile.isEmpty()) return;
+            java.io.File f = new java.io.File(context.getFilesDir(), wrongFile);
+            if (!f.exists()) return;
+            java.io.FileInputStream fis = new java.io.FileInputStream(f);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(fis, "UTF-8"));
+            StringBuilder sb = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) sb.append(line).append('\n');
+            reader.close();
+            org.json.JSONObject root = new org.json.JSONObject(sb.toString());
+            org.json.JSONArray questions = root.optJSONArray("questions");
+            if (questions == null) return;
+            String qText = entry.questionText != null && !entry.questionText.isEmpty() ? entry.questionText : entry.character;
+            org.json.JSONArray newQuestions = new org.json.JSONArray();
+            for (int i = 0; i < questions.length(); i++) {
+                org.json.JSONObject q = questions.optJSONObject(i);
+                if (q != null && !q.optString("question").equals(qText)) {
+                    newQuestions.put(q);
+                }
+            }
+            root.put("questions", newQuestions);
+            root.put("total", newQuestions.length());
+            java.io.FileWriter fw = new java.io.FileWriter(f);
+            fw.write(root.toString(2));
+            fw.close();
+        } catch (Exception e) {
+            android.util.Log.e("CharacterBank", "removeFromWrongBank failed", e);
+        }
+    }
     private String readAssetFile(Context context, String fileName) {
         // Try internal files first (uploaded banks)
         try {

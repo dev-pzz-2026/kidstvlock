@@ -21,6 +21,8 @@ public class PrefManager {
     private static final String KEY_IS_LOCKED = "is_locked";
     private static final String KEY_TIMER_ACTIVE = "timer_active";
     private static final String KEY_TIMER_END_TIME = "timer_end_time";
+    private static final String KEY_ANSWER_MODE = "answer_mode"; // "cumulative" or "continuous"
+    private static final String KEY_WRONG_BANK_FILE = "wrong_bank_file";
     
     // 题库配置
     private static final String KEY_CURRENT_BANK_ID = "current_bank_id";
@@ -32,6 +34,8 @@ public class PrefManager {
     private static final boolean DEFAULT_AUTO_START = true;
     private static final int DEFAULT_UNLOCK_COUNT = 3;
     private static final int DEFAULT_WATCH_LIMIT_MIN = 10;
+    private static final String DEFAULT_ANSWER_MODE = "cumulative";
+    private static final String DEFAULT_WRONG_BANK_FILE = "错题库.json";
     
     // 锁屏相关配置
     private static final String KEY_LOCK_DURATION_MIN = "lock_duration_min";
@@ -150,7 +154,27 @@ public class PrefManager {
         return isTimerActive() && System.currentTimeMillis() >= getTimerEndTime();
     }
 
-    // --- Question Bank Config ---
+    // --- Answer Mode ---
+    public String getAnswerMode() {
+        return prefs.getString(KEY_ANSWER_MODE, DEFAULT_ANSWER_MODE);
+    }
+
+    public void setAnswerMode(String mode) {
+        prefs.edit().putString(KEY_ANSWER_MODE, mode).apply();
+    }
+
+    // --- Wrong Bank File ---
+    public String getWrongBankFile() {
+        return prefs.getString(KEY_WRONG_BANK_FILE, DEFAULT_WRONG_BANK_FILE);
+    }
+
+    public void setWrongBankFile(String fileName) {
+        if (fileName == null || fileName.isEmpty()) {
+            prefs.edit().remove(KEY_WRONG_BANK_FILE).apply();
+        } else {
+            prefs.edit().putString(KEY_WRONG_BANK_FILE, fileName).apply();
+        }
+    }
     public String getCurrentBankId() {
         return prefs.getString(KEY_CURRENT_BANK_ID, "grade1_math");
     }

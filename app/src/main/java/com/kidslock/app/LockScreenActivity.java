@@ -25,6 +25,7 @@ public class LockScreenActivity extends AppCompatActivity {
     private String correctAnswer;
     private int correctCount = 0;
     private int requiredCount;
+    private String currentBankFile;
 
     private View layoutMain;
     private TextView tvCharacter;
@@ -34,6 +35,10 @@ public class LockScreenActivity extends AppCompatActivity {
     private Button[] optionButtons;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
+
+    private String getAnswerMode() {
+        return pref != null ? pref.getAnswerMode() : "cumulative";
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +64,10 @@ public class LockScreenActivity extends AppCompatActivity {
         try {
             pref = new PrefManager(this);
             bank = new CharacterBank();
+            currentBankFile = pref.getCurrentBankFile();
             bank.loadFromCurrentBank(pref, this);
             requiredCount = pref.getUnlockCount();
+            correctCount = 0;
             hideSystemUI();
             initViews();
             loadNextQuestion();
@@ -90,7 +97,29 @@ public class LockScreenActivity extends AppCompatActivity {
     }
 
     private void loadNextQuestion() {
+        tvFeedback.setVisibility(View.GONE);
+        if (pref != null) {
+            requiredCount = pref.getUnlockCount();
+            String bankFile = pref.getCurrentBankFile();
+            if (bankFile != null && !bankFile.equals(currentBankFile)) {
+                currentBankFile = bankFile;
+                bank = new CharacterBank();
+                bank.loadFromCurrentBank(pref, this);
+            }
+        }
+        if (bank == null || bank.getSize() == 0) {
+            bank = new CharacterBank();
+            if (pref != null) bank.loadFromCurrentBank(pref, this);
+        }
+        if (bank == null || bank.getSize() == 0) {
+            finish();
+            return;
+        }
         currentChar = bank.getRandomCharacter();
+        if (currentChar == null) {
+            finish();
+            return;
+        }
         if (currentChar.options != null && !currentChar.options.isEmpty() && currentChar.correctIndex >= 0 && currentChar.correctIndex < currentChar.options.size()) {
             currentOptions = new ArrayList<>(currentChar.options);
             correctAnswer = currentChar.options.get(currentChar.correctIndex);
@@ -125,6 +154,10 @@ public class LockScreenActivity extends AppCompatActivity {
             optionButtons[i].setText(currentOptions.get(i));
             optionButtons[i].setBackgroundResource(R.drawable.btn_option_bg);
             optionButtons[i].setEnabled(true);
+            optionButtons[i].setVisibility(View.VISIBLE);
+        }
+        for (int i = currentOptions.size(); i < optionButtons.length; i++) {
+            optionButtons[i].setVisibility(View.GONE);
         }
 
         updateProgress();
@@ -138,11 +171,17 @@ public class LockScreenActivity extends AppCompatActivity {
 
         String selected = currentOptions.get(index);
         if (selected.equals(correctAnswer)) {
+            if (bank != null && pref != null && currentChar != null) {
+                try {
+                    bank.removeFromWrongBank(this, pref, currentChar);
+                } catch (Exception e) {}
+            }
             correctCount++;
             optionButtons[index].setBackgroundResource(R.drawable.btn_option_correct);
             tvFeedback.setText("答对了！");
             tvFeedback.setTextColor(getResources().getColor(R.color.correct_green));
             tvFeedback.setVisibility(View.VISIBLE);
+            updateProgress();
 
             if (correctCount >= requiredCount) {
                 handler.postDelayed(this::unlock, 600);
@@ -156,6 +195,16 @@ public class LockScreenActivity extends AppCompatActivity {
                     optionButtons[i].setBackgroundResource(R.drawable.btn_option_correct);
                     break;
                 }
+            }
+            if (bank != null && pref != null && currentChar != null) {
+                try {
+                    bank.addToWrongBank(this, pref, currentChar);
+                } catch (Exception e) {}
+            }
+            String mode = getAnswerMode();
+            if ("continuous".equals(mode)) {
+                correctCount = 0;
+                updateProgress();
             }
             StringBuilder fb = new StringBuilder();
             fb.append("答错了，正确答案：").append(correctAnswer);
@@ -171,7 +220,12 @@ public class LockScreenActivity extends AppCompatActivity {
     }
 
     private void updateProgress() {
-        tvProgress.setText(String.format("已累计答对 %d/%d 道题即可解锁", correctCount, requiredCount));
+        String mode = getAnswerMode();
+        if ("continuous".equals(mode)) {
+            tvProgress.setText(String.format("连续答对 %d/%d 道题即可解锁", correctCount, requiredCount));
+        } else {
+            tvProgress.setText(String.format("已累计答对 %d/%d 道题即可解锁", correctCount, requiredCount));
+        }
     }
 
     private void unlock() {
