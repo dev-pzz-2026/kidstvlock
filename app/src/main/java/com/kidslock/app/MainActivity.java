@@ -78,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 toastSafe("计时已启动：" + minutes + " 分钟后锁屏");
             }
+            // 延长 finish 时间，确保 Toast 足够显示（部分电视需较长时间）
+            new Handler(Looper.getMainLooper()).postDelayed(this::finish, 5000);
         } else {
             startLockService();
             WebConfigService.ensureRunning(this);
@@ -89,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 toastSafe(String.format("计时器运行中，剩余 %02d:%02d", min, sec));
             }
+            new Handler(Looper.getMainLooper()).postDelayed(this::finish, 5000);
         }
     }
 
