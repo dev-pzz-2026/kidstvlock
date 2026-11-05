@@ -108,26 +108,22 @@ public class WebConfigServer {
     }
     
     /**
-     * 查询端口真实监听状态，不依赖 running 内存标志。
-     * 通过尝试连接实际绑定的端口来确认端口是否真正在监听。
+     * 查询端口真实监听状态（最高优先级）。
+     * 通过尝试连接实际绑定的端口来确认是否真正在监听，不依赖 running 内存标志。
      */
     public synchronized boolean isRunning() {
-        // 快速失败：内存状态已标记为未运行
-        if (!running) {
-            return false;
-        }
-        // 如果 serverSocket 为空或已关闭，端口肯定不在监听
-        if (serverSocket == null || serverSocket.isClosed()) {
+        // 最高优先级：通过查询端口真实监听状态判断
+        if (actualPort <= 0 || actualPort > 65535) {
             running = false;
-            actualPort = PORT;
+            serverSocket = null;
+            Log.w(TAG, "actualPort invalid, resetting state");
             return false;
         }
-        // 最终确认：尝试连接实际绑定的端口，查询端口真实监听状态
         try (java.net.Socket probe = new java.net.Socket()) {
             probe.connect(new java.net.InetSocketAddress("127.0.0.1", actualPort), 500);
+            running = true;
             return true;
         } catch (Exception e) {
-            // 连接失败，说明端口不在监听，重置状态
             Log.w(TAG, "Port " + actualPort + " not actually listening, resetting state");
             running = false;
             actualPort = PORT;
