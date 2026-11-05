@@ -59,6 +59,7 @@ public class BootReceiver extends BroadcastReceiver {
             pref.setHomeAliasEnabled(context, true);
             // 启动守护服务，防止按 HOME / 切换应用绕过锁屏
             startLockService(context);
+            startWebConfigService(context);
             Intent lockIntent = new Intent(context, LockScreenActivity.class);
             lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                     | Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -75,6 +76,8 @@ public class BootReceiver extends BroadcastReceiver {
                 pref.setLocked(true);
                 pref.setHomeAliasEnabled(context, true);
                 pref.stopTimer();
+                startLockService(context);
+                startWebConfigService(context);
                 Intent lockIntent = new Intent(context, LockScreenActivity.class);
                 lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                         | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -83,6 +86,7 @@ public class BootReceiver extends BroadcastReceiver {
                 // 计时未超时 → 恢复计时服务
                 Log.i(TAG, "Timer still running, resuming service");
                 startLockService(context);
+                startWebConfigService(context);
             }
             return;
         }
@@ -93,12 +97,22 @@ public class BootReceiver extends BroadcastReceiver {
             int minutes = pref.getWatchLimitMinutes();
             pref.startTimer(minutes);
             startLockService(context);
+            startWebConfigService(context);
         }
     }
 
     private void startLockService(Context context) {
         Intent serviceIntent = new Intent(context, LockService.class);
         serviceIntent.putExtra("action", "start_timer");
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            context.startForegroundService(serviceIntent);
+        } else {
+            context.startService(serviceIntent);
+        }
+    }
+
+    private void startWebConfigService(Context context) {
+        Intent serviceIntent = new Intent(context, WebConfigService.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             context.startForegroundService(serviceIntent);
         } else {

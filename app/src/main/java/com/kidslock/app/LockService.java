@@ -59,6 +59,9 @@ public class LockService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         startForeground(NOTIFICATION_ID, buildNotification());
 
+        // 兜底：确保 Web 监听服务运行（BootReceiver 可能只启动了 LockService）
+        WebConfigServer.getInstance(getApplicationContext()).start();
+
         // 进程死后重启：检查是否已过期，直接锁屏
         if (pref.isTimerExpired()) {
             Log.i(TAG, "Service restarted, timer already expired, locking now");
