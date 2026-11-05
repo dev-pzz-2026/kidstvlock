@@ -243,9 +243,16 @@ public class LockScreenActivity extends AppCompatActivity {
             }
         } catch (Exception e) {
         }
-        // 答题解锁后确保 Web 监听服务运行
+        // 答题解锁后检查端口监听，若未监听则直接拉起 WebConfigServer
+        WebConfigServer server = WebConfigServer.getInstance(getApplicationContext());
+        if (!server.isRunning()) {
+            android.util.Log.w("LockScreenActivity", "端口未监听，直接启动 WebConfigServer");
+            server.start();
+        } else {
+            android.util.Log.i("LockScreenActivity", "端口已监听，无需重复启动");
+        }
+        // 启动前台 WebConfigService 保持常驻
         WebConfigService.ensureRunning(this);
-        android.util.Log.i("LockScreenActivity", "答题解锁完成，检查并启动 Web 监听服务");
         finishAffinity();
     }
 
