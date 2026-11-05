@@ -15,12 +15,35 @@ import android.util.Log;
 public class BootReceiver extends BroadcastReceiver {
 
     private static final String TAG = "BootReceiver";
+    static final String ACTION_WAKEUP = "com.kidslock.app.ACTION_WAKEUP";
 
     @Override
     public void onReceive(Context context, Intent intent) {
         String action = intent.getAction();
         Log.i(TAG, "Boot received: " + action);
         if (action == null) return;
+
+        // 闹钟唤醒：检查计时器是否已超时，超时则锁屏
+        if (ACTION_WAKEUP.equals(action)) {
+            Log.i(TAG, "Wakeup alarm received");
+            PrefManager pref = new PrefManager(context);
+            if (pref.isTimerExpired()) {
+                Log.i(TAG, "Timer expired on wakeup, locking");
+                pref.setLocked(true);
+                pref.setHomeAliasEnabled(context, true);
+                pref.stopTimer();
+                startLockService(context);
+                Intent lockIntent = new Intent(context, LockScreenActivity.class);
+                lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                        | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+                context.startActivity(lockIntent);
+            } else {
+                Log.i(TAG, "Timer not expired on wakeup, resuming service");
+                startLockService(context);
+            }
+            return;
+        }
 
         boolean isBoot = action.equals(Intent.ACTION_BOOT_COMPLETED)
                 || action.equals("android.intent.action.QUICKBOOT_POWERON")

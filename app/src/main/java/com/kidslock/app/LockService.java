@@ -1,5 +1,6 @@
 package com.kidslock.app;
 
+import android.app.AlarmManager;
 import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -34,6 +35,7 @@ public class LockService extends Service {
     private static final String TAG = "LockService";
     private static final String CHANNEL_ID = "kids_lock_timer";
     private static final int NOTIFICATION_ID = 1001;
+    private static final String ACTION_WAKEUP = "com.kidslock.app.ACTION_WAKEUP";
 
     private PrefManager pref;
     private Handler handler;
@@ -56,6 +58,13 @@ public class LockService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         startForeground(NOTIFICATION_ID, buildNotification());
+
+        // 进程死后重启：检查是否已过期，直接锁屏
+        if (pref.isTimerExpired()) {
+            Log.i(TAG, "Service restarted, timer already expired, locking now");
+            triggerLock();
+            return START_STICKY;
+        }
 
         // ACTION_UNLOCK → 解锁并重新启动计时
         if (intent != null && "com.kidslock.app.ACTION_UNLOCK".equals(intent.getAction())) {
@@ -123,6 +132,10 @@ public class LockService extends Service {
         if (tickRunnable != null) {
             handler.removeCallbacks(tickRunnable);
         }
+        long endTime = pref.getTimerEndTime();
+        if (endTime > System.currentTimeMillis()) {
+            scheduleWakeupAlarm(endTime);
+        }
         tickRunnable = new Runnable() {
             @Override
             public void run() {
@@ -153,6 +166,55 @@ public class LockService extends Service {
         hideOverlay();
 
         startWatchdog();
+    }
+
+    /**
+     * 设置闹钟后备唤醒，防止 Handler 在进程休眠/系统杀服务后不再检查超时。
+     */
+    private void scheduleWakeupAlarm(long triggerAtMillis) {
+        try {
+            AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+            Intent intent = new Intent(this, BootReceiver.class);
+            intent.setAction(ACTION_WAKEUP);
+            PendingIntent pi = PendingIntent.getBroadcast(
+                    this, 0, intent,
+                    PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi);
+            } else {
+                am.setExact(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi);
+            }
+            Log.i(TAG, "Wakeup alarm scheduled at " + triggerAtMillis + " (remaining " + (triggerAtMillis - System.currentTimeMillis()) + " ms)");
+        } catch (Exception e) {
+            Log.e(TAG, "scheduleWakeupAlarm failed", e);
+        }
+    }
+
+    /**
+     * 根据当前 prefs 中的计时器结束时间，重新设置闹钟后备唤醒。
+     * 供 Web 配置修改 watchLimitMinutes 后调用，确保闹钟时间与新结束时间一致。
+     */
+    public static void rescheduleWakeupAlarm(Context context) {
+        try {
+            PrefManager pref = new PrefManager(context.getApplicationContext());
+            long endTime = pref.getTimerEndTime();
+            if (endTime > System.currentTimeMillis()) {
+                AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                Intent intent = new Intent(context, BootReceiver.class);
+                intent.setAction(ACTION_WAKEUP);
+                PendingIntent pi = PendingIntent.getBroadcast(
+                        context, 0, intent,
+                        PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, endTime, pi);
+                } else {
+                    am.setExact(AlarmManager.RTC_WAKEUP, endTime, pi);
+                }
+                Log.i("LockService", "Wakeup alarm rescheduled at " + endTime + " (remaining " + (endTime - System.currentTimeMillis()) + " ms)");
+            }
+        } catch (Exception e) {
+            Log.e("LockService", "rescheduleWakeupAlarm failed", e);
+        }
     }
 
     private void startWatchdog() {

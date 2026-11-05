@@ -35,6 +35,7 @@ public class WebConfigServer {
     
     private ServerSocket serverSocket;
     private volatile boolean running = false;
+    private int actualPort = PORT;  // 实际绑定的端口，可能不同于默认 PORT
     private ExecutorService executor = Executors.newCachedThreadPool();
     private Context context;
     
@@ -51,15 +52,32 @@ public class WebConfigServer {
     
     public synchronized void start() {
         if (running) {
-            Log.i(TAG, "Web server already running");
+            Log.i(TAG, "Web server already running on port " + actualPort);
             return;
         }
-        running = true;
+        int[] ports = {8080, 8081, 8082, 8083, 8084};
+        boolean bound = false;
+        for (int port : ports) {
+            try {
+                serverSocket = new ServerSocket(port, 50, java.net.InetAddress.getByName("0.0.0.0"));
+                serverSocket.setReuseAddress(true);
+                actualPort = port;  // 记录实际绑定端口
+                running = true;
+                Log.i(TAG, "Web server started on port " + actualPort);
+                bound = true;
+                break;
+            } catch (Exception e) {
+                Log.e(TAG, "Port " + port + " bind failed", e);
+                running = false;
+                serverSocket = null;
+            }
+        }
+        if (!bound) {
+            Log.e(TAG, "All ports failed, web server not started");
+            return;
+        }
         executor.execute(() -> {
             try {
-                serverSocket = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
-                serverSocket.setReuseAddress(true);
-                Log.i(TAG, "Web server started on port " + PORT);
                 while (running) {
                     try {
                         Socket client = serverSocket.accept();
@@ -72,7 +90,7 @@ public class WebConfigServer {
                     }
                 }
             } catch (Exception e) {
-                Log.e(TAG, "Server error", e);
+                Log.e(TAG, "Server loop error", e);
                 running = false;
             }
         });
@@ -84,6 +102,7 @@ public class WebConfigServer {
     
     public void stop() {
         running = false;
+        actualPort = PORT;
         try {
             if (serverSocket != null) {
                 serverSocket.close();
@@ -100,12 +119,12 @@ public class WebConfigServer {
                 int ipInt = wm.getConnectionInfo().getIpAddress();
                 if (ipInt != 0) {
                     String ip = Formatter.formatIpAddress(ipInt);
-                    return "http://" + ip + ":" + PORT;
+                    return "http://" + ip + ":" + actualPort;
                 }
             }
         } catch (Exception e) {
         }
-        return "http://127.0.0.1:" + PORT;
+        return "http://127.0.0.1:" + actualPort;
     }
     
     private class ClientHandler implements Runnable {
@@ -243,6 +262,8 @@ public class WebConfigServer {
                     int newMinutes = json.getInt("watchLimitMinutes");
                     if (newMinutes != oldMinutes && newMinutes > 0) {
                         pref.startTimer(newMinutes);
+                        // 重新设置闹钟后备唤醒，确保闹钟时间与新结束时间一致
+                        LockService.rescheduleWakeupAlarm(context);
                     }
                 }
                 // 重启计时服务以应用新配置
