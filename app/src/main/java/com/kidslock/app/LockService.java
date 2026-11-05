@@ -37,9 +37,6 @@ public class LockService extends Service {
     private static final int NOTIFICATION_ID = 1001;
     private static final String ACTION_WAKEUP = "com.kidslock.app.ACTION_WAKEUP";
 
-    // 防止重复启动 LockScreenActivity，避免多入口并发导致假死
-    public static volatile boolean lockScreenLaunching = false;
-
     private PrefManager pref;
     private Handler handler;
     private Runnable tickRunnable;
@@ -293,9 +290,8 @@ public class LockService extends Service {
     }
 
     private boolean isLockScreenOnTop() {
-        // 无 GET_TASKS 权限时无法可靠获取栈顶，锁定状态下默认视为已置顶，
-        // 由 LockScreenActivity 自身的 onPause 保护避免重复启动
-        return pref.isLocked();
+        // 无 GET_TASKS 权限时无法可靠获取栈顶，通过 LockScreenActivity.isForeground 判断
+        return LockScreenActivity.isForeground;
     }
 
     private boolean canDrawOverlays() {
@@ -317,7 +313,7 @@ public class LockService extends Service {
      * 统一锁屏并拉起答题页面（点击app、计时器到期、闹钟到期共用）。
      */
     public static void lockAndShow(Context context) {
-        if (lockScreenLaunching) {
+        if (LockScreenActivity.lockScreenLaunching) {
             Log.i("LockService", "LockScreenActivity already launching, skipping duplicate");
             return;
         }
@@ -325,7 +321,7 @@ public class LockService extends Service {
         pref.setLocked(true);
         pref.setHomeAliasEnabled(context, true);
         pref.stopTimer();
-        lockScreenLaunching = true;
+        LockScreenActivity.lockScreenLaunching = true;
         startLockScreenActivity(context);
         Log.i("LockService", "lockAndShow: locked and start LockScreenActivity");
     }
@@ -343,12 +339,12 @@ public class LockService extends Service {
             pendingIntent.send();
         } catch (Exception e) {
             Log.e("LockService", "PendingIntent.start LockScreenActivity failed", e);
-            lockScreenLaunching = false;
+            LockScreenActivity.lockScreenLaunching = false;
             try {
                 context.startActivity(lockIntent);
             } catch (Exception ex) {
                 Log.e("LockService", "Retry start LockScreenActivity failed", ex);
-                lockScreenLaunching = false;
+                LockScreenActivity.lockScreenLaunching = false;
             }
         }
     }

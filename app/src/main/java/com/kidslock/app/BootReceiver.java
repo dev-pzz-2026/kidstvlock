@@ -46,20 +46,12 @@ public class BootReceiver extends BroadcastReceiver {
 
         PrefManager pref = new PrefManager(context);
 
-        // 如果已经处于锁定状态，启动服务并直接弹锁屏（防重复由 LockService.lockScreenLaunching 控制）
+        // 如果已经处于锁定状态，启动服务，由 LockService watchdog 持续拉起锁屏界面
         if (pref.isLocked()) {
-            Log.i(TAG, "Device was locked, starting services and showing lock screen");
+            Log.i(TAG, "Device was locked, starting services, LockService watchdog will show lock screen");
             pref.setHomeAliasEnabled(context, true);
             startLockService(context);
             startWebConfigService(context);
-            if (!LockService.lockScreenLaunching) {
-                LockService.lockScreenLaunching = true;
-                Intent lockIntent = new Intent(context, LockScreenActivity.class);
-                lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                        | Intent.FLAG_ACTIVITY_CLEAR_TASK
-                        | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-                context.startActivity(lockIntent);
-            }
             return;
         }
 

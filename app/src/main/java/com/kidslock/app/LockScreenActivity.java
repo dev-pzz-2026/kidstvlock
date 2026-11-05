@@ -18,6 +18,12 @@ import java.util.List;
 
 public class LockScreenActivity extends AppCompatActivity {
 
+    // 标志当前 Activity 是否在前台可见，供 LockService watchdog 判断是否需要重新拉起
+    public static volatile boolean isForeground = false;
+
+    // 防重复标志，由 LockService 维护
+    public static volatile boolean lockScreenLaunching = false;
+
     private PrefManager pref;
     private CharacterBank bank;
 
@@ -74,7 +80,8 @@ public class LockScreenActivity extends AppCompatActivity {
             loadNextQuestion();
         } catch (Exception e) {
             Log.w("LockScreenActivity", "LockScreenActivity init failed, finishing", e);
-            LockService.lockScreenLaunching = false;
+            isForeground = false;
+            LockScreenActivity.lockScreenLaunching = false;
             finish();
             return;
         }
@@ -85,16 +92,10 @@ public class LockScreenActivity extends AppCompatActivity {
         super.onNewIntent(intent);
         setIntent(intent);
         // singleTask 模式，重复启动会走这里，避免多次弹出锁屏界面
-        if (LockService.lockScreenLaunching) {
+        if (lockScreenLaunching) {
             Log.w("LockScreenActivity", "LockScreenActivity already launching/visible, ignoring duplicate intent");
             return;
         }
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        LockService.lockScreenLaunching = false;
     }
 
     private void initViews() {
@@ -307,19 +308,34 @@ public class LockScreenActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         handler.removeCallbacks(reLockRunnable);
-        // 锁屏 Activity 暂停时不再自行重启，避免与 LockService watchdog 及 BootReceiver 并发冲突；
-        // 锁屏状态由 LockService watchdog 统一保持置顶
+        isForeground = false;
+        // 锁屏 Activity 暂停时不再自行重启，交给 LockService watchdog 统一保持置顶
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         handler.removeCallbacks(reLockRunnable);
+        isForeground = true;
+        lockScreenLaunching = false;
         hideSystemUI();
         if (pref == null || !pref.isLocked()) {
             finish();
             return;
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        isForeground = false;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        isForeground = false;
+        lockScreenLaunching = false;
     }
 
     @Override
