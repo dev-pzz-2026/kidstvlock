@@ -161,13 +161,7 @@ public class LockService extends Service {
 
     private void triggerLock() {
         Log.i(TAG, "Triggering lock screen!");
-        pref.setLocked(true);
-        pref.setHomeAliasEnabled(this, true);
-        pref.stopTimer();
-
-        startLockScreenActivity();
-        hideOverlay();
-
+        lockAndShow(this);
         startWatchdog();
     }
 
@@ -274,26 +268,41 @@ public class LockService extends Service {
         }
     }
 
-    private void startLockScreenActivity() {
-        Intent lockIntent = new Intent(this, LockScreenActivity.class);
+    /**
+     * 统一锁屏并拉起答题页面（点击app、计时器到期、闹钟到期共用）。
+     */
+    public static void lockAndShow(Context context) {
+        PrefManager pref = new PrefManager(context.getApplicationContext());
+        pref.setLocked(true);
+        pref.setHomeAliasEnabled(context, true);
+        pref.stopTimer();
+        startLockScreenActivity(context);
+        Log.i("LockService", "lockAndShow: locked and start LockScreenActivity");
+    }
+
+    private static void startLockScreenActivity(Context context) {
+        Intent lockIntent = new Intent(context, LockScreenActivity.class);
         lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        lockIntent.setPackage(getPackageName());
+        lockIntent.setPackage(context.getPackageName());
         try {
-            // 使用 PendingIntent.send 绕过 Android 10+ 后台启动 Activity 限制
             PendingIntent pendingIntent = PendingIntent.getActivity(
-                    this, 0, lockIntent,
+                    context, 0, lockIntent,
                     PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
             pendingIntent.send();
         } catch (Exception e) {
-            Log.e(TAG, "PendingIntent.start LockScreenActivity failed", e);
+            Log.e("LockService", "PendingIntent.start LockScreenActivity failed", e);
             try {
-                startActivity(lockIntent);
+                context.startActivity(lockIntent);
             } catch (Exception ex) {
-                Log.e(TAG, "Retry start LockScreenActivity failed", ex);
+                Log.e("LockService", "Retry start LockScreenActivity failed", ex);
             }
         }
+    }
+
+    private void startLockScreenActivity() {
+        startLockScreenActivity(this);
     }
 
     public static void requestUnlock(Context context) {

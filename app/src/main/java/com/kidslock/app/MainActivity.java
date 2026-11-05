@@ -59,9 +59,7 @@ public class MainActivity extends AppCompatActivity {
         requestAllPermissions();
 
         if (pref.isLocked()) {
-            Intent lockIntent = new Intent(this, LockScreenActivity.class);
-            lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(lockIntent);
+            LockService.lockAndShow(this);
             finish();
             return;
         }

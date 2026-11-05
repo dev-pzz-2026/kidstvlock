@@ -29,15 +29,8 @@ public class BootReceiver extends BroadcastReceiver {
             PrefManager pref = new PrefManager(context);
             if (pref.isTimerExpired()) {
                 Log.i(TAG, "Timer expired on wakeup, locking");
-                pref.setLocked(true);
-                pref.setHomeAliasEnabled(context, true);
-                pref.stopTimer();
+                LockService.lockAndShow(context);
                 startLockService(context);
-                Intent lockIntent = new Intent(context, LockScreenActivity.class);
-                lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                        | Intent.FLAG_ACTIVITY_CLEAR_TASK
-                        | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-                context.startActivity(lockIntent);
             } else {
                 Log.i(TAG, "Timer not expired on wakeup, resuming service");
                 startLockService(context);
