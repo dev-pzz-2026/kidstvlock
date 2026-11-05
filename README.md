@@ -5,10 +5,12 @@
 ## 项目简介
 
 - **答题解锁**：锁屏时显示汉字/题目，答对指定数量题目才能解锁。
+- **答题模式**：累计答题解锁 / 连续答题解锁（Web 配置页可选，立即生效）。
 - **开机自启**：电视开机后自动启动计时（默认开启）。
-- **定时锁屏**：10/15/30/45/60/90/120 分钟可选，到时自动锁屏。
+- **定时锁屏**：10/15/30/45/60/90/120 分钟可选，默认 10 分钟，到时自动锁屏。
 - **重启仍锁**：锁屏后即使关机重启，电视仍保持锁屏状态。
 - **题库丰富**：内置 1-9 年级语文/数学/英语/科学题库及背诵篇目。
+- **错题库**：答错收入错题库（默认 `错题库.json`），答对移除；Web 配置页可选择默认题库。
 - **可配**：通过 Web 配置页（端口 8080）调整参数。
 
 ## 适用人群与场景
@@ -25,23 +27,25 @@ kidslock/
 │   ├── src/main/
 │   │   ├── AndroidManifest.xml
 │   │   ├── java/com/kidslock/app/
-│   │   │   ├── MainActivity.java        # 设置界面
-│   │   │   ├── LockScreenActivity.java  # 锁屏答题界面
-│   │   │   ├── LockService.java         # 计时前台服务
-│   │   │   ├── BootReceiver.java        # 开机自启动
-│   │   │   ├── CharacterBank.java       # 题库加载
-│   │   │   ├── PrefManager.java         # 设置持久化
-│   │   │   ├── WebConfigServer.java     # Web 配置服务
-│   │   │   └── WebConfigService.java    # Web 配置服务封装
+│   │   │   ├── KidsLockApplication.java    # 应用进程入口，启动即启动 Web 监听和计时服务
+│   │   │   ├── MainActivity.java           # 设置界面，启动时检查并启动 Web 监听服务
+│   │   │   ├── LockScreenActivity.java     # 锁屏答题界面，答完关闭时检查端口监听
+│   │   │   ├── LockService.java            # 计时前台服务，支持 AlarmManager 闹钟唤醒
+│   │   │   ├── BootReceiver.java           # 开机自启动，处理闹钟唤醒
+│   │   │   ├── CharacterBank.java          # 题库加载，支持错题库增删
+│   │   │   ├── PrefManager.java            # 设置持久化
+│   │   │   ├── WebConfigServer.java        # Web 配置服务（端口 8080）
+│   │   │   └── WebConfigService.java       # Web 配置服务封装
 │   │   ├── res/
-│   │   │   ├── layout/                  # 布局 XML
-│   │   │   ├── drawable/                # 按钮选择器、图标、TV banner
-│   │   │   ├── mipmap-*/                # 启动图标
-│   │   │   └── values/                  # 颜色、尺寸、字符串、主题
-│   │   └── assets/                      # 题库 JSON
+│   │   │   ├── layout/                     # 布局 XML
+│   │   │   ├── drawable/                   # 按钮选择器、图标、TV banner
+│   │   │   ├── mipmap-*/                   # 启动图标
+│   │   │   └── values/                     # 颜色、尺寸、字符串、主题
+│   │   └── assets/                         # 题库 JSON（含 错题库.json 模板）
 ├── build.gradle
 ├── settings.gradle
 ├── gradle.properties
+├── LICENSE
 └── README.md
 ```
 
@@ -49,12 +53,15 @@ kidslock/
 
 - 包名：`com.kidslock.app`。
 - 默认观看时长：10 分钟（`PrefManager.DEFAULT_WATCH_LIMIT_MIN`）。
+- 默认答题模式：累计答题解锁（`cumulative`），可在 Web 配置页切换为连续答题解锁（`continuous`）。
 - 锁屏仅通过答题解锁，无家长 PIN / 密码入口。
+- 默认错题库文件：`错题库.json`（`filesDir` 下，不存在则自动创建）。
 - 常驻通知：`LockService` 前台服务，需通知权限。
-- 开机自启：`BootReceiver` 监听 `BOOT_COMPLETED`。
-- Web 配置：端口 8080，局域网访问 `http://<电视IP>:8080`。
-- 题库：`assets/` 下 JSON，`CharacterBank` 解析。
-- 修改图标：更新 `mipmap-*/ic_launcher*.png` 与 `drawable/tv_banner.png`（320×180）。
+- 开机自启：`BootReceiver` 监听 `BOOT_COMPLETED`，闹钟唤醒监听 `com.kidslock.app.ACTION_WAKEUP`。
+- Web 配置：端口 **8080**（固定），局域网访问 `http://<电视IP>:8080`。
+- Web 配置页支持：观看时长、解锁题数、锁定时长、锁屏间隔、重新锁屏延迟、开机自启、答题模式、默认题库选择。
+- 题库：`assets/` 下 JSON，`CharacterBank` 解析；错题库增删由 `CharacterBank.addToWrongBank` / `removeFromWrongBank` 实现。
+- 修改图标：更新 `mipmap-*/ic_launcher*.png` 与 `drawable/tv_banner.png`（320×180，图标仅，无全文）。
 - 二次开发请保留 MIT 协议。
 
 ## 打包与安装
@@ -136,10 +143,10 @@ adb shell settings put secure accessibility_enabled 1
 adb shell am start -n com.kidslock.app/.MainActivity
 
 # 8. 查看日志（调试用）
-adb logcat -s LockService KidsLockAccessibilityService BootReceiver
+adb logcat -s LockService KidsLockAccessibilityService BootReceiver WebConfigServer
 ```
 
-> **注意**：部分电视品牌（小米、 TCL 等）可能需要在电视设置中手动授权「开机自启」和「后台运行」，ADB 命令仅作为辅助。
+> **注意**：部分电视品牌（小米、TCL 等）可能需要在电视设置中手动授权「开机自启」和「后台运行」，ADB 命令仅作为辅助。
 
 ### 权限
 
@@ -221,6 +228,23 @@ adb logcat -s LockService KidsLockAccessibilityService BootReceiver
 }
 ```
 
+### 错题库格式（自动生成）
+
+默认文件名 `错题库.json`，位于应用内部存储目录。答错时自动写入，答对时自动移除。格式同选择题：
+
+```json
+{
+  "bank_id": "wrong_bank",
+  "bank_name": "错题库",
+  "grade": 0,
+  "subject": "wrong",
+  "subject_name": "错题",
+  "version": 1,
+  "total": 0,
+  "questions": []
+}
+```
+
 ### 字段说明
 
 | 字段 | 类型 | 必填 | 说明 |
@@ -228,7 +252,7 @@ adb logcat -s LockService KidsLockAccessibilityService BootReceiver
 | `bank_id` | string | 是 | 题库唯一标识 |
 | `bank_name` | string | 是 | 题库显示名称 |
 | `grade` / `grade_range` | int/string | 是 | 年级或年级范围 |
-| `subject` | string | 是 | 学科标识（chinese/math/english/science/recitation） |
+| `subject` | string | 是 | 学科标识（chinese/math/english/science/recitation/wrong） |
 | `questions` | array | 选择题必填 | 选择题列表 |
 | `pieces` | array | 背诵题必填 | 背诵篇目列表 |
 | `id` | int | 是 | 题目/篇目 ID |
