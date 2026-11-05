@@ -51,6 +51,12 @@ public class WebConfigServer {
     }
     
     public synchronized void start() {
+        // 如果已有有效的 serverSocket（未关闭），直接复用，避免重复绑定导致 EADDRINUSE
+        if (serverSocket != null && !serverSocket.isClosed()) {
+            running = true;
+            Log.i(TAG, "Web server reusing existing serverSocket on port " + actualPort);
+            return;
+        }
         // 兜底：如果 running 为 true 但 serverSocket 已关闭/无效，重置状态并重新启动
         if (running && (serverSocket == null || serverSocket.isClosed())) {
             Log.w(TAG, "running=true but serverSocket invalid, resetting state");
