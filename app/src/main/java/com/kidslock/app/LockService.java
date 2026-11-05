@@ -179,15 +179,36 @@ public class LockService extends Service {
             PendingIntent pi = PendingIntent.getBroadcast(
                     this, 0, intent,
                     PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi);
+            if (hasExactAlarmPermission()) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi);
+                } else {
+                    am.setExact(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi);
+                }
+                Log.i(TAG, "Wakeup alarm scheduled at " + triggerAtMillis + " (remaining " + (triggerAtMillis - System.currentTimeMillis()) + " ms)");
             } else {
-                am.setExact(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi);
+                // 没有 SCHEDULE_EXACT_ALARM 权限，回退到普通闹钟窗口
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    am.setWindow(AlarmManager.RTC_WAKEUP, triggerAtMillis, 60000, pi);
+                } else {
+                    am.set(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi);
+                }
+                Log.w(TAG, "No SCHEDULE_EXACT_ALARM permission, using fallback alarm at " + triggerAtMillis);
             }
-            Log.i(TAG, "Wakeup alarm scheduled at " + triggerAtMillis + " (remaining " + (triggerAtMillis - System.currentTimeMillis()) + " ms)");
         } catch (Exception e) {
             Log.e(TAG, "scheduleWakeupAlarm failed", e);
         }
+    }
+
+    /**
+     * 检查是否持有 SCHEDULE_EXACT_ALARM 权限（Android 12+ 需要）
+     */
+    private boolean hasExactAlarmPermission() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            return true;
+        }
+        AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        return am != null && am.canScheduleExactAlarms();
     }
 
     /**
@@ -205,16 +226,37 @@ public class LockService extends Service {
                 PendingIntent pi = PendingIntent.getBroadcast(
                         context, 0, intent,
                         PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, endTime, pi);
+                if (hasExactAlarmPermission(context)) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, endTime, pi);
+                    } else {
+                        am.setExact(AlarmManager.RTC_WAKEUP, endTime, pi);
+                    }
+                    Log.i("LockService", "Wakeup alarm rescheduled at " + endTime + " (remaining " + (endTime - System.currentTimeMillis()) + " ms)");
                 } else {
-                    am.setExact(AlarmManager.RTC_WAKEUP, endTime, pi);
+                    // 没有 SCHEDULE_EXACT_ALARM 权限，回退到普通闹钟窗口
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                        am.setWindow(AlarmManager.RTC_WAKEUP, endTime, 60000, pi);
+                    } else {
+                        am.set(AlarmManager.RTC_WAKEUP, endTime, pi);
+                    }
+                    Log.w("LockService", "No SCHEDULE_EXACT_ALARM permission, using fallback alarm at " + endTime);
                 }
-                Log.i("LockService", "Wakeup alarm rescheduled at " + endTime + " (remaining " + (endTime - System.currentTimeMillis()) + " ms)");
             }
         } catch (Exception e) {
             Log.e("LockService", "rescheduleWakeupAlarm failed", e);
         }
+    }
+
+    /**
+     * 检查是否持有 SCHEDULE_EXACT_ALARM 权限（Android 12+ 需要）
+     */
+    public static boolean hasExactAlarmPermission(Context context) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            return true;
+        }
+        AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        return am != null && am.canScheduleExactAlarms();
     }
 
     private void startWatchdog() {
