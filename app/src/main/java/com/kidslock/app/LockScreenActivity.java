@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -72,9 +73,28 @@ public class LockScreenActivity extends AppCompatActivity {
             initViews();
             loadNextQuestion();
         } catch (Exception e) {
+            Log.w("LockScreenActivity", "LockScreenActivity init failed, finishing", e);
+            LockService.lockScreenLaunching = false;
             finish();
             return;
         }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        // singleTask 模式，重复启动会走这里，避免多次弹出锁屏界面
+        if (LockService.lockScreenLaunching) {
+            Log.w("LockScreenActivity", "LockScreenActivity already launching/visible, ignoring duplicate intent");
+            return;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        LockService.lockScreenLaunching = false;
     }
 
     private void initViews() {
