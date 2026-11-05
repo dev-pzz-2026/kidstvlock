@@ -85,4 +85,17 @@ public class WebConfigService extends Service {
             context.startService(intent);
         }
     }
+
+    /**
+     * 确保 Web 监听服务运行；若未启动则启动，并记录日志。
+     */
+    public static void ensureRunning(Context context) {
+        WebConfigServer server = WebConfigServer.getInstance(context.getApplicationContext());
+        if (server == null || !server.isRunning()) {
+            Log.i("WebConfigService", "Web 监听服务未运行，正在启动");
+            start(context);
+        } else {
+            Log.i("WebConfigService", "Web 监听服务已运行，无需重复启动");
+        }
+    }
 }

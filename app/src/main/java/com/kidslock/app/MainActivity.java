@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         requestAllPermissions();
         ensureServicesRunning();
+        android.util.Log.i("MainActivity", "App 启动，检查并启动 Web 监听服务");
 
         if (pref.isLocked()) {
             Intent lockIntent = new Intent(this, LockScreenActivity.class);
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             int minutes = pref.getWatchLimitMinutes();
             pref.startTimer(minutes);
             startLockService();
-            WebConfigService.start(this);
+            WebConfigService.ensureRunning(this);
             if (!pref.isFirstLaunchShown()) {
                 Toast.makeText(this, "儿童锁屏已启动，默认" + minutes + "分钟后锁屏", Toast.LENGTH_LONG).show();
                 pref.setFirstLaunchShown(true);
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             new Handler(Looper.getMainLooper()).postDelayed(this::finish, 1500);
         } else {
             startLockService();
-            WebConfigService.start(this);
+            WebConfigService.ensureRunning(this);
             long remaining = pref.getRemainingMillis();
             long min = remaining / 60000;
             long sec = (remaining / 1000) % 60;

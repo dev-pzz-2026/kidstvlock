@@ -243,6 +243,9 @@ public class LockScreenActivity extends AppCompatActivity {
             }
         } catch (Exception e) {
         }
+        // 答题解锁后确保 Web 监听服务运行
+        WebConfigService.ensureRunning(this);
+        android.util.Log.i("LockScreenActivity", "答题解锁完成，检查并启动 Web 监听服务");
         finishAffinity();
     }
 

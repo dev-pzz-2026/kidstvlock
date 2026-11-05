@@ -75,6 +75,10 @@ public class WebConfigServer {
         });
     }
     
+    public boolean isRunning() {
+        return running;
+    }
+    
     public void stop() {
         running = false;
         try {
