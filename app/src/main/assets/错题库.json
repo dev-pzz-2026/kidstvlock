@@ -1,0 +1,12 @@
+{
+  "bank_id": "error_all",
+  "bank_name": "错题库",
+  "grade": 1,
+  "subject": "error",
+  "subject_name": "错题库",
+  "version": 2,
+  "updated_at": "2026-11-02T08:00:00Z",
+  "total": 120,
+  "questions": [
+    ]
+}
