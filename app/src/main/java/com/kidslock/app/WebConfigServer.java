@@ -51,6 +51,12 @@ public class WebConfigServer {
     }
     
     public synchronized void start() {
+        // 兜底：如果 running 为 true 但 serverSocket 已关闭/无效，重置状态并重新启动
+        if (running && (serverSocket == null || serverSocket.isClosed())) {
+            Log.w(TAG, "running=true but serverSocket invalid, resetting state");
+            running = false;
+            actualPort = PORT;
+        }
         if (running) {
             Log.i(TAG, "Web server already running on port " + actualPort);
             return;
@@ -84,7 +90,10 @@ public class WebConfigServer {
                         executor.execute(new ClientHandler(client));
                     } catch (Exception e) {
                         if (running) {
-                            Log.e(TAG, "Accept error", e);
+                            Log.e(TAG, "Accept error, serverSocket may be closed", e);
+                            running = false;
+                            actualPort = PORT;
+                            serverSocket = null;
                         }
                         break;
                     }
@@ -92,6 +101,8 @@ public class WebConfigServer {
             } catch (Exception e) {
                 Log.e(TAG, "Server loop error", e);
                 running = false;
+                actualPort = PORT;
+                serverSocket = null;
             }
         });
     }
