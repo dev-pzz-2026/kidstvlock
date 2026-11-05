@@ -58,6 +58,11 @@ public class WebConfigServer {
             Log.i(TAG, "Web server reusing existing serverSocket on port " + actualPort);
             return;
         }
+        // 清理已关闭的 serverSocket，避免残留引用
+        if (serverSocket != null && serverSocket.isClosed()) {
+            Log.w(TAG, "serverSocket is closed, clearing reference");
+            serverSocket = null;
+        }
         // 如果端口已经在监听（可能是其他服务或之前的实例），视为已运行，避免重复绑定
         if (isRunning()) {
             running = true;
@@ -121,12 +126,13 @@ public class WebConfigServer {
     /**
      * 查询端口真实监听状态（最高优先级）。
      * 通过尝试连接实际绑定的端口来确认是否真正在监听，不依赖 running 内存标志。
+     * 本方法仅做只读探测，不得修改 serverSocket 状态，避免破坏已绑定的 socket。
      */
     public synchronized boolean isRunning() {
         // 最高优先级：通过查询端口真实监听状态判断
         if (actualPort <= 0 || actualPort > 65535) {
             running = false;
-            serverSocket = null;
+            actualPort = PORT;
             Log.w(TAG, "actualPort invalid, resetting state");
             return false;
         }
@@ -135,10 +141,10 @@ public class WebConfigServer {
             running = true;
             return true;
         } catch (Exception e) {
-            Log.w(TAG, "Port " + actualPort + " not actually listening, resetting state");
+            Log.w(TAG, "Port " + actualPort + " not actually listening");
             running = false;
             actualPort = PORT;
-            serverSocket = null;
+            // 注意：不置 serverSocket = null，避免破坏已绑定的 socket 状态
             return false;
         }
     }
