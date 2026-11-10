@@ -278,8 +278,12 @@ public class LockService extends Service {
                 // 确保 Web 监听服务持续运行，防止被系统杀死后无法配置
                 WebConfigService.ensureRunning(LockService.this);
 
-                if (!isLockScreenOnTop()) {
+                // 防重复：若 LockScreenActivity 正在启动中，跳过本次拉起，避免闪烁
+                if (LockScreenActivity.lockScreenLaunching) {
+                    Log.i(TAG, "LockScreenActivity launching, skipping watchdog pull");
+                } else if (!isLockScreenOnTop()) {
                     Log.i(TAG, "Lock screen not on top, pulling again");
+                    LockScreenActivity.lockScreenLaunching = true;
                     startLockScreenActivity();
                     hideOverlay();
                 } else {
@@ -314,25 +318,26 @@ public class LockService extends Service {
 
     /**
      * 统一锁屏并拉起答题页面（点击app、计时器到期、闹钟到期共用）。
-     * 不检查 lockScreenLaunching 标志，由 watchdog 通过 isForeground 持续重试，避免标志锁死导致答题页永不弹出。
+     * 启动前置 lockScreenLaunching=true，由 LockScreenActivity.onResume 重置为 false。
+     * watchdog 通过 isForeground + lockScreenLaunching 防重复拉起，避免闪烁。
      */
     public static void lockAndShow(Context context) {
         PrefManager pref = new PrefManager(context.getApplicationContext());
         pref.setLocked(true);
         pref.setHomeAliasEnabled(context, true);
         pref.stopTimer();
+        LockScreenActivity.lockScreenLaunching = true;
         startLockScreenActivity(context);
         Log.i("LockService", "lockAndShow: locked and start LockScreenActivity");
     }
 
     /**
      * 启动锁屏答题页面。使用 PendingIntent 优先，失败则直接 startActivity 作为 fallback，
-     * 确保在后台服务中也能可靠弹出锁屏界面。
+     * 确保在后台服务中也能可靠弹出锁屏界面。不使用 CLEAR_TASK，避免重新创建已存在的 Activity 导致闪烁。
      */
     private static void startLockScreenActivity(Context context) {
         Intent lockIntent = new Intent(context, LockScreenActivity.class);
         lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                | Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         lockIntent.setPackage(context.getPackageName());
         try {
@@ -351,6 +356,7 @@ public class LockService extends Service {
             Log.i("LockService", "LockScreenActivity launched via startActivity fallback");
         } catch (Exception ex) {
             Log.e("LockService", "Retry start LockScreenActivity failed", ex);
+            LockScreenActivity.lockScreenLaunching = false;
         }
     }
 
