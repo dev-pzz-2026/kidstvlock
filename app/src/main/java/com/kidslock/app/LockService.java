@@ -275,6 +275,9 @@ public class LockService extends Service {
                     return;
                 }
 
+                // 确保 Web 监听服务持续运行，防止被系统杀死后无法配置
+                WebConfigService.ensureRunning(LockService.this);
+
                 if (!isLockScreenOnTop()) {
                     Log.i(TAG, "Lock screen not on top, pulling again");
                     startLockScreenActivity();
@@ -322,6 +325,10 @@ public class LockService extends Service {
         Log.i("LockService", "lockAndShow: locked and start LockScreenActivity");
     }
 
+    /**
+     * 启动锁屏答题页面。使用 PendingIntent 优先，失败则直接 startActivity 作为 fallback，
+     * 确保在后台服务中也能可靠弹出锁屏界面。
+     */
     private static void startLockScreenActivity(Context context) {
         Intent lockIntent = new Intent(context, LockScreenActivity.class);
         lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
@@ -333,13 +340,17 @@ public class LockService extends Service {
                     context, 0, lockIntent,
                     PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
             pendingIntent.send();
+            Log.i("LockService", "LockScreenActivity launched via PendingIntent");
+            return;
         } catch (Exception e) {
             Log.e("LockService", "PendingIntent.start LockScreenActivity failed", e);
-            try {
-                context.startActivity(lockIntent);
-            } catch (Exception ex) {
-                Log.e("LockService", "Retry start LockScreenActivity failed", ex);
-            }
+        }
+        // Fallback：直接 startActivity（需 FLAG_ACTIVITY_NEW_TASK，已设置）
+        try {
+            context.startActivity(lockIntent);
+            Log.i("LockService", "LockScreenActivity launched via startActivity fallback");
+        } catch (Exception ex) {
+            Log.e("LockService", "Retry start LockScreenActivity failed", ex);
         }
     }
 
