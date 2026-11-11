@@ -36,7 +36,9 @@ public class WebConfigService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        WebConfigServer.getInstance(this).stop();
+        // 不再关闭 WebConfigServer，由 LockService watchdog 负责维护 WebConfigServer 生命周期，
+        // 避免 WebConfigService 被系统杀死时，onDestroy 关闭 serverSocket 导致 Web 监听中断
+        Log.i(TAG, "WebConfigService onDestroy，WebConfigServer 保持运行");
     }
 
     @Override
