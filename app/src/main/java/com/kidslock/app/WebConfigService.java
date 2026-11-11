@@ -95,8 +95,8 @@ public class WebConfigService extends Service {
     public static void ensureRunning(Context context) {
         WebConfigServer server = WebConfigServer.getInstance(context.getApplicationContext());
         if (server == null || !server.isRunning()) {
-            Log.i("WebConfigService", "Web 监听服务未运行，正在启动");
-            start(context);
+            Log.i("WebConfigService", "Web 监听服务未运行，直接启动 WebConfigServer");
+            server.start();
         } else {
             Log.i("WebConfigService", "Web 监听服务已运行，无需重复启动");
         }
