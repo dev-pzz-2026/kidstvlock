@@ -135,6 +135,13 @@ public class LockService extends Service {
         tickRunnable = new Runnable() {
             @Override
             public void run() {
+                // 每秒检查 Web 监听服务，确保无论锁屏与否，Web 监听都持续运行
+                WebConfigServer server = WebConfigServer.getInstance(getApplicationContext());
+                if (!server.isRunning()) {
+                    Log.w(TAG, "Tick check: Web server not running, directly starting WebConfigServer");
+                    server.start();
+                }
+
                 if (pref.isLocked()) {
                     hideOverlay();
                     startWatchdog();
