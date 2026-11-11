@@ -268,8 +268,13 @@ public class LockService extends Service {
                     return;
                 }
 
-                // 确保 Web 监听服务持续运行，防止被系统杀死后无法配置
-                WebConfigService.ensureRunning(LockService.this);
+                // 直接维护 WebConfigServer 端口监听，不依赖 WebConfigService 生命周期，
+                // 即使 WebConfigService 被系统杀死，LockService 也能直接重新绑定端口
+                WebConfigServer server = WebConfigServer.getInstance(getApplicationContext());
+                if (!server.isRunning()) {
+                    Log.w(TAG, "Web server not running, directly starting WebConfigServer");
+                    server.start();
+                }
 
                 // 防重复：若 LockScreenActivity 正在启动中，跳过本次拉起，避免闪烁
                 if (LockScreenActivity.lockScreenLaunching) {
