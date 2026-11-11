@@ -66,10 +66,10 @@ public class WebConfigServer {
             Log.w(TAG, "serverSocket is closed, clearing reference");
             serverSocket = null;
         }
-        // 启动节流：只有在 serverSocket 已存在且刚刚关闭时才需要节流，
+        // 启动节流：只有在 serverSocket 刚刚被清空（bind 失败后重置）时才需要节流，
         // 避免日志风暴。serverSocket 为 null 时允许立即重试绑定。
         long now = System.currentTimeMillis();
-        if (lastStartAttemptMs > 0 && now - lastStartAttemptMs < START_THROTTLE_MS && lastStartAttemptMs != 0) {
+        if (serverSocket != null && lastStartAttemptMs > 0 && now - lastStartAttemptMs < START_THROTTLE_MS) {
             return;
         }
         lastStartAttemptMs = now;
