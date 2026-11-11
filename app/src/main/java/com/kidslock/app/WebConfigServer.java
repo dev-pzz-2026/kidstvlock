@@ -73,26 +73,18 @@ public class WebConfigServer {
             return;
         }
         lastStartAttemptMs = now;
-        // 尝试绑定 8080 端口，失败则尝试备用端口 8081-8084
-        int[] ports = {8080, 8081, 8082, 8083, 8084};
-        boolean bound = false;
-        for (int port : ports) {
-            try {
-                serverSocket = new ServerSocket(port, 50, java.net.InetAddress.getByName("0.0.0.0"));
-                serverSocket.setReuseAddress(true);
-                actualPort = port;
-                running = true;
-                Log.i(TAG, "Web server started on port " + actualPort);
-                bound = true;
-                break;
-            } catch (Exception e) {
-                Log.e(TAG, "Port " + port + " bind failed", e);
-                running = false;
-                serverSocket = null;
-            }
-        }
-        if (!bound) {
-            Log.e(TAG, "All ports 8080-8084 failed, web server not started");
+        // 只绑定 8080 端口，不使用多端口轮询
+        try {
+            serverSocket = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
+            serverSocket.setReuseAddress(true);
+            actualPort = PORT;
+            running = true;
+            Log.i(TAG, "Web server started on port " + actualPort);
+        } catch (Exception e) {
+            // bind 失败（如 EADDRINUSE），不放弃，由 watchdog 每 2 秒重试直到成功
+            Log.e(TAG, "Port " + PORT + " bind failed, will retry via watchdog", e);
+            running = false;
+            serverSocket = null;
             return;
         }
         executor.execute(() -> {
