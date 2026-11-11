@@ -82,6 +82,11 @@ public class LockScreenActivity extends AppCompatActivity {
             Log.w("LockScreenActivity", "LockScreenActivity init failed, finishing", e);
             isForeground = false;
             LockScreenActivity.lockScreenLaunching = false;
+            // 初始化失败时解锁状态，避免无法退出导致死机
+            if (pref != null) {
+                pref.setLocked(false);
+                pref.setHomeAliasEnabled(this, false);
+            }
             finish();
             return;
         }
@@ -133,11 +138,16 @@ public class LockScreenActivity extends AppCompatActivity {
             if (pref != null) bank.loadFromCurrentBank(pref, this);
         }
         if (bank == null || bank.getSize() == 0) {
+            // 题库为空时解锁，避免无法退出锁屏导致死机
+            pref.setLocked(false);
+            pref.setHomeAliasEnabled(this, false);
             finish();
             return;
         }
         currentChar = bank.getRandomCharacter();
         if (currentChar == null) {
+            pref.setLocked(false);
+            pref.setHomeAliasEnabled(this, false);
             finish();
             return;
         }
