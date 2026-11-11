@@ -81,10 +81,27 @@ public class WebConfigServer {
             running = true;
             Log.i(TAG, "Web server started on port " + actualPort);
         } catch (Exception e) {
-            // bind 失败（如 EADDRINUSE），不放弃，由 watchdog 每 2 秒重试直到成功
-            Log.e(TAG, "Port " + PORT + " bind failed, will retry via watchdog", e);
-            running = false;
-            serverSocket = null;
+            // bind 失败（如 EADDRINUSE）
+            // 先通过 Socket 连接探测端口是否真的被其他进程监听
+            boolean portTrulyOccupied = false;
+            try (java.net.Socket probe = new java.net.Socket()) {
+                probe.connect(new java.net.InetSocketAddress("127.0.0.1", PORT), 500);
+                portTrulyOccupied = true; // 能连上，说明有其他进程在监听
+            } catch (Exception probeE) {
+                // 连不上，说明端口空闲（可能是 TIME_WAIT），下次节流后继续重试
+                portTrulyOccupied = false;
+            }
+            if (portTrulyOccupied) {
+                // 端口被其他进程占用，不再重复尝试绑定，只记录一次警告
+                Log.w(TAG, "Port " + PORT + " is occupied by another process, will not retry binding");
+                running = false;
+                serverSocket = null;
+            } else {
+                // 端口空闲但绑定失败（如 TIME_WAIT），由 watchdog 每 2 秒重试直到成功
+                Log.e(TAG, "Port " + PORT + " bind failed, will retry via watchdog", e);
+                running = false;
+                serverSocket = null;
+            }
             return;
         }
         executor.execute(() -> {
