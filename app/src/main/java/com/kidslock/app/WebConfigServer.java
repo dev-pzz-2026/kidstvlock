@@ -38,6 +38,10 @@ public class WebConfigServer {
     private int actualPort = PORT;  // 实际绑定的端口，可能不同于默认 PORT
     private ExecutorService executor = Executors.newCachedThreadPool();
     private Context context;
+
+    // 启动节流：记录上次启动尝试时间，短时间内不重复尝试绑定，避免日志风暴
+    private long lastStartAttemptMs = 0;
+    private static final long START_THROTTLE_MS = 2000;
     
     public static synchronized WebConfigServer getInstance(Context context) {
         if (instance == null) {
@@ -62,6 +66,12 @@ public class WebConfigServer {
             Log.w(TAG, "serverSocket is closed, clearing reference");
             serverSocket = null;
         }
+        // 启动节流：短时间内不重复尝试绑定，避免日志风暴
+        long now = System.currentTimeMillis();
+        if (now - lastStartAttemptMs < START_THROTTLE_MS) {
+            return;
+        }
+        lastStartAttemptMs = now;
         // 直接正式绑定端口，不做先 probe 再关闭再绑定的双重绑定，避免 TIME_WAIT 导致反复绑定失败
         try {
             serverSocket = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
