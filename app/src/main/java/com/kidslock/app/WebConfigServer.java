@@ -71,8 +71,8 @@ public class WebConfigServer {
             running = true;
             Log.i(TAG, "Web server started on port " + actualPort);
         } catch (Exception e) {
-            // bind 失败（如 EADDRINUSE），说明端口已被占用（本应用或其他服务），视为已运行，不重复绑定
-            Log.e(TAG, "Port " + PORT + " bind failed, port already in use", e);
+            // bind 失败（如 EADDRINUSE），不放弃，由 watchdog 每 500ms 重试直到成功
+            Log.e(TAG, "Port " + PORT + " bind failed, will retry via watchdog", e);
             running = false;
             serverSocket = null;
             return;
@@ -108,27 +108,8 @@ public class WebConfigServer {
      * 本方法仅做只读探测，不修改 serverSocket / running 状态，避免破坏已绑定的 socket。
      */
     public synchronized boolean isRunning() {
-        // 如果已有有效的 serverSocket，直接视为运行中（只读，不修改全局状态）
-        if (serverSocket != null && !serverSocket.isClosed()) {
-            return true;
-        }
-        // 尝试 bind 试探：bind 成功说明端口空闲，没有服务在监听；bind 失败说明端口已被占用
-        ServerSocket probe = null;
-        try {
-            probe = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
-            probe.setReuseAddress(true);
-            probe.close();
-            // bind 成功，端口空闲，未运行
-            return false;
-        } catch (Exception e) {
-            // bind 失败，端口已被占用（本应用或其他服务），视为运行中
-            Log.w(TAG, "Port " + PORT + " bind probe failed in isRunning, port already in use, treating as running");
-            return true;
-        } finally {
-            if (probe != null) {
-                try { probe.close(); } catch (Exception ex) {}
-            }
-        }
+        // 仅依赖内存中的 serverSocket 状态，不做 bind 探测
+        return serverSocket != null && !serverSocket.isClosed();
     }
     
     public void stop() {
