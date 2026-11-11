@@ -287,15 +287,12 @@ public class LockService extends Service {
                     server.start();
                 }
 
-                // 防重复：若 LockScreenActivity 正在启动中，跳过本次拉起，避免闪烁
-                if (LockScreenActivity.lockScreenLaunching) {
-                    Log.i(TAG, "LockScreenActivity launching, skipping watchdog pull");
-                } else if (!isLockScreenOnTop()) {
-                    Log.i(TAG, "Lock screen not on top, pulling again");
-                    LockScreenActivity.lockScreenLaunching = true;
-                    startLockScreenActivity();
-                    hideOverlay();
+                // 防重复：若 LockScreenActivity 已在前台可见，跳过本次拉起，避免闪烁
+                if (isLockScreenOnTop()) {
+                    Log.i(TAG, "Lock screen already on top, skipping watchdog pull");
                 } else {
+                    Log.i(TAG, "Lock screen not on top, pulling again");
+                    startLockScreenActivity();
                     hideOverlay();
                 }
 
@@ -327,15 +324,14 @@ public class LockService extends Service {
 
     /**
      * 统一锁屏并拉起答题页面（点击app、计时器到期、闹钟到期共用）。
-     * 启动前置 lockScreenLaunching=true，由 LockScreenActivity.onResume 重置为 false。
-     * watchdog 通过 isForeground + lockScreenLaunching 防重复拉起，避免闪烁。
+     * 不预设 lockScreenLaunching 标志，完全由 LockScreenActivity.onResume/onDestroy 重置，
+     * 避免标志永远为 true 导致 watchdog 再不拉起锁屏，引起电视死机。
      */
     public static void lockAndShow(Context context) {
         PrefManager pref = new PrefManager(context.getApplicationContext());
         pref.setLocked(true);
         pref.setHomeAliasEnabled(context, true);
         pref.stopTimer();
-        LockScreenActivity.lockScreenLaunching = true;
         startLockScreenActivity(context);
         Log.i("LockService", "lockAndShow: locked and start LockScreenActivity");
     }
