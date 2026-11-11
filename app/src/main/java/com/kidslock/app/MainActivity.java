@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         requestAllPermissions();
 
         if (pref.isLocked()) {
+            // 先启动 LockService，确保 watchdog 和 Web 监听维护在运行，再弹锁屏
+            startLockService();
             LockService.lockAndShow(this);
             finish();
             return;
