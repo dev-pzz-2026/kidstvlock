@@ -42,6 +42,10 @@ public class WebConfigServer {
     // 启动节流：记录上次启动尝试时间，短时间内不重复尝试绑定，避免日志风暴
     private long lastStartAttemptMs = 0;
     private static final long START_THROTTLE_MS = 2000;
+
+    // 端口是否被其他进程永久占用。一旦探测到端口被其他进程监听，
+    // 就不再尝试绑定，避免每秒重复产生 EADDRINUSE 错误日志
+    private boolean portPermanentlyOccupied = false;
     
     public static synchronized WebConfigServer getInstance(Context context) {
         if (instance == null) {
@@ -72,6 +76,10 @@ public class WebConfigServer {
         if (lastStartAttemptMs > 0 && now - lastStartAttemptMs < START_THROTTLE_MS) {
             return;
         }
+        // 如果端口已被其他进程占用，不再重复尝试绑定
+        if (portPermanentlyOccupied) {
+            return;
+        }
         lastStartAttemptMs = now;
         // 只绑定 8080 端口，不使用多端口轮询
         try {
@@ -94,6 +102,7 @@ public class WebConfigServer {
             if (portTrulyOccupied) {
                 // 端口被其他进程占用，不再重复尝试绑定，只记录一次警告
                 Log.w(TAG, "Port " + PORT + " is occupied by another process, will not retry binding");
+                portPermanentlyOccupied = true;
                 running = false;
                 serverSocket = null;
             } else {
