@@ -115,15 +115,13 @@ public class LockService extends Service {
             tickRunnable = null;
         }
 
-        // LockService 作为前台服务始终保持运行，由 watchdog 和 tickRunnable 负责维持计时和锁屏守护，
-        // 不因计时器未激活而自行停止，避免 Web 监听服务和定时弹出功能意外中断。
-        if (!pref.isTimerActive()) {
-            Log.i(TAG, "Timer not active, keeping service running for watchdog and WebConfigService maintenance");
-        }
-
-        // 开始计时循环（仅在计时器激活时）
+        // LockService 作为前台服务始终保持运行，由 tickRunnable 负责维持 Web 监听和计时，
+        // 不因计时器未激活而停止 tickRunnable，避免 Web 监听服务意外中断。
         if (pref.isTimerActive()) {
             startTicking();
+        } else {
+            // 计时器未激活，启动轻量级 Web 监听维护循环（每秒检查一次 WebConfigServer 状态）
+            startWebMaintenance();
         }
         return START_STICKY;
     }
@@ -161,6 +159,29 @@ public class LockService extends Service {
             }
         };
         handler.post(tickRunnable);
+    }
+
+    /**
+     * 轻量级 Web 监听维护循环（计时器未激活时使用）。
+     * 每秒检查一次 WebConfigServer 状态，未运行时直接启动，确保 Web 监听持续可用。
+     */
+    private void startWebMaintenance() {
+        if (tickRunnable != null) {
+            handler.removeCallbacks(tickRunnable);
+        }
+        tickRunnable = new Runnable() {
+            @Override
+            public void run() {
+                WebConfigServer server = WebConfigServer.getInstance(getApplicationContext());
+                if (!server.isRunning()) {
+                    Log.w(TAG, "Web maintenance: Web server not running, directly starting WebConfigServer");
+                    server.start();
+                }
+                handler.postDelayed(this, 1000);
+            }
+        };
+        handler.post(tickRunnable);
+        Log.i(TAG, "Web maintenance loop started");
     }
 
     private void triggerLock() {
