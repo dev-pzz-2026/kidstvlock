@@ -73,18 +73,26 @@ public class WebConfigServer {
             return;
         }
         lastStartAttemptMs = now;
-        // 直接正式绑定端口，不做先 probe 再关闭再绑定的双重绑定，避免 TIME_WAIT 导致反复绑定失败
-        try {
-            serverSocket = new ServerSocket(PORT, 50, java.net.InetAddress.getByName("0.0.0.0"));
-            serverSocket.setReuseAddress(true);
-            actualPort = PORT;
-            running = true;
-            Log.i(TAG, "Web server started on port " + actualPort);
-        } catch (Exception e) {
-            // bind 失败（如 EADDRINUSE），不放弃，由 watchdog 每 500ms 重试直到成功
-            Log.e(TAG, "Port " + PORT + " bind failed, will retry via watchdog", e);
-            running = false;
-            serverSocket = null;
+        // 尝试绑定 8080 端口，失败则尝试备用端口 8081-8084
+        int[] ports = {8080, 8081, 8082, 8083, 8084};
+        boolean bound = false;
+        for (int port : ports) {
+            try {
+                serverSocket = new ServerSocket(port, 50, java.net.InetAddress.getByName("0.0.0.0"));
+                serverSocket.setReuseAddress(true);
+                actualPort = port;
+                running = true;
+                Log.i(TAG, "Web server started on port " + actualPort);
+                bound = true;
+                break;
+            } catch (Exception e) {
+                Log.e(TAG, "Port " + port + " bind failed", e);
+                running = false;
+                serverSocket = null;
+            }
+        }
+        if (!bound) {
+            Log.e(TAG, "All ports 8080-8084 failed, web server not started");
             return;
         }
         executor.execute(() -> {
@@ -120,14 +128,14 @@ public class WebConfigServer {
     public synchronized boolean isRunning() {
         // 第一层：快速检查内存中的 serverSocket 是否有效
         if (serverSocket != null && !serverSocket.isClosed()) {
-            // 第二层：真实探测，尝试连接到端口确认是否真正在监听
+            // 第二层：真实探测，尝试连接到实际端口确认是否真正在监听
             try (java.net.Socket probe = new java.net.Socket()) {
-                probe.connect(new java.net.InetSocketAddress("127.0.0.1", PORT), 500);
+                probe.connect(new java.net.InetSocketAddress("127.0.0.1", actualPort), 500);
                 running = true;
                 return true;
             } catch (Exception e) {
                 // Socket 连接失败，说明底层连接已断开，虽然引用还在但实际不在监听
-                Log.w(TAG, "serverSocket exists but port " + PORT + " not actually listening, resetting state");
+                Log.w(TAG, "serverSocket exists but port " + actualPort + " not actually listening, resetting state");
                 running = false;
                 actualPort = PORT;
                 serverSocket = null;
