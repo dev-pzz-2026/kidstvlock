@@ -28,8 +28,9 @@ public class WebConfigService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         startForeground(NOTIFICATION_ID, buildNotification());
-        WebConfigServer.getInstance(this).start();
-        Log.i(TAG, "Web config server started");
+        // WebConfigServer 生命周期由 LockService 负责，此处不再直接启动 server，
+        // 避免与 LockService 竞争导致状态混乱和重复日志
+        Log.i(TAG, "Web config server started (WebConfigServer managed by LockService)");
         return START_STICKY;
     }
 

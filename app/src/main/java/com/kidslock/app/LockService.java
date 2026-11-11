@@ -53,14 +53,15 @@ public class LockService extends Service {
         windowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
         createNotificationChannel();
         Log.i(TAG, "LockService created");
+
+        // LockService 单一负责 WebConfigServer 生命周期，在 onCreate 时启动 Web 监听
+        WebConfigServer.getInstance(getApplicationContext()).start();
+        Log.i(TAG, "LockService 启动 WebConfigServer");
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         startForeground(NOTIFICATION_ID, buildNotification());
-
-        // 兜底：确保 Web 监听服务运行（BootReceiver 可能只启动了 LockService）
-        WebConfigServer.getInstance(getApplicationContext()).start();
 
         // 进程死后重启：检查是否已过期，直接锁屏
         if (pref.isTimerExpired()) {

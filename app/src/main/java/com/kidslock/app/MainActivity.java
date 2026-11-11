@@ -380,15 +380,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ensureServicesRunning() {
-        // 兜底：直接启动 WebConfigServer，不依赖 Service 的异步 onStartCommand
-        WebConfigServer server = WebConfigServer.getInstance(getApplicationContext());
-        if (!server.isRunning()) {
-            Log.w("MainActivity", "Web 监听服务未运行，直接启动 WebConfigServer");
-            server.start();
-        } else {
-            Log.w("MainActivity", "Web 监听服务已运行");
-        }
-        // 启动前台服务保持常驻
+        // WebConfigServer 生命周期由 LockService 负责，此处仅启动 LockService 和 WebConfigService
         WebConfigService.ensureRunning(this);
         try {
             startLockService();
