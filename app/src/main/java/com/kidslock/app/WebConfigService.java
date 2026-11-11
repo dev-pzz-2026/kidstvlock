@@ -91,12 +91,23 @@ public class WebConfigService extends Service {
 
     /**
      * 确保 Web 监听服务运行；若未启动则启动，并记录日志。
+     * 若首次启动失败，延迟 1 秒重试一次，避免端口暂时被占用导致启动失败。
      */
     public static void ensureRunning(Context context) {
         WebConfigServer server = WebConfigServer.getInstance(context.getApplicationContext());
         if (server == null || !server.isRunning()) {
             Log.i("WebConfigService", "Web 监听服务未运行，直接启动 WebConfigServer");
             server.start();
+            // 启动后再检查一次，若仍未运行则延迟重试
+            if (server == null || !server.isRunning()) {
+                new android.os.Handler(android.os.Looper.getMainLooper()).postDelayed(() -> {
+                    WebConfigServer s2 = WebConfigServer.getInstance(context.getApplicationContext());
+                    if (s2 != null && !s2.isRunning()) {
+                        Log.w("WebConfigService", "Web 监听服务首次启动失败，延迟重试");
+                        s2.start();
+                    }
+                }, 1000);
+            }
         } else {
             Log.i("WebConfigService", "Web 监听服务已运行，无需重复启动");
         }
