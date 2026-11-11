@@ -29,8 +29,10 @@ public class BootReceiver extends BroadcastReceiver {
             PrefManager pref = new PrefManager(context);
             if (pref.isTimerExpired()) {
                 Log.i(TAG, "Timer expired on wakeup, locking");
-                LockService.lockAndShow(context);
+                // 先启动 LockService，由 onStartCommand 统一处理锁屏，避免重复弹 Activity
                 startLockService(context);
+                startWebConfigService(context);
+                LockService.lockAndShow(context);
             } else {
                 Log.i(TAG, "Timer not expired on wakeup, resuming service");
                 startLockService(context);

@@ -111,23 +111,16 @@ public class LockService extends Service {
             tickRunnable = null;
         }
 
-        // 计时器未激活 → 停止服务
+        // LockService 作为前台服务始终保持运行，由 watchdog 和 tickRunnable 负责维持计时和锁屏守护，
+        // 不因计时器未激活而自行停止，避免 Web 监听服务和定时弹出功能意外中断。
         if (!pref.isTimerActive()) {
-            Log.i(TAG, "Timer not active, stopping service");
-            stopForeground(true);
-            stopSelf();
-            return START_NOT_STICKY;
+            Log.i(TAG, "Timer not active, keeping service running for watchdog and WebConfigService maintenance");
         }
 
-        // 如果已经超时，直接锁屏
-        if (pref.isTimerExpired()) {
-            Log.i(TAG, "Timer expired, locking now");
-            triggerLock();
-            return START_STICKY;
+        // 开始计时循环（仅在计时器激活时）
+        if (pref.isTimerActive()) {
+            startTicking();
         }
-
-        // 开始计时循环
-        startTicking();
         return START_STICKY;
     }
 
