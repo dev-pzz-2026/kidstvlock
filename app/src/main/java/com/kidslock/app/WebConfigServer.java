@@ -41,7 +41,11 @@ public class WebConfigServer {
 
     // 启动节流：记录上次启动尝试时间，短时间内不重复尝试绑定，避免日志风暴
     private long lastStartAttemptMs = 0;
-    private static final long START_THROTTLE_MS = 2000;
+    private static final long START_THROTTLE_MS = 5000;
+
+    // 连续绑定失败计数器，连续失败 5 次后停止重试
+    private int consecutiveBindFailures = 0;
+    private static final int MAX_CONSECUTIVE_BIND_FAILURES = 5;
 
     // 端口是否被其他进程永久占用。一旦探测到端口被其他进程监听，
     // 就不再尝试绑定，避免每秒重复产生 EADDRINUSE 错误日志
@@ -80,6 +84,10 @@ public class WebConfigServer {
         if (portPermanentlyOccupied) {
             return;
         }
+        // 如果连续失败次数过多，停止重试
+        if (consecutiveBindFailures >= MAX_CONSECUTIVE_BIND_FAILURES) {
+            return;
+        }
         lastStartAttemptMs = now;
         // 只绑定 8080 端口，不使用多端口轮询
         try {
@@ -87,9 +95,11 @@ public class WebConfigServer {
             serverSocket.setReuseAddress(true);
             actualPort = PORT;
             running = true;
+            consecutiveBindFailures = 0; // 绑定成功，重置失败计数器
             Log.i(TAG, "Web server started on port " + actualPort);
         } catch (Exception e) {
             // bind 失败（如 EADDRINUSE）
+            consecutiveBindFailures++; // 增加失败计数器
             // 先通过 Socket 连接探测端口是否真的被其他进程监听
             boolean portTrulyOccupied = false;
             try (java.net.Socket probe = new java.net.Socket()) {
@@ -106,8 +116,8 @@ public class WebConfigServer {
                 running = false;
                 serverSocket = null;
             } else {
-                // 端口空闲但绑定失败（如 TIME_WAIT），由 watchdog 每 2 秒重试直到成功
-                Log.e(TAG, "Port " + PORT + " bind failed, will retry via watchdog", e);
+                // 端口空闲但绑定失败（如 TIME_WAIT），由 watchdog 每 5 秒重试直到成功或达到最大失败次数
+                Log.e(TAG, "Port " + PORT + " bind failed (failures: " + consecutiveBindFailures + "/" + MAX_CONSECUTIVE_BIND_FAILURES + "), will retry via watchdog", e);
                 running = false;
                 serverSocket = null;
             }
