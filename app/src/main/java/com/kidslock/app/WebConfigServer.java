@@ -150,30 +150,12 @@ public class WebConfigServer {
     
     /**
      * 查询端口真实监听状态（最高优先级）。
-     * 通过尝试 Socket 连接到实际端口来确认是否真正在监听，不依赖内存中的 running 标志。
-     * 若内存中 serverSocket 有效但实际连接失败，说明底层连接已断开，重置状态。
+     * 通过检查内存中的 serverSocket 是否有效来判断，不依赖 Socket connect 探测，
+     * 避免因为系统网络问题导致误判为未运行而重复绑定端口。
      */
     public synchronized boolean isRunning() {
-        // 第一层：快速检查内存中的 serverSocket 是否有效
-        if (serverSocket != null && !serverSocket.isClosed()) {
-            // 第二层：真实探测，尝试连接到实际端口确认是否真正在监听
-            try (java.net.Socket probe = new java.net.Socket()) {
-                probe.connect(new java.net.InetSocketAddress("127.0.0.1", actualPort), 500);
-                running = true;
-                return true;
-            } catch (Exception e) {
-                // Socket 连接失败，说明底层连接已断开，虽然引用还在但实际不在监听
-                Log.w(TAG, "serverSocket exists but port " + actualPort + " not actually listening, resetting state");
-                running = false;
-                actualPort = PORT;
-                serverSocket = null;
-                return false;
-            }
-        }
-        // 内存中没有有效 serverSocket，端口未在监听
-        running = false;
-        actualPort = PORT;
-        return false;
+        // 仅依赖内存中的 serverSocket 是否有效
+        return serverSocket != null && !serverSocket.isClosed();
     }
     
     public void stop() {
