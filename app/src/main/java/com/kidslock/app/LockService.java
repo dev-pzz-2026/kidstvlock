@@ -130,6 +130,10 @@ public class LockService extends Service {
         if (tickRunnable != null) {
             handler.removeCallbacks(tickRunnable);
         }
+        if (watchdogRunnable != null) {
+            handler.removeCallbacks(watchdogRunnable);
+            watchdogRunnable = null;
+        }
         long endTime = pref.getTimerEndTime();
         if (endTime > System.currentTimeMillis()) {
             scheduleWakeupAlarm(endTime);
