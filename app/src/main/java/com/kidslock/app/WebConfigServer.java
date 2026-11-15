@@ -51,6 +51,16 @@ public class WebConfigServer {
     // 就不再尝试绑定，避免每秒重复产生 EADDRINUSE 错误日志
     private boolean portPermanentlyOccupied = false;
     
+    /**
+     * 重置失败计数器和占用标志，用于在解锁或服务重启时给 Web 监听
+     * 重新启动的机会。
+     */
+    public synchronized void resetFailureCount() {
+        consecutiveBindFailures = 0;
+        portPermanentlyOccupied = false;
+        Log.i(TAG, "Failure count reset, Web server can retry binding");
+    }
+    
     public static synchronized WebConfigServer getInstance(Context context) {
         if (instance == null) {
             instance = new WebConfigServer(context.getApplicationContext());
