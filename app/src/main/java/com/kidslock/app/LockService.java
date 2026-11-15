@@ -310,7 +310,7 @@ public class LockService extends Service {
 
                 // 防重复：若 LockScreenActivity 已在前台可见，跳过本次拉起，避免闪烁
                 if (isLockScreenOnTop()) {
-                    Log.i(TAG, "Lock screen already on top, skipping watchdog pull");
+                    // 锁屏已在前台，不输出日志，避免日志风暴
                 } else {
                     Log.i(TAG, "Lock screen not on top, pulling again");
                     startLockScreenActivity();
