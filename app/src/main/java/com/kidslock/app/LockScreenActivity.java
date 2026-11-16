@@ -276,8 +276,6 @@ public class LockScreenActivity extends AppCompatActivity {
         }
         // 答题解锁后检查端口监听，若未监听则直接拉起 WebConfigServer
         WebConfigServer server = WebConfigServer.getInstance(getApplicationContext());
-        // 解锁时重置失败计数器，确保 Web 监听能重新启动
-        server.resetFailureCount();
         if (!server.isRunning()) {
             android.util.Log.w("LockScreenActivity", "端口未监听，直接启动 WebConfigServer");
             server.start();
